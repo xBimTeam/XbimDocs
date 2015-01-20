@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="d7e6c2dd-4931-46be-888f-8004f50db7b8" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>Version 3.0 was released on 5th January 2015.
+			</para>
+		</introduction>
+
+		<section>
+			<title>xBIM Version 3</title>
+			<content>
+
+				<list class="bullet">
+					<listItem>
+						<para>This contains a major upgrade to the geometry engine, allowing authoring as well as presentation of IFC geometries. All boundary representation solid, shell, face, edge and vertex behaviours are implemented</para>
+            <para>All entities in Ifc 2x3 are now supported</para>
+            <para>The web viewing components have been written and we now provide a high performance standalone javascript client that is tuned for WebGL</para>
+            <para>We have moved from the Codeplex platform to GitHub by popular demand of the developers</para>
+            <para>All packages are now distributed by GitHub</para>
+          </listItem>
+
+				</list>
+
+			</content>
+		</section>
+
+		<relatedTopics>
+			<link xlink:href="7000b516-9f07-4d82-adf2-7365213d1996" />
+		</relatedTopics>
+
+	</developerConceptualDocument>
+</topic>

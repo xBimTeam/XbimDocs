@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="eb3d64e2-3ae5-476f-8790-caf1be5aabee" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>The is the documentation for the core xBIM class libraries.</para>
+		</introduction>
+		<section>
+			<title>Getting Started</title>
+			<content>
+				<para>
+          The source of the xBIM Toolkit is distributed through the <externalLink>
+            <linkText>GitHub site</linkText>
+            <linkUri>http://github.com/xBimTeam</linkUri>
+          </externalLink>.</para>
+          <para>To simplify development and integration with your projects a set of Nuget packages are available on the <externalLink>
+            <linkText>Nuget site</linkText>
+            <linkUri>http://www.nuget.org/packages?q=xbim</linkUri>
+          </externalLink> under the search tag xBIM.
+      </para>
+
+				<list class="bullet">
+					<listItem>
+						<para>These include</para>
+					</listItem>
+					<listItem>
+						<para>
+              <legacyBold>Xbim.Essentials</legacyBold> - A simple and clear .NET API for reading, querying, managing and creating IFC models</para>
+					</listItem>
+					<listItem>
+						<para>
+              <legacyBold>Xbim.Geometry</legacyBold> -  A class library for geometry conversion to and from IFC and Boundary Representation, 
+            including boolean operations, transforms and meshing fro 3D rendering engines. Brep solids, shells, faces, edges and vertices are implemented as well as the necessary geometric behavious and properties. i.e. Volume, area, slice, union, rotate, intersect etc.</para>
+					</listItem>
+					<listItem>
+						<para>
+              <legacyBold>Xbim.Exchange</legacyBold> - A class library to support interoperability with other BIM formats such as COBie, COBieLite, BCF etc has been added in Xbim.Exchange</para>
+					</listItem>
+          <listItem>
+            <para>
+              <legacyBold>Xbim.WebUI</legacyBold> - A set of javascript routines to implement high speed viewing of 3D models in WEBGL clients,
+            together with controls to display COBieLite models</para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Xbim.WindowsUI</legacyBold> - A set of .NET WPF controls to support  high speed viewing of 3D models in PC Windows clients,
+              together with controls to display IFC models
+            </para>
+          </listItem>
+				</list>
+			</content>
+		</section>
+
+		<relatedTopics>
+			<link xlink:href="7000b516-9f07-4d82-adf2-7365213d1996" />
+		</relatedTopics>
+	</developerConceptualDocument>
+</topic>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="7000b516-9f07-4d82-adf2-7365213d1996" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>The topics in this section describe the various changes made to the xBIM Toolkit.</para>
+		</introduction>
+
+		<section>
+			<title>Version History</title>
+			<content>
+				<para>Select a version below to see a description of its changes.</para>
+
+				<list class="bullet">
+					<listItem>
+						<para><link xlink:href="d7e6c2dd-4931-46be-888f-8004f50db7b8" /></para>
+					</listItem>
+
+					<listItem>
+						<para>The latest version of xBIM is 3.0</para>
+					</listItem>
+
+				</list>
+
+			</content>
+		</section>
+
+		<relatedTopics>
+			<link xlink:href="eb3d64e2-3ae5-476f-8790-caf1be5aabee" />
+		</relatedTopics>
+
+	</developerConceptualDocument>
+</topic>
