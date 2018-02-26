@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
   <PropertyGroup>
     <!-- The configuration and platform will be used to determine which assemblies to include from solution and
 				 project documentation sources -->
@@ -7,7 +7,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bad85414-8e38-464b-a826-5ce4acab803c</ProjectGuid>
-    <SHFBSchemaVersion>1.9.9.0</SHFBSchemaVersion>
+    <SHFBSchemaVersion>2017.9.26.0</SHFBSchemaVersion>
     <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual Studio adds them anyway -->
     <AssemblyName>Documentation1</AssemblyName>
     <RootNamespace>Documentation1</RootNamespace>
@@ -29,7 +29,7 @@
     <DocumentationSources>
       <DocumentationSource sourceFile="..\..\XbimEssentials\Xbim.Essentials.Nuget.sln" />
       <DocumentationSource sourceFile="..\..\XbimGeometry\Xbim.Geometry.Engine.Interop\Xbim.Geometry.Engine.Interop.csproj" />
-      <DocumentationSource sourceFile="..\..\XbimGeometry\Xbim.Geometry.Engine\Xbim.Geometry.Engine.vcxproj" />
+      <DocumentationSource sourceFile="..\..\XbimGeometry\Xbim.ModelGeometry.Scene\Xbim.ModelGeometry.Scene.csproj" />
     </DocumentationSources>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <HelpFileFormat>Website</HelpFileFormat>
@@ -56,26 +56,27 @@
     <CopyrightHref>The xBIM Team 2013</CopyrightHref>
     <ApiFilter>
       <Filter entryType="Namespace" fullName="" isExposed="False" />
-<Filter entryType="Namespace" fullName="QUT.Gppg" isExposed="False" />
-<Filter entryType="Namespace" fullName="Tests" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.COBie" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.COBie.Client" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.COBie.Contracts" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.COBie.Data" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.COBie.Federate" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.COBie.Rows" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.COBie.Serialisers" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.COBie.Serialisers.XbimSerialiser" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.COBieLite" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.CobieLite.Validation" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.DPoW.Interfaces" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.DPoW.Interfaces.Converters" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.IO.DynamicGrouping" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.IO.GroupingAndStyling" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.ModelGeometry.Converter" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.Tests.COBie" isExposed="False" />
-<Filter entryType="Namespace" fullName="Xbim.XbimExtensions.DataProviders" isExposed="False" /></ApiFilter>
-    <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
+      <Filter entryType="Namespace" fullName="QUT.Gppg" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Tests" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.COBie" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.COBie.Client" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.COBie.Contracts" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.COBie.Data" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.COBie.Federate" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.COBie.Rows" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.COBie.Serialisers" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.COBie.Serialisers.XbimSerialiser" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.COBieLite" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.CobieLite.Validation" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.DPoW.Interfaces" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.DPoW.Interfaces.Converters" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.IO.DynamicGrouping" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.IO.GroupingAndStyling" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.ModelGeometry.Converter" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.Tests.COBie" isExposed="False" />
+      <Filter entryType="Namespace" fullName="Xbim.XbimExtensions.DataProviders" isExposed="False" />
+    </ApiFilter>
+    <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected, EditorBrowsableNever, NonBrowsable</VisibleItems>
     <CatalogName>VisualStudio11</CatalogName>
     <TocParentId>-1</TocParentId>
     <TocParentVersion>100</TocParentVersion>
