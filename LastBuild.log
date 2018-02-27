@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.12.30.2" projectFile="D:\Project\XBimDocs\Documentation\Xbim.Documentation.shfbproj" started="26/02/2018 16:32:27">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Locating components in the following folder(s):
+    D:\Project\XBimDocs\Documentation
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
+Using framework reflection data for &#39;.NET Framework 4.5&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2017.12.30.2
+Copyright &#169; 2006-2017, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+-------------------------------
+Clearing any prior web/markdown output...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: D:\Project\XbimEssentials\Xbim.Essentials.Nuget.sln
+    Found project &#39;D:\Project\XbimEssentials\Xbim.Ifc2x3\Xbim.Ifc2x3.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.IO.Tests\Xbim.IO.Tests.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.Ifc4\Xbim.Ifc4.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.Common\Xbim.Common.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.CobieExpress\Xbim.CobieExpress.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.IO\Xbim.IO.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.Ifc.Extensions\Xbim.Ifc2x3.Extensions.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.Ifc2x3.IO\Xbim.Ifc2x3.IO.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.Essentials.Tests\Xbim.Essentials.Tests.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Profiling.Parsing\Profiling.Parsing.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Utility.ExtractCobieData\Utility.ExtractCobieData.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.Ifc\Xbim.Ifc.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Profiling.WritingXml\Profiling.WritingXml.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Profiling.ReadingXML\Profiling.ReadingXML.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.Tessellator\Xbim.Tessellator.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Utility.CreateCobieConfiguration\Utility.CreateCobieConfiguration.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.CobieExpress.IO\Xbim.CobieExpress.IO.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Xbim.IO.TableStore\Xbim.IO.TableStore.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Profiling.TableStore\Profiling.TableStore.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Profiling.ProductExtraction\Profiling.ProductExtraction.csproj&#39;
+    Found project &#39;D:\Project\XbimEssentials\Profiling.InverseCacheImpact\Profiling.InverseCacheImpact.csproj&#39;
+Source: D:\Project\XbimGeometry\Xbim.Geometry.Engine.Interop\Xbim.Geometry.Engine.Interop.csproj
+    Found project &#39;D:\Project\XbimGeometry\Xbim.Geometry.Engine.Interop\Xbim.Geometry.Engine.Interop.csproj&#39;
+Source: D:\Project\XbimGeometry\Xbim.ModelGeometry.Scene\Xbim.ModelGeometry.Scene.csproj
+    Found project &#39;D:\Project\XbimGeometry\Xbim.ModelGeometry.Scene\Xbim.ModelGeometry.Scene.csproj&#39;
+
+Parsing project files
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.Ifc2x3\..\Output\Debug\Xbim.Ifc2x3.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.IO.Tests\..\Output\Debug\Xbim.Ifc2x3.Model.Tests.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.Ifc4\..\Output\Debug\Xbim.Ifc4.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.Common\..\Output\Debug\Xbim.Common.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.CobieExpress\..\Output\Debug\Xbim.CobieExpress.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.IO\..\Output\Debug\Xbim.IO.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.Ifc.Extensions\..\Output\Debug\Xbim.Ifc.Extensions.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.Ifc2x3.IO\..\Output\Debug\Xbim.Ifc2x3.IO.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.Essentials.Tests\..\output\Debug\Xbim.Essentials.Tests.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Profiling.Parsing\..\output\Debug\Profiling.Parsing.exe&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Utility.ExtractCobieData\..\output\Debug\ExtractCobieData.exe&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.Ifc\..\output\Debug\Xbim.Ifc.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Profiling.WritingXml\..\output\Debug\Profiling.WritingXml.exe&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Profiling.ReadingXML\..\output\Debug\Profiling.ReadingXML.exe&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.Tessellator\..\Output\Debug\Xbim.Tessellator.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Utility.CreateCobieConfiguration\bin\Debug\Utility.CreateCobieConfiguration.exe&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.CobieExpress.IO\..\Output\Debug\Xbim.CobieExpress.IO.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Xbim.IO.TableStore\..\Output\Debug\Xbim.IO.TableStore.dll&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Profiling.TableStore\bin\Debug\Profiling.TableStore.exe&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Profiling.ProductExtraction\bin\Debug\Profiling.ProductExtraction.exe&#39;
+    Found assembly &#39;D:\Project\XbimEssentials\Profiling.InverseCacheImpact\bin\Debug\Profiling.InverseCacheImpact.exe&#39;
+    Found assembly &#39;D:\Project\XbimGeometry\Xbim.Geometry.Engine.Interop\..\Output\Debug\Xbim.Geometry.Engine.Interop.dll&#39;
+    Found assembly &#39;D:\Project\XbimGeometry\Xbim.ModelGeometry.Scene\..\Output\Debug\Xbim.ModelGeometry.Scene.dll&#39;
+
+References to include (excluding framework assemblies):
+    Esent.Interop, Version=1.9.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL
+    ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL
+    log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL
+    Microsoft.VisualStudio.QualityTools.UnitTestFramework
+    NPOI, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL
+    NPOI.OOXML, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL
+    NPOI.OpenXml4Net, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL
+    NPOI.OpenXmlFormats, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL
+    Xbim.CobieExpress, Version=4.0.0.0, Culture=neutral, PublicKeyToken=11e3655e576ec5a9, processorArchitecture=MSIL
+    Xbim.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=11e3655e576ec5a9, processorArchitecture=MSIL
+    Xbim.Ifc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=11e3655e576ec5a9, processorArchitecture=MSIL
+    Xbim.Ifc.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=11e3655e576ec5a9, processorArchitecture=MSIL
+    Xbim.Ifc2x3, Version=4.0.0.0, Culture=neutral, PublicKeyToken=11e3655e576ec5a9, processorArchitecture=MSIL
+    Xbim.Ifc2x3.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=11e3655e576ec5a9, processorArchitecture=MSIL
+    Xbim.Ifc4, Version=4.0.0.0, Culture=neutral, PublicKeyToken=11e3655e576ec5a9, processorArchitecture=MSIL
+    Xbim.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=11e3655e576ec5a9, processorArchitecture=MSIL
+    Xbim.Tessellator, Version=4.0.0.0, Culture=neutral, PublicKeyToken=11e3655e576ec5a9, processorArchitecture=MSIL
+SHFB: Warning BE0062: No documentation source XML comments files found.  The help file will not contain any member comments.
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, Anglais (&#201;tats-Unis))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00,0049
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00,0000
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
+La g‚n‚ration a d‚marr‚ 26/02/2018 16:32:37.
+Projet &quot;D:\Project\XBimDocs\Documentation\Help\Working\GenerateRefInfo.proj&quot; sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2017.12.30.2)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 23 assemblies for reflection and 18 dependency assemblies.
+  Wrote information on 130 namespaces, 4327 types, and 22319 members
+  Copie du fichier de &quot;reflection.org&quot; vers &quot;reflection.all&quot;.
+  XslTransform (v2017.12.30.2)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+G‚n‚ration du projet &quot;D:\Project\XBimDocs\Documentation\Help\Working\GenerateRefInfo.proj&quot; termin‚e (cibles par d‚faut).
+    Last step completed in 00:00:08,2041
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
+La g‚n‚ration a d‚marr‚ 26/02/2018 16:32:45.
+Projet &quot;D:\Project\XBimDocs\Documentation\Help\Working\TransformManifest.proj&quot; sur le noud 1 (cibles par d‚faut).
+TransformManifest:
+  XslTransform (v2017.12.30.2)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copie du fichier de &quot;reflection.xml&quot; vers &quot;reflection.nofilenames&quot;.
+  XslTransform (v2017.12.30.2)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+  XslTransform (v2017.12.30.2)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+G‚n‚ration du projet &quot;D:\Project\XBimDocs\Documentation\Help\Working\TransformManifest.proj&quot; termin‚e (cibles par d‚faut).
+    Last step completed in 00:00:15,7650
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:01,4537
+</buildStep>
+<buildStep step="CopyConceptualContent">
+Copying conceptual content...
+Copying standard token shared content file...
+Checking for other token files...
+Checking for code snippets files...
+Copying images and creating the media map file...
+Generating conceptual topic files
+    Parsing topic file &#39;D:\Project\XBimDocs\Documentation\Content\Welcome.aml&#39;
+    D:\Project\XBimDocs\Documentation\Content\Welcome.aml -&gt; D:\Project\XBimDocs\Documentation\Help\Working\ddueXml\eb3d64e2-3ae5-476f-8790-caf1be5aabee.xml
+    Parsing topic file &#39;D:\Project\XBimDocs\Documentation\Content\VersionHistory\VersionHistory.aml&#39;
+    D:\Project\XBimDocs\Documentation\Content\VersionHistory\VersionHistory.aml -&gt; D:\Project\XBimDocs\Documentation\Help\Working\ddueXml\7000b516-9f07-4d82-adf2-7365213d1996.xml
+    Parsing topic file &#39;D:\Project\XBimDocs\Documentation\Content\VersionHistory\v3.0.aml&#39;
+    D:\Project\XBimDocs\Documentation\Content\VersionHistory\v3.0.aml -&gt; D:\Project\XBimDocs\Documentation\Help\Working\ddueXml\d7e6c2dd-4931-46be-888f-8004f50db7b8.xml
+    Last step completed in 00:00:00,0206
+</buildStep>
+<buildStep step="CreateConceptualTopicConfigs">
+Creating conceptual topic configuration files...
+    Companion files
+    _ContentMetadata_.xml
+    Merging topic IDs into manifest.xml
+    Last step completed in 00:00:00,1684
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+D:\Project\XBimDocs\Documentation\icons\Help.png -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\Help.png
+    Last step completed in 00:00:00,0040
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00,0005
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
+La g‚n‚ration a d‚marr‚ 26/02/2018 16:33:03.
+Projet &quot;D:\Project\XBimDocs\Documentation\Help\Working\GenerateIntermediateTOC.proj&quot; sur le noud 1 (cibles par d‚faut).
+GenerateIntermediateTOC:
+  XslTransform (v2017.12.30.2)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+G‚n‚ration du projet &quot;D:\Project\XBimDocs\Documentation\Help\Working\GenerateIntermediateTOC.proj&quot; termin‚e (cibles par d‚faut).
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:02,5454
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:01,0913
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+D:\Project\XBimDocs\Documentation\Help\Working\sandcastle.config
+  Updating reference topic configurations.
+  Updating conceptual topic configurations.
+    Removing unused ExampleComponent.
+    Last step completed in 00:00:00,0030
+</buildStep>
+<buildStep step="BuildTopics">
+Building help topics...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
+La g‚n‚ration a d‚marr‚ 26/02/2018 16:33:06.
+Projet &quot;D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj&quot; sur le noud 1 (cibles par d‚faut).
+BuildTopics:
+  BuildAssembler (v2017.12.30.2)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:System.Collections.Generic&#39; occur in both &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Collections.Generic.xml&#39; and &#39;D:\Project\XBimDocs\Documentation\Help\Working\reflection.xml&#39;. The last entry will be used. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+  Processing topics...
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.CobieExpress.IO.Resolvers.AttributeTypeResolver.Resolve(System.Type,NPOI.SS.UserModel.ICell,Xbim.IO.TableStore.ClassMapping,Xbim.IO.TableStore.PropertyMapping)] Unknown reference link target &#39;T:NPOI.SS.UserModel.ICell&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.Common.Geometry.XbimQuaternion] Unknown reference link target &#39;!:SharpDX.Quaternion&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.Common.Geometry.XbimQuaternion] Invalid reference link target &#39;!:SharpDX.Quaternion&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Xbim.Common.Geometry.XbimQuaternion] Unknown reference link target &#39;!:SharpDX.Quaternion&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Xbim.Common.Geometry.XbimQuaternion] Invalid reference link target &#39;!:SharpDX.Quaternion&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.Common.Geometry.XbimQuaternion.Transform(Xbim.Common.Geometry.XbimVector3D@,Xbim.Common.Geometry.XbimQuaternion@,Xbim.Common.Geometry.XbimVector3D@)] Unknown reference link target &#39;!:SharpDX.Quaternion&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.Common.Geometry.XbimQuaternion.Transform(Xbim.Common.Geometry.XbimVector3D@,Xbim.Common.Geometry.XbimQuaternion@,Xbim.Common.Geometry.XbimVector3D@)] Invalid reference link target &#39;!:SharpDX.Quaternion&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.Common.Geometry.XbimQuaternion.Transform(Xbim.Common.Geometry.XbimVector3D@,Xbim.Common.Geometry.XbimQuaternion@,Xbim.Common.Geometry.XbimVector3D@)] Unknown reference link target &#39;!:SharpDX.Quaternion&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.Common.Geometry.XbimQuaternion.Transform(Xbim.Common.Geometry.XbimVector3D@,Xbim.Common.Geometry.XbimQuaternion@,Xbim.Common.Geometry.XbimVector3D@)] Invalid reference link target &#39;!:SharpDX.Quaternion&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.Common.Geometry.XbimQuaternion.Transform(Xbim.Common.Geometry.XbimVector3D@,Xbim.Common.Geometry.XbimQuaternion@,Xbim.Common.Geometry.XbimVector3D@)] Unknown reference link target &#39;!:SharpDX.Vector4&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.Common.Geometry.XbimQuaternion.Transform(Xbim.Common.Geometry.XbimVector3D@,Xbim.Common.Geometry.XbimQuaternion@,Xbim.Common.Geometry.XbimVector3D@)] Invalid reference link target &#39;!:SharpDX.Vector4&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Esent.P21ToIndexParser] Unknown reference link target &#39;T:QUT.Gppg.ShiftReduceParser`2&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Esent.P21ToIndexParser] Unknown reference link target &#39;T:QUT.Gppg.LexLocation&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.P21Parser] Unknown reference link target &#39;T:QUT.Gppg.ShiftReduceParser`2&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.P21Parser] Unknown reference link target &#39;T:QUT.Gppg.LexLocation&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.P21Parser] Unknown reference link target &#39;M:QUT.Gppg.ShiftReduceParser`2.DoAction(System.Int32)&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.P21Parser] Unknown reference link target &#39;M:QUT.Gppg.ShiftReduceParser`2.Initialize&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.P21Parser] Unknown reference link target &#39;M:QUT.Gppg.ShiftReduceParser`2.TerminalToString(System.Int32)&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Xbim.IO.Parser.P21Parser] Unknown reference link target &#39;M:QUT.Gppg.ShiftReduceParser`2.DoAction(System.Int32)&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Xbim.IO.Parser.P21Parser] Unknown reference link target &#39;M:QUT.Gppg.ShiftReduceParser`2.Initialize&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Xbim.IO.Parser.P21Parser] Unknown reference link target &#39;M:QUT.Gppg.ShiftReduceParser`2.TerminalToString(System.Int32)&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.ScanBase] Unknown reference link target &#39;T:QUT.Gppg.AbstractScanner`2&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.ScanBase] Unknown reference link target &#39;T:QUT.Gppg.LexLocation&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.ScanBase] Unknown reference link target &#39;P:QUT.Gppg.AbstractScanner`2.yylloc&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Xbim.IO.Parser.ScanBase] Unknown reference link target &#39;P:QUT.Gppg.AbstractScanner`2.yylloc&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Xbim.IO.Parser.ScanBase.yylloc] Unknown reference link target &#39;T:QUT.Gppg.LexLocation&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.Scanner] Unknown reference link target &#39;T:QUT.Gppg.AbstractScanner`2&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.Scanner] Unknown reference link target &#39;T:QUT.Gppg.LexLocation&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.Scanner] Unknown reference link target &#39;M:QUT.Gppg.AbstractScanner`2.yyerror(System.String,System.Object[])&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Parser.Scanner] Unknown reference link target &#39;M:QUT.Gppg.AbstractScanner`2.yylex&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Xbim.IO.Parser.Scanner] Unknown reference link target &#39;M:QUT.Gppg.AbstractScanner`2.yyerror(System.String,System.Object[])&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Xbim.IO.Parser.Scanner] Unknown reference link target &#39;M:QUT.Gppg.AbstractScanner`2.yylex&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.IO.Parser.ScanObj.#ctor(System.Int32,Xbim.IO.Parser.ValueType,QUT.Gppg.LexLocation)] Unknown reference link target &#39;T:QUT.Gppg.LexLocation&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:Xbim.IO.Parser.ScanObj.yylloc] Unknown reference link target &#39;T:QUT.Gppg.LexLocation&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Step21.XbimP21Parser] Unknown reference link target &#39;T:QUT.Gppg.ShiftReduceParser`2&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Xbim.IO.Step21.XbimP21Parser] Unknown reference link target &#39;T:QUT.Gppg.LexLocation&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Xbim.IO.TableStore.ReferenceContext.CurrentRow] Unknown reference link target &#39;T:NPOI.SS.UserModel.IRow&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.IO.TableStore.ReferenceContext.LoadData(NPOI.SS.UserModel.IRow,System.Boolean)] Unknown reference link target &#39;T:NPOI.SS.UserModel.IRow&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.IO.TableStore.TableStore.Store(NPOI.SS.UserModel.IWorkbook)] Unknown reference link target &#39;T:NPOI.SS.UserModel.IWorkbook&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.IO.TableStore.Resolvers.ITypeResolver.Resolve(System.Type,NPOI.SS.UserModel.ICell,Xbim.IO.TableStore.ClassMapping,Xbim.IO.TableStore.PropertyMapping)] Unknown reference link target &#39;T:NPOI.SS.UserModel.ICell&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.Tessellator.XbimTriangulatedMesh.ComputeTriangleNormal(XbimTriangleEdge[])] Unknown reference link target &#39;T:XbimTriangleEdge&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Xbim.Tessellator.XbimTriangulatedMesh.Faces] Unknown reference link target &#39;T:XbimTriangleEdge&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Xbim.Tessellator.XbimTriangulatedMesh.FaultyTriangles] Unknown reference link target &#39;T:XbimTriangleEdge&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.Tessellator.XbimTriangulatedMesh.IsFacingOutward(XbimTriangleEdge)] Unknown reference link target &#39;T:XbimTriangleEdge&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Xbim.Tessellator.XbimTriangulatedMesh.TriangleNormal(XbimTriangleEdge)] Unknown reference link target &#39;T:XbimTriangleEdge&#39;. [D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj]
+  Processed 34707 topic(s)
+  46 warning(s)
+  CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
+  ResolveArtLinksComponent: Copying media files...
+  ResolveReferenceLinksComponent: 5 entries added to the MSDN content ID cache.  New cache size: 961 entries
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 15 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 17 of 30.
+G‚n‚ration du projet &quot;D:\Project\XBimDocs\Documentation\Help\Working\BuildTopics.proj&quot; termin‚e (cibles par d‚faut).
+    Last step completed in 00:03:03,6218
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00,2578
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe - ExtractHtmlInfo.proj]
+Sandcastle Help File Builder and Tools, version 2017.12.30.2
+Copyright &#184; 2006-2017, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing website files in D:\Project\XBimDocs\Documentation\Help\Working\Output\Website
+Processed 34707 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to D:\Project\XBimDocs\Documentation\Help\Working\WebKI.xml
+Saving website table of contents to D:\Project\XBimDocs\Documentation\Help\Working\WebTOC.xml
+    Last step completed in 00:00:14,6962
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\search.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\Web.Config
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\GeneralError.htm -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\html\GeneralError.htm
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\PageNotFound.htm -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\html\PageNotFound.htm
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\Search.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\TocClose.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\TocCollapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\TocExpanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\icons\TocOpen.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\scripts\branding-Website.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\scripts\clipboard.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; D:\Project\XBimDocs\Documentation\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
+    Last step completed in 00:00:00,5183
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00,0000
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+Adding lightweight search and TOC elements to each topic...
+</plugIn>    Last step completed in 00:00:56,0214
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 500 files
+Copied 1000 files
+Copied 1500 files
+Copied 2000 files
+Copied 2500 files
+Copied 3000 files
+Copied 3500 files
+Copied 4000 files
+Copied 4500 files
+Copied 5000 files
+Copied 5500 files
+Copied 6000 files
+Copied 6500 files
+Copied 7000 files
+Copied 7500 files
+Copied 8000 files
+Copied 8500 files
+Copied 9000 files
+Copied 9500 files
+Copied 10000 files
+Copied 10500 files
+Copied 11000 files
+Copied 11500 files
+Copied 12000 files
+Copied 12500 files
+Copied 13000 files
+Copied 13500 files
+Copied 14000 files
+Copied 14500 files
+Copied 15000 files
+Copied 15500 files
+Copied 16000 files
+Copied 16500 files
+Copied 17000 files
+Copied 17500 files
+Copied 18000 files
+Copied 18500 files
+Copied 19000 files
+Copied 19500 files
+Copied 20000 files
+Copied 20500 files
+Copied 21000 files
+Copied 21500 files
+Copied 22000 files
+Copied 22500 files
+Copied 23000 files
+Copied 23500 files
+Copied 24000 files
+Copied 24500 files
+Copied 25000 files
+Copied 25500 files
+Copied 26000 files
+Copied 26500 files
+Copied 27000 files
+Copied 27500 files
+Copied 28000 files
+Copied 28500 files
+Copied 29000 files
+Copied 29500 files
+Copied 30000 files
+Copied 30500 files
+Copied 31000 files
+Copied 31500 files
+Copied 32000 files
+Copied 32500 files
+Copied 33000 files
+Copied 33500 files
+Copied 34000 files
+Copied 34500 files
+Copied 35000 files
+Copied 35500 files
+Copied 36000 files
+Copied 36500 files
+Copied 37000 files
+Copied 37500 files
+Copied 38000 files
+Copied 38500 files
+Copied 39000 files
+Copied 39500 files
+Copied 40000 files
+Copied 40500 files
+Copied 41000 files
+Copied 41500 files
+Copied 42000 files
+Copied 42500 files
+Copied 43000 files
+Copied 43500 files
+Copied 44000 files
+Copied 44500 files
+Copied 45000 files
+Copied 45500 files
+Copied 46000 files
+Copied 46500 files
+Copied 46732 files for the website content
+    Last step completed in 00:05:16,3007
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:12,4435
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 26/02/2018 16:42:50.  Total time: 00:10:22,9148
+
+</buildStep>
+</shfbBuild>
