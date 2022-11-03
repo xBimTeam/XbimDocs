@@ -1,6 +1,6 @@
 resources:
   pipelines:
-  - pipeline: XbimEssentialsLib
+  - pipeline: EssentialsPipeline
     source: XbimEssentials
     project: XbimEssentials
     trigger: true
