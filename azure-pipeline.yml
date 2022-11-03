@@ -1,0 +1,47 @@
+resources:
+  pipelines:
+  - pipeline: XbimEssentialsLib
+    source: XbimEssentials
+    project: XbimEssentials
+    trigger: true
+
+steps:
+- task: DeleteFiles@1
+  displayName: 'Remove old docs files'
+  inputs:
+    contents: |
+      **
+
+- powershell: |
+   $url = 'https://github.com/xBimTeam/XbimEssentials.git'
+   git clone $url --branch develop
+  displayName: 'Clone Essentials repository'
+
+- powershell: |
+    choco install docfx -y
+    docfx XbimEssentials/docs/docfx.json
+    if ($lastexitcode -ne 0){
+      throw ("Error generating document")
+    }
+  displayName: 'Generate Documentation'
+  #condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+   
+
+- task: CopyFiles@2
+  displayName: 'Copy generated docs to repo'
+  #condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)\\XbimEssentials\\docs\\_build'
+    Contents: |
+      **
+    TargetFolder: '$(System.DefaultWorkingDirectory)'
+    flattenFolders: false
+    OverWrite: true
+ 
+- powershell: |
+    git config --global user.email "azure.agent@xbim.net"
+    git config --global user.name "azure.agent"
+    git add .
+    git commit -m 'new docs generated'
+    git push -u origin gh-pages
+  displayName: 'Clone Essentials repository'
