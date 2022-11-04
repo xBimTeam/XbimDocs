@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Changelog </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Changelog ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p>All notable changes to this project should be documented in this file</p>
+<h2 id="v51527-2019-05-30">[v5.1.527] 2019-05-30</h2>
+<p>This is the 5.1 release of XBIM</p>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><code>IXbimGeometryEngine.CreateSurfaceModel</code> interface changed to use abstract Face Set</li>
+<li>Allow IModelProviders to overide EntityFactory</li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Re-introduced method to parse header without loading whole file <a href="https://github.com/xBimTeam/XbimEssentials/issues/229">#229</a></li>
+<li><code>EsentModelProvider</code> allows filename to be specified</li>
+<li>Support for IfcPolygonalFaceSet added to tessellation</li>
+<li>Added separate .netcore unit test project</li>
+<li>Enumerator support added to XbimCartesianPointList3D</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li><code>IfcStore</code> preserves Filename from model</li>
+<li>Esent Model not removed when filename specified</li>
+<li>Ifc4 'CorrectObjectAssignment' validation function fixed</li>
+<li>Fix for .netcore XML deserialisation <a href="https://github.com/xBimTeam/XbimEssentials/issues/247">#247</a></li>
+<li>Fix for infinite loop in Scanner with bad EOF <a href="https://github.com/xBimTeam/XbimEssentials/issues/249">#249</a></li>
+<li>Spelling corrections in IfcStore Xml Docs <a href="https://github.com/xBimTeam/XbimEssentials/issues/250">#250</a></li>
+<li>Better handling / reporting of duplicate entity labels</li>
+<li>Improved handling of invalid Enums in parser</li>
+<li>Handle ambiguous specification of PnIndex in IfcTriangulatedFaceSet <a href="https://github.com/xBimTeam/XbimGeometry/issues/167">XbimGeometry#167</a></li>
+<li><code>IfcStore</code> supports STP and STPZIP files.</li>
+<li>Opening ifcXml file in ifcZip failed when using progress delegate <a href="https://github.com/xBimTeam/XbimEssentials/issues/258">#258</a></li>
+</ul>
+<h2 id="v50213-2018-12-17-nuget-release">[v5.0.213] 2018-12-17 Nuget Release</h2>
+<p>The first official suite of Xbim v5 packages!</p>
+<h3 id="changed-1">Changed</h3>
+<ul>
+<li><code>IfcValidator</code> moved from <code>Xbim.Ifc</code> to <code>Xbim.Common</code> and renamed <code>Validator</code></li>
+</ul>
+<h2 id="v50204-2018-12-11">[v5.0.204] 2018-12-11</h2>
+<h3 id="changed-2">Changed</h3>
+<ul>
+<li>The base .NET Framework target has been raised from <code>net45</code> to <code>net47</code>. This is to enable .NET Standard <a href="https://github.com/xBimTeam/XbimEssentials/issues/213">#213</a></li>
+<li>XBIMEssentials is now a 'meta package' which brings in the individual packages. <strong>Important</strong>: To avoid a <a href="https://github.com/xBimTeam/XbimEssentials/issues/233">failed upgrade (#233)</a>
+make sure you update your <code>net4x</code> projects to at least <code>net47</code> <strong>before</strong> you upgrade the Essentials package.</li>
+<li>All project major projects now use the new 'SDK' style <em>csproj</em> format <a href="https://github.com/xBimTeam/XbimEssentials/issues/216">#216</a></li>
+<li>All tests consolidated into <em>Xbim.Essentials.Tests</em></li>
+<li><code>XbimDBAccess</code> has moved from <code>Xbim.IO.Esent</code> namespace to <code>Xbim.IO</code> (in <em>Xbim.Common</em>)</li>
+<li><code>XbimStoreType</code> has moved from <code>Xbim.IO.Esent</code> namespace to <code>Xbim.IO</code> (in <em>Xbim.Common</em>)</li>
+<li><code>IfcSchemaVersion</code> has been renamed <code>XbimSchemaVersion</code></li>
+<li><code>IfcStorageType</code> has been renamed <code>StorageType</code></li>
+<li><em>Xbim.Ifc</em> no longer references <em>Xbim.IO.Esent</em> in order to support netstandard, which required decoupling the Store from specific IModel implementations. <strong>See <a href="https://github.com/xBimTeam/XbimEssentials/issues/227">#228</a></strong>
+<ul>
+<li><strong>BREAKING CHANGE</strong>: Windows forms and Console apps using <em>IfcStore</em> must now call <code>IfcStore.ModelProviderFactory.UseHeuristicModelProvider();</code> at application startup (or at least before using <em>IfcStore.Open()</em>)</li>
+<li>If you don't configure the <code>IfcStore</code> to do this, you will likely result in use of the very basic <code>MemoryModel</code> implementation which does not support <em>.xbim</em> files</li>
+<li>ASP.NET [Core] consumers should not need to do this, but no harm in configuring explicitly.</li>
+</ul>
+</li>
+<li>IfcStore methods factored out to Extension methods: <em>InsertCopy</em>, <em>SaveAsIfc/IfcXml/IfcZip</em>, <em>SaveAsWexbim</em></li>
+<li>Assemblies code signed again - early versions of v5 removed this. <a href="https://github.com/xBimTeam/XbimEssentials/issues/225">#225</a></li>
+</ul>
+<h3 id="added-1">Added</h3>
+<ul>
+<li>Support for IFC4x1 and IFC4 Addendum 2 <a href="https://github.com/xBimTeam/XbimEssentials/issues/177">#177</a></li>
+<li>Support for building against <code>netstandard2.0</code> for all Essentials components (except for <code>Xbim.IO.Esent</code>).
+This should enable the use of XBIM in .NET Core apps and other targets, as well as providing cross-platform support. <a href="https://github.com/xBimTeam/XbimEssentials/issues/213">#213</a></li>
+<li>Support for <em>Microsoft.Extensions.Logging</em> and 3rd party logging providers. (See <em>log4net</em> note below) <a href="https://github.com/xBimTeam/XbimEssentials/issues/214">#214</a>
+<ul>
+<li><code>Xbim.Common.XbimLogging</code> added as a host for <em>ILoggerFactory</em></li>
+<li><a href="https://github.com/xBimTeam/XbimExchange/blob/60f4d0489042fe46f7cccef515d633b861223bb2/Xbim.Exchange/Program.cs#L252">Usage Example 1</a>: Using the standard <a href="https://www.nuget.org/packages/Microsoft.Extensions.Logging.Console/">Microsoft.Extensions.Logging.Console</a></li>
+<li><a href="https://github.com/xBimTeam/XbimWindowsUI/blob/5557cf841670aee7d4f8d902ca25e0a43004b491/XbimXplorer/XplorerMainWindow.xaml.cs#L116">Usage Example 2</a>: Using <a href="https://serilog.net/">Serilog</a> with XBim</li>
+</ul>
+</li>
+<li>Support for Visual Studio 2017</li>
+<li>Support for partial files - selective scanning of part of the model</li>
+<li>Inverse relation caching and entity caching</li>
+<li>Ability to skip certain entity types in the Step21 scanner/ MemoryModel</li>
+<li>Support for IFC files with badly specified CodePages <a href="https://github.com/xBimTeam/XbimEssentials/issues/120">#120</a></li>
+</ul>
+<h3 id="removed-1">Removed</h3>
+<ul>
+<li><code>XBim.Ifc2x3.IO</code> assembly has been removed, including <code>XbimModel</code>. Please use <code>Xbim.Ifc.IfcStore</code> instead</li>
+<li><code>Xbim.CobieExpress.*</code> and <code>XBim.IO.TableStore</code> have been moved to a <a href="https://github.com/xBimTeam/XbimCobieExpress">new dedicated repo</a></li>
+<li><code>Xbim.Ifc.Extensions</code> has been dropped due to the logic only targeting IFC2x3 interfaces and the subjective and potentially ambiguous implementation logic.
+We recommend you build your own or reference it from our <a href="https://github.com/xBimTeam/XbimEssentials/tree/a3787e2c5da268543e480c6f5fe16279787c7449/Xbim.Ifc.Extensions">old source</a>.
+PRs for a new repo are welcome!</li>
+<li><em>log4net</em> logging has been removed. We now use <code>Microsoft.Extensions.Logging</code> abstraction interfaces, meaning you can use the
+<a href="https://github.com/aspnet/Extensions/blob/master/src/Logging/README.md">logging framework of your choice</a> through an
+<a href="https://blog.stephencleary.com/2018/06/microsoft-extensions-logging-part-2-types.html#iloggerprovider">ILoggerProvider</a>
+<ul>
+<li>log4net dependencies and configuration in any of upstream app.config or web.config can be removed</li>
+</ul>
+</li>
+</ul>
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+<li>Clean Esent JFM flushmap files when deleting XBIM databases <a href="https://github.com/xBimTeam/XbimEssentials/issues/206">#206</a></li>
+<li>SaveAs doesn't set &quot;FileName&quot; in IfcStore <a href="https://github.com/xBimTeam/XbimEssentials/issues/223">#223</a></li>
+<li>Indexing and Parsing performance + stability improvements <a href="https://github.com/xBimTeam/XbimEssentials/issues/215">#215</a></li>
+<li>Schema recognition without Exception throwing</li>
+<li>Metadata created only when needed</li>
+<li>Increased error tolerance in the Step21 parser (types of errors)</li>
+<li>Centralised ModelFactor code</li>
+<li>Fixed issue with IfcTriangulatedFaceSet <a href="https://github.com/xBimTeam/XbimEssentials/issues/211">#211</a></li>
+<li>Fixed threading issue in IO.Esent <a href="https://github.com/xBimTeam/XbimEssentials/issues/208">#208</a></li>
+<li>Fixed IFC4 Tesselator issue with MeshPolyhedronBinary <a href="https://github.com/xBimTeam/XbimEssentials/issues/196">#196</a></li>
+<li>Fix for empty RelatedObjects in Ifcxml <a href="https://github.com/xBimTeam/XbimEssentials/issues/188">#188</a></li>
+<li>Support IfcZip containing multiple files <a href="https://github.com/xBimTeam/XbimEssentials/issues/185">#185</a></li>
+<li>Duplicate IfcOrganization created <a href="https://github.com/xBimTeam/XbimEssentials/issues/173">#173</a></li>
+<li>IfcCalendar.ToString provides Date <a href="https://github.com/xBimTeam/XbimEssentials/issues/171">#171</a></li>
+<li>Fix BeginTransaction erasing FileHeader <a href="https://github.com/xBimTeam/XbimEssentials/issues/168">#168</a></li>
+<li>Added missing SI Units for IFC4/2x3 <a href="https://github.com/xBimTeam/XbimEssentials/issues/162">#162</a></li>
+<li>Support parsing of IfcDuration in other cultures <a href="https://github.com/xBimTeam/XbimEssentials/issues/153">#153</a></li>
+<li>More tolerant schema checking in MemoryModel <a href="https://github.com/xBimTeam/XbimEssentials/issues/126">#126</a></li>
+<li>Better tolerance for loading 'bad' files <a href="https://github.com/xBimTeam/XbimEssentials/issues/107">#107</a></li>
+<li>Tessellation is done in floats, resulting in loss of precision <a href="https://github.com/xBimTeam/XbimEssentials/issues/113">#113</a></li>
+</ul>
+<h2 id="4029---2017-12-06">[4.0.29] - 2017-12-06</h2>
+<h3 id="added-2">Added</h3>
+<ul>
+<li>Support for <a href="http://www.buildingsmart-tech.org/specifications/ifc-releases/ifc4-add1-release"><strong>Ifc4-Add1</strong></a> and
+<a href="http://www.buildingsmart-tech.org/specifications/ifc-releases/ifc2x3-tc1-release/summary"><strong>Ifc2x3-TC1</strong></a>.</li>
+</ul>
+<h2 id="4028---2017-09-09">[4.0.28] - 2017-09-09</h2>
+<h3 id="added-3">Added</h3>
+<ul>
+<li>Preliminary support for Ifc4-Add1 and Ifc2x3-TC1</li>
+<li>Where clause validation re-added</li>
+</ul>
+<h2 id="404---2017-10-24">[4.0.4] - 2017-10-24</h2>
+<p>Major new release. See <a href="http://docs.xbim.net/xbim-4/xbim-4-release-notes.html">http://docs.xbim.net/xbim-4/xbim-4-release-notes.html</a></p>
+<h3 id="added-4">Added</h3>
+<ul>
+<li>Support for IFC4 and side-by-side using code-generated schemas</li>
+<li>Ifc4 XML support</li>
+<li>Introduced <code>IModel</code> interface with <code>MemoryModel</code> and <code>EsentModel</code> implementations</li>
+<li>IfcStore added - wrapping <code>MemoryModel</code> and <code>EsentModel</code></li>
+</ul>
+<h3 id="changed-3">Changed</h3>
+<ul>
+<li>XbimModel moved to Xbim.IO.Ifc2x3</li>
+</ul>
+<h3 id="removed-2">Removed</h3>
+<ul>
+<li>IFC <code>WHERE</code> rules have not been brought forward with the new code generated IFC schemas. To be addressed in future</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/CHANGELOG.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1044 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcIShapeProfileDef
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcIShapeProfileDef
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef">
+  
+  
+  <h1 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef" class="text-break">Class IfcIShapeProfileDef
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcProfileDef.html">IfcProfileDef</a></div>
+    <div class="level3"><a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcParameterizedProfileDef.html">IfcParameterizedProfileDef</a></div>
+    <div class="level4"><span class="xref">IfcIShapeProfileDef</span></div>
+      <div class="level5"><a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcAsymmetricIShapeProfileDef.html">IfcAsymmetricIShapeProfileDef</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcProfileDef.html">IfcProfileDef</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcParameterizedProfileDef.html">IfcParameterizedProfileDef</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcIShapeProfileDef.html">IIfcIShapeProfileDef</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcParameterizedProfileDef.html">IIfcParameterizedProfileDef</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcProfileDef.html">IIfcProfileDef</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ExternalReferenceResource.IfcResourceObjectSelect.html">IfcResourceObjectSelect</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcResourceObjectSelect.html">IIfcResourceObjectSelect</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcIShapeProfileDef.html">IIfcIShapeProfileDef</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcParameterizedProfileDef.html">IIfcParameterizedProfileDef</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcProfileDef.html">IIfcProfileDef</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.html">IfcIShapeProfileDef</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcParameterizedProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcParameterizedProfileDef_Xbim_Ifc4_Interfaces_IIfcParameterizedProfileDef_Position">IfcParameterizedProfileDef.IIfcParameterizedProfileDef.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcParameterizedProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcParameterizedProfileDef_Xbim_Ifc2x3_Interfaces_IIfcParameterizedProfileDef_Position">IfcParameterizedProfileDef.IIfcParameterizedProfileDef.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcParameterizedProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcParameterizedProfileDef_Position">IfcParameterizedProfileDef.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcParameterizedProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcParameterizedProfileDef_Equals_Xbim_Ifc2x3_ProfileResource_IfcParameterizedProfileDef_">IfcParameterizedProfileDef.Equals(IfcParameterizedProfileDef)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcProfileDef_Xbim_Ifc4_Interfaces_IIfcProfileDef_ProfileType">IfcProfileDef.IIfcProfileDef.ProfileType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcProfileDef_Xbim_Ifc4_Interfaces_IIfcProfileDef_ProfileName">IfcProfileDef.IIfcProfileDef.ProfileName</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcProfileDef_Xbim_Ifc4_Interfaces_IIfcProfileDef_HasExternalReference">IfcProfileDef.IIfcProfileDef.HasExternalReference</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcProfileDef_Xbim_Ifc4_Interfaces_IIfcProfileDef_HasProperties">IfcProfileDef.IIfcProfileDef.HasProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcProfileDef_Xbim_Ifc2x3_Interfaces_IIfcProfileDef_ProfileType">IfcProfileDef.IIfcProfileDef.ProfileType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcProfileDef_Xbim_Ifc2x3_Interfaces_IIfcProfileDef_ProfileName">IfcProfileDef.IIfcProfileDef.ProfileName</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcProfileDef_ProfileType">IfcProfileDef.ProfileType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcProfileDef_ProfileName">IfcProfileDef.ProfileName</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcProfileDef_Equals_Xbim_Ifc2x3_ProfileResource_IfcProfileDef_">IfcProfileDef.Equals(IfcProfileDef)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc2x3.ProfileResource.html">Xbim.Ifc2x3.ProfileResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc2x3.dll</h6>
+  <h5 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcIShapeProfileDef&quot;, 352)]
+public class IfcIShapeProfileDef : IfcParameterizedProfileDef, INotifyPropertyChanged, IEquatable&lt;IfcProfileDef&gt;, IEquatable&lt;IfcParameterizedProfileDef&gt;, IIfcIShapeProfileDef, IIfcParameterizedProfileDef, IIfcProfileDef, IfcResourceObjectSelect, IIfcResourceObjectSelect, IExpressSelectType, IInstantiableEntity, IIfcIShapeProfileDef, IIfcParameterizedProfileDef, IIfcProfileDef, IContainsEntityReferences, IPersistEntity, IPersist, IEquatable&lt;IfcIShapeProfileDef&gt;, IExpressValidatable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_FilletRadius.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.FilletRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L143">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_FilletRadius_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.FilletRadius*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_FilletRadius" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.FilletRadius">FilletRadius</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(8, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 8)]
+public IfcPositiveLengthMeasure? FilletRadius { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_FlangeThickness.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.FlangeThickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L129">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_FlangeThickness_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.FlangeThickness*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_FlangeThickness" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.FlangeThickness">FlangeThickness</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(7, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 7)]
+public IfcPositiveLengthMeasure FlangeThickness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_OverallDepth.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.OverallDepth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L101">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_OverallDepth_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.OverallDepth*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_OverallDepth" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.OverallDepth">OverallDepth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(5, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 5)]
+public IfcPositiveLengthMeasure OverallDepth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_OverallWidth.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.OverallWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L87">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_OverallWidth_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.OverallWidth*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_OverallWidth" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.OverallWidth">OverallWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(4, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 4)]
+public IfcPositiveLengthMeasure OverallWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_WebThickness.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.WebThickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L115">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_WebThickness_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.WebThickness*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_WebThickness" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.WebThickness">WebThickness</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(6, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 6)]
+public IfcPositiveLengthMeasure WebThickness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Equals_Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Equals(Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L194">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Equals_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Equals*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Equals_Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Equals(Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef)">Equals(IfcIShapeProfileDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcIShapeProfileDef other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.html">IfcIShapeProfileDef</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L163">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Parse_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Parse*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcParameterizedProfileDef.html#Xbim_Ifc2x3_ProfileResource_IfcParameterizedProfileDef_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">IfcParameterizedProfileDef.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Validate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcIShapeProfileDef.cs/#L55">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Validate_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Validate*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Validate" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Validate">Validate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;ValidationResult&gt; Validate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.ValidationResult.html">ValidationResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_ValidateClause_Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_IfcIShapeProfileDefClause_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.IfcIShapeProfileDefClause)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcIShapeProfileDef.cs/#L32">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_ValidateClause_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.ValidateClause*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_ValidateClause_Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_IfcIShapeProfileDefClause_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.IfcIShapeProfileDefClause)">ValidateClause(IfcIShapeProfileDef.IfcIShapeProfileDefClause)</h4>
+  <div class="markdown level1 summary"><p>Tests the express where-clause specified in param 'clause'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateClause(IfcIShapeProfileDef.IfcIShapeProfileDefClause clause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.IfcIShapeProfileDefClause.html">IfcIShapeProfileDef.IfcIShapeProfileDefClause</a></td>
+        <td><span class="parametername">clause</span></td>
+        <td><p>The express clause to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the clause is satisfied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Common_IContainsEntityReferences_References.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Common%23IContainsEntityReferences%23References%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L201">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Common_IContainsEntityReferences_References_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Common#IContainsEntityReferences#References*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Common_IContainsEntityReferences_References" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Common#IContainsEntityReferences#References">IContainsEntityReferences.References</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IPersistEntity&gt; IContainsEntityReferences.References { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_FilletRadius.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc2x3%23Interfaces%23IIfcIShapeProfileDef%23FilletRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L65">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_FilletRadius_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc2x3#Interfaces#IIfcIShapeProfileDef#FilletRadius*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_FilletRadius" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc2x3#Interfaces#IIfcIShapeProfileDef#FilletRadius">IIfcIShapeProfileDef.FilletRadius</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcPositiveLengthMeasure? IIfcIShapeProfileDef.FilletRadius { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_FlangeThickness.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc2x3%23Interfaces%23IIfcIShapeProfileDef%23FlangeThickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L60">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_FlangeThickness_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc2x3#Interfaces#IIfcIShapeProfileDef#FlangeThickness*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_FlangeThickness" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc2x3#Interfaces#IIfcIShapeProfileDef#FlangeThickness">IIfcIShapeProfileDef.FlangeThickness</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcPositiveLengthMeasure IIfcIShapeProfileDef.FlangeThickness { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_OverallDepth.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc2x3%23Interfaces%23IIfcIShapeProfileDef%23OverallDepth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L50">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_OverallDepth_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc2x3#Interfaces#IIfcIShapeProfileDef#OverallDepth*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_OverallDepth" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc2x3#Interfaces#IIfcIShapeProfileDef#OverallDepth">IIfcIShapeProfileDef.OverallDepth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcPositiveLengthMeasure IIfcIShapeProfileDef.OverallDepth { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_OverallWidth.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc2x3%23Interfaces%23IIfcIShapeProfileDef%23OverallWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L45">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_OverallWidth_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc2x3#Interfaces#IIfcIShapeProfileDef#OverallWidth*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_OverallWidth" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc2x3#Interfaces#IIfcIShapeProfileDef#OverallWidth">IIfcIShapeProfileDef.OverallWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcPositiveLengthMeasure IIfcIShapeProfileDef.OverallWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_WebThickness.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc2x3%23Interfaces%23IIfcIShapeProfileDef%23WebThickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfileResource/IfcIShapeProfileDef.cs/#L55">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_WebThickness_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc2x3#Interfaces#IIfcIShapeProfileDef#WebThickness*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc2x3_Interfaces_IIfcIShapeProfileDef_WebThickness" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc2x3#Interfaces#IIfcIShapeProfileDef#WebThickness">IIfcIShapeProfileDef.WebThickness</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcPositiveLengthMeasure IIfcIShapeProfileDef.WebThickness { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FilletRadius.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc4%23Interfaces%23IIfcIShapeProfileDef%23FilletRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcIShapeProfileDef.cs/#L77">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FilletRadius_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#FilletRadius*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FilletRadius" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#FilletRadius">IIfcIShapeProfileDef.FilletRadius</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcIShapeProfileDef), 8)]
+IfcNonNegativeLengthMeasure? IIfcIShapeProfileDef.FilletRadius { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcNonNegativeLengthMeasure.html">IfcNonNegativeLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FlangeEdgeRadius.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc4%23Interfaces%23IIfcIShapeProfileDef%23FlangeEdgeRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcIShapeProfileDef.cs/#L97">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FlangeEdgeRadius_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#FlangeEdgeRadius*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FlangeEdgeRadius" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#FlangeEdgeRadius">IIfcIShapeProfileDef.FlangeEdgeRadius</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcIShapeProfileDef), 9)]
+IfcNonNegativeLengthMeasure? IIfcIShapeProfileDef.FlangeEdgeRadius { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcNonNegativeLengthMeasure.html">IfcNonNegativeLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FlangeSlope.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc4%23Interfaces%23IIfcIShapeProfileDef%23FlangeSlope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcIShapeProfileDef.cs/#L114">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FlangeSlope_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#FlangeSlope*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FlangeSlope" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#FlangeSlope">IIfcIShapeProfileDef.FlangeSlope</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcIShapeProfileDef), 10)]
+IfcPlaneAngleMeasure? IIfcIShapeProfileDef.FlangeSlope { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcPlaneAngleMeasure.html">IfcPlaneAngleMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FlangeThickness.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc4%23Interfaces%23IIfcIShapeProfileDef%23FlangeThickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcIShapeProfileDef.cs/#L63">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FlangeThickness_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#FlangeThickness*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_FlangeThickness" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#FlangeThickness">IIfcIShapeProfileDef.FlangeThickness</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcIShapeProfileDef), 7)]
+IfcPositiveLengthMeasure IIfcIShapeProfileDef.FlangeThickness { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_OverallDepth.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc4%23Interfaces%23IIfcIShapeProfileDef%23OverallDepth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcIShapeProfileDef.cs/#L35">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_OverallDepth_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#OverallDepth*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_OverallDepth" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#OverallDepth">IIfcIShapeProfileDef.OverallDepth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcIShapeProfileDef), 5)]
+IfcPositiveLengthMeasure IIfcIShapeProfileDef.OverallDepth { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_OverallWidth.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc4%23Interfaces%23IIfcIShapeProfileDef%23OverallWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcIShapeProfileDef.cs/#L21">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_OverallWidth_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#OverallWidth*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_OverallWidth" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#OverallWidth">IIfcIShapeProfileDef.OverallWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcIShapeProfileDef), 4)]
+IfcPositiveLengthMeasure IIfcIShapeProfileDef.OverallWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_WebThickness.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim%23Ifc4%23Interfaces%23IIfcIShapeProfileDef%23WebThickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcIShapeProfileDef.cs/#L49">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_WebThickness_" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#WebThickness*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef_Xbim_Ifc4_Interfaces_IIfcIShapeProfileDef_WebThickness" data-uid="Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.Xbim#Ifc4#Interfaces#IIfcIShapeProfileDef#WebThickness">IIfcIShapeProfileDef.WebThickness</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcIShapeProfileDef), 6)]
+IfcPositiveLengthMeasure IIfcIShapeProfileDef.WebThickness { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcPositiveLengthMeasure.html">IfcPositiveLengthMeasure</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcIShapeProfileDef.html">IIfcIShapeProfileDef</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcParameterizedProfileDef.html">IIfcParameterizedProfileDef</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcProfileDef.html">IIfcProfileDef</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ExternalReferenceResource.IfcResourceObjectSelect.html">IfcResourceObjectSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcResourceObjectSelect.html">IIfcResourceObjectSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcIShapeProfileDef.html">IIfcIShapeProfileDef</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcParameterizedProfileDef.html">IIfcParameterizedProfileDef</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcProfileDef.html">IIfcProfileDef</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfileResource_IfcIShapeProfileDef.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcIShapeProfileDef.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1794 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcScheduleTimeControl
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcScheduleTimeControl
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl">
+  
+  
+  <h1 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl" class="text-break">Class IfcScheduleTimeControl
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html">IfcRoot</a></div>
+    <div class="level3"><a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html">IfcObjectDefinition</a></div>
+    <div class="level4"><a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html">IfcObject</a></div>
+    <div class="level5"><a class="xref" href="Xbim.Ifc2x3.Kernel.IfcControl.html">IfcControl</a></div>
+    <div class="level6"><span class="xref">IfcScheduleTimeControl</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html">IfcRoot</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html">IfcObjectDefinition</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html">IfcObject</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcControl.html">IIfcControl</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcObject.html">IIfcObject</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcObjectDefinition.html">IIfcObjectDefinition</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcRoot.html">IIfcRoot</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Kernel.IfcDefinitionSelect.html">IfcDefinitionSelect</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcDefinitionSelect.html">IIfcDefinitionSelect</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Kernel.IfcControl.html">IfcControl</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcScheduleTimeControl.html">IIfcScheduleTimeControl</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcControl.html">IIfcControl</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcObject.html">IIfcObject</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcObjectDefinition.html">IIfcObjectDefinition</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcRoot.html">IIfcRoot</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.html">IfcScheduleTimeControl</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcControl.html#Xbim_Ifc2x3_Kernel_IfcControl_Xbim_Ifc4_Interfaces_IIfcControl_Identification">IfcControl.IIfcControl.Identification</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcControl.html#Xbim_Ifc2x3_Kernel_IfcControl_Xbim_Ifc4_Interfaces_IIfcControl_Controls">IfcControl.IIfcControl.Controls</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcControl.html#Xbim_Ifc2x3_Kernel_IfcControl_Xbim_Ifc2x3_Interfaces_IIfcControl_Controls">IfcControl.IIfcControl.Controls</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcControl.html#Xbim_Ifc2x3_Kernel_IfcControl_Controls">IfcControl.Controls</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcControl.html#Xbim_Ifc2x3_Kernel_IfcControl_Equals_Xbim_Ifc2x3_Kernel_IfcControl_">IfcControl.Equals(IfcControl)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc4_Interfaces_IIfcObject_ObjectType">IfcObject.IIfcObject.ObjectType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc4_Interfaces_IIfcObject_IsDeclaredBy">IfcObject.IIfcObject.IsDeclaredBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc4_Interfaces_IIfcObject_Declares">IfcObject.IIfcObject.Declares</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc4_Interfaces_IIfcObject_IsTypedBy">IfcObject.IIfcObject.IsTypedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc4_Interfaces_IIfcObject_IsDefinedBy">IfcObject.IIfcObject.IsDefinedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc2x3_Interfaces_IIfcObject_ObjectType">IfcObject.IIfcObject.ObjectType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc2x3_Interfaces_IIfcObject_IsDefinedBy">IfcObject.IIfcObject.IsDefinedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_ObjectType">IfcObject.ObjectType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_IsDefinedBy">IfcObject.IsDefinedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Equals_Xbim_Ifc2x3_Kernel_IfcObject_">IfcObject.Equals(IfcObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_IsDefinedByProperties">IfcObject.IsDefinedByProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_IsTypedBy">IfcObject.IsTypedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_AddDefiningType_Xbim_Ifc2x3_Kernel_IfcTypeObject_">IfcObject.AddDefiningType(IfcTypeObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_AddPropertySet_Xbim_Ifc2x3_Kernel_IfcPropertySet_">IfcObject.AddPropertySet(IfcPropertySet)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetPropertySet_System_String_System_Boolean_">IfcObject.GetPropertySet(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetPropertySingleValue_System_String_System_String_">IfcObject.GetPropertySingleValue(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetPropertySingleValue__1_System_String_System_String_">IfcObject.GetPropertySingleValue&lt;TValueType&gt;(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetPropertySingleNominalValue_System_String_System_String_">IfcObject.GetPropertySingleNominalValue(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_PropertySets">IfcObject.PropertySets</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_SetPropertySingleValue_System_String_System_String_System_Type_">IfcObject.SetPropertySingleValue(String, String, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_SetPropertySingleValue_System_String_System_String_Xbim_Ifc2x3_MeasureResource_IfcValue_">IfcObject.SetPropertySingleValue(String, String, IfcValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetExternalElements_Xbim_Common_IModel_">IfcObject.GetExternalElements(IModel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetElementQuantity_System_String_System_Boolean_">IfcObject.GetElementQuantity(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_ElementQuantities">IfcObject.ElementQuantities</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_PhysicalSimpleQuantities">IfcObject.PhysicalSimpleQuantities</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetQuantity__1_System_String_System_String_">IfcObject.GetQuantity&lt;TQType&gt;(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetQuantity__1_System_String_">IfcObject.GetQuantity&lt;TQType&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_AddQuantity_System_String_Xbim_Ifc2x3_QuantityResource_IfcPhysicalQuantity_System_String_">IfcObject.AddQuantity(String, IfcPhysicalQuantity, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_AddQuantity_System_String_Xbim_Ifc2x3_QuantityResource_IfcPhysicalQuantity_">IfcObject.AddQuantity(String, IfcPhysicalQuantity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetElementPhysicalSimpleQuantity_System_String_System_String_">IfcObject.GetElementPhysicalSimpleQuantity(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_SetElementPhysicalSimpleQuantity_System_String_System_String_System_Double_Xbim_Ifc2x3_Kernel_XbimQuantityTypeEnum_Xbim_Ifc2x3_MeasureResource_IfcNamedUnit_">IfcObject.SetElementPhysicalSimpleQuantity(String, String, Double, XbimQuantityTypeEnum, IfcNamedUnit)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_ValidateClause_Xbim_Ifc2x3_Kernel_IfcObject_IfcObjectClause_">IfcObject.ValidateClause(IfcObject.IfcObjectClause)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Validate">IfcObject.Validate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_HasAssignments">IfcObjectDefinition.IIfcObjectDefinition.HasAssignments</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_Nests">IfcObjectDefinition.IIfcObjectDefinition.Nests</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_IsNestedBy">IfcObjectDefinition.IIfcObjectDefinition.IsNestedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_HasContext">IfcObjectDefinition.IIfcObjectDefinition.HasContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_IsDecomposedBy">IfcObjectDefinition.IIfcObjectDefinition.IsDecomposedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_Decomposes">IfcObjectDefinition.IIfcObjectDefinition.Decomposes</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_HasAssociations">IfcObjectDefinition.IIfcObjectDefinition.HasAssociations</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Item_System_String_">IfcObjectDefinition.Item[String]</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc2x3_Interfaces_IIfcObjectDefinition_HasAssignments">IfcObjectDefinition.IIfcObjectDefinition.HasAssignments</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc2x3_Interfaces_IIfcObjectDefinition_IsDecomposedBy">IfcObjectDefinition.IIfcObjectDefinition.IsDecomposedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc2x3_Interfaces_IIfcObjectDefinition_Decomposes">IfcObjectDefinition.IIfcObjectDefinition.Decomposes</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc2x3_Interfaces_IIfcObjectDefinition_HasAssociations">IfcObjectDefinition.IIfcObjectDefinition.HasAssociations</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_HasAssignments">IfcObjectDefinition.HasAssignments</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_IsDecomposedBy">IfcObjectDefinition.IsDecomposedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Decomposes">IfcObjectDefinition.Decomposes</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_HasAssociations">IfcObjectDefinition.HasAssociations</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Equals_Xbim_Ifc2x3_Kernel_IfcObjectDefinition_">IfcObjectDefinition.Equals(IfcObjectDefinition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Material">IfcObjectDefinition.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_GlobalId">IfcRoot.IIfcRoot.GlobalId</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_OwnerHistory">IfcRoot.IIfcRoot.OwnerHistory</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_Name">IfcRoot.IIfcRoot.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_Description">IfcRoot.IIfcRoot.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc2x3_Interfaces_IIfcRoot_GlobalId">IfcRoot.IIfcRoot.GlobalId</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc2x3_Interfaces_IIfcRoot_OwnerHistory">IfcRoot.IIfcRoot.OwnerHistory</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc2x3_Interfaces_IIfcRoot_Name">IfcRoot.IIfcRoot.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc2x3_Interfaces_IIfcRoot_Description">IfcRoot.IIfcRoot.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_GlobalId">IfcRoot.GlobalId</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_OwnerHistory">IfcRoot.OwnerHistory</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Name">IfcRoot.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Description">IfcRoot.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Equals_Xbim_Ifc2x3_Kernel_IfcRoot_">IfcRoot.Equals(IfcRoot)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_FriendlyName">IfcRoot.FriendlyName</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc2x3.ProcessExtension.html">Xbim.Ifc2x3.ProcessExtension</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc2x3.dll</h6>
+  <h5 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcScheduleTimeControl&quot;, 402)]
+public class IfcScheduleTimeControl : IfcControl, INotifyPropertyChanged, IEquatable&lt;IfcRoot&gt;, IEquatable&lt;IfcObjectDefinition&gt;, IEquatable&lt;IfcObject&gt;, IExpressValidatable, IIfcControl, IIfcObject, IIfcObjectDefinition, IIfcRoot, IfcDefinitionSelect, IIfcDefinitionSelect, IExpressSelectType, IEquatable&lt;IfcControl&gt;, IInstantiableEntity, IIfcScheduleTimeControl, IIfcControl, IIfcObject, IIfcObjectDefinition, IIfcRoot, IContainsEntityReferences, IPersistEntity, IPersist, IEquatable&lt;IfcScheduleTimeControl&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ActualDuration.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ActualDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L333">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ActualDuration_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ActualDuration*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ActualDuration" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ActualDuration">ActualDuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(15, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 21)]
+public IfcTimeMeasure? ActualDuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ActualFinish.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ActualFinish%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L255">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ActualFinish_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ActualFinish*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ActualFinish" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ActualFinish">ActualFinish</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(10, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 16)]
+public IfcDateTimeSelect ActualFinish { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ActualStart.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ActualStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L191">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ActualStart_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ActualStart*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ActualStart" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ActualStart">ActualStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(6, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 12)]
+public IfcDateTimeSelect ActualStart { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Completion.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Completion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L447">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Completion_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Completion*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Completion" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Completion">Completion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(23, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 29)]
+public IfcPositiveRatioMeasure? Completion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveRatioMeasure.html">IfcPositiveRatioMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_EarlyFinish.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.EarlyFinish%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L271">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_EarlyFinish_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.EarlyFinish*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_EarlyFinish" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.EarlyFinish">EarlyFinish</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(11, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 17)]
+public IfcDateTimeSelect EarlyFinish { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_EarlyStart.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.EarlyStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L207">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_EarlyStart_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.EarlyStart*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_EarlyStart" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.EarlyStart">EarlyStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(7, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 13)]
+public IfcDateTimeSelect EarlyStart { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_FinishFloat.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.FinishFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L433">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_FinishFloat_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.FinishFloat*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_FinishFloat" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.FinishFloat">FinishFloat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(22, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 28)]
+public IfcTimeMeasure? FinishFloat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_FreeFloat.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.FreeFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L361">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_FreeFloat_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.FreeFloat*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_FreeFloat" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.FreeFloat">FreeFloat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(17, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 23)]
+public IfcTimeMeasure? FreeFloat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_IsCritical.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.IsCritical%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L389">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_IsCritical_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.IsCritical*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_IsCritical" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.IsCritical">IsCritical</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(19, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 25)]
+public bool? IsCritical { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_LateFinish.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.LateFinish%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L287">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_LateFinish_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.LateFinish*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_LateFinish" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.LateFinish">LateFinish</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(12, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 18)]
+public IfcDateTimeSelect LateFinish { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_LateStart.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.LateStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L223">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_LateStart_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.LateStart*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_LateStart" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.LateStart">LateStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(8, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 14)]
+public IfcDateTimeSelect LateStart { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_RemainingTime.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.RemainingTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L347">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_RemainingTime_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.RemainingTime*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_RemainingTime" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.RemainingTime">RemainingTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(16, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 22)]
+public IfcTimeMeasure? RemainingTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleDuration.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L319">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleDuration_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleDuration*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleDuration" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleDuration">ScheduleDuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(14, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 20)]
+public IfcTimeMeasure? ScheduleDuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleFinish.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleFinish%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L303">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleFinish_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleFinish*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleFinish" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleFinish">ScheduleFinish</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(13, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 19)]
+public IfcDateTimeSelect ScheduleFinish { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleStart.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L239">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleStart_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleStart*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleStart" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleStart">ScheduleStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(9, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 15)]
+public IfcDateTimeSelect ScheduleStart { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleTimeControlAssigned.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleTimeControlAssigned%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L466">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleTimeControlAssigned_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleTimeControlAssigned*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_ScheduleTimeControlAssigned" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.ScheduleTimeControlAssigned">ScheduleTimeControlAssigned</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;TimeForTask&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, null, null, 30)]
+public IfcRelAssignsTasks ScheduleTimeControlAssigned { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ProcessExtension.IfcRelAssignsTasks.html">IfcRelAssignsTasks</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_StartFloat.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.StartFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L419">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_StartFloat_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.StartFloat*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_StartFloat" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.StartFloat">StartFloat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(21, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 27)]
+public IfcTimeMeasure? StartFloat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_StatusTime.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.StatusTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L403">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_StatusTime_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.StatusTime*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_StatusTime" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.StatusTime">StatusTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(20, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 26)]
+public IfcDateTimeSelect StatusTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_TotalFloat.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.TotalFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L375">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_TotalFloat_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.TotalFloat*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_TotalFloat" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.TotalFloat">TotalFloat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(18, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 24)]
+public IfcTimeMeasure? TotalFloat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Equals_Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Equals(Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L550">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Equals_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Equals*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Equals_Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Equals(Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl)">Equals(IfcScheduleTimeControl)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcScheduleTimeControl other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.html">IfcScheduleTimeControl</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L478">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Parse_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Parse*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc2x3.Kernel.IfcControl.html#Xbim_Ifc2x3_Kernel_IfcControl_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">IfcControl.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Common_IContainsEntityReferences_References.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Common%23IContainsEntityReferences%23References%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L557">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Common_IContainsEntityReferences_References_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Common#IContainsEntityReferences#References*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Common_IContainsEntityReferences_References" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Common#IContainsEntityReferences#References">IContainsEntityReferences.References</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IPersistEntity&gt; IContainsEntityReferences.References { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ActualDuration.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23ActualDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L114">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ActualDuration_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ActualDuration*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ActualDuration" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ActualDuration">IIfcScheduleTimeControl.ActualDuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcTimeMeasure? IIfcScheduleTimeControl.ActualDuration { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ActualFinish.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23ActualFinish%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L85">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ActualFinish_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ActualFinish*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ActualFinish" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ActualFinish">IIfcScheduleTimeControl.ActualFinish</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcScheduleTimeControl.ActualFinish { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ActualStart.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23ActualStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L61">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ActualStart_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ActualStart*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ActualStart" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ActualStart">IIfcScheduleTimeControl.ActualStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcScheduleTimeControl.ActualStart { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_Completion.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23Completion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L155">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_Completion_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#Completion*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_Completion" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#Completion">IIfcScheduleTimeControl.Completion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcPositiveRatioMeasure? IIfcScheduleTimeControl.Completion { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcPositiveRatioMeasure.html">IfcPositiveRatioMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_EarlyFinish.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23EarlyFinish%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L91">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_EarlyFinish_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#EarlyFinish*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_EarlyFinish" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#EarlyFinish">IIfcScheduleTimeControl.EarlyFinish</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcScheduleTimeControl.EarlyFinish { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_EarlyStart.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23EarlyStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L67">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_EarlyStart_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#EarlyStart*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_EarlyStart" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#EarlyStart">IIfcScheduleTimeControl.EarlyStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcScheduleTimeControl.EarlyStart { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_FinishFloat.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23FinishFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L150">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_FinishFloat_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#FinishFloat*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_FinishFloat" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#FinishFloat">IIfcScheduleTimeControl.FinishFloat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcTimeMeasure? IIfcScheduleTimeControl.FinishFloat { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_FreeFloat.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23FreeFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L124">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_FreeFloat_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#FreeFloat*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_FreeFloat" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#FreeFloat">IIfcScheduleTimeControl.FreeFloat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcTimeMeasure? IIfcScheduleTimeControl.FreeFloat { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_IsCritical.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23IsCritical%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L134">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_IsCritical_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#IsCritical*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_IsCritical" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#IsCritical">IIfcScheduleTimeControl.IsCritical</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool? IIfcScheduleTimeControl.IsCritical { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_LateFinish.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23LateFinish%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L97">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_LateFinish_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#LateFinish*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_LateFinish" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#LateFinish">IIfcScheduleTimeControl.LateFinish</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcScheduleTimeControl.LateFinish { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_LateStart.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23LateStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L73">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_LateStart_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#LateStart*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_LateStart" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#LateStart">IIfcScheduleTimeControl.LateStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcScheduleTimeControl.LateStart { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_RemainingTime.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23RemainingTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L119">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_RemainingTime_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#RemainingTime*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_RemainingTime" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#RemainingTime">IIfcScheduleTimeControl.RemainingTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcTimeMeasure? IIfcScheduleTimeControl.RemainingTime { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleDuration.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23ScheduleDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L109">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleDuration_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ScheduleDuration*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleDuration" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ScheduleDuration">IIfcScheduleTimeControl.ScheduleDuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcTimeMeasure? IIfcScheduleTimeControl.ScheduleDuration { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleFinish.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23ScheduleFinish%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L103">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleFinish_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ScheduleFinish*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleFinish" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ScheduleFinish">IIfcScheduleTimeControl.ScheduleFinish</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcScheduleTimeControl.ScheduleFinish { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleStart.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23ScheduleStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L79">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleStart_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ScheduleStart*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleStart" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ScheduleStart">IIfcScheduleTimeControl.ScheduleStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcScheduleTimeControl.ScheduleStart { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleTimeControlAssigned.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23ScheduleTimeControlAssigned%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L161">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleTimeControlAssigned_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ScheduleTimeControlAssigned*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_ScheduleTimeControlAssigned" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#ScheduleTimeControlAssigned">IIfcScheduleTimeControl.ScheduleTimeControlAssigned</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcRelAssignsTasks IIfcScheduleTimeControl.ScheduleTimeControlAssigned { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcRelAssignsTasks.html">IIfcRelAssignsTasks</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_StartFloat.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23StartFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L145">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_StartFloat_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#StartFloat*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_StartFloat" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#StartFloat">IIfcScheduleTimeControl.StartFloat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcTimeMeasure? IIfcScheduleTimeControl.StartFloat { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_StatusTime.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23StatusTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L139">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_StatusTime_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#StatusTime*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_StatusTime" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#StatusTime">IIfcScheduleTimeControl.StatusTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcScheduleTimeControl.StatusTime { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_TotalFloat.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim%23Ifc2x3%23Interfaces%23IIfcScheduleTimeControl%23TotalFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L129">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_TotalFloat_" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#TotalFloat*"></a>
+  <h4 id="Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl_Xbim_Ifc2x3_Interfaces_IIfcScheduleTimeControl_TotalFloat" data-uid="Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl.Xbim#Ifc2x3#Interfaces#IIfcScheduleTimeControl#TotalFloat">IIfcScheduleTimeControl.TotalFloat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcTimeMeasure? IIfcScheduleTimeControl.TotalFloat { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcTimeMeasure.html">IfcTimeMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcControl.html">IIfcControl</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcObject.html">IIfcObject</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcObjectDefinition.html">IIfcObjectDefinition</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcRoot.html">IIfcRoot</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Kernel.IfcDefinitionSelect.html">IfcDefinitionSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcDefinitionSelect.html">IIfcDefinitionSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcScheduleTimeControl.html">IIfcScheduleTimeControl</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcControl.html">IIfcControl</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcObject.html">IIfcObject</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcObjectDefinition.html">IIfcObjectDefinition</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcRoot.html">IIfcRoot</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProcessExtension_IfcScheduleTimeControl.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProcessExtension.IfcScheduleTimeControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProcessExtension/IfcScheduleTimeControl.cs/#L56" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IXbimShapeGeometryData
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IXbimShapeGeometryData
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData">
+  
+  
+  <h1 id="Xbim_Common_Geometry_IXbimShapeGeometryData" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData" class="text-break">Interface IXbimShapeGeometryData
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Common.Geometry.html">Xbim.Common.Geometry</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Common.dll</h6>
+  <h5 id="Xbim_Common_Geometry_IXbimShapeGeometryData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IXbimShapeGeometryData</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData_BoundingBox.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData.BoundingBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L36">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShapeGeometryData_BoundingBox_" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.BoundingBox*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShapeGeometryData_BoundingBox" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.BoundingBox">BoundingBox</h4>
+  <div class="markdown level1 summary"><p>The bounding box of this instance in world coordinates, it has been transformed to the correct location</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] BoundingBox { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData_Cost.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData.Cost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L20">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShapeGeometryData_Cost_" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.Cost*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShapeGeometryData_Cost" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.Cost">Cost</h4>
+  <div class="markdown level1 summary"><p>The cost of this shape in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Cost { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData_Format.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData.Format%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L32">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShapeGeometryData_Format_" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.Format*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShapeGeometryData_Format" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.Format">Format</h4>
+  <div class="markdown level1 summary"><p>The format in which the shape data is represented, i.e. triangular mesh, polygon, opencascade</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte Format { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData_GeometryHash.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData.GeometryHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L16">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShapeGeometryData_GeometryHash_" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.GeometryHash*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShapeGeometryData_GeometryHash" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.GeometryHash">GeometryHash</h4>
+  <div class="markdown level1 summary"><p>Hash of the shape Geometry, based on the IFC representation, this is not unique</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GeometryHash { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData_IfcShapeLabel.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData.IfcShapeLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L12">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShapeGeometryData_IfcShapeLabel_" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.IfcShapeLabel*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShapeGeometryData_IfcShapeLabel" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.IfcShapeLabel">IfcShapeLabel</h4>
+  <div class="markdown level1 summary"><p>The label of the IFC object that defines this shape</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int IfcShapeLabel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData_LocalShapeDisplacement.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData.LocalShapeDisplacement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L52">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShapeGeometryData_LocalShapeDisplacement_" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.LocalShapeDisplacement*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShapeGeometryData_LocalShapeDisplacement" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.LocalShapeDisplacement">LocalShapeDisplacement</h4>
+  <div class="markdown level1 summary"><p>If the shape coordinates are large the actual serialised geometry should be
+reduced to local origin to avoid problems with floating point precission
+of float coordinates. This displacement should be presented in
+LocalShapeDisplacement and should be added to placement of the shape in the product.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IVector3D LocalShapeDisplacement { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IVector3D.html">IVector3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData_LOD.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData.LOD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L28">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShapeGeometryData_LOD_" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.LOD*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShapeGeometryData_LOD" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.LOD">LOD</h4>
+  <div class="markdown level1 summary"><p>The level of detail or development that the shape is suited for</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte LOD { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData_ReferenceCount.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData.ReferenceCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L24">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShapeGeometryData_ReferenceCount_" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.ReferenceCount*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShapeGeometryData_ReferenceCount" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.ReferenceCount">ReferenceCount</h4>
+  <div class="markdown level1 summary"><p>The number of references to this shape</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ReferenceCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData_ShapeData.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData.ShapeData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L44">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShapeGeometryData_ShapeData_" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.ShapeData*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShapeGeometryData_ShapeData" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.ShapeData">ShapeData</h4>
+  <div class="markdown level1 summary"><p>The geometry data defining the shape in  uncompressed format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] ShapeData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData_ShapeDataCompressed.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData.ShapeDataCompressed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L40">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShapeGeometryData_ShapeDataCompressed_" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.ShapeDataCompressed*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShapeGeometryData_ShapeDataCompressed" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.ShapeDataCompressed">ShapeDataCompressed</h4>
+  <div class="markdown level1 summary"><p>The geometry data defining the shape in zip compression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] ShapeDataCompressed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData_ShapeLabel.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData.ShapeLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L8">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShapeGeometryData_ShapeLabel_" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.ShapeLabel*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShapeGeometryData_ShapeLabel" data-uid="Xbim.Common.Geometry.IXbimShapeGeometryData.ShapeLabel">ShapeLabel</h4>
+  <div class="markdown level1 summary"><p>The unique label of this shape instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ShapeLabel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShapeGeometryData.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShapeGeometryData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShapeGeometryData.cs/#L3" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

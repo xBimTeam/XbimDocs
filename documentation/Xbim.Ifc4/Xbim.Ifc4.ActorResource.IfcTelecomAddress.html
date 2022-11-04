@@ -1,0 +1,831 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcTelecomAddress
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcTelecomAddress
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress">
+  
+  
+  <h1 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress" class="text-break">Class IfcTelecomAddress
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html">IfcAddress</a></div>
+    <div class="level3"><span class="xref">IfcTelecomAddress</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html">IfcAddress</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcTelecomAddress.html">IIfcTelecomAddress</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcAddress.html">IIfcAddress</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.PropertyResource.IfcObjectReferenceSelect.html">IfcObjectReferenceSelect</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcObjectReferenceSelect.html">IIfcObjectReferenceSelect</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.ActorResource.IfcTelecomAddress.html">IfcTelecomAddress</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_Xbim_Ifc4_Interfaces_IIfcAddress_Purpose">IfcAddress.IIfcAddress.Purpose</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_Xbim_Ifc4_Interfaces_IIfcAddress_Description">IfcAddress.IIfcAddress.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_Xbim_Ifc4_Interfaces_IIfcAddress_UserDefinedPurpose">IfcAddress.IIfcAddress.UserDefinedPurpose</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_Xbim_Ifc4_Interfaces_IIfcAddress_OfPerson">IfcAddress.IIfcAddress.OfPerson</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_Xbim_Ifc4_Interfaces_IIfcAddress_OfOrganization">IfcAddress.IIfcAddress.OfOrganization</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_Purpose">IfcAddress.Purpose</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_Description">IfcAddress.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_UserDefinedPurpose">IfcAddress.UserDefinedPurpose</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_OfPerson">IfcAddress.OfPerson</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_OfOrganization">IfcAddress.OfOrganization</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_Equals_Xbim_Ifc4_ActorResource_IfcAddress_">IfcAddress.Equals(IfcAddress)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_ValidateClause_Xbim_Ifc4_ActorResource_IfcAddress_IfcAddressClause_">IfcAddress.ValidateClause(IfcAddress.IfcAddressClause)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc4.ActorResource.html">Xbim.Ifc4.ActorResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc4.dll</h6>
+  <h5 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcTelecomAddress&quot;, 553)]
+public class IfcTelecomAddress : IfcAddress, INotifyPropertyChanged, IEquatable&lt;IfcAddress&gt;, IInstantiableEntity, IIfcTelecomAddress, IIfcAddress, IfcObjectReferenceSelect, IIfcObjectReferenceSelect, IExpressSelectType, IPersistEntity, IPersist, IEquatable&lt;IfcTelecomAddress&gt;, IExpressValidatable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_ElectronicMailAddresses.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.ElectronicMailAddresses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L125">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_ElectronicMailAddresses_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.ElectronicMailAddresses*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_ElectronicMailAddresses" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.ElectronicMailAddresses">ElectronicMailAddresses</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(7, EntityAttributeState.Optional, EntityAttributeType.List, EntityAttributeType.None, new int[]{1}, new int[]{-1}, 9)]
+public IOptionalItemSet&lt;IfcLabel&gt; ElectronicMailAddresses { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IOptionalItemSet-1.html">IOptionalItemSet</a>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_FacsimileNumbers.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.FacsimileNumbers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L101">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_FacsimileNumbers_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.FacsimileNumbers*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_FacsimileNumbers" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.FacsimileNumbers">FacsimileNumbers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(5, EntityAttributeState.Optional, EntityAttributeType.List, EntityAttributeType.None, new int[]{1}, new int[]{-1}, 7)]
+public IOptionalItemSet&lt;IfcLabel&gt; FacsimileNumbers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IOptionalItemSet-1.html">IOptionalItemSet</a>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_MessagingIDs.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.MessagingIDs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L149">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_MessagingIDs_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.MessagingIDs*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_MessagingIDs" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.MessagingIDs">MessagingIDs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(9, EntityAttributeState.Optional, EntityAttributeType.List, EntityAttributeType.None, new int[]{1}, new int[]{-1}, 11)]
+public IOptionalItemSet&lt;IfcURIReference&gt; MessagingIDs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IOptionalItemSet-1.html">IOptionalItemSet</a>&lt;<a class="xref" href="Xbim.Ifc4.ExternalReferenceResource.IfcURIReference.html">IfcURIReference</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_PagerNumber.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.PagerNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L111">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_PagerNumber_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.PagerNumber*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_PagerNumber" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.PagerNumber">PagerNumber</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(6, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 8)]
+public IfcLabel? PagerNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_TelephoneNumbers.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.TelephoneNumbers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L91">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_TelephoneNumbers_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.TelephoneNumbers*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_TelephoneNumbers" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.TelephoneNumbers">TelephoneNumbers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(4, EntityAttributeState.Optional, EntityAttributeType.List, EntityAttributeType.None, new int[]{1}, new int[]{-1}, 6)]
+public IOptionalItemSet&lt;IfcLabel&gt; TelephoneNumbers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IOptionalItemSet-1.html">IOptionalItemSet</a>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_WWWHomePageURL.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.WWWHomePageURL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L135">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_WWWHomePageURL_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.WWWHomePageURL*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_WWWHomePageURL" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.WWWHomePageURL">WWWHomePageURL</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(8, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 10)]
+public IfcURIReference? WWWHomePageURL { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.ExternalReferenceResource.IfcURIReference.html">IfcURIReference</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_Equals_Xbim_Ifc4_ActorResource_IfcTelecomAddress_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.Equals(Xbim.Ifc4.ActorResource.IfcTelecomAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L199">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Equals_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Equals*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Equals_Xbim_Ifc4_ActorResource_IfcTelecomAddress_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Equals(Xbim.Ifc4.ActorResource.IfcTelecomAddress)">Equals(IfcTelecomAddress)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcTelecomAddress other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.ActorResource.IfcTelecomAddress.html">IfcTelecomAddress</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L165">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Parse_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Parse*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">IfcAddress.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_Validate.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/Validation/IfcTelecomAddress.cs/#L43">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Validate_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Validate*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Validate" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Validate">Validate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;ValidationResult&gt; Validate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.ValidationResult.html">ValidationResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc4.ActorResource.IfcAddress.html#Xbim_Ifc4_ActorResource_IfcAddress_Validate">IfcAddress.Validate()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_ValidateClause_Xbim_Ifc4_ActorResource_IfcTelecomAddress_IfcTelecomAddressClause_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.ValidateClause(Xbim.Ifc4.ActorResource.IfcTelecomAddress.IfcTelecomAddressClause)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/Validation/IfcTelecomAddress.cs/#L26">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_ValidateClause_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.ValidateClause*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_ValidateClause_Xbim_Ifc4_ActorResource_IfcTelecomAddress_IfcTelecomAddressClause_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.ValidateClause(Xbim.Ifc4.ActorResource.IfcTelecomAddress.IfcTelecomAddressClause)">ValidateClause(IfcTelecomAddress.IfcTelecomAddressClause)</h4>
+  <div class="markdown level1 summary"><p>Tests the express where-clause specified in param 'clause'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateClause(IfcTelecomAddress.IfcTelecomAddressClause clause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.ActorResource.IfcTelecomAddress.IfcTelecomAddressClause.html">IfcTelecomAddress.IfcTelecomAddressClause</a></td>
+        <td><span class="parametername">clause</span></td>
+        <td><p>The express clause to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the clause is satisfied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_ElectronicMailAddresses.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim%23Ifc4%23Interfaces%23IIfcTelecomAddress%23ElectronicMailAddresses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L58">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_ElectronicMailAddresses_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#ElectronicMailAddresses*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_ElectronicMailAddresses" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#ElectronicMailAddresses">IIfcTelecomAddress.ElectronicMailAddresses</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IItemSet&lt;IfcLabel&gt; IIfcTelecomAddress.ElectronicMailAddresses { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IItemSet-1.html">IItemSet</a>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_FacsimileNumbers.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim%23Ifc4%23Interfaces%23IIfcTelecomAddress%23FacsimileNumbers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L50">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_FacsimileNumbers_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#FacsimileNumbers*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_FacsimileNumbers" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#FacsimileNumbers">IIfcTelecomAddress.FacsimileNumbers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IItemSet&lt;IfcLabel&gt; IIfcTelecomAddress.FacsimileNumbers { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IItemSet-1.html">IItemSet</a>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_MessagingIDs.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim%23Ifc4%23Interfaces%23IIfcTelecomAddress%23MessagingIDs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L66">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_MessagingIDs_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#MessagingIDs*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_MessagingIDs" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#MessagingIDs">IIfcTelecomAddress.MessagingIDs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IItemSet&lt;IfcURIReference&gt; IIfcTelecomAddress.MessagingIDs { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IItemSet-1.html">IItemSet</a>&lt;<a class="xref" href="Xbim.Ifc4.ExternalReferenceResource.IfcURIReference.html">IfcURIReference</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_PagerNumber.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim%23Ifc4%23Interfaces%23IIfcTelecomAddress%23PagerNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L53">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_PagerNumber_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#PagerNumber*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_PagerNumber" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#PagerNumber">IIfcTelecomAddress.PagerNumber</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLabel? IIfcTelecomAddress.PagerNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_TelephoneNumbers.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim%23Ifc4%23Interfaces%23IIfcTelecomAddress%23TelephoneNumbers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L47">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_TelephoneNumbers_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#TelephoneNumbers*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_TelephoneNumbers" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#TelephoneNumbers">IIfcTelecomAddress.TelephoneNumbers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IItemSet&lt;IfcLabel&gt; IIfcTelecomAddress.TelephoneNumbers { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IItemSet-1.html">IItemSet</a>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_WWWHomePageURL.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim%23Ifc4%23Interfaces%23IIfcTelecomAddress%23WWWHomePageURL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/ActorResource/IfcTelecomAddress.cs/#L61">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_WWWHomePageURL_" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#WWWHomePageURL*"></a>
+  <h4 id="Xbim_Ifc4_ActorResource_IfcTelecomAddress_Xbim_Ifc4_Interfaces_IIfcTelecomAddress_WWWHomePageURL" data-uid="Xbim.Ifc4.ActorResource.IfcTelecomAddress.Xbim#Ifc4#Interfaces#IIfcTelecomAddress#WWWHomePageURL">IIfcTelecomAddress.WWWHomePageURL</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcURIReference? IIfcTelecomAddress.WWWHomePageURL { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.ExternalReferenceResource.IfcURIReference.html">IfcURIReference</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcTelecomAddress.html">IIfcTelecomAddress</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcAddress.html">IIfcAddress</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.PropertyResource.IfcObjectReferenceSelect.html">IfcObjectReferenceSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcObjectReferenceSelect.html">IIfcObjectReferenceSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_ActorResource_IfcTelecomAddress.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.ActorResource.IfcTelecomAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/Validation/IfcTelecomAddress.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

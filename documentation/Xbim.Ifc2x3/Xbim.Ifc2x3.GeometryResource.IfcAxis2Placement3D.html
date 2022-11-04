@@ -1,0 +1,947 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcAxis2Placement3D
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcAxis2Placement3D
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D">
+  
+  
+  <h1 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D" class="text-break">Class IfcAxis2Placement3D
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcRepresentationItem.html">IfcRepresentationItem</a></div>
+    <div class="level3"><a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcGeometricRepresentationItem.html">IfcGeometricRepresentationItem</a></div>
+    <div class="level4"><a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcPlacement.html">IfcPlacement</a></div>
+    <div class="level5"><span class="xref">IfcAxis2Placement3D</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcRepresentationItem.html">IfcRepresentationItem</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcGeometricRepresentationItem.html">IfcGeometricRepresentationItem</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcPlacement.html">IfcPlacement</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcAxis2Placement3D.html">IIfcAxis2Placement3D</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcPlacement.html">IIfcPlacement</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcGeometricRepresentationItem.html">IIfcGeometricRepresentationItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcRepresentationItem.html">IIfcRepresentationItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.PresentationOrganizationResource.IfcLayeredItem.html">IfcLayeredItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcLayeredItem.html">IIfcLayeredItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement.html">IfcAxis2Placement</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcAxis2Placement.html">IIfcAxis2Placement</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.html">IfcAxis2Placement3D</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcAxis2Placement3D.html">IIfcAxis2Placement3D</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcPlacement.html">IIfcPlacement</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcGeometricRepresentationItem.html">IIfcGeometricRepresentationItem</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcRepresentationItem.html">IIfcRepresentationItem</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.PresentationOrganizationResource.IfcLayeredItem.html">IfcLayeredItem</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcLayeredItem.html">IIfcLayeredItem</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.GeometryResource.IfcAxis2Placement.html">IfcAxis2Placement</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcAxis2Placement.html">IIfcAxis2Placement</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcPlacement.html#Xbim_Ifc2x3_GeometryResource_IfcPlacement_Xbim_Ifc2x3_Interfaces_IIfcPlacement_Location">IfcPlacement.IIfcPlacement.Location</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcPlacement.html#Xbim_Ifc2x3_GeometryResource_IfcPlacement_Location">IfcPlacement.Location</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcPlacement.html#Xbim_Ifc2x3_GeometryResource_IfcPlacement_Equals_Xbim_Ifc2x3_GeometryResource_IfcPlacement_">IfcPlacement.Equals(IfcPlacement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcPlacement.html#Xbim_Ifc2x3_GeometryResource_IfcPlacement_ToMatrix3D">IfcPlacement.ToMatrix3D()</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcPlacement.html#Xbim_Ifc2x3_GeometryResource_IfcPlacement_Xbim_Ifc4_Interfaces_IIfcPlacement_Location">IfcPlacement.IIfcPlacement.Location</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcPlacement.html#Xbim_Ifc2x3_GeometryResource_IfcPlacement_Xbim_Ifc4_Interfaces_IIfcPlacement_Dim">IfcPlacement.IIfcPlacement.Dim</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcGeometricRepresentationItem.html#Xbim_Ifc2x3_GeometryResource_IfcGeometricRepresentationItem_Equals_Xbim_Ifc2x3_GeometryResource_IfcGeometricRepresentationItem_">IfcGeometricRepresentationItem.Equals(IfcGeometricRepresentationItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc2x3_GeometryResource_IfcRepresentationItem_Xbim_Ifc2x3_Interfaces_IIfcRepresentationItem_LayerAssignments">IfcRepresentationItem.IIfcRepresentationItem.LayerAssignments</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc2x3_GeometryResource_IfcRepresentationItem_Xbim_Ifc2x3_Interfaces_IIfcRepresentationItem_StyledByItem">IfcRepresentationItem.IIfcRepresentationItem.StyledByItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc2x3_GeometryResource_IfcRepresentationItem_LayerAssignments">IfcRepresentationItem.LayerAssignments</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc2x3_GeometryResource_IfcRepresentationItem_StyledByItem">IfcRepresentationItem.StyledByItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc2x3_GeometryResource_IfcRepresentationItem_Equals_Xbim_Ifc2x3_GeometryResource_IfcRepresentationItem_">IfcRepresentationItem.Equals(IfcRepresentationItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc2x3_GeometryResource_IfcRepresentationItem_Xbim_Ifc4_Interfaces_IIfcRepresentationItem_LayerAssignment">IfcRepresentationItem.IIfcRepresentationItem.LayerAssignment</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc2x3_GeometryResource_IfcRepresentationItem_Xbim_Ifc4_Interfaces_IIfcRepresentationItem_StyledByItem">IfcRepresentationItem.IIfcRepresentationItem.StyledByItem</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc2x3.GeometryResource.html">Xbim.Ifc2x3.GeometryResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc2x3.dll</h6>
+  <h5 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcAxis2Placement3D&quot;, 448)]
+public class IfcAxis2Placement3D : IfcPlacement, INotifyPropertyChanged, IEquatable&lt;IfcRepresentationItem&gt;, IEquatable&lt;IfcGeometricRepresentationItem&gt;, IEquatable&lt;IfcPlacement&gt;, IInstantiableEntity, IIfcAxis2Placement3D, IIfcPlacement, IIfcGeometricRepresentationItem, IIfcRepresentationItem, IfcLayeredItem, IIfcLayeredItem, IfcAxis2Placement, IIfcAxis2Placement, IContainsEntityReferences, IEquatable&lt;IfcAxis2Placement3D&gt;, IIfcAxis2Placement3D, IIfcPlacement, IIfcGeometricRepresentationItem, IIfcRepresentationItem, IfcLayeredItem, IIfcLayeredItem, IfcAxis2Placement, IIfcAxis2Placement, IExpressSelectType, IPersistEntity, IPersist, IExpressValidatable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Axis.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Axis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometryResource/IfcAxis2Placement3D.cs/#L67">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Axis_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Axis*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Axis" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Axis">Axis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(2, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 4)]
+public IfcDirection Axis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcDirection.html">IfcDirection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Dim.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Dim%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometryResource/IfcAxis2Placement3DPartial.cs/#L43">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Dim_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Dim*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Dim" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Dim">Dim</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IfcDimensionCount Dim { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcDimensionCount.html">IfcDimensionCount</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_P.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.P%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometryResource/IfcAxis2Placement3D.cs/#L103">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_P_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.P*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_P" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.P">P</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(0, EntityAttributeState.Derived, EntityAttributeType.List, EntityAttributeType.Class, new int[]{3}, new int[]{3}, 0)]
+public List&lt;XbimVector3D&gt; P { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimVector3D.html">XbimVector3D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_RefDirection.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.RefDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometryResource/IfcAxis2Placement3D.cs/#L83">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_RefDirection_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.RefDirection*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_RefDirection" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.RefDirection">RefDirection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(3, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 5)]
+public IfcDirection RefDirection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcDirection.html">IfcDirection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Equals_Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Equals(Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometryResource/IfcAxis2Placement3D.cs/#L159">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Equals_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Equals*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Equals_Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Equals(Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D)">Equals(IfcAxis2Placement3D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcAxis2Placement3D other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.html">IfcAxis2Placement3D</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometryResource/IfcAxis2Placement3D.cs/#L139">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Parse_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Parse*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcPlacement.html#Xbim_Ifc2x3_GeometryResource_IfcPlacement_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">IfcPlacement.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_ToMatrix3D_System_Collections_Concurrent_ConcurrentDictionary_System_Int32_System_Object__.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.ToMatrix3D(System.Collections.Concurrent.ConcurrentDictionary%7BSystem.Int32%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometryResource/IfcAxis2Placement3DPartial.cs/#L13">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_ToMatrix3D_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.ToMatrix3D*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_ToMatrix3D_System_Collections_Concurrent_ConcurrentDictionary_System_Int32_System_Object__" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.ToMatrix3D(System.Collections.Concurrent.ConcurrentDictionary{System.Int32,System.Object})">ToMatrix3D(ConcurrentDictionary&lt;Int32, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimMatrix3D ToMatrix3D(ConcurrentDictionary&lt;int, object&gt; maps = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Concurrent.ConcurrentDictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">maps</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimMatrix3D.html">XbimMatrix3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Validate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcAxis2Placement3D.cs/#L63">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Validate_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Validate*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Validate" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Validate">Validate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;ValidationResult&gt; Validate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.ValidationResult.html">ValidationResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_ValidateClause_Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_IfcAxis2Placement3DClause_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.IfcAxis2Placement3DClause)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcAxis2Placement3D.cs/#L34">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_ValidateClause_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.ValidateClause*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_ValidateClause_Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_IfcAxis2Placement3DClause_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.IfcAxis2Placement3DClause)">ValidateClause(IfcAxis2Placement3D.IfcAxis2Placement3DClause)</h4>
+  <div class="markdown level1 summary"><p>Tests the express where-clause specified in param 'clause'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateClause(IfcAxis2Placement3D.IfcAxis2Placement3DClause clause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.IfcAxis2Placement3DClause.html">IfcAxis2Placement3D.IfcAxis2Placement3DClause</a></td>
+        <td><span class="parametername">clause</span></td>
+        <td><p>The express clause to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the clause is satisfied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Common_IContainsEntityReferences_References.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim%23Common%23IContainsEntityReferences%23References%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometryResource/IfcAxis2Placement3D.cs/#L166">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Common_IContainsEntityReferences_References_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Common#IContainsEntityReferences#References*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Common_IContainsEntityReferences_References" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Common#IContainsEntityReferences#References">IContainsEntityReferences.References</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IPersistEntity&gt; IContainsEntityReferences.References { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement_P.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim%23Ifc2x3%23GeometryResource%23IfcAxis2Placement%23P%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometryResource/IfcAxis2Placement3DPartial.cs/#L48">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement_P_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc2x3#GeometryResource#IfcAxis2Placement#P*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement_P" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc2x3#GeometryResource#IfcAxis2Placement#P">IfcAxis2Placement.P</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;XbimVector3D&gt; IfcAxis2Placement.P { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimVector3D.html">XbimVector3D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc2x3_Interfaces_IIfcAxis2Placement3D_Axis.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim%23Ifc2x3%23Interfaces%23IIfcAxis2Placement3D%23Axis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometryResource/IfcAxis2Placement3D.cs/#L41">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc2x3_Interfaces_IIfcAxis2Placement3D_Axis_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc2x3#Interfaces#IIfcAxis2Placement3D#Axis*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc2x3_Interfaces_IIfcAxis2Placement3D_Axis" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc2x3#Interfaces#IIfcAxis2Placement3D#Axis">IIfcAxis2Placement3D.Axis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDirection IIfcAxis2Placement3D.Axis { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDirection.html">IIfcDirection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc2x3_Interfaces_IIfcAxis2Placement3D_RefDirection.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim%23Ifc2x3%23Interfaces%23IIfcAxis2Placement3D%23RefDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometryResource/IfcAxis2Placement3D.cs/#L47">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc2x3_Interfaces_IIfcAxis2Placement3D_RefDirection_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc2x3#Interfaces#IIfcAxis2Placement3D#RefDirection*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc2x3_Interfaces_IIfcAxis2Placement3D_RefDirection" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc2x3#Interfaces#IIfcAxis2Placement3D#RefDirection">IIfcAxis2Placement3D.RefDirection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDirection IIfcAxis2Placement3D.RefDirection { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDirection.html">IIfcDirection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_GeometryResource_IfcAxis2Placement_Dim.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim%23Ifc4%23GeometryResource%23IfcAxis2Placement%23Dim%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAxis2Placement3D.cs/#L57">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_GeometryResource_IfcAxis2Placement_Dim_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc4#GeometryResource#IfcAxis2Placement#Dim*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_GeometryResource_IfcAxis2Placement_Dim" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc4#GeometryResource#IfcAxis2Placement#Dim">IfcAxis2Placement.Dim</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcDimensionCount IfcAxis2Placement.Dim { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.GeometryResource.IfcDimensionCount.html">IfcDimensionCount</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_GeometryResource_IfcAxis2Placement_P.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim%23Ifc4%23GeometryResource%23IfcAxis2Placement%23P%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAxis2Placement3D.cs/#L48">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_GeometryResource_IfcAxis2Placement_P_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc4#GeometryResource#IfcAxis2Placement#P*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_GeometryResource_IfcAxis2Placement_P" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc4#GeometryResource#IfcAxis2Placement#P">IfcAxis2Placement.P</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;XbimVector3D&gt; IfcAxis2Placement.P { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimVector3D.html">XbimVector3D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_Interfaces_IIfcAxis2Placement3D_Axis.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim%23Ifc4%23Interfaces%23IIfcAxis2Placement3D%23Axis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAxis2Placement3D.cs/#L21">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_Interfaces_IIfcAxis2Placement3D_Axis_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc4#Interfaces#IIfcAxis2Placement3D#Axis*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_Interfaces_IIfcAxis2Placement3D_Axis" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc4#Interfaces#IIfcAxis2Placement3D#Axis">IIfcAxis2Placement3D.Axis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAxis2Placement3D), 2)]
+IIfcDirection IIfcAxis2Placement3D.Axis { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcDirection.html">IIfcDirection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_Interfaces_IIfcAxis2Placement3D_RefDirection.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim%23Ifc4%23Interfaces%23IIfcAxis2Placement3D%23RefDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAxis2Placement3D.cs/#L35">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_Interfaces_IIfcAxis2Placement3D_RefDirection_" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc4#Interfaces#IIfcAxis2Placement3D#RefDirection*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D_Xbim_Ifc4_Interfaces_IIfcAxis2Placement3D_RefDirection" data-uid="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.Xbim#Ifc4#Interfaces#IIfcAxis2Placement3D#RefDirection">IIfcAxis2Placement3D.RefDirection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAxis2Placement3D), 3)]
+IIfcDirection IIfcAxis2Placement3D.RefDirection { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcDirection.html">IIfcDirection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcAxis2Placement3D.html">IIfcAxis2Placement3D</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcPlacement.html">IIfcPlacement</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcGeometricRepresentationItem.html">IIfcGeometricRepresentationItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcRepresentationItem.html">IIfcRepresentationItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.PresentationOrganizationResource.IfcLayeredItem.html">IfcLayeredItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcLayeredItem.html">IIfcLayeredItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement.html">IfcAxis2Placement</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcAxis2Placement.html">IIfcAxis2Placement</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcAxis2Placement3D.html">IIfcAxis2Placement3D</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcPlacement.html">IIfcPlacement</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcGeometricRepresentationItem.html">IIfcGeometricRepresentationItem</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcRepresentationItem.html">IIfcRepresentationItem</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.PresentationOrganizationResource.IfcLayeredItem.html">IfcLayeredItem</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcLayeredItem.html">IIfcLayeredItem</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.GeometryResource.IfcAxis2Placement.html">IfcAxis2Placement</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcAxis2Placement.html">IIfcAxis2Placement</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcAxis2PlacementExtensions.html#Xbim_Ifc2x3_GeometryResource_IfcAxis2PlacementExtensions_ToMatrix3D_Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement_">IfcAxis2PlacementExtensions.ToMatrix3D(IfcAxis2Placement)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometryResource_IfcAxis2Placement3D.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcAxis2Placement3D.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

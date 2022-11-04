@@ -1,0 +1,1527 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcStructuralProfileProperties
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcStructuralProfileProperties
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties">
+  
+  
+  <h1 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties" class="text-break">Class IfcStructuralProfileProperties
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html">IfcProfileProperties</a></div>
+    <div class="level3"><a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html">IfcGeneralProfileProperties</a></div>
+    <div class="level4"><span class="xref">IfcStructuralProfileProperties</span></div>
+      <div class="level5"><a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralSteelProfileProperties.html">IfcStructuralSteelProfileProperties</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcProfileProperties.html">IIfcProfileProperties</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcExtendedProperties.html">IIfcExtendedProperties</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcPropertyAbstraction.html">IIfcPropertyAbstraction</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ExternalReferenceResource.IfcResourceObjectSelect.html">IfcResourceObjectSelect</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcResourceObjectSelect.html">IIfcResourceObjectSelect</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html">IfcProfileProperties</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html">IfcGeneralProfileProperties</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcStructuralProfileProperties.html">IIfcStructuralProfileProperties</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcGeneralProfileProperties.html">IIfcGeneralProfileProperties</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcProfileProperties.html">IIfcProfileProperties</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.html">IfcStructuralProfileProperties</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcGeneralProfileProperties_PhysicalWeight">IfcGeneralProfileProperties.IIfcGeneralProfileProperties.PhysicalWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcGeneralProfileProperties_Perimeter">IfcGeneralProfileProperties.IIfcGeneralProfileProperties.Perimeter</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcGeneralProfileProperties_MinimumPlateThickness">IfcGeneralProfileProperties.IIfcGeneralProfileProperties.MinimumPlateThickness</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcGeneralProfileProperties_MaximumPlateThickness">IfcGeneralProfileProperties.IIfcGeneralProfileProperties.MaximumPlateThickness</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcGeneralProfileProperties_CrossSectionArea">IfcGeneralProfileProperties.IIfcGeneralProfileProperties.CrossSectionArea</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_PhysicalWeight">IfcGeneralProfileProperties.PhysicalWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_Perimeter">IfcGeneralProfileProperties.Perimeter</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_MinimumPlateThickness">IfcGeneralProfileProperties.MinimumPlateThickness</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_MaximumPlateThickness">IfcGeneralProfileProperties.MaximumPlateThickness</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_CrossSectionArea">IfcGeneralProfileProperties.CrossSectionArea</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_Equals_Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_">IfcGeneralProfileProperties.Equals(IfcGeneralProfileProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_ValidateClause_Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_IfcGeneralProfilePropertiesClause_">IfcGeneralProfileProperties.ValidateClause(IfcGeneralProfileProperties.IfcGeneralProfilePropertiesClause)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcProfileProperties_Xbim_Ifc4_Interfaces_IIfcProfileProperties_ProfileDefinition">IfcProfileProperties.IIfcProfileProperties.ProfileDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcProfileProperties_Xbim_Ifc4_Interfaces_IIfcExtendedProperties_Name">IfcProfileProperties.IIfcExtendedProperties.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcProfileProperties_Xbim_Ifc4_Interfaces_IIfcExtendedProperties_Description">IfcProfileProperties.IIfcExtendedProperties.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcProfileProperties_Xbim_Ifc4_Interfaces_IIfcExtendedProperties_Properties">IfcProfileProperties.IIfcExtendedProperties.Properties</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcProfileProperties_Xbim_Ifc4_Interfaces_IIfcPropertyAbstraction_HasExternalReferences">IfcProfileProperties.IIfcPropertyAbstraction.HasExternalReferences</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcProfileProperties_ProfileName">IfcProfileProperties.IIfcProfileProperties.ProfileName</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcProfileProperties_ProfileDefinition">IfcProfileProperties.IIfcProfileProperties.ProfileDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcProfileProperties_ProfileName">IfcProfileProperties.ProfileName</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcProfileProperties_ProfileDefinition">IfcProfileProperties.ProfileDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcProfileProperties_Equals_Xbim_Ifc2x3_ProfilePropertyResource_IfcProfileProperties_">IfcProfileProperties.Equals(IfcProfileProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.html">Xbim.Ifc2x3.ProfilePropertyResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc2x3.dll</h6>
+  <h5 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcStructuralProfileProperties&quot;, 683)]
+public class IfcStructuralProfileProperties : IfcGeneralProfileProperties, INotifyPropertyChanged, IIfcProfileProperties, IIfcExtendedProperties, IIfcPropertyAbstraction, IfcResourceObjectSelect, IIfcResourceObjectSelect, IExpressSelectType, IEquatable&lt;IfcProfileProperties&gt;, IEquatable&lt;IfcGeneralProfileProperties&gt;, IInstantiableEntity, IIfcStructuralProfileProperties, IIfcGeneralProfileProperties, IIfcProfileProperties, IContainsEntityReferences, IPersistEntity, IPersist, IEquatable&lt;IfcStructuralProfileProperties&gt;, IExpressValidatable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_CentreOfGravityInX.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.CentreOfGravityInX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L360">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_CentreOfGravityInX_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.CentreOfGravityInX*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_CentreOfGravityInX" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.CentreOfGravityInX">CentreOfGravityInX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(22, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 22)]
+public IfcLengthMeasure? CentreOfGravityInX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLengthMeasure.html">IfcLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_CentreOfGravityInY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.CentreOfGravityInY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L374">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_CentreOfGravityInY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.CentreOfGravityInY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_CentreOfGravityInY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.CentreOfGravityInY">CentreOfGravityInY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(23, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 23)]
+public IfcLengthMeasure? CentreOfGravityInY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLengthMeasure.html">IfcLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MaximumSectionModulusY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MaximumSectionModulusY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L290">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MaximumSectionModulusY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MaximumSectionModulusY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MaximumSectionModulusY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MaximumSectionModulusY">MaximumSectionModulusY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(17, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 17)]
+public IfcSectionModulusMeasure? MaximumSectionModulusY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcSectionModulusMeasure.html">IfcSectionModulusMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MaximumSectionModulusZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MaximumSectionModulusZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L318">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MaximumSectionModulusZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MaximumSectionModulusZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MaximumSectionModulusZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MaximumSectionModulusZ">MaximumSectionModulusZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(19, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 19)]
+public IfcSectionModulusMeasure? MaximumSectionModulusZ { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcSectionModulusMeasure.html">IfcSectionModulusMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MinimumSectionModulusY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MinimumSectionModulusY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L304">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MinimumSectionModulusY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MinimumSectionModulusY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MinimumSectionModulusY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MinimumSectionModulusY">MinimumSectionModulusY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(18, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 18)]
+public IfcSectionModulusMeasure? MinimumSectionModulusY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcSectionModulusMeasure.html">IfcSectionModulusMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MinimumSectionModulusZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MinimumSectionModulusZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L332">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MinimumSectionModulusZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MinimumSectionModulusZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MinimumSectionModulusZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MinimumSectionModulusZ">MinimumSectionModulusZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(20, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 20)]
+public IfcSectionModulusMeasure? MinimumSectionModulusZ { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcSectionModulusMeasure.html">IfcSectionModulusMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MomentOfInertiaY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MomentOfInertiaY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L192">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MomentOfInertiaY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MomentOfInertiaY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MomentOfInertiaY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MomentOfInertiaY">MomentOfInertiaY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(10, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 10)]
+public IfcMomentOfInertiaMeasure? MomentOfInertiaY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcMomentOfInertiaMeasure.html">IfcMomentOfInertiaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MomentOfInertiaYZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MomentOfInertiaYZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L178">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MomentOfInertiaYZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MomentOfInertiaYZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MomentOfInertiaYZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MomentOfInertiaYZ">MomentOfInertiaYZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(9, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 9)]
+public IfcMomentOfInertiaMeasure? MomentOfInertiaYZ { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcMomentOfInertiaMeasure.html">IfcMomentOfInertiaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MomentOfInertiaZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MomentOfInertiaZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L206">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MomentOfInertiaZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MomentOfInertiaZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_MomentOfInertiaZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.MomentOfInertiaZ">MomentOfInertiaZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(11, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 11)]
+public IfcMomentOfInertiaMeasure? MomentOfInertiaZ { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcMomentOfInertiaMeasure.html">IfcMomentOfInertiaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearCentreY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearCentreY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L248">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearCentreY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearCentreY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearCentreY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearCentreY">ShearCentreY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(14, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 14)]
+public IfcLengthMeasure? ShearCentreY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLengthMeasure.html">IfcLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearCentreZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearCentreZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L234">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearCentreZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearCentreZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearCentreZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearCentreZ">ShearCentreZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(13, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 13)]
+public IfcLengthMeasure? ShearCentreZ { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLengthMeasure.html">IfcLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearDeformationAreaY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearDeformationAreaY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L276">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearDeformationAreaY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearDeformationAreaY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearDeformationAreaY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearDeformationAreaY">ShearDeformationAreaY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(16, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 16)]
+public IfcAreaMeasure? ShearDeformationAreaY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcAreaMeasure.html">IfcAreaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearDeformationAreaZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearDeformationAreaZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L262">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearDeformationAreaZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearDeformationAreaZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ShearDeformationAreaZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ShearDeformationAreaZ">ShearDeformationAreaZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(15, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 15)]
+public IfcAreaMeasure? ShearDeformationAreaZ { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcAreaMeasure.html">IfcAreaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_TorsionalConstantX.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.TorsionalConstantX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L164">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_TorsionalConstantX_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.TorsionalConstantX*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_TorsionalConstantX" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.TorsionalConstantX">TorsionalConstantX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(8, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 8)]
+public IfcMomentOfInertiaMeasure? TorsionalConstantX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcMomentOfInertiaMeasure.html">IfcMomentOfInertiaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_TorsionalSectionModulus.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.TorsionalSectionModulus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L346">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_TorsionalSectionModulus_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.TorsionalSectionModulus*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_TorsionalSectionModulus" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.TorsionalSectionModulus">TorsionalSectionModulus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(21, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 21)]
+public IfcSectionModulusMeasure? TorsionalSectionModulus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcSectionModulusMeasure.html">IfcSectionModulusMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_WarpingConstant.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.WarpingConstant%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L220">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_WarpingConstant_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.WarpingConstant*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_WarpingConstant" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.WarpingConstant">WarpingConstant</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(12, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 12)]
+public IfcWarpingConstantMeasure? WarpingConstant { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcWarpingConstantMeasure.html">IfcWarpingConstantMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Equals_Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Equals(Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L462">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Equals_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Equals*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Equals_Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Equals(Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties)">Equals(IfcStructuralProfileProperties)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcStructuralProfileProperties other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.html">IfcStructuralProfileProperties</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L394">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Parse_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Parse*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">IfcGeneralProfileProperties.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Validate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcStructuralProfileProperties.cs/#L51">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Validate_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Validate*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Validate" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Validate">Validate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;ValidationResult&gt; Validate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.ValidationResult.html">ValidationResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.html#Xbim_Ifc2x3_ProfilePropertyResource_IfcGeneralProfileProperties_Validate">IfcGeneralProfileProperties.Validate()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ValidateClause_Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_IfcStructuralProfilePropertiesClause_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ValidateClause(Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.IfcStructuralProfilePropertiesClause)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcStructuralProfileProperties.cs/#L31">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ValidateClause_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ValidateClause*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_ValidateClause_Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_IfcStructuralProfilePropertiesClause_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ValidateClause(Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.IfcStructuralProfilePropertiesClause)">ValidateClause(IfcStructuralProfileProperties.IfcStructuralProfilePropertiesClause)</h4>
+  <div class="markdown level1 summary"><p>Tests the express where-clause specified in param 'clause'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateClause(IfcStructuralProfileProperties.IfcStructuralProfilePropertiesClause clause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.IfcStructuralProfilePropertiesClause.html">IfcStructuralProfileProperties.IfcStructuralProfilePropertiesClause</a></td>
+        <td><span class="parametername">clause</span></td>
+        <td><p>The express clause to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the clause is satisfied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Common_IContainsEntityReferences_References.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Common%23IContainsEntityReferences%23References%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L469">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Common_IContainsEntityReferences_References_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Common#IContainsEntityReferences#References*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Common_IContainsEntityReferences_References" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Common#IContainsEntityReferences#References">IContainsEntityReferences.References</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IPersistEntity&gt; IContainsEntityReferences.References { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_CentreOfGravityInX.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23CentreOfGravityInX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L126">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_CentreOfGravityInX_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#CentreOfGravityInX*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_CentreOfGravityInX" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#CentreOfGravityInX">IIfcStructuralProfileProperties.CentreOfGravityInX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLengthMeasure? IIfcStructuralProfileProperties.CentreOfGravityInX { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLengthMeasure.html">IfcLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_CentreOfGravityInY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23CentreOfGravityInY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L131">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_CentreOfGravityInY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#CentreOfGravityInY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_CentreOfGravityInY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#CentreOfGravityInY">IIfcStructuralProfileProperties.CentreOfGravityInY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLengthMeasure? IIfcStructuralProfileProperties.CentreOfGravityInY { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLengthMeasure.html">IfcLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MaximumSectionModulusY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23MaximumSectionModulusY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L101">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MaximumSectionModulusY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MaximumSectionModulusY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MaximumSectionModulusY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MaximumSectionModulusY">IIfcStructuralProfileProperties.MaximumSectionModulusY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcSectionModulusMeasure? IIfcStructuralProfileProperties.MaximumSectionModulusY { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcSectionModulusMeasure.html">IfcSectionModulusMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MaximumSectionModulusZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23MaximumSectionModulusZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L111">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MaximumSectionModulusZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MaximumSectionModulusZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MaximumSectionModulusZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MaximumSectionModulusZ">IIfcStructuralProfileProperties.MaximumSectionModulusZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcSectionModulusMeasure? IIfcStructuralProfileProperties.MaximumSectionModulusZ { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcSectionModulusMeasure.html">IfcSectionModulusMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MinimumSectionModulusY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23MinimumSectionModulusY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L106">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MinimumSectionModulusY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MinimumSectionModulusY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MinimumSectionModulusY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MinimumSectionModulusY">IIfcStructuralProfileProperties.MinimumSectionModulusY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcSectionModulusMeasure? IIfcStructuralProfileProperties.MinimumSectionModulusY { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcSectionModulusMeasure.html">IfcSectionModulusMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MinimumSectionModulusZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23MinimumSectionModulusZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L116">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MinimumSectionModulusZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MinimumSectionModulusZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MinimumSectionModulusZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MinimumSectionModulusZ">IIfcStructuralProfileProperties.MinimumSectionModulusZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcSectionModulusMeasure? IIfcStructuralProfileProperties.MinimumSectionModulusZ { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcSectionModulusMeasure.html">IfcSectionModulusMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MomentOfInertiaY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23MomentOfInertiaY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L66">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MomentOfInertiaY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MomentOfInertiaY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MomentOfInertiaY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MomentOfInertiaY">IIfcStructuralProfileProperties.MomentOfInertiaY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcMomentOfInertiaMeasure? IIfcStructuralProfileProperties.MomentOfInertiaY { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcMomentOfInertiaMeasure.html">IfcMomentOfInertiaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MomentOfInertiaYZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23MomentOfInertiaYZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L61">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MomentOfInertiaYZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MomentOfInertiaYZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MomentOfInertiaYZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MomentOfInertiaYZ">IIfcStructuralProfileProperties.MomentOfInertiaYZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcMomentOfInertiaMeasure? IIfcStructuralProfileProperties.MomentOfInertiaYZ { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcMomentOfInertiaMeasure.html">IfcMomentOfInertiaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MomentOfInertiaZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23MomentOfInertiaZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L71">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MomentOfInertiaZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MomentOfInertiaZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_MomentOfInertiaZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#MomentOfInertiaZ">IIfcStructuralProfileProperties.MomentOfInertiaZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcMomentOfInertiaMeasure? IIfcStructuralProfileProperties.MomentOfInertiaZ { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcMomentOfInertiaMeasure.html">IfcMomentOfInertiaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearCentreY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23ShearCentreY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L86">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearCentreY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#ShearCentreY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearCentreY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#ShearCentreY">IIfcStructuralProfileProperties.ShearCentreY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLengthMeasure? IIfcStructuralProfileProperties.ShearCentreY { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLengthMeasure.html">IfcLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearCentreZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23ShearCentreZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L81">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearCentreZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#ShearCentreZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearCentreZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#ShearCentreZ">IIfcStructuralProfileProperties.ShearCentreZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLengthMeasure? IIfcStructuralProfileProperties.ShearCentreZ { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLengthMeasure.html">IfcLengthMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearDeformationAreaY.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23ShearDeformationAreaY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L96">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearDeformationAreaY_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#ShearDeformationAreaY*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearDeformationAreaY" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#ShearDeformationAreaY">IIfcStructuralProfileProperties.ShearDeformationAreaY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcAreaMeasure? IIfcStructuralProfileProperties.ShearDeformationAreaY { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcAreaMeasure.html">IfcAreaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearDeformationAreaZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23ShearDeformationAreaZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L91">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearDeformationAreaZ_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#ShearDeformationAreaZ*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_ShearDeformationAreaZ" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#ShearDeformationAreaZ">IIfcStructuralProfileProperties.ShearDeformationAreaZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcAreaMeasure? IIfcStructuralProfileProperties.ShearDeformationAreaZ { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcAreaMeasure.html">IfcAreaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_TorsionalConstantX.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23TorsionalConstantX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L56">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_TorsionalConstantX_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#TorsionalConstantX*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_TorsionalConstantX" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#TorsionalConstantX">IIfcStructuralProfileProperties.TorsionalConstantX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcMomentOfInertiaMeasure? IIfcStructuralProfileProperties.TorsionalConstantX { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcMomentOfInertiaMeasure.html">IfcMomentOfInertiaMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_TorsionalSectionModulus.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23TorsionalSectionModulus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L121">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_TorsionalSectionModulus_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#TorsionalSectionModulus*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_TorsionalSectionModulus" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#TorsionalSectionModulus">IIfcStructuralProfileProperties.TorsionalSectionModulus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcSectionModulusMeasure? IIfcStructuralProfileProperties.TorsionalSectionModulus { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcSectionModulusMeasure.html">IfcSectionModulusMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_WarpingConstant.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim%23Ifc2x3%23Interfaces%23IIfcStructuralProfileProperties%23WarpingConstant%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ProfilePropertyResource/IfcStructuralProfileProperties.cs/#L76">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_WarpingConstant_" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#WarpingConstant*"></a>
+  <h4 id="Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties_Xbim_Ifc2x3_Interfaces_IIfcStructuralProfileProperties_WarpingConstant" data-uid="Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.Xbim#Ifc2x3#Interfaces#IIfcStructuralProfileProperties#WarpingConstant">IIfcStructuralProfileProperties.WarpingConstant</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcWarpingConstantMeasure? IIfcStructuralProfileProperties.WarpingConstant { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcWarpingConstantMeasure.html">IfcWarpingConstantMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcProfileProperties.html">IIfcProfileProperties</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcExtendedProperties.html">IIfcExtendedProperties</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcPropertyAbstraction.html">IIfcPropertyAbstraction</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ExternalReferenceResource.IfcResourceObjectSelect.html">IfcResourceObjectSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcResourceObjectSelect.html">IIfcResourceObjectSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcStructuralProfileProperties.html">IIfcStructuralProfileProperties</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcGeneralProfileProperties.html">IIfcGeneralProfileProperties</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcProfileProperties.html">IIfcProfileProperties</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ProfilePropertyResource_IfcStructuralProfileProperties.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcStructuralProfileProperties.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,884 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EsentShapeGeometryCursor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EsentShapeGeometryCursor
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor">
+  
+  
+  <h1 id="Xbim_IO_Esent_EsentShapeGeometryCursor" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor" class="text-break">Class EsentShapeGeometryCursor
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Xbim.IO.Esent.EsentCursor.html">EsentCursor</a></div>
+    <div class="level2"><span class="xref">EsentShapeGeometryCursor</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_TransactionBatchSize">EsentCursor.TransactionBatchSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_Instance">EsentCursor.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_Sesid">EsentCursor.Sesid</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_DbId">EsentCursor.DbId</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_Table">EsentCursor.Table</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_Model">EsentCursor.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_GlobalsTable">EsentCursor.GlobalsTable</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_GlobalsTableName">EsentCursor.GlobalsTableName</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_EntityCountColumnName">EsentCursor.EntityCountColumnName</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_GeometryCountColumnName">EsentCursor.GeometryCountColumnName</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_FlushColumnName">EsentCursor.FlushColumnName</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_EntityCountColumn">EsentCursor.EntityCountColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_GeometryCountColumn">EsentCursor.GeometryCountColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_FlushColumn">EsentCursor.FlushColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_IfcHeaderColumn">EsentCursor.IfcHeaderColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_VersionColumnName">EsentCursor.VersionColumnName</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_Version">EsentCursor.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_Session">EsentCursor.Session</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_LockObject">EsentCursor.LockObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_ReadOnly">EsentCursor.ReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_CreateGlobalsTable_Microsoft_Isam_Esent_Interop_JET_SESID_Microsoft_Isam_Esent_Interop_JET_DBID_">EsentCursor.CreateGlobalsTable(JET_SESID, JET_DBID)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_BeginLazyTransaction">EsentCursor.BeginLazyTransaction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_BeginReadOnlyTransaction">EsentCursor.BeginReadOnlyTransaction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_Dispose_System_Boolean_">EsentCursor.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_Dispose">EsentCursor.Dispose()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.IO.Esent.html">Xbim.IO.Esent</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.IO.Esent.dll</h6>
+  <h5 id="Xbim_IO_Esent_EsentShapeGeometryCursor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EsentShapeGeometryCursor : EsentCursor, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor__ctor_Xbim_IO_Esent_EsentModel_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.%23ctor(Xbim.IO.Esent.EsentModel%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L51">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor__ctor_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.#ctor*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor__ctor_Xbim_IO_Esent_EsentModel_System_String_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.#ctor(Xbim.IO.Esent.EsentModel,System.String)">EsentShapeGeometryCursor(EsentModel, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EsentShapeGeometryCursor(EsentModel model, string database)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.EsentModel.html">EsentModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">database</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor__ctor_Xbim_IO_Esent_EsentModel_System_String_Microsoft_Isam_Esent_Interop_OpenDatabaseGrbit_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.%23ctor(Xbim.IO.Esent.EsentModel%2CSystem.String%2CMicrosoft.Isam.Esent.Interop.OpenDatabaseGrbit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L55">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor__ctor_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.#ctor*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor__ctor_Xbim_IO_Esent_EsentModel_System_String_Microsoft_Isam_Esent_Interop_OpenDatabaseGrbit_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.#ctor(Xbim.IO.Esent.EsentModel,System.String,Microsoft.Isam.Esent.Interop.OpenDatabaseGrbit)">EsentShapeGeometryCursor(EsentModel, String, OpenDatabaseGrbit)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EsentShapeGeometryCursor(EsentModel model, string database, OpenDatabaseGrbit mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.EsentModel.html">EsentModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">database</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Isam.Esent.Interop.OpenDatabaseGrbit</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_GeometryTableName.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.GeometryTableName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L73">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_GeometryTableName" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.GeometryTableName">GeometryTableName</h4>
+  <div class="markdown level1 summary"><p>shape geometry table name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GeometryTableName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_AddGeometry_Xbim_Common_Geometry_IXbimShapeGeometryData_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.AddGeometry(Xbim.Common.Geometry.IXbimShapeGeometryData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L275">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_AddGeometry_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.AddGeometry*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_AddGeometry_Xbim_Common_Geometry_IXbimShapeGeometryData_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.AddGeometry(Xbim.Common.Geometry.IXbimShapeGeometryData)">AddGeometry(IXbimShapeGeometryData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddGeometry(IXbimShapeGeometryData shapeGeom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.IXbimShapeGeometryData.html">IXbimShapeGeometryData</a></td>
+        <td><span class="parametername">shapeGeom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_GetCost.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.GetCost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L451">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_GetCost_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.GetCost*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_GetCost" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.GetCost">GetCost()</h4>
+  <div class="markdown level1 summary"><p>returns the cost for the current record, assume that TryMoveFirstReferenceCounter has been called</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCost()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_GetReferenceCount.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.GetReferenceCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L442">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_GetReferenceCount_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.GetReferenceCount*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_GetReferenceCount" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.GetReferenceCount">GetReferenceCount()</h4>
+  <div class="markdown level1 summary"><p>returns the reference count for the current record, assume that TryMoveFirstReferenceCounter has been called</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetReferenceCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_GetReferenceCount_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.GetReferenceCount(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L390">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_GetReferenceCount_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.GetReferenceCount*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_GetReferenceCount_System_Int32_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.GetReferenceCount(System.Int32)">GetReferenceCount(Int32)</h4>
+  <div class="markdown level1 summary"><p>fast retrieval of the reference counf for this geometry</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetReferenceCount(int shapeGeometryLabel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">shapeGeometryLabel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_GetShapeGeometryLabel.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.GetShapeGeometryLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L459">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_GetShapeGeometryLabel_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.GetShapeGeometryLabel*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_GetShapeGeometryLabel" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.GetShapeGeometryLabel">GetShapeGeometryLabel()</h4>
+  <div class="markdown level1 summary"><p>returns the geometry label for the current record, assume that the current index has been set to primary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetShapeGeometryLabel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_TryGetShapeGeometry_System_Int32_Xbim_Common_Geometry_IXbimShapeGeometryData__.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.TryGetShapeGeometry(System.Int32%2CXbim.Common.Geometry.IXbimShapeGeometryData%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L370">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryGetShapeGeometry_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryGetShapeGeometry*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryGetShapeGeometry_System_Int32_Xbim_Common_Geometry_IXbimShapeGeometryData__" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryGetShapeGeometry(System.Int32,Xbim.Common.Geometry.IXbimShapeGeometryData@)">TryGetShapeGeometry(Int32, ref IXbimShapeGeometryData)</h4>
+  <div class="markdown level1 summary"><p>Returns the shape geometry for the specified label if it exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetShapeGeometry(int shapeGeometryLabel, ref IXbimShapeGeometryData sg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">shapeGeometryLabel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.IXbimShapeGeometryData.html">IXbimShapeGeometryData</a></td>
+        <td><span class="parametername">sg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveFirstReferenceCounter.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveFirstReferenceCounter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L406">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveFirstReferenceCounter_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveFirstReferenceCounter*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveFirstReferenceCounter" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveFirstReferenceCounter">TryMoveFirstReferenceCounter()</h4>
+  <div class="markdown level1 summary"><p>Moves to the first Shape Geometry and sets the index to the reference counter index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryMoveFirstReferenceCounter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveFirstRegion_Xbim_Common_Geometry_IXbimShapeGeometryData__.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveFirstRegion(Xbim.Common.Geometry.IXbimShapeGeometryData%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L412">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveFirstRegion_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveFirstRegion*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveFirstRegion_Xbim_Common_Geometry_IXbimShapeGeometryData__" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveFirstRegion(Xbim.Common.Geometry.IXbimShapeGeometryData@)">TryMoveFirstRegion(ref IXbimShapeGeometryData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryMoveFirstRegion(ref IXbimShapeGeometryData sg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.IXbimShapeGeometryData.html">IXbimShapeGeometryData</a></td>
+        <td><span class="parametername">sg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveFirstShapeGeometry_Xbim_Common_Geometry_IXbimShapeGeometryData__.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveFirstShapeGeometry(Xbim.Common.Geometry.IXbimShapeGeometryData%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L333">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveFirstShapeGeometry_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveFirstShapeGeometry*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveFirstShapeGeometry_Xbim_Common_Geometry_IXbimShapeGeometryData__" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveFirstShapeGeometry(Xbim.Common.Geometry.IXbimShapeGeometryData@)">TryMoveFirstShapeGeometry(ref IXbimShapeGeometryData)</h4>
+  <div class="markdown level1 summary"><p>Seeks and returns the first shape geometry</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryMoveFirstShapeGeometry(ref IXbimShapeGeometryData sg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.IXbimShapeGeometryData.html">IXbimShapeGeometryData</a></td>
+        <td><span class="parametername">sg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveNextReferenceCounter.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveNextReferenceCounter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L433">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveNextReferenceCounter_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveNextReferenceCounter*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveNextReferenceCounter" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveNextReferenceCounter">TryMoveNextReferenceCounter()</h4>
+  <div class="markdown level1 summary"><p>Moves to the next shape geometry assumes TryMoveFirstReferenceCounter has been called</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryMoveNextReferenceCounter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveNextShapeGeometry_Xbim_Common_Geometry_IXbimShapeGeometryData__.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveNextShapeGeometry(Xbim.Common.Geometry.IXbimShapeGeometryData%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L352">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveNextShapeGeometry_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveNextShapeGeometry*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_TryMoveNextShapeGeometry_Xbim_Common_Geometry_IXbimShapeGeometryData__" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.TryMoveNextShapeGeometry(Xbim.Common.Geometry.IXbimShapeGeometryData@)">TryMoveNextShapeGeometry(ref IXbimShapeGeometryData)</h4>
+  <div class="markdown level1 summary"><p>Returns the next Shape geometry after a move or a seek call</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryMoveNextShapeGeometry(ref IXbimShapeGeometryData sg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.IXbimShapeGeometryData.html">IXbimShapeGeometryData</a></td>
+        <td><span class="parametername">sg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_UpdateCount_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.UpdateCount(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L269">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_UpdateCount_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.UpdateCount*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_UpdateCount_System_Int32_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.UpdateCount(System.Int32)">UpdateCount(Int32)</h4>
+  <div class="markdown level1 summary"><p>Update the count of geometry entities in the globals table. This is done with EscrowUpdate
+so that there won't be any write conflicts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void UpdateCount(int delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">delta</span></td>
+        <td><p>The delta to apply to the count.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.IO.Esent.EsentCursor.html#Xbim_IO_Esent_EsentCursor_UpdateCount_System_Int32_">EsentCursor.UpdateCount(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor_UpdateReferenceCount_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor.UpdateReferenceCount(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L300">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentShapeGeometryCursor_UpdateReferenceCount_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.UpdateReferenceCount*"></a>
+  <h4 id="Xbim_IO_Esent_EsentShapeGeometryCursor_UpdateReferenceCount_System_Int32_System_Int32_" data-uid="Xbim.IO.Esent.EsentShapeGeometryCursor.UpdateReferenceCount(System.Int32,System.Int32)">UpdateReferenceCount(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateReferenceCount(int geomLabel, int refCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">geomLabel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">refCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentShapeGeometryCursor.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentShapeGeometryCursor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentShapeGeometryCursor.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

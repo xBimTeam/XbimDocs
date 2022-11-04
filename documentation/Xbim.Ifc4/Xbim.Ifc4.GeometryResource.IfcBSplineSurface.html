@@ -1,0 +1,930 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcBSplineSurface
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcBSplineSurface
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface">
+  
+  
+  <h1 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface" class="text-break">Class IfcBSplineSurface
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html">IfcRepresentationItem</a></div>
+    <div class="level3"><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcGeometricRepresentationItem.html">IfcGeometricRepresentationItem</a></div>
+    <div class="level4"><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcSurface.html">IfcSurface</a></div>
+    <div class="level5"><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcBoundedSurface.html">IfcBoundedSurface</a></div>
+    <div class="level6"><span class="xref">IfcBSplineSurface</span></div>
+      <div class="level7"><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcBSplineSurfaceWithKnots.html">IfcBSplineSurfaceWithKnots</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html">IfcRepresentationItem</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.GeometryResource.IfcGeometricRepresentationItem.html">IfcGeometricRepresentationItem</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.GeometryResource.IfcSurface.html">IfcSurface</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.GeometryResource.IfcBoundedSurface.html">IfcBoundedSurface</a>&gt;</div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcBSplineSurface.html">IIfcBSplineSurface</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcBoundedSurface.html">IIfcBoundedSurface</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcSurface.html">IIfcSurface</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcGeometricRepresentationItem.html">IIfcGeometricRepresentationItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcRepresentationItem.html">IIfcRepresentationItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.PresentationOrganizationResource.IfcLayeredItem.html">IfcLayeredItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcLayeredItem.html">IIfcLayeredItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcGeometricSetSelect.html">IfcGeometricSetSelect</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcGeometricSetSelect.html">IIfcGeometricSetSelect</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.GeometricConstraintResource.IfcSurfaceOrFaceSurface.html">IfcSurfaceOrFaceSurface</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcSurfaceOrFaceSurface.html">IIfcSurfaceOrFaceSurface</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.html">IfcBSplineSurface</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcBoundedSurface.html#Xbim_Ifc4_GeometryResource_IfcBoundedSurface_Equals_Xbim_Ifc4_GeometryResource_IfcBoundedSurface_">IfcBoundedSurface.Equals(IfcBoundedSurface)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcSurface.html#Xbim_Ifc4_GeometryResource_IfcSurface_Dim">IfcSurface.Dim</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcSurface.html#Xbim_Ifc4_GeometryResource_IfcSurface_Equals_Xbim_Ifc4_GeometryResource_IfcSurface_">IfcSurface.Equals(IfcSurface)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcGeometricRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcGeometricRepresentationItem_Equals_Xbim_Ifc4_GeometryResource_IfcGeometricRepresentationItem_">IfcGeometricRepresentationItem.Equals(IfcGeometricRepresentationItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcRepresentationItem_Xbim_Ifc4_Interfaces_IIfcRepresentationItem_LayerAssignment">IfcRepresentationItem.IIfcRepresentationItem.LayerAssignment</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcRepresentationItem_Xbim_Ifc4_Interfaces_IIfcRepresentationItem_StyledByItem">IfcRepresentationItem.IIfcRepresentationItem.StyledByItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcRepresentationItem_LayerAssignment">IfcRepresentationItem.LayerAssignment</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcRepresentationItem_StyledByItem">IfcRepresentationItem.StyledByItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcRepresentationItem_Equals_Xbim_Ifc4_GeometryResource_IfcRepresentationItem_">IfcRepresentationItem.Equals(IfcRepresentationItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc4.GeometryResource.html">Xbim.Ifc4.GeometryResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc4.dll</h6>
+  <h5 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcBSplineSurface&quot;, 1102)]
+public abstract class IfcBSplineSurface : IfcBoundedSurface, INotifyPropertyChanged, IEquatable&lt;IfcRepresentationItem&gt;, IEquatable&lt;IfcGeometricRepresentationItem&gt;, IEquatable&lt;IfcSurface&gt;, IEquatable&lt;IfcBoundedSurface&gt;, IIfcBSplineSurface, IIfcBoundedSurface, IIfcSurface, IIfcGeometricRepresentationItem, IIfcRepresentationItem, IfcLayeredItem, IIfcLayeredItem, IfcGeometricSetSelect, IIfcGeometricSetSelect, IfcSurfaceOrFaceSurface, IIfcSurfaceOrFaceSurface, IExpressSelectType, IPersistEntity, IPersist, IEquatable&lt;IfcBSplineSurface&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_ControlPoints.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.ControlPoints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L223">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_ControlPoints_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.ControlPoints*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_ControlPoints" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.ControlPoints">ControlPoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(0, EntityAttributeState.Derived, EntityAttributeType.Array, EntityAttributeType.Array, new int[]{0, 0}, new int[]{-1, -1}, 0)]
+public List&lt;List&lt;XbimPoint3D&gt;&gt; ControlPoints { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimPoint3D.html">XbimPoint3D</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_ControlPointsList.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.ControlPointsList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L131">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_ControlPointsList_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.ControlPointsList*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_ControlPointsList" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.ControlPointsList">ControlPointsList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(3, EntityAttributeState.Mandatory, EntityAttributeType.List, EntityAttributeType.List, new int[]{2, 2}, new int[]{-1, -1}, 5)]
+public IItemSet&lt;IItemSet&lt;IfcCartesianPoint&gt;&gt; ControlPointsList { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IItemSet-1.html">IItemSet</a>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IItemSet-1.html">IItemSet</a>&lt;<a class="xref" href="Xbim.Ifc4.GeometryResource.IfcCartesianPoint.html">IfcCartesianPoint</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_SelfIntersect.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.SelfIntersect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L183">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_SelfIntersect_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.SelfIntersect*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_SelfIntersect" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.SelfIntersect">SelfIntersect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(7, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 9)]
+public IfcLogical SelfIntersect { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLogical.html">IfcLogical</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_SurfaceForm.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.SurfaceForm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L141">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_SurfaceForm_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.SurfaceForm*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_SurfaceForm" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.SurfaceForm">SurfaceForm</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(4, EntityAttributeState.Mandatory, EntityAttributeType.Enum, EntityAttributeType.None, null, null, 6)]
+public IfcBSplineSurfaceForm SurfaceForm { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.Interfaces.IfcBSplineSurfaceForm.html">IfcBSplineSurfaceForm</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_UClosed.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.UClosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L155">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_UClosed_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.UClosed*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_UClosed" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.UClosed">UClosed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(5, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 7)]
+public IfcLogical UClosed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLogical.html">IfcLogical</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_UDegree.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.UDegree%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L103">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_UDegree_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.UDegree*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_UDegree" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.UDegree">UDegree</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(1, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 3)]
+public IfcInteger UDegree { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcInteger.html">IfcInteger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_UUpper.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.UUpper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L201">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_UUpper_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.UUpper*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_UUpper" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.UUpper">UUpper</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(0, EntityAttributeState.Derived, EntityAttributeType.None, EntityAttributeType.None, null, null, 0)]
+public IfcInteger UUpper { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcInteger.html">IfcInteger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_VClosed.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.VClosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L169">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_VClosed_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.VClosed*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_VClosed" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.VClosed">VClosed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(6, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 8)]
+public IfcLogical VClosed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLogical.html">IfcLogical</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_VDegree.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.VDegree%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L117">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_VDegree_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.VDegree*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_VDegree" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.VDegree">VDegree</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(2, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 4)]
+public IfcInteger VDegree { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcInteger.html">IfcInteger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_VUpper.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.VUpper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L212">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_VUpper_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.VUpper*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_VUpper" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.VUpper">VUpper</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(0, EntityAttributeState.Derived, EntityAttributeType.None, EntityAttributeType.None, null, null, 0)]
+public IfcInteger VUpper { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcInteger.html">IfcInteger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Equals_Xbim_Ifc4_GeometryResource_IfcBSplineSurface_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Equals(Xbim.Ifc4.GeometryResource.IfcBSplineSurface)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L279">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Equals_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Equals*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Equals_Xbim_Ifc4_GeometryResource_IfcBSplineSurface_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Equals(Xbim.Ifc4.GeometryResource.IfcBSplineSurface)">Equals(IfcBSplineSurface)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcBSplineSurface other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.html">IfcBSplineSurface</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L245">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Parse_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Parse*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcBoundedSurface.html#Xbim_Ifc4_GeometryResource_IfcBoundedSurface_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">IfcBoundedSurface.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_ControlPointsList.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim%23Ifc4%23Interfaces%23IIfcBSplineSurface%23ControlPointsList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L60">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_ControlPointsList_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#ControlPointsList*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_ControlPointsList" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#ControlPointsList">IIfcBSplineSurface.ControlPointsList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IItemSet&lt;IItemSet&lt;IIfcCartesianPoint&gt;&gt; IIfcBSplineSurface.ControlPointsList { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IItemSet-1.html">IItemSet</a>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IItemSet-1.html">IItemSet</a>&lt;<a class="xref" href="Xbim.Ifc4.Interfaces.IIfcCartesianPoint.html">IIfcCartesianPoint</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_SelfIntersect.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim%23Ifc4%23Interfaces%23IIfcBSplineSurface%23SelfIntersect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L78">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_SelfIntersect_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#SelfIntersect*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_SelfIntersect" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#SelfIntersect">IIfcBSplineSurface.SelfIntersect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLogical IIfcBSplineSurface.SelfIntersect { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLogical.html">IfcLogical</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_SurfaceForm.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim%23Ifc4%23Interfaces%23IIfcBSplineSurface%23SurfaceForm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L63">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_SurfaceForm_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#SurfaceForm*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_SurfaceForm" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#SurfaceForm">IIfcBSplineSurface.SurfaceForm</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcBSplineSurfaceForm IIfcBSplineSurface.SurfaceForm { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.Interfaces.IfcBSplineSurfaceForm.html">IfcBSplineSurfaceForm</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_UClosed.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim%23Ifc4%23Interfaces%23IIfcBSplineSurface%23UClosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L68">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_UClosed_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#UClosed*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_UClosed" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#UClosed">IIfcBSplineSurface.UClosed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLogical IIfcBSplineSurface.UClosed { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLogical.html">IfcLogical</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_UDegree.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim%23Ifc4%23Interfaces%23IIfcBSplineSurface%23UDegree%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L50">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_UDegree_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#UDegree*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_UDegree" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#UDegree">IIfcBSplineSurface.UDegree</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcInteger IIfcBSplineSurface.UDegree { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcInteger.html">IfcInteger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_VClosed.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim%23Ifc4%23Interfaces%23IIfcBSplineSurface%23VClosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L73">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_VClosed_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#VClosed*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_VClosed" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#VClosed">IIfcBSplineSurface.VClosed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLogical IIfcBSplineSurface.VClosed { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcLogical.html">IfcLogical</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_VDegree.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim%23Ifc4%23Interfaces%23IIfcBSplineSurface%23VDegree%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L55">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_VDegree_" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#VDegree*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcBSplineSurface_Xbim_Ifc4_Interfaces_IIfcBSplineSurface_VDegree" data-uid="Xbim.Ifc4.GeometryResource.IfcBSplineSurface.Xbim#Ifc4#Interfaces#IIfcBSplineSurface#VDegree">IIfcBSplineSurface.VDegree</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcInteger IIfcBSplineSurface.VDegree { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcInteger.html">IfcInteger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcBSplineSurface.html">IIfcBSplineSurface</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcBoundedSurface.html">IIfcBoundedSurface</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcSurface.html">IIfcSurface</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcGeometricRepresentationItem.html">IIfcGeometricRepresentationItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcRepresentationItem.html">IIfcRepresentationItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.PresentationOrganizationResource.IfcLayeredItem.html">IfcLayeredItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcLayeredItem.html">IIfcLayeredItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcGeometricSetSelect.html">IfcGeometricSetSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcGeometricSetSelect.html">IIfcGeometricSetSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.GeometricConstraintResource.IfcSurfaceOrFaceSurface.html">IfcSurfaceOrFaceSurface</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcSurfaceOrFaceSurface.html">IIfcSurfaceOrFaceSurface</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcBSplineSurface.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcBSplineSurface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcBSplineSurface.cs/#L45" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

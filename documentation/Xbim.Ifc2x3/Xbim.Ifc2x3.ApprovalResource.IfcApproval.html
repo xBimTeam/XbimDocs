@@ -1,0 +1,1414 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcApproval
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcApproval
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval">
+  
+  
+  <h1 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval" class="text-break">Class IfcApproval
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><span class="xref">IfcApproval</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcApproval.html">IIfcApproval</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ApprovalResource.IfcApproval.html">IfcApproval</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcApproval.html">IIfcApproval</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ExternalReferenceResource.IfcResourceObjectSelect.html">IfcResourceObjectSelect</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcResourceObjectSelect.html">IIfcResourceObjectSelect</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc2x3.ApprovalResource.html">Xbim.Ifc2x3.ApprovalResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc2x3.dll</h6>
+  <h5 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcApproval&quot;, 626)]
+public class IfcApproval : PersistEntity, INotifyPropertyChanged, IInstantiableEntity, IIfcApproval, IContainsEntityReferences, IEquatable&lt;IfcApproval&gt;, IIfcApproval, IfcResourceObjectSelect, IIfcResourceObjectSelect, IPersistEntity, IExpressSelectType, IPersist</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Actors.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Actors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L216">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Actors_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Actors*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Actors" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Actors">Actors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;Approval&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{-1}, 8)]
+public IEnumerable&lt;IfcApprovalActorRelationship&gt; Actors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ApprovalResource.IfcApprovalActorRelationship.html">IfcApprovalActorRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalDateTime.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L125">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalDateTime_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalDateTime*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalDateTime" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalDateTime">ApprovalDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(2, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 2)]
+public IfcDateTimeSelect ApprovalDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalLevel.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L155">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalLevel_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalLevel*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalLevel" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalLevel">ApprovalLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(4, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 4)]
+public IfcLabel? ApprovalLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalQualifier.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalQualifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L169">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalQualifier_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalQualifier*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalQualifier" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalQualifier">ApprovalQualifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(5, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 5)]
+public IfcText? ApprovalQualifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcText.html">IfcText</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalStatus.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalStatus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L141">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalStatus_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalStatus*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_ApprovalStatus" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.ApprovalStatus">ApprovalStatus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(3, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 3)]
+public IfcLabel? ApprovalStatus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Description.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L111">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Description_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Description*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Description" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Description">Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(1, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 1)]
+public IfcText? Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcText.html">IfcText</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Identifier.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Identifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L197">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Identifier_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Identifier*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Identifier" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Identifier">Identifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(7, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 7)]
+public IfcIdentifier Identifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcIdentifier.html">IfcIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_IsRelatedWith.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.IsRelatedWith%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L225">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_IsRelatedWith_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.IsRelatedWith*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_IsRelatedWith" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.IsRelatedWith">IsRelatedWith</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;RelatedApproval&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{-1}, 9)]
+public IEnumerable&lt;IfcApprovalRelationship&gt; IsRelatedWith { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ApprovalResource.IfcApprovalRelationship.html">IfcApprovalRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Name.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L183">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Name_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Name*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Name" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(6, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 6)]
+public IfcLabel Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Relates.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Relates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L234">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Relates_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Relates*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Relates" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Relates">Relates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;RelatingApproval&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{-1}, 10)]
+public IEnumerable&lt;IfcApprovalRelationship&gt; Relates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ApprovalResource.IfcApprovalRelationship.html">IfcApprovalRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Equals_Xbim_Ifc2x3_ApprovalResource_IfcApproval_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Equals(Xbim.Ifc2x3.ApprovalResource.IfcApproval)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L278">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Equals_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Equals*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Equals_Xbim_Ifc2x3_ApprovalResource_IfcApproval_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Equals(Xbim.Ifc2x3.ApprovalResource.IfcApproval)">Equals(IfcApproval)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcApproval other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ApprovalResource.IfcApproval.html">IfcApproval</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L246">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Parse_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Parse*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">PersistEntity.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Common_IContainsEntityReferences_References.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Common%23IContainsEntityReferences%23References%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L285">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Common_IContainsEntityReferences_References_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Common#IContainsEntityReferences#References*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Common_IContainsEntityReferences_References" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Common#IContainsEntityReferences#References">IContainsEntityReferences.References</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IPersistEntity&gt; IContainsEntityReferences.References { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Actors.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc2x3%23Interfaces%23IIfcApproval%23Actors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L90">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Actors_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#Actors*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Actors" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#Actors">IIfcApproval.Actors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcApprovalActorRelationship&gt; IIfcApproval.Actors { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcApprovalActorRelationship.html">IIfcApprovalActorRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalDateTime.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc2x3%23Interfaces%23IIfcApproval%23ApprovalDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L58">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalDateTime_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#ApprovalDateTime*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalDateTime" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#ApprovalDateTime">IIfcApproval.ApprovalDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcApproval.ApprovalDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalLevel.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc2x3%23Interfaces%23IIfcApproval%23ApprovalLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L69">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalLevel_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#ApprovalLevel*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalLevel" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#ApprovalLevel">IIfcApproval.ApprovalLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLabel? IIfcApproval.ApprovalLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalQualifier.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc2x3%23Interfaces%23IIfcApproval%23ApprovalQualifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L74">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalQualifier_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#ApprovalQualifier*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalQualifier" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#ApprovalQualifier">IIfcApproval.ApprovalQualifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcText? IIfcApproval.ApprovalQualifier { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcText.html">IfcText</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalStatus.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc2x3%23Interfaces%23IIfcApproval%23ApprovalStatus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L64">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalStatus_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#ApprovalStatus*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_ApprovalStatus" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#ApprovalStatus">IIfcApproval.ApprovalStatus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLabel? IIfcApproval.ApprovalStatus { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Description.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc2x3%23Interfaces%23IIfcApproval%23Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L53">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Description_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#Description*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Description" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#Description">IIfcApproval.Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcText? IIfcApproval.Description { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcText.html">IfcText</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Identifier.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc2x3%23Interfaces%23IIfcApproval%23Identifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L84">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Identifier_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#Identifier*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Identifier" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#Identifier">IIfcApproval.Identifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcIdentifier IIfcApproval.Identifier { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcIdentifier.html">IfcIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_IsRelatedWith.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc2x3%23Interfaces%23IIfcApproval%23IsRelatedWith%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L91">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_IsRelatedWith_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#IsRelatedWith*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_IsRelatedWith" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#IsRelatedWith">IIfcApproval.IsRelatedWith</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcApprovalRelationship&gt; IIfcApproval.IsRelatedWith { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcApprovalRelationship.html">IIfcApprovalRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Name.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc2x3%23Interfaces%23IIfcApproval%23Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L79">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Name_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#Name*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Name" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#Name">IIfcApproval.Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLabel IIfcApproval.Name { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Relates.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc2x3%23Interfaces%23IIfcApproval%23Relates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ApprovalResource/IfcApproval.cs/#L92">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Relates_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#Relates*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc2x3_Interfaces_IIfcApproval_Relates" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc2x3#Interfaces#IIfcApproval#Relates">IIfcApproval.Relates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcApprovalRelationship&gt; IIfcApproval.Relates { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcApprovalRelationship.html">IIfcApprovalRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_ApprovedObjects.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23ApprovedObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L202">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_ApprovedObjects_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#ApprovedObjects*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_ApprovedObjects" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#ApprovedObjects">IIfcApproval.ApprovedObjects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcRelAssociatesApproval&gt; IIfcApproval.ApprovedObjects { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcRelAssociatesApproval.html">IIfcRelAssociatesApproval</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_ApprovedResources.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23ApprovedResources%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L209">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_ApprovedResources_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#ApprovedResources*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_ApprovedResources" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#ApprovedResources">IIfcApproval.ApprovedResources</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcResourceApprovalRelationship&gt; IIfcApproval.ApprovedResources { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcResourceApprovalRelationship.html">IIfcResourceApprovalRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Description.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L53">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Description_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Description*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Description" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Description">IIfcApproval.Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcApproval), 3)]
+IfcText? IIfcApproval.Description { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcText.html">IfcText</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_GivingApproval.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23GivingApproval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L182">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_GivingApproval_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#GivingApproval*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_GivingApproval" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#GivingApproval">IIfcApproval.GivingApproval</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcApproval), 9)]
+IIfcActorSelect IIfcApproval.GivingApproval { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcActorSelect.html">IIfcActorSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_HasExternalReferences.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23HasExternalReferences%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L195">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_HasExternalReferences_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#HasExternalReferences*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_HasExternalReferences" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#HasExternalReferences">IIfcApproval.HasExternalReferences</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcExternalReferenceRelationship&gt; IIfcApproval.HasExternalReferences { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcExternalReferenceRelationship.html">IIfcExternalReferenceRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Identifier.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23Identifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L21">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Identifier_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Identifier*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Identifier" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Identifier">IIfcApproval.Identifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcApproval), 1)]
+IfcIdentifier? IIfcApproval.Identifier { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcIdentifier.html">IfcIdentifier</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_IsRelatedWith.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23IsRelatedWith%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L216">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_IsRelatedWith_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#IsRelatedWith*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_IsRelatedWith" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#IsRelatedWith">IIfcApproval.IsRelatedWith</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcApprovalRelationship&gt; IIfcApproval.IsRelatedWith { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcApprovalRelationship.html">IIfcApprovalRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Level.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23Level%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L128">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Level_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Level*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Level" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Level">IIfcApproval.Level</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcApproval), 6)]
+IfcLabel? IIfcApproval.Level { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Name.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L37">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Name_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Name*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Name" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Name">IIfcApproval.Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcApproval), 2)]
+IfcLabel? IIfcApproval.Name { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Qualifier.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23Qualifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L145">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Qualifier_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Qualifier*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Qualifier" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Qualifier">IIfcApproval.Qualifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcApproval), 7)]
+IfcText? IIfcApproval.Qualifier { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcText.html">IfcText</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Relates.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23Relates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L223">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Relates_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Relates*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Relates" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Relates">IIfcApproval.Relates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcApprovalRelationship&gt; IIfcApproval.Relates { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcApprovalRelationship.html">IIfcApprovalRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_RequestingApproval.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23RequestingApproval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L165">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_RequestingApproval_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#RequestingApproval*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_RequestingApproval" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#RequestingApproval">IIfcApproval.RequestingApproval</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcApproval), 8)]
+IIfcActorSelect IIfcApproval.RequestingApproval { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcActorSelect.html">IIfcActorSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Status.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L111">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Status_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Status*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_Status" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#Status">IIfcApproval.Status</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcApproval), 5)]
+IfcLabel? IIfcApproval.Status { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_TimeOfApproval.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim%23Ifc4%23Interfaces%23IIfcApproval%23TimeOfApproval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L70">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_TimeOfApproval_" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#TimeOfApproval*"></a>
+  <h4 id="Xbim_Ifc2x3_ApprovalResource_IfcApproval_Xbim_Ifc4_Interfaces_IIfcApproval_TimeOfApproval" data-uid="Xbim.Ifc2x3.ApprovalResource.IfcApproval.Xbim#Ifc4#Interfaces#IIfcApproval#TimeOfApproval">IIfcApproval.TimeOfApproval</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcApproval), 4)]
+IfcDateTime? IIfcApproval.TimeOfApproval { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.DateTimeResource.IfcDateTime.html">IfcDateTime</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcApproval.html">IIfcApproval</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcApproval.html">IIfcApproval</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ExternalReferenceResource.IfcResourceObjectSelect.html">IfcResourceObjectSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcResourceObjectSelect.html">IIfcResourceObjectSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ApprovalResource_IfcApproval.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ApprovalResource.IfcApproval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcApproval.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

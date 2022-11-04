@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IXbimWire
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IXbimWire
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Common.Geometry.IXbimWire">
+  
+  
+  <h1 id="Xbim_Common_Geometry_IXbimWire" data-uid="Xbim.Common.Geometry.IXbimWire" class="text-break">Interface IXbimWire
+  </h1>
+  <div class="markdown level0 summary"><p>A wire is a connected set of one or more edges</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_GeometryType">IXbimGeometryObject.GeometryType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_IsValid">IXbimGeometryObject.IsValid</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_IsSet">IXbimGeometryObject.IsSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_BoundingBox">IXbimGeometryObject.BoundingBox</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_Transform_Xbim_Common_Geometry_XbimMatrix3D_">IXbimGeometryObject.Transform(XbimMatrix3D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_TransformShallow_Xbim_Common_Geometry_XbimMatrix3D_">IXbimGeometryObject.TransformShallow(XbimMatrix3D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_Tag">IXbimGeometryObject.Tag</a>
+    </div>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.IEquatable&lt;Xbim.Common.Geometry.IXbimWire&gt;.Equals(Xbim.Common.Geometry.IXbimWire)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Common.Geometry.html">Xbim.Common.Geometry</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Common.dll</h6>
+  <h5 id="Xbim_Common_Geometry_IXbimWire_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IXbimWire : IXbimGeometryObject, IDisposable, IEquatable&lt;IXbimWire&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire_Edges.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire.Edges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L21">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimWire_Edges_" data-uid="Xbim.Common.Geometry.IXbimWire.Edges*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimWire_Edges" data-uid="Xbim.Common.Geometry.IXbimWire.Edges">Edges</h4>
+  <div class="markdown level1 summary"><p>List of connected oriented edges</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimEdgeSet Edges { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimEdgeSet.html">IXbimEdgeSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire_End.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire.End%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L57">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimWire_End_" data-uid="Xbim.Common.Geometry.IXbimWire.End*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimWire_End" data-uid="Xbim.Common.Geometry.IXbimWire.End">End</h4>
+  <div class="markdown level1 summary"><p>Last point of the wire</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">XbimPoint3D End { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.XbimPoint3D.html">XbimPoint3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire_IsClosed.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire.IsClosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L47">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimWire_IsClosed_" data-uid="Xbim.Common.Geometry.IXbimWire.IsClosed*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimWire_IsClosed" data-uid="Xbim.Common.Geometry.IXbimWire.IsClosed">IsClosed</h4>
+  <div class="markdown level1 summary"><p>The wire is a closed loop</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsClosed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire_IsPlanar.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire.IsPlanar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L42">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimWire_IsPlanar_" data-uid="Xbim.Common.Geometry.IXbimWire.IsPlanar*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimWire_IsPlanar" data-uid="Xbim.Common.Geometry.IXbimWire.IsPlanar">IsPlanar</h4>
+  <div class="markdown level1 summary"><p>The vertices lay on a planar surface within the specified tolerance of the vertices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsPlanar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire_Length.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L62">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimWire_Length_" data-uid="Xbim.Common.Geometry.IXbimWire.Length*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimWire_Length" data-uid="Xbim.Common.Geometry.IXbimWire.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Length of the wire</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire_Normal.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire.Normal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L37">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimWire_Normal_" data-uid="Xbim.Common.Geometry.IXbimWire.Normal*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimWire_Normal" data-uid="Xbim.Common.Geometry.IXbimWire.Normal">Normal</h4>
+  <div class="markdown level1 summary"><p>The normal of the loop, calculated using the Newell's normal method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">XbimVector3D Normal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.XbimVector3D.html">XbimVector3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire_Points.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire.Points%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L31">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimWire_Points_" data-uid="Xbim.Common.Geometry.IXbimWire.Points*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimWire_Points" data-uid="Xbim.Common.Geometry.IXbimWire.Points">Points</h4>
+  <div class="markdown level1 summary"><p>Points in order of the wire</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;XbimPoint3D&gt; Points { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Common.Geometry.XbimPoint3D.html">XbimPoint3D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire_Start.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L52">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimWire_Start_" data-uid="Xbim.Common.Geometry.IXbimWire.Start*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimWire_Start" data-uid="Xbim.Common.Geometry.IXbimWire.Start">Start</h4>
+  <div class="markdown level1 summary"><p>First point of the wire</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">XbimPoint3D Start { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.XbimPoint3D.html">XbimPoint3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire_ToBRep.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire.ToBRep%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L76">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimWire_ToBRep_" data-uid="Xbim.Common.Geometry.IXbimWire.ToBRep*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimWire_ToBRep" data-uid="Xbim.Common.Geometry.IXbimWire.ToBRep">ToBRep</h4>
+  <div class="markdown level1 summary"><p>Converts the object to a string in BRep format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ToBRep { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire_Vertices.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire.Vertices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L26">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimWire_Vertices_" data-uid="Xbim.Common.Geometry.IXbimWire.Vertices*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimWire_Vertices" data-uid="Xbim.Common.Geometry.IXbimWire.Vertices">Vertices</h4>
+  <div class="markdown level1 summary"><p>Unique vertices in the shape, not in order</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimVertexSet Vertices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimVertexSet.html">IXbimVertexSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire_Trim_System_Double_System_Double_System_Double_Microsoft_Extensions_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire.Trim(System.Double%2CSystem.Double%2CSystem.Double%2CMicrosoft.Extensions.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L72">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimWire_Trim_" data-uid="Xbim.Common.Geometry.IXbimWire.Trim*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimWire_Trim_System_Double_System_Double_System_Double_Microsoft_Extensions_Logging_ILogger_" data-uid="Xbim.Common.Geometry.IXbimWire.Trim(System.Double,System.Double,System.Double,Microsoft.Extensions.Logging.ILogger)">Trim(Double, Double, Double, ILogger)</h4>
+  <div class="markdown level1 summary"><p>Returns a segment of the wire from start to end position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimWire Trim(double start, double end, double tolerance, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>The distanceto trim from the start of the wire</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>The distance to trim to, from the start of the wire</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>The distance at which two points are considered to be the same</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>An optional logger</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimWire.html">IXbimWire</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimWire.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimWire%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimWire.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

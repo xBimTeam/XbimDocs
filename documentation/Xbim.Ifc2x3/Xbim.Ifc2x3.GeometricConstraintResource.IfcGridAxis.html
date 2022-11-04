@@ -1,0 +1,1088 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcGridAxis
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcGridAxis
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis">
+  
+  
+  <h1 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis" class="text-break">Class IfcGridAxis
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><span class="xref">IfcGridAxis</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcGridAxis.html">IIfcGridAxis</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.html">IfcGridAxis</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcGridAxis.html">IIfcGridAxis</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc2x3.GeometricConstraintResource.html">Xbim.Ifc2x3.GeometricConstraintResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc2x3.dll</h6>
+  <h5 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcGridAxis&quot;, 441)]
+public class IfcGridAxis : PersistEntity, INotifyPropertyChanged, IInstantiableEntity, IIfcGridAxis, IContainsEntityReferences, IEquatable&lt;IfcGridAxis&gt;, IIfcGridAxis, IPersistEntity, IPersist, IExpressValidatable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_AxisCurve.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.AxisCurve%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L100">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_AxisCurve_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.AxisCurve*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_AxisCurve" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.AxisCurve">AxisCurve</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(2, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 2)]
+public IfcCurve AxisCurve { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.GeometryResource.IfcCurve.html">IfcCurve</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_AxisTag.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.AxisTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L86">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_AxisTag_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.AxisTag*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_AxisTag" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.AxisTag">AxisTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(1, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 1)]
+public IfcLabel? AxisTag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_HasIntersections.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.HasIntersections%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L162">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_HasIntersections_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.HasIntersections*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_HasIntersections" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.HasIntersections">HasIntersections</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;IntersectingAxes&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{-1}, 7)]
+public IEnumerable&lt;IfcVirtualGridIntersection&gt; HasIntersections { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.GeometricConstraintResource.IfcVirtualGridIntersection.html">IfcVirtualGridIntersection</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_PartOfU.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.PartOfU%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L153">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_PartOfU_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.PartOfU*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_PartOfU" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.PartOfU">PartOfU</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;UAxes&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{1}, 6)]
+public IEnumerable&lt;IfcGrid&gt; PartOfU { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ProductExtension.IfcGrid.html">IfcGrid</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_PartOfV.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.PartOfV%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L144">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_PartOfV_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.PartOfV*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_PartOfV" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.PartOfV">PartOfV</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;VAxes&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{1}, 5)]
+public IEnumerable&lt;IfcGrid&gt; PartOfV { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ProductExtension.IfcGrid.html">IfcGrid</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_PartOfW.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.PartOfW%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L135">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_PartOfW_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.PartOfW*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_PartOfW" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.PartOfW">PartOfW</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;WAxes&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{1}, 4)]
+public IEnumerable&lt;IfcGrid&gt; PartOfW { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ProductExtension.IfcGrid.html">IfcGrid</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_SameSense.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.SameSense%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L116">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_SameSense_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.SameSense*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_SameSense" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.SameSense">SameSense</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(3, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 3)]
+public IfcBoolean SameSense { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcBoolean.html">IfcBoolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Equals_Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Equals(Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L194">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Equals_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Equals*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Equals_Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Equals(Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis)">Equals(IfcGridAxis)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcGridAxis other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.html">IfcGridAxis</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L174">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Parse_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Parse*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">PersistEntity.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Validate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcGridAxis.cs/#L51">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Validate_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Validate*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Validate" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Validate">Validate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;ValidationResult&gt; Validate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.ValidationResult.html">ValidationResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_ValidateClause_Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_IfcGridAxisClause_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.ValidateClause(Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.IfcGridAxisClause)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcGridAxis.cs/#L31">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_ValidateClause_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.ValidateClause*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_ValidateClause_Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_IfcGridAxisClause_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.ValidateClause(Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.IfcGridAxisClause)">ValidateClause(IfcGridAxis.IfcGridAxisClause)</h4>
+  <div class="markdown level1 summary"><p>Tests the express where-clause specified in param 'clause'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateClause(IfcGridAxis.IfcGridAxisClause clause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.IfcGridAxisClause.html">IfcGridAxis.IfcGridAxisClause</a></td>
+        <td><span class="parametername">clause</span></td>
+        <td><p>The express clause to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the clause is satisfied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Common_IContainsEntityReferences_References.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Common%23IContainsEntityReferences%23References%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L201">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Common_IContainsEntityReferences_References_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Common#IContainsEntityReferences#References*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Common_IContainsEntityReferences_References" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Common#IContainsEntityReferences#References">IContainsEntityReferences.References</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IPersistEntity&gt; IContainsEntityReferences.References { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_AxisCurve.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc2x3%23Interfaces%23IIfcGridAxis%23AxisCurve%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L56">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_AxisCurve_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#AxisCurve*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_AxisCurve" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#AxisCurve">IIfcGridAxis.AxisCurve</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcCurve IIfcGridAxis.AxisCurve { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcCurve.html">IIfcCurve</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_AxisTag.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc2x3%23Interfaces%23IIfcGridAxis%23AxisTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L51">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_AxisTag_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#AxisTag*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_AxisTag" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#AxisTag">IIfcGridAxis.AxisTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLabel? IIfcGridAxis.AxisTag { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_HasIntersections.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc2x3%23Interfaces%23IIfcGridAxis%23HasIntersections%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L71">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_HasIntersections_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#HasIntersections*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_HasIntersections" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#HasIntersections">IIfcGridAxis.HasIntersections</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcVirtualGridIntersection&gt; IIfcGridAxis.HasIntersections { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcVirtualGridIntersection.html">IIfcVirtualGridIntersection</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_PartOfU.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc2x3%23Interfaces%23IIfcGridAxis%23PartOfU%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L70">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_PartOfU_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#PartOfU*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_PartOfU" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#PartOfU">IIfcGridAxis.PartOfU</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcGrid&gt; IIfcGridAxis.PartOfU { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcGrid.html">IIfcGrid</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_PartOfV.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc2x3%23Interfaces%23IIfcGridAxis%23PartOfV%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L69">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_PartOfV_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#PartOfV*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_PartOfV" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#PartOfV">IIfcGridAxis.PartOfV</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcGrid&gt; IIfcGridAxis.PartOfV { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcGrid.html">IIfcGrid</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_PartOfW.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc2x3%23Interfaces%23IIfcGridAxis%23PartOfW%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L68">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_PartOfW_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#PartOfW*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_PartOfW" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#PartOfW">IIfcGridAxis.PartOfW</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcGrid&gt; IIfcGridAxis.PartOfW { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcGrid.html">IIfcGrid</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_SameSense.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc2x3%23Interfaces%23IIfcGridAxis%23SameSense%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/GeometricConstraintResource/IfcGridAxis.cs/#L62">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_SameSense_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#SameSense*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc2x3_Interfaces_IIfcGridAxis_SameSense" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc2x3#Interfaces#IIfcGridAxis#SameSense">IIfcGridAxis.SameSense</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcBoolean IIfcGridAxis.SameSense { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcBoolean.html">IfcBoolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_AxisCurve.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc4%23Interfaces%23IIfcGridAxis%23AxisCurve%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcGridAxis.cs/#L38">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_AxisCurve_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#AxisCurve*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_AxisCurve" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#AxisCurve">IIfcGridAxis.AxisCurve</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcGridAxis), 2)]
+IIfcCurve IIfcGridAxis.AxisCurve { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcCurve.html">IIfcCurve</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_AxisTag.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc4%23Interfaces%23IIfcGridAxis%23AxisTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcGridAxis.cs/#L21">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_AxisTag_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#AxisTag*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_AxisTag" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#AxisTag">IIfcGridAxis.AxisTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcGridAxis), 1)]
+IfcLabel? IIfcGridAxis.AxisTag { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_HasIntersections.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc4%23Interfaces%23IIfcGridAxis%23HasIntersections%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcGridAxis.cs/#L86">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_HasIntersections_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#HasIntersections*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_HasIntersections" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#HasIntersections">IIfcGridAxis.HasIntersections</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcVirtualGridIntersection&gt; IIfcGridAxis.HasIntersections { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcVirtualGridIntersection.html">IIfcVirtualGridIntersection</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_PartOfU.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc4%23Interfaces%23IIfcGridAxis%23PartOfU%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcGridAxis.cs/#L79">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_PartOfU_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#PartOfU*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_PartOfU" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#PartOfU">IIfcGridAxis.PartOfU</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcGrid&gt; IIfcGridAxis.PartOfU { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcGrid.html">IIfcGrid</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_PartOfV.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc4%23Interfaces%23IIfcGridAxis%23PartOfV%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcGridAxis.cs/#L72">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_PartOfV_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#PartOfV*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_PartOfV" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#PartOfV">IIfcGridAxis.PartOfV</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcGrid&gt; IIfcGridAxis.PartOfV { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcGrid.html">IIfcGrid</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_PartOfW.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc4%23Interfaces%23IIfcGridAxis%23PartOfW%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcGridAxis.cs/#L65">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_PartOfW_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#PartOfW*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_PartOfW" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#PartOfW">IIfcGridAxis.PartOfW</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcGrid&gt; IIfcGridAxis.PartOfW { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcGrid.html">IIfcGrid</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_SameSense.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim%23Ifc4%23Interfaces%23IIfcGridAxis%23SameSense%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcGridAxis.cs/#L52">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_SameSense_" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#SameSense*"></a>
+  <h4 id="Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis_Xbim_Ifc4_Interfaces_IIfcGridAxis_SameSense" data-uid="Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.Xbim#Ifc4#Interfaces#IIfcGridAxis#SameSense">IIfcGridAxis.SameSense</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcGridAxis), 3)]
+IfcBoolean IIfcGridAxis.SameSense { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcBoolean.html">IfcBoolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcGridAxis.html">IIfcGridAxis</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcGridAxis.html">IIfcGridAxis</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_GeometricConstraintResource_IfcGridAxis.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcGridAxis.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

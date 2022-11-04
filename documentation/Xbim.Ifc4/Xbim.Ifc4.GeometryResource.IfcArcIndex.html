@@ -1,0 +1,722 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct IfcArcIndex
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct IfcArcIndex
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex">
+  
+  
+  <h1 id="Xbim_Ifc4_GeometryResource_IfcArcIndex" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex" class="text-break">Struct IfcArcIndex
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcSegmentIndexSelect.html">IfcSegmentIndexSelect</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcSegmentIndexSelect.html">IIfcSegmentIndexSelect</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressComplexType.html">IExpressComplexType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressValueType.html">IExpressValueType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcPositiveInteger.html">IfcPositiveInteger</a>&gt;&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc4.GeometryResource.html">Xbim.Ifc4.GeometryResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc4.dll</h6>
+  <h5 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcArcIndex&quot;, 984)]
+[DefinedType(typeof(List&lt;IfcPositiveInteger&gt;))]
+public struct IfcArcIndex : IfcSegmentIndexSelect, IIfcSegmentIndexSelect, IExpressSelectType, IExpressComplexType, IExpressValueType, IPersist, IEquatable&lt;List&lt;IfcPositiveInteger&gt;&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex__ctor_System_Collections_Generic_List_Xbim_Ifc4_MeasureResource_IfcPositiveInteger__.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.%23ctor(System.Collections.Generic.List%7BXbim.Ifc4.MeasureResource.IfcPositiveInteger%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L43">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex__ctor_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.#ctor*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex__ctor_System_Collections_Generic_List_Xbim_Ifc4_MeasureResource_IfcPositiveInteger__" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.#ctor(System.Collections.Generic.List{Xbim.Ifc4.MeasureResource.IfcPositiveInteger})">IfcArcIndex(List&lt;IfcPositiveInteger&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IfcArcIndex(List&lt;IfcPositiveInteger&gt; val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcPositiveInteger.html">IfcPositiveInteger</a>&gt;</td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_Value.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L38">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Value_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Value*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Value" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Value">Value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly object Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_Add_Xbim_Ifc4_GeometryResource_IfcArcIndex__Xbim_Ifc4_MeasureResource_IfcPositiveInteger_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.Add(Xbim.Ifc4.GeometryResource.IfcArcIndex%40%2CXbim.Ifc4.MeasureResource.IfcPositiveInteger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L25">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Add_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Add*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Add_Xbim_Ifc4_GeometryResource_IfcArcIndex__Xbim_Ifc4_MeasureResource_IfcPositiveInteger_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Add(Xbim.Ifc4.GeometryResource.IfcArcIndex@,Xbim.Ifc4.MeasureResource.IfcPositiveInteger)">Add(ref IfcArcIndex, IfcPositiveInteger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Add(ref IfcArcIndex comp, IfcPositiveInteger component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcArcIndex.html">IfcArcIndex</a></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.MeasureResource.IfcPositiveInteger.html">IfcPositiveInteger</a></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_Equals_System_Collections_Generic_List_Xbim_Ifc4_MeasureResource_IfcPositiveInteger__.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.Equals(System.Collections.Generic.List%7BXbim.Ifc4.MeasureResource.IfcPositiveInteger%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L77">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Equals_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Equals*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Equals_System_Collections_Generic_List_Xbim_Ifc4_MeasureResource_IfcPositiveInteger__" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Equals(System.Collections.Generic.List{Xbim.Ifc4.MeasureResource.IfcPositiveInteger})">Equals(List&lt;IfcPositiveInteger&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(List&lt;IfcPositiveInteger&gt; other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcPositiveInteger.html">IfcPositiveInteger</a>&gt;</td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L63">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Equals_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Equals*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Equals_System_Object_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_GetHashCode.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L92">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_GetHashCode_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.GetHashCode*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_GetHashCode" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Equality_Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Ifc4_GeometryResource_IfcArcIndex_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Equality(Xbim.Ifc4.GeometryResource.IfcArcIndex%2CXbim.Ifc4.GeometryResource.IfcArcIndex)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L82">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Equality_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Equality*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Equality_Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Ifc4_GeometryResource_IfcArcIndex_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Equality(Xbim.Ifc4.GeometryResource.IfcArcIndex,Xbim.Ifc4.GeometryResource.IfcArcIndex)">Equality(IfcArcIndex, IfcArcIndex)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(IfcArcIndex obj1, IfcArcIndex obj2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcArcIndex.html">IfcArcIndex</a></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcArcIndex.html">IfcArcIndex</a></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Implicit_System_Collections_Generic_List_Xbim_Ifc4_MeasureResource_IfcPositiveInteger___Xbim_Ifc4_GeometryResource_IfcArcIndex.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Implicit(System.Collections.Generic.List%7BXbim.Ifc4.MeasureResource.IfcPositiveInteger%7D)~Xbim.Ifc4.GeometryResource.IfcArcIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L50">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Implicit_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Implicit*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Implicit_System_Collections_Generic_List_Xbim_Ifc4_MeasureResource_IfcPositiveInteger___Xbim_Ifc4_GeometryResource_IfcArcIndex" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Implicit(System.Collections.Generic.List{Xbim.Ifc4.MeasureResource.IfcPositiveInteger})~Xbim.Ifc4.GeometryResource.IfcArcIndex">Implicit(List&lt;IfcPositiveInteger&gt; to IfcArcIndex)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator IfcArcIndex(List&lt;IfcPositiveInteger&gt; value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcPositiveInteger.html">IfcPositiveInteger</a>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcArcIndex.html">IfcArcIndex</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Implicit_Xbim_Ifc4_GeometryResource_IfcArcIndex__System_Collections_Generic_List_Xbim_Ifc4_MeasureResource_IfcPositiveInteger_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Implicit(Xbim.Ifc4.GeometryResource.IfcArcIndex)~System.Collections.Generic.List%7BXbim.Ifc4.MeasureResource.IfcPositiveInteger%7D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L55">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Implicit_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Implicit*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Implicit_Xbim_Ifc4_GeometryResource_IfcArcIndex__System_Collections_Generic_List_Xbim_Ifc4_MeasureResource_IfcPositiveInteger_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Implicit(Xbim.Ifc4.GeometryResource.IfcArcIndex)~System.Collections.Generic.List{Xbim.Ifc4.MeasureResource.IfcPositiveInteger}">Implicit(IfcArcIndex to List&lt;IfcPositiveInteger&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator List&lt;IfcPositiveInteger&gt;(IfcArcIndex obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcArcIndex.html">IfcArcIndex</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcPositiveInteger.html">IfcPositiveInteger</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Inequality_Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Ifc4_GeometryResource_IfcArcIndex_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Inequality(Xbim.Ifc4.GeometryResource.IfcArcIndex%2CXbim.Ifc4.GeometryResource.IfcArcIndex)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L87">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Inequality_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Inequality*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_op_Inequality_Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Ifc4_GeometryResource_IfcArcIndex_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.op_Inequality(Xbim.Ifc4.GeometryResource.IfcArcIndex,Xbim.Ifc4.GeometryResource.IfcArcIndex)">Inequality(IfcArcIndex, IfcArcIndex)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(IfcArcIndex obj1, IfcArcIndex obj2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcArcIndex.html">IfcArcIndex</a></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcArcIndex.html">IfcArcIndex</a></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Common_IExpressComplexType_Properties.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.Xbim%23Common%23IExpressComplexType%23Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L119">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Common_IExpressComplexType_Properties_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Xbim#Common#IExpressComplexType#Properties*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Common_IExpressComplexType_Properties" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Xbim#Common#IExpressComplexType#Properties">IExpressComplexType.Properties</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly IEnumerable&lt;object&gt; IExpressComplexType.Properties { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Common_IExpressValueType_UnderlyingSystemType.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.Xbim%23Common%23IExpressValueType%23UnderlyingSystemType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L110">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Common_IExpressValueType_UnderlyingSystemType_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Xbim#Common#IExpressValueType#UnderlyingSystemType*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Common_IExpressValueType_UnderlyingSystemType" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Xbim#Common#IExpressValueType#UnderlyingSystemType">IExpressValueType.UnderlyingSystemType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly Type IExpressValueType.UnderlyingSystemType { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Common_IPersist_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex.Xbim%23Common%23IPersist%23Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L98">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Common_IPersist_Parse_" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Xbim#Common#IPersist#Parse*"></a>
+  <h4 id="Xbim_Ifc4_GeometryResource_IfcArcIndex_Xbim_Common_IPersist_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc4.GeometryResource.IfcArcIndex.Xbim#Common#IPersist#Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">IPersist.Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IPersist.Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcSegmentIndexSelect.html">IfcSegmentIndexSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcSegmentIndexSelect.html">IIfcSegmentIndexSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressComplexType.html">IExpressComplexType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressValueType.html">IExpressValueType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometryResource_IfcArcIndex.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometryResource.IfcArcIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometryResource/IfcArcIndex.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

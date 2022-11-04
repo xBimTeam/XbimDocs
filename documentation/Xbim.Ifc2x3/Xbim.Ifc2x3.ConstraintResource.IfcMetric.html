@@ -1,0 +1,810 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcMetric
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcMetric
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric">
+  
+  
+  <h1 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric" class="text-break">Class IfcMetric
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html">IfcConstraint</a></div>
+    <div class="level3"><span class="xref">IfcMetric</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html">IfcConstraint</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcMetric.html">IIfcMetric</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcConstraint.html">IIfcConstraint</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcMetric.html">IfcMetric</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcMetric.html">IIfcMetric</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcConstraint.html">IIfcConstraint</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ExternalReferenceResource.IfcResourceObjectSelect.html">IfcResourceObjectSelect</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcResourceObjectSelect.html">IIfcResourceObjectSelect</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_Name">IfcConstraint.IIfcConstraint.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_Description">IfcConstraint.IIfcConstraint.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_ConstraintGrade">IfcConstraint.IIfcConstraint.ConstraintGrade</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_ConstraintSource">IfcConstraint.IIfcConstraint.ConstraintSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_CreatingActor">IfcConstraint.IIfcConstraint.CreatingActor</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_CreationTime">IfcConstraint.IIfcConstraint.CreationTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_UserDefinedGrade">IfcConstraint.IIfcConstraint.UserDefinedGrade</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_ClassifiedAs">IfcConstraint.IIfcConstraint.ClassifiedAs</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_RelatesConstraints">IfcConstraint.IIfcConstraint.RelatesConstraints</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_IsRelatedWith">IfcConstraint.IIfcConstraint.IsRelatedWith</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_PropertiesForConstraint">IfcConstraint.IIfcConstraint.PropertiesForConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_Aggregates">IfcConstraint.IIfcConstraint.Aggregates</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc2x3_Interfaces_IIfcConstraint_IsAggregatedIn">IfcConstraint.IIfcConstraint.IsAggregatedIn</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Name">IfcConstraint.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Description">IfcConstraint.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_ConstraintGrade">IfcConstraint.ConstraintGrade</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_ConstraintSource">IfcConstraint.ConstraintSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_CreatingActor">IfcConstraint.CreatingActor</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_CreationTime">IfcConstraint.CreationTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_UserDefinedGrade">IfcConstraint.UserDefinedGrade</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_ClassifiedAs">IfcConstraint.ClassifiedAs</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_RelatesConstraints">IfcConstraint.RelatesConstraints</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_IsRelatedWith">IfcConstraint.IsRelatedWith</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_PropertiesForConstraint">IfcConstraint.PropertiesForConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Aggregates">IfcConstraint.Aggregates</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_IsAggregatedIn">IfcConstraint.IsAggregatedIn</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Equals_Xbim_Ifc2x3_ConstraintResource_IfcConstraint_">IfcConstraint.Equals(IfcConstraint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc4_Interfaces_IIfcConstraint_Name">IfcConstraint.IIfcConstraint.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc4_Interfaces_IIfcConstraint_Description">IfcConstraint.IIfcConstraint.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc4_Interfaces_IIfcConstraint_ConstraintGrade">IfcConstraint.IIfcConstraint.ConstraintGrade</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc4_Interfaces_IIfcConstraint_ConstraintSource">IfcConstraint.IIfcConstraint.ConstraintSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc4_Interfaces_IIfcConstraint_CreatingActor">IfcConstraint.IIfcConstraint.CreatingActor</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc4_Interfaces_IIfcConstraint_CreationTime">IfcConstraint.IIfcConstraint.CreationTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc4_Interfaces_IIfcConstraint_UserDefinedGrade">IfcConstraint.IIfcConstraint.UserDefinedGrade</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc4_Interfaces_IIfcConstraint_HasExternalReferences">IfcConstraint.IIfcConstraint.HasExternalReferences</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Xbim_Ifc4_Interfaces_IIfcConstraint_PropertiesForConstraint">IfcConstraint.IIfcConstraint.PropertiesForConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_ValidateClause_Xbim_Ifc2x3_ConstraintResource_IfcConstraint_IfcConstraintClause_">IfcConstraint.ValidateClause(IfcConstraint.IfcConstraintClause)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Validate">IfcConstraint.Validate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc2x3.ConstraintResource.html">Xbim.Ifc2x3.ConstraintResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc2x3.dll</h6>
+  <h5 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcMetric&quot;, 80)]
+public class IfcMetric : IfcConstraint, INotifyPropertyChanged, IEquatable&lt;IfcConstraint&gt;, IExpressValidatable, IInstantiableEntity, IIfcMetric, IIfcConstraint, IContainsEntityReferences, IEquatable&lt;IfcMetric&gt;, IIfcMetric, IIfcConstraint, IfcResourceObjectSelect, IIfcResourceObjectSelect, IPersistEntity, IExpressSelectType, IPersist</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_Benchmark.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.Benchmark%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ConstraintResource/IfcMetric.cs/#L74">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Benchmark_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Benchmark*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Benchmark" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Benchmark">Benchmark</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(8, EntityAttributeState.Mandatory, EntityAttributeType.Enum, EntityAttributeType.None, null, null, 14)]
+public IfcBenchmarkEnum Benchmark { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcBenchmarkEnum.html">IfcBenchmarkEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_DataValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.DataValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ConstraintResource/IfcMetric.cs/#L102">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_DataValue_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.DataValue*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_DataValue" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.DataValue">DataValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(10, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 16)]
+public IfcMetricValueSelect DataValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcMetricValueSelect.html">IfcMetricValueSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_ValueSource.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.ValueSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ConstraintResource/IfcMetric.cs/#L88">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_ValueSource_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.ValueSource*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_ValueSource" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.ValueSource">ValueSource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(9, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 15)]
+public IfcLabel? ValueSource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_Equals_Xbim_Ifc2x3_ConstraintResource_IfcMetric_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.Equals(Xbim.Ifc2x3.ConstraintResource.IfcMetric)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ConstraintResource/IfcMetric.cs/#L154">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Equals_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Equals*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Equals_Xbim_Ifc2x3_ConstraintResource_IfcMetric_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Equals(Xbim.Ifc2x3.ConstraintResource.IfcMetric)">Equals(IfcMetric)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcMetric other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcMetric.html">IfcMetric</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ConstraintResource/IfcMetric.cs/#L125">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Parse_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Parse*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcConstraint.html#Xbim_Ifc2x3_ConstraintResource_IfcConstraint_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">IfcConstraint.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Common_IContainsEntityReferences_References.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim%23Common%23IContainsEntityReferences%23References%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ConstraintResource/IfcMetric.cs/#L161">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Common_IContainsEntityReferences_References_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Common#IContainsEntityReferences#References*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Common_IContainsEntityReferences_References" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Common#IContainsEntityReferences#References">IContainsEntityReferences.References</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IPersistEntity&gt; IContainsEntityReferences.References { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc2x3_Interfaces_IIfcMetric_Benchmark.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim%23Ifc2x3%23Interfaces%23IIfcMetric%23Benchmark%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ConstraintResource/IfcMetric.cs/#L43">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc2x3_Interfaces_IIfcMetric_Benchmark_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc2x3#Interfaces#IIfcMetric#Benchmark*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc2x3_Interfaces_IIfcMetric_Benchmark" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc2x3#Interfaces#IIfcMetric#Benchmark">IIfcMetric.Benchmark</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcBenchmarkEnum IIfcMetric.Benchmark { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ConstraintResource.IfcBenchmarkEnum.html">IfcBenchmarkEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc2x3_Interfaces_IIfcMetric_DataValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim%23Ifc2x3%23Interfaces%23IIfcMetric%23DataValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ConstraintResource/IfcMetric.cs/#L53">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc2x3_Interfaces_IIfcMetric_DataValue_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc2x3#Interfaces#IIfcMetric#DataValue*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc2x3_Interfaces_IIfcMetric_DataValue" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc2x3#Interfaces#IIfcMetric#DataValue">IIfcMetric.DataValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcMetricValueSelect IIfcMetric.DataValue { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcMetricValueSelect.html">IIfcMetricValueSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc2x3_Interfaces_IIfcMetric_ValueSource.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim%23Ifc2x3%23Interfaces%23IIfcMetric%23ValueSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/ConstraintResource/IfcMetric.cs/#L48">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc2x3_Interfaces_IIfcMetric_ValueSource_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc2x3#Interfaces#IIfcMetric#ValueSource*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc2x3_Interfaces_IIfcMetric_ValueSource" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc2x3#Interfaces#IIfcMetric#ValueSource">IIfcMetric.ValueSource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLabel? IIfcMetric.ValueSource { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_Benchmark.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim%23Ifc4%23Interfaces%23IIfcMetric%23Benchmark%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcMetric.cs/#L21">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_Benchmark_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc4#Interfaces#IIfcMetric#Benchmark*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_Benchmark" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc4#Interfaces#IIfcMetric#Benchmark">IIfcMetric.Benchmark</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcMetric), 8)]
+IfcBenchmarkEnum IIfcMetric.Benchmark { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IfcBenchmarkEnum.html">IfcBenchmarkEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_DataValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim%23Ifc4%23Interfaces%23IIfcMetric%23DataValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcMetric.cs/#L124">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_DataValue_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc4#Interfaces#IIfcMetric#DataValue*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_DataValue" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc4#Interfaces#IIfcMetric#DataValue">IIfcMetric.DataValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcMetric), 10)]
+IIfcMetricValueSelect IIfcMetric.DataValue { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcMetricValueSelect.html">IIfcMetricValueSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_ReferencePath.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim%23Ifc4%23Interfaces%23IIfcMetric%23ReferencePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcMetric.cs/#L976">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_ReferencePath_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc4#Interfaces#IIfcMetric#ReferencePath*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_ReferencePath" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc4#Interfaces#IIfcMetric#ReferencePath">IIfcMetric.ReferencePath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcMetric), 11)]
+IIfcReference IIfcMetric.ReferencePath { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcReference.html">IIfcReference</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_ValueSource.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim%23Ifc4%23Interfaces%23IIfcMetric%23ValueSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcMetric.cs/#L104">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_ValueSource_" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc4#Interfaces#IIfcMetric#ValueSource*"></a>
+  <h4 id="Xbim_Ifc2x3_ConstraintResource_IfcMetric_Xbim_Ifc4_Interfaces_IIfcMetric_ValueSource" data-uid="Xbim.Ifc2x3.ConstraintResource.IfcMetric.Xbim#Ifc4#Interfaces#IIfcMetric#ValueSource">IIfcMetric.ValueSource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcMetric), 9)]
+IfcLabel? IIfcMetric.ValueSource { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcMetric.html">IIfcMetric</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcConstraint.html">IIfcConstraint</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcMetric.html">IIfcMetric</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcConstraint.html">IIfcConstraint</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ExternalReferenceResource.IfcResourceObjectSelect.html">IfcResourceObjectSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcResourceObjectSelect.html">IIfcResourceObjectSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_ConstraintResource_IfcMetric.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.ConstraintResource.IfcMetric%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcMetric.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

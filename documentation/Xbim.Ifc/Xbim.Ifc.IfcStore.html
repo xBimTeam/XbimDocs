@@ -1,0 +1,2392 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcStore
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcStore
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc.IfcStore">
+  
+  
+  <h1 id="Xbim_Ifc_IfcStore" data-uid="Xbim.Ifc.IfcStore" class="text-break">Class IfcStore
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="Xbim.Ifc.IfcStore.html">IfcStore</a> is the main entry point for working with Model files of any format.</p>
+<p>IfcStore handles opening, parsing, export, and (optionally persistence) of Ifc files in any format,
+as well as accessing internal XBIM formats (such as *.xbim) files.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">IfcStore</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.Federation.IFederatedModel.html">IFederatedModel</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc.html">Xbim.Ifc</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc.dll</h6>
+  <h5 id="Xbim_Ifc_IfcStore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class IfcStore : IModel, IDisposable, IFederatedModel, IEquatable&lt;IModel&gt;</code></pre>
+  </div>
+  <h5 id="Xbim_Ifc_IfcStore_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+Note: the Store capabilities may be affected by the ModelProvider implementation - some stores may not
+implement all capabilities. e.g. An In-Memory store will not permit saving to XBIM format.
+</p>
+<p>
+IMPORTANT: By default, the v5 <a class="xref" href="Xbim.Ifc.IfcStore.html">IfcStore</a> will attempt to discover the 
+HeuristicModelProvider (in the Esent assembly), by probing the app&apos;s loaded assemblies. 
+This provider gives the same functionality as prior IfcStore versions. 
+However, this will only be discovered if Xbim.IO.Esent dll has been 
+referenced and loaded. ASP.NET apps do this automatically, but console and windows apps may not load the
+DLL into the AppDomain unless a type is referenced.
+If the store cannot be discover the Heuristic provider it will fall back to a <a class="xref" href="../Xbim.IO.MemoryModel/Xbim.IO.Memory.MemoryModelProvider.html">MemoryModelProvider</a>
+which is less efficient with larger models.
+</p>
+<p>
+To guarantee the correct provider regardless, configure <a class="xref" href="Xbim.Ifc.IfcStore.html#Xbim_Ifc_IfcStore_ModelProviderFactory">ModelProviderFactory</a> with the 
+following code in your application initialisation:
+<pre><code>IfcStore.ModelProviderFactory.UseHeuristicModelProvider();</code></pre>
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore__ctor.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L70">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore__ctor_" data-uid="Xbim.Ifc.IfcStore.#ctor*"></a>
+  <h4 id="Xbim_Ifc_IfcStore__ctor" data-uid="Xbim.Ifc.IfcStore.#ctor">IfcStore()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IfcStore()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore__ctor_System_String_Xbim_Common_Step21_XbimSchemaVersion_Xbim_Ifc_XbimEditorCredentials_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.%23ctor(System.String%2CXbim.Common.Step21.XbimSchemaVersion%2CXbim.Ifc.XbimEditorCredentials)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L81">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore__ctor_" data-uid="Xbim.Ifc.IfcStore.#ctor*"></a>
+  <h4 id="Xbim_Ifc_IfcStore__ctor_System_String_Xbim_Common_Step21_XbimSchemaVersion_Xbim_Ifc_XbimEditorCredentials_" data-uid="Xbim.Ifc.IfcStore.#ctor(System.String,Xbim.Common.Step21.XbimSchemaVersion,Xbim.Ifc.XbimEditorCredentials)">IfcStore(String, XbimSchemaVersion, XbimEditorCredentials)</h4>
+  <div class="markdown level1 summary"><p>Constructor used to create a new persistent model with specified path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IfcStore(string filepath, XbimSchemaVersion ifcVersion, XbimEditorCredentials editorDetails)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filepath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">ifcVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.XbimEditorCredentials.html">XbimEditorCredentials</a></td>
+        <td><span class="parametername">editorDetails</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore__ctor_Xbim_IO_XbimStoreType_Xbim_Common_Step21_XbimSchemaVersion_Xbim_Ifc_XbimEditorCredentials_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.%23ctor(Xbim.IO.XbimStoreType%2CXbim.Common.Step21.XbimSchemaVersion%2CXbim.Ifc.XbimEditorCredentials)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L93">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore__ctor_" data-uid="Xbim.Ifc.IfcStore.#ctor*"></a>
+  <h4 id="Xbim_Ifc_IfcStore__ctor_Xbim_IO_XbimStoreType_Xbim_Common_Step21_XbimSchemaVersion_Xbim_Ifc_XbimEditorCredentials_" data-uid="Xbim.Ifc.IfcStore.#ctor(Xbim.IO.XbimStoreType,Xbim.Common.Step21.XbimSchemaVersion,Xbim.Ifc.XbimEditorCredentials)">IfcStore(XbimStoreType, XbimSchemaVersion, XbimEditorCredentials)</h4>
+  <div class="markdown level1 summary"><p>Constructor used to create a new model for edit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IfcStore(XbimStoreType storageType, XbimSchemaVersion ifcVersion, XbimEditorCredentials editorDetails)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimStoreType.html">XbimStoreType</a></td>
+        <td><span class="parametername">storageType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">ifcVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.XbimEditorCredentials.html">XbimEditorCredentials</a></td>
+        <td><span class="parametername">editorDetails</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_CurrentTransaction.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.CurrentTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L337">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_CurrentTransaction_" data-uid="Xbim.Ifc.IfcStore.CurrentTransaction*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_CurrentTransaction" data-uid="Xbim.Ifc.IfcStore.CurrentTransaction">CurrentTransaction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITransaction CurrentTransaction { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_DefaultOwningApplication.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.DefaultOwningApplication%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L502">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_DefaultOwningApplication_" data-uid="Xbim.Ifc.IfcStore.DefaultOwningApplication*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_DefaultOwningApplication" data-uid="Xbim.Ifc.IfcStore.DefaultOwningApplication">DefaultOwningApplication</h4>
+  <div class="markdown level1 summary"><p>Returns default application used to fill in owner history on new or modified objects. This object is only populated if
+you provide XbimEditorCredentials in one of constructors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IIfcApplication DefaultOwningApplication { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcApplication.html">IIfcApplication</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_DefaultOwningUser.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.DefaultOwningUser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L454">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_DefaultOwningUser_" data-uid="Xbim.Ifc.IfcStore.DefaultOwningUser*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_DefaultOwningUser" data-uid="Xbim.Ifc.IfcStore.DefaultOwningUser">DefaultOwningUser</h4>
+  <div class="markdown level1 summary"><p>Returns default user used to fill in owner history on new or modified objects. This object is only populated if
+you provide XbimEditorCredentials in one of constructors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IIfcPersonAndOrganization DefaultOwningUser { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcPersonAndOrganization.html">IIfcPersonAndOrganization</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_EditorDetails.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.EditorDetails%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L104">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_EditorDetails_" data-uid="Xbim.Ifc.IfcStore.EditorDetails*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_EditorDetails" data-uid="Xbim.Ifc.IfcStore.EditorDetails">EditorDetails</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimEditorCredentials EditorDetails { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.XbimEditorCredentials.html">XbimEditorCredentials</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_EntityCache.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.EntityCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L375">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_EntityCache_" data-uid="Xbim.Ifc.IfcStore.EntityCache*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_EntityCache" data-uid="Xbim.Ifc.IfcStore.EntityCache">EntityCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityCache EntityCache { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityCache.html">IEntityCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_FederatedInstanceHandles.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.FederatedInstanceHandles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L875">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_FederatedInstanceHandles_" data-uid="Xbim.Ifc.IfcStore.FederatedInstanceHandles*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_FederatedInstanceHandles" data-uid="Xbim.Ifc.IfcStore.FederatedInstanceHandles">FederatedInstanceHandles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;XbimInstanceHandle&gt; FederatedInstanceHandles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.XbimInstanceHandle.html">XbimInstanceHandle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_FederatedInstances.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.FederatedInstances%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L870">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_FederatedInstances_" data-uid="Xbim.Ifc.IfcStore.FederatedInstances*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_FederatedInstances" data-uid="Xbim.Ifc.IfcStore.FederatedInstances">FederatedInstances</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyEntityCollection FederatedInstances { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IReadOnlyEntityCollection.html">IReadOnlyEntityCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_FileName.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.FileName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L833">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_FileName_" data-uid="Xbim.Ifc.IfcStore.FileName*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_FileName" data-uid="Xbim.Ifc.IfcStore.FileName">FileName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FileName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_GeometryStore.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.GeometryStore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L280">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_GeometryStore_" data-uid="Xbim.Ifc.IfcStore.GeometryStore*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_GeometryStore" data-uid="Xbim.Ifc.IfcStore.GeometryStore">GeometryStore</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IGeometryStore GeometryStore { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.IGeometryStore.html">IGeometryStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Header.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Header%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L285">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Header_" data-uid="Xbim.Ifc.IfcStore.Header*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Header" data-uid="Xbim.Ifc.IfcStore.Header">Header</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStepFileHeader Header { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.IStepFileHeader.html">IStepFileHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_InstanceHandles.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.InstanceHandles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L309">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_InstanceHandles_" data-uid="Xbim.Ifc.IfcStore.InstanceHandles*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_InstanceHandles" data-uid="Xbim.Ifc.IfcStore.InstanceHandles">InstanceHandles</h4>
+  <div class="markdown level1 summary"><p>Returns a list of the handles to only the entities in this model
+Note this do NOT include entities that are in any federated models</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;XbimInstanceHandle&gt; InstanceHandles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.XbimInstanceHandle.html">XbimInstanceHandle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Instances.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Instances%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L300">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Instances_" data-uid="Xbim.Ifc.IfcStore.Instances*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Instances" data-uid="Xbim.Ifc.IfcStore.Instances">Instances</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityCollection Instances { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityCollection.html">IEntityCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_InverseCache.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.InverseCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L269">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_InverseCache_" data-uid="Xbim.Ifc.IfcStore.InverseCache*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_InverseCache" data-uid="Xbim.Ifc.IfcStore.InverseCache">InverseCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IInverseCache InverseCache { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IInverseCache.html">IInverseCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_IsFederation.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.IsFederation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L847">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_IsFederation_" data-uid="Xbim.Ifc.IfcStore.IsFederation*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_IsFederation" data-uid="Xbim.Ifc.IfcStore.IsFederation">IsFederation</h4>
+  <div class="markdown level1 summary"><p>Returns true if the model contains reference models or the model has extension xBIMf</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsFederation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_IsTransactional.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.IsTransactional%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L290">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_IsTransactional_" data-uid="Xbim.Ifc.IfcStore.IsTransactional*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_IsTransactional" data-uid="Xbim.Ifc.IfcStore.IsTransactional">IsTransactional</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTransactional { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Location.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Location%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L295">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Location_" data-uid="Xbim.Ifc.IfcStore.Location*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Location" data-uid="Xbim.Ifc.IfcStore.Location">Location</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Location { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Logger.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L268">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Logger_" data-uid="Xbim.Ifc.IfcStore.Logger*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Logger" data-uid="Xbim.Ifc.IfcStore.Logger">Logger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger Logger { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Metadata.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Metadata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L342">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Metadata_" data-uid="Xbim.Ifc.IfcStore.Metadata*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Metadata" data-uid="Xbim.Ifc.IfcStore.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressMetaData Metadata { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Metadata.ExpressMetaData.html">ExpressMetaData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Model.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Model%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L99">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Model_" data-uid="Xbim.Ifc.IfcStore.Model*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Model" data-uid="Xbim.Ifc.IfcStore.Model">Model</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IModel Model { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_ModelFactors.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.ModelFactors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L347">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_ModelFactors_" data-uid="Xbim.Ifc.IfcStore.ModelFactors*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_ModelFactors" data-uid="Xbim.Ifc.IfcStore.ModelFactors">ModelFactors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IModelFactors ModelFactors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModelFactors.html">IModelFactors</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_ModelProvider.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.ModelProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L109">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_ModelProvider_" data-uid="Xbim.Ifc.IfcStore.ModelProvider*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_ModelProvider" data-uid="Xbim.Ifc.IfcStore.ModelProvider">ModelProvider</h4>
+  <div class="markdown level1 summary"><p>Provides access to model persistence capabilities</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IModelProvider ModelProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.IModelProvider.html">IModelProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_ModelProviderFactory.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.ModelProviderFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L128">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_ModelProviderFactory_" data-uid="Xbim.Ifc.IfcStore.ModelProviderFactory*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_ModelProviderFactory" data-uid="Xbim.Ifc.IfcStore.ModelProviderFactory">ModelProviderFactory</h4>
+  <div class="markdown level1 summary"><p>Factory to create ModelProvider instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IModelProviderFactory ModelProviderFactory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.IModelProviderFactory.html">IModelProviderFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Xbim_Ifc_IfcStore_ModelProviderFactory_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Consumers can use this instance of <a class="xref" href="../Xbim.Common/Xbim.IO.IModelProviderFactory.html">IModelProviderFactory</a> to control the
+implementations of IModel it uses.
+In particular you can tell the factory to always use MemoryModel, or Esent model, or a blend (Heuristic)</p>
+</div>
+  <h5 id="Xbim_Ifc_IfcStore_ModelProviderFactory_examples">Examples</h5>
+  <p>To override the Store's backing model with an implementation you would use:</p>
+<pre><code>IfcStore.ModelProvider.Use(() => new MyCustomModelProvider());</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_OwnerHistoryAddObject.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.OwnerHistoryAddObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L538">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_OwnerHistoryAddObject_" data-uid="Xbim.Ifc.IfcStore.OwnerHistoryAddObject*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_OwnerHistoryAddObject" data-uid="Xbim.Ifc.IfcStore.OwnerHistoryAddObject">OwnerHistoryAddObject</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IIfcOwnerHistory OwnerHistoryAddObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcOwnerHistory.html">IIfcOwnerHistory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_ReferencedModels.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.ReferencedModels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L834">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_ReferencedModels_" data-uid="Xbim.Ifc.IfcStore.ReferencedModels*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_ReferencedModels" data-uid="Xbim.Ifc.IfcStore.ReferencedModels">ReferencedModels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IReferencedModel&gt; ReferencedModels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.Federation.IReferencedModel.html">IReferencedModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_ReferencingModel.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.ReferencingModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L865">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_ReferencingModel_" data-uid="Xbim.Ifc.IfcStore.ReferencingModel*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_ReferencingModel" data-uid="Xbim.Ifc.IfcStore.ReferencingModel">ReferencingModel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IModel ReferencingModel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_SchemaVersion.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.SchemaVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L386">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_SchemaVersion_" data-uid="Xbim.Ifc.IfcStore.SchemaVersion*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_SchemaVersion" data-uid="Xbim.Ifc.IfcStore.SchemaVersion">SchemaVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimSchemaVersion SchemaVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Tag.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Tag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L267">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Tag_" data-uid="Xbim.Ifc.IfcStore.Tag*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Tag" data-uid="Xbim.Ifc.IfcStore.Tag">Tag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Tag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_UserDefinedId.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.UserDefinedId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L274">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_UserDefinedId_" data-uid="Xbim.Ifc.IfcStore.UserDefinedId*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_UserDefinedId" data-uid="Xbim.Ifc.IfcStore.UserDefinedId">UserDefinedId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UserDefinedId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_AddModelReference_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.AddModelReference(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L697">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_AddModelReference_" data-uid="Xbim.Ifc.IfcStore.AddModelReference*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_AddModelReference_System_String_System_String_System_String_" data-uid="Xbim.Ifc.IfcStore.AddModelReference(System.String,System.String,System.String)">AddModelReference(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a model as a reference or federated model, do not call inside a transaction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimReferencedModel AddModelReference(string refModelPath, string organisationName, string organisationRole)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">refModelPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">organisationName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">organisationRole</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.XbimReferencedModel.html">XbimReferencedModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_AddModelReference_Xbim_Common_Federation_IReferencedModel_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.AddModelReference(Xbim.Common.Federation.IReferencedModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L839">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_AddModelReference_" data-uid="Xbim.Ifc.IfcStore.AddModelReference*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_AddModelReference_Xbim_Common_Federation_IReferencedModel_" data-uid="Xbim.Ifc.IfcStore.AddModelReference(Xbim.Common.Federation.IReferencedModel)">AddModelReference(IReferencedModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddModelReference(IReferencedModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Federation.IReferencedModel.html">IReferencedModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_BeginEntityCaching.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.BeginEntityCaching%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L382">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_BeginEntityCaching_" data-uid="Xbim.Ifc.IfcStore.BeginEntityCaching*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_BeginEntityCaching" data-uid="Xbim.Ifc.IfcStore.BeginEntityCaching">BeginEntityCaching()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityCache BeginEntityCaching()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityCache.html">IEntityCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_BeginInverseCaching.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.BeginInverseCaching%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L377">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_BeginInverseCaching_" data-uid="Xbim.Ifc.IfcStore.BeginInverseCaching*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_BeginInverseCaching" data-uid="Xbim.Ifc.IfcStore.BeginInverseCaching">BeginInverseCaching()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IInverseCache BeginInverseCaching()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IInverseCache.html">IInverseCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_BeginTransaction_System_String_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.BeginTransaction(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L324">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_BeginTransaction_" data-uid="Xbim.Ifc.IfcStore.BeginTransaction*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_BeginTransaction_System_String_" data-uid="Xbim.Ifc.IfcStore.BeginTransaction(System.String)">BeginTransaction(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITransaction BeginTransaction(string name = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Close.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L392">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Close_" data-uid="Xbim.Ifc.IfcStore.Close*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Close" data-uid="Xbim.Ifc.IfcStore.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>Closes the store and disposes of all resources. The store is invalid after this call</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Create_System_String_Xbim_Ifc_XbimEditorCredentials_Xbim_Common_Step21_XbimSchemaVersion_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Create(System.String%2CXbim.Ifc.XbimEditorCredentials%2CXbim.Common.Step21.XbimSchemaVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L182">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Create_" data-uid="Xbim.Ifc.IfcStore.Create*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Create_System_String_Xbim_Ifc_XbimEditorCredentials_Xbim_Common_Step21_XbimSchemaVersion_" data-uid="Xbim.Ifc.IfcStore.Create(System.String,Xbim.Ifc.XbimEditorCredentials,Xbim.Common.Step21.XbimSchemaVersion)">Create(String, XbimEditorCredentials, XbimSchemaVersion)</h4>
+  <div class="markdown level1 summary"><p>Creates a Database store at the specified location</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IfcStore Create(string filePath, XbimEditorCredentials editorDetails, XbimSchemaVersion ifcVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.XbimEditorCredentials.html">XbimEditorCredentials</a></td>
+        <td><span class="parametername">editorDetails</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">ifcVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.IfcStore.html">IfcStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Create_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimStoreType_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Create(Xbim.Common.Step21.XbimSchemaVersion%2CXbim.IO.XbimStoreType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L192">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Create_" data-uid="Xbim.Ifc.IfcStore.Create*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Create_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimStoreType_" data-uid="Xbim.Ifc.IfcStore.Create(Xbim.Common.Step21.XbimSchemaVersion,Xbim.IO.XbimStoreType)">Create(XbimSchemaVersion, XbimStoreType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IfcStore Create(XbimSchemaVersion ifcVersion, XbimStoreType storageType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">ifcVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimStoreType.html">XbimStoreType</a></td>
+        <td><span class="parametername">storageType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.IfcStore.html">IfcStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Create_Xbim_Ifc_XbimEditorCredentials_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimStoreType_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Create(Xbim.Ifc.XbimEditorCredentials%2CXbim.Common.Step21.XbimSchemaVersion%2CXbim.IO.XbimStoreType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L187">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Create_" data-uid="Xbim.Ifc.IfcStore.Create*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Create_Xbim_Ifc_XbimEditorCredentials_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimStoreType_" data-uid="Xbim.Ifc.IfcStore.Create(Xbim.Ifc.XbimEditorCredentials,Xbim.Common.Step21.XbimSchemaVersion,Xbim.IO.XbimStoreType)">Create(XbimEditorCredentials, XbimSchemaVersion, XbimStoreType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IfcStore Create(XbimEditorCredentials editorDetails, XbimSchemaVersion ifcVersion, XbimStoreType storageType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.XbimEditorCredentials.html">XbimEditorCredentials</a></td>
+        <td><span class="parametername">editorDetails</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">ifcVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimStoreType.html">XbimStoreType</a></td>
+        <td><span class="parametername">storageType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.IfcStore.html">IfcStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Delete_Xbim_Common_IPersistEntity_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Delete(Xbim.Common.IPersistEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L319">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Delete_" data-uid="Xbim.Ifc.IfcStore.Delete*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Delete_Xbim_Common_IPersistEntity_" data-uid="Xbim.Ifc.IfcStore.Delete(Xbim.Common.IPersistEntity)">Delete(IPersistEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(IPersistEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Dispose.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L932">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Dispose_" data-uid="Xbim.Ifc.IfcStore.Dispose*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Dispose" data-uid="Xbim.Ifc.IfcStore.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L941">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Dispose_" data-uid="Xbim.Ifc.IfcStore.Dispose*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Dispose_System_Boolean_" data-uid="Xbim.Ifc.IfcStore.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_EnsureUniqueUserDefinedId.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.EnsureUniqueUserDefinedId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L853">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_EnsureUniqueUserDefinedId_" data-uid="Xbim.Ifc.IfcStore.EnsureUniqueUserDefinedId*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_EnsureUniqueUserDefinedId" data-uid="Xbim.Ifc.IfcStore.EnsureUniqueUserDefinedId">EnsureUniqueUserDefinedId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureUniqueUserDefinedId()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L902">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Equals_" data-uid="Xbim.Ifc.IfcStore.Equals*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Equals_System_Object_" data-uid="Xbim.Ifc.IfcStore.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns true if it is another reference to this or if it is an embedded model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Equals_Xbim_Common_IModel_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Equals(Xbim.Common.IModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L892">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Equals_" data-uid="Xbim.Ifc.IfcStore.Equals*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Equals_Xbim_Common_IModel_" data-uid="Xbim.Ifc.IfcStore.Equals(Xbim.Common.IModel)">Equals(IModel)</h4>
+  <div class="markdown level1 summary"><p>Returns true if it is another reference to this or if it is an embedded model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IModel other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.ForEach%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L369">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_ForEach_" data-uid="Xbim.Ifc.IfcStore.ForEach*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__" data-uid="Xbim.Ifc.IfcStore.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, Action&lt;TSource&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt; source, Action&lt;TSource&gt; body)
+    where TSource : IPersistEntity</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_GetHashCode.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L907">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_GetHashCode_" data-uid="Xbim.Ifc.IfcStore.GetHashCode*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_GetHashCode" data-uid="Xbim.Ifc.IfcStore.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_InsertCopy__1___0_Xbim_Common_XbimInstanceHandleMap_Xbim_Common_PropertyTranformDelegate_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.InsertCopy%60%601(%60%600%2CXbim.Common.XbimInstanceHandleMap%2CXbim.Common.PropertyTranformDelegate%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L352">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_InsertCopy_" data-uid="Xbim.Ifc.IfcStore.InsertCopy*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_InsertCopy__1___0_Xbim_Common_XbimInstanceHandleMap_Xbim_Common_PropertyTranformDelegate_System_Boolean_System_Boolean_" data-uid="Xbim.Ifc.IfcStore.InsertCopy``1(``0,Xbim.Common.XbimInstanceHandleMap,Xbim.Common.PropertyTranformDelegate,System.Boolean,System.Boolean)">InsertCopy&lt;T&gt;(T, XbimInstanceHandleMap, PropertyTranformDelegate, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T InsertCopy&lt;T&gt;(T toCopy, XbimInstanceHandleMap mappings, PropertyTranformDelegate propTransform, bool includeInverses, bool keepLabels)
+    where T : IPersistEntity</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">toCopy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.XbimInstanceHandleMap.html">XbimInstanceHandleMap</a></td>
+        <td><span class="parametername">mappings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.PropertyTranformDelegate.html">PropertyTranformDelegate</a></td>
+        <td><span class="parametername">propTransform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeInverses</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">keepLabels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Open_System_IO_Stream_Xbim_IO_StorageType_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimModelType_Xbim_Ifc_XbimEditorCredentials_Xbim_IO_XbimDBAccess_Xbim_Common_ReportProgressDelegate_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Open(System.IO.Stream%2CXbim.IO.StorageType%2CXbim.Common.Step21.XbimSchemaVersion%2CXbim.IO.XbimModelType%2CXbim.Ifc.XbimEditorCredentials%2CXbim.IO.XbimDBAccess%2CXbim.Common.ReportProgressDelegate%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L216">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Open_" data-uid="Xbim.Ifc.IfcStore.Open*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Open_System_IO_Stream_Xbim_IO_StorageType_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimModelType_Xbim_Ifc_XbimEditorCredentials_Xbim_IO_XbimDBAccess_Xbim_Common_ReportProgressDelegate_System_Int32_" data-uid="Xbim.Ifc.IfcStore.Open(System.IO.Stream,Xbim.IO.StorageType,Xbim.Common.Step21.XbimSchemaVersion,Xbim.IO.XbimModelType,Xbim.Ifc.XbimEditorCredentials,Xbim.IO.XbimDBAccess,Xbim.Common.ReportProgressDelegate,System.Int32)">Open(Stream, StorageType, XbimSchemaVersion, XbimModelType, XbimEditorCredentials, XbimDBAccess, ReportProgressDelegate, Int32)</h4>
+  <div class="markdown level1 summary"><p>You can use this function to open IFC model from a <span class="xref">System.IO.Stream</span>.
+You need to know file type (IFC, IFCZIP, IFCXML) and schema type (IFC2x3 or IFC4) to be able to use this function.
+If you don't know, you should the overloaded <a class="xref" href="Xbim.Ifc.IfcStore.html#Xbim_Ifc_IfcStore_Open_System_String_Xbim_Ifc_XbimEditorCredentials_System_Nullable_System_Double__Xbim_Common_ReportProgressDelegate_Xbim_IO_XbimDBAccess_System_Int32_">Open(String, XbimEditorCredentials, Nullable&lt;Double&gt;, ReportProgressDelegate, XbimDBAccess, Int32)</a>
+method which takes file paths as an argument, and can automatically detect schema and file type.
+If are opening an *.xbim file you should also use the path-based overload because Esent database needs to operate
+on the file and this function will have to create temporal file if it is not a file stream.
+If the input is a FileStream, be aware this method may call <span class="xref">System.IO.Stream.Close</span> on it to keep exclusive access.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IfcStore Open(Stream stream, StorageType dataType, XbimSchemaVersion schema, XbimModelType modelType, XbimEditorCredentials editorDetails = null, XbimDBAccess accessMode = XbimDBAccess.Read, ReportProgressDelegate progDelegate = null, int codePageOverride = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream of data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.StorageType.html">StorageType</a></td>
+        <td><span class="parametername">dataType</span></td>
+        <td><p>Type of data (*.ifc, *.ifcxml, *.ifczip)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td><p>IFC schema (IFC2x3, IFC4). Other schemas are not supported by this class.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimModelType.html">XbimModelType</a></td>
+        <td><span class="parametername">modelType</span></td>
+        <td><p>Type of model to be used. You can choose between EsentModel and MemoryModel</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.XbimEditorCredentials.html">XbimEditorCredentials</a></td>
+        <td><span class="parametername">editorDetails</span></td>
+        <td><p>Optional details. You should always pass these if you are going to change the data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimDBAccess.html">XbimDBAccess</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td><p>Access mode to the stream. This is only important if you choose EsentModel. MemoryModel is completely in memory so this is not relevant</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td><p>Progress reporting delegate</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">codePageOverride</span></td>
+        <td><p>A CodePage that will be used to read implicitly encoded one-byte-char strings. If -1 is specified the default ISO8859-1
+encoding will be used according to the Ifc specification.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.IfcStore.html">IfcStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Open_System_String_Xbim_Ifc_XbimEditorCredentials_System_Nullable_System_Double__Xbim_Common_ReportProgressDelegate_Xbim_IO_XbimDBAccess_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Open(System.String%2CXbim.Ifc.XbimEditorCredentials%2CSystem.Nullable%7BSystem.Double%7D%2CXbim.Common.ReportProgressDelegate%2CXbim.IO.XbimDBAccess%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L240">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Open_" data-uid="Xbim.Ifc.IfcStore.Open*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Open_System_String_Xbim_Ifc_XbimEditorCredentials_System_Nullable_System_Double__Xbim_Common_ReportProgressDelegate_Xbim_IO_XbimDBAccess_System_Int32_" data-uid="Xbim.Ifc.IfcStore.Open(System.String,Xbim.Ifc.XbimEditorCredentials,System.Nullable{System.Double},Xbim.Common.ReportProgressDelegate,Xbim.IO.XbimDBAccess,System.Int32)">Open(String, XbimEditorCredentials, Nullable&lt;Double&gt;, ReportProgressDelegate, XbimDBAccess, Int32)</h4>
+  <div class="markdown level1 summary"><p>Opens an IFC file, Ifcxml, IfcZip, xbim from a file path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IfcStore Open(string path, XbimEditorCredentials editorDetails = null, double? ifcDatabaseSizeThreshHold = null, ReportProgressDelegate progDelegate = null, XbimDBAccess accessMode = XbimDBAccess.Read, int codePageOverride = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>the file name of the ifc, ifczip, ifcxml or xbim file to be opened</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.XbimEditorCredentials.html">XbimEditorCredentials</a></td>
+        <td><span class="parametername">editorDetails</span></td>
+        <td><p>This is only required if the store is opened for editing</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">ifcDatabaseSizeThreshHold</span></td>
+        <td><p>Expressed in MB. If not defined the DefaultIfcDatabaseSizeThreshHold is used,
+IFC files below this size will be opened in memory, above this size a database will be created. If -1 is specified an in memory model will be
+created for all IFC files that are opened. Xbim files are always opened as databases</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimDBAccess.html">XbimDBAccess</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">codePageOverride</span></td>
+        <td><p>A CodePage that will be used to read implicitly encoded one-byte-char strings. If -1 is specified the default ISO8859-1
+encoding will be used according to the Ifc specification.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.IfcStore.html">IfcStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_SaveAs_System_String_System_Nullable_Xbim_IO_StorageType__Xbim_Common_ReportProgressDelegate_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.SaveAs(System.String%2CSystem.Nullable%7BXbim.IO.StorageType%7D%2CXbim.Common.ReportProgressDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L599">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_SaveAs_" data-uid="Xbim.Ifc.IfcStore.SaveAs*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_SaveAs_System_String_System_Nullable_Xbim_IO_StorageType__Xbim_Common_ReportProgressDelegate_" data-uid="Xbim.Ifc.IfcStore.SaveAs(System.String,System.Nullable{Xbim.IO.StorageType},Xbim.Common.ReportProgressDelegate)">SaveAs(String, Nullable&lt;StorageType&gt;, ReportProgressDelegate)</h4>
+  <div class="markdown level1 summary"><p>Saves the model to the specified file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveAs(string fileName, StorageType? format = null, ReportProgressDelegate progDelegate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file to save to, if no format is specified the extension is used to determine the format</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.IO.StorageType.html">StorageType</a>&gt;</td>
+        <td><span class="parametername">format</span></td>
+        <td><p>if specified saves in the required format and changes the extension to the correct one</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td><p>reports on progress</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_EntityDeleted.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.EntityDeleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L56">View Source</a>
+  </span>
+  <h4 id="Xbim_Ifc_IfcStore_EntityDeleted" data-uid="Xbim.Ifc.IfcStore.EntityDeleted">EntityDeleted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event DeletedEntityHandler EntityDeleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.DeletedEntityHandler.html">DeletedEntityHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_EntityModified.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.EntityModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L55">View Source</a>
+  </span>
+  <h4 id="Xbim_Ifc_IfcStore_EntityModified" data-uid="Xbim.Ifc.IfcStore.EntityModified">EntityModified</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ModifiedEntityHandler EntityModified</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ModifiedEntityHandler.html">ModifiedEntityHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_EntityNew.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.EntityNew%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L54">View Source</a>
+  </span>
+  <h4 id="Xbim_Ifc_IfcStore_EntityNew" data-uid="Xbim.Ifc.IfcStore.EntityNew">EntityNew</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event NewEntityHandler EntityNew</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.NewEntityHandler.html">NewEntityHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_op_Equality_Xbim_Ifc_IfcStore_Xbim_Common_IModel_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.op_Equality(Xbim.Ifc.IfcStore%2CXbim.Common.IModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L912">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_op_Equality_" data-uid="Xbim.Ifc.IfcStore.op_Equality*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_op_Equality_Xbim_Ifc_IfcStore_Xbim_Common_IModel_" data-uid="Xbim.Ifc.IfcStore.op_Equality(Xbim.Ifc.IfcStore,Xbim.Common.IModel)">Equality(IfcStore, IModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(IfcStore store, IModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.IfcStore.html">IfcStore</a></td>
+        <td><span class="parametername">store</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_op_Inequality_Xbim_Ifc_IfcStore_Xbim_Common_IModel_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.op_Inequality(Xbim.Ifc.IfcStore%2CXbim.Common.IModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L924">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_op_Inequality_" data-uid="Xbim.Ifc.IfcStore.op_Inequality*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_op_Inequality_Xbim_Ifc_IfcStore_Xbim_Common_IModel_" data-uid="Xbim.Ifc.IfcStore.op_Inequality(Xbim.Ifc.IfcStore,Xbim.Common.IModel)">Inequality(IfcStore, IModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(IfcStore store, IModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc.IfcStore.html">IfcStore</a></td>
+        <td><span class="parametername">store</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore_Xbim_Common_IModel_Activate_Xbim_Common_IPersistEntity_.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore.Xbim%23Common%23IModel%23Activate(Xbim.Common.IPersistEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L314">View Source</a>
+  </span>
+  <a id="Xbim_Ifc_IfcStore_Xbim_Common_IModel_Activate_" data-uid="Xbim.Ifc.IfcStore.Xbim#Common#IModel#Activate*"></a>
+  <h4 id="Xbim_Ifc_IfcStore_Xbim_Common_IModel_Activate_Xbim_Common_IPersistEntity_" data-uid="Xbim.Ifc.IfcStore.Xbim#Common#IModel#Activate(Xbim.Common.IPersistEntity)">IModel.Activate(IPersistEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IModel.Activate(IPersistEntity owningEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></td>
+        <td><span class="parametername">owningEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.Federation.IFederatedModel.html">IFederatedModel</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Xbim.Ifc.IfcStoreCopyItemsExtensions.html#Xbim_Ifc_IfcStoreCopyItemsExtensions_InsertCopy_Xbim_Common_IModel_System_Collections_Generic_IEnumerable_Xbim_Ifc4_Interfaces_IIfcProduct__System_Boolean_System_Boolean_Xbim_Common_XbimInstanceHandleMap_">IfcStoreCopyItemsExtensions.InsertCopy(IModel, IEnumerable&lt;IIfcProduct&gt;, Boolean, Boolean, XbimInstanceHandleMap)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc.IfcStoreExportExtensions.html#Xbim_Ifc_IfcStoreExportExtensions_SaveAsIfc_Xbim_Common_IModel_System_IO_Stream_Xbim_Common_ReportProgressDelegate_">IfcStoreExportExtensions.SaveAsIfc(IModel, Stream, ReportProgressDelegate)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc.IfcStoreExportExtensions.html#Xbim_Ifc_IfcStoreExportExtensions_SaveAsIfcXml_Xbim_Common_IModel_System_IO_Stream_Xbim_Common_ReportProgressDelegate_">IfcStoreExportExtensions.SaveAsIfcXml(IModel, Stream, ReportProgressDelegate)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc.IfcStoreExportExtensions.html#Xbim_Ifc_IfcStoreExportExtensions_SaveAsIfcZip_Xbim_Common_IModel_System_IO_Stream_System_String_Xbim_IO_StorageType_Xbim_Common_ReportProgressDelegate_">IfcStoreExportExtensions.SaveAsIfcZip(IModel, Stream, String, StorageType, ReportProgressDelegate)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc.IfcStoreGeometryExtensions.html#Xbim_Ifc_IfcStoreGeometryExtensions_SaveAsWexBim_Xbim_Common_IModel_System_IO_BinaryWriter_System_Collections_Generic_IEnumerable_Xbim_Ifc4_Interfaces_IIfcProduct__Xbim_Common_Geometry_IVector3D_">IfcStoreGeometryExtensions.SaveAsWexBim(IModel, BinaryWriter, IEnumerable&lt;IIfcProduct&gt;, IVector3D)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc_IfcStore.md&amp;value=---%0Auid%3A%20Xbim.Ifc.IfcStore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc/IfcStore.cs/#L51" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

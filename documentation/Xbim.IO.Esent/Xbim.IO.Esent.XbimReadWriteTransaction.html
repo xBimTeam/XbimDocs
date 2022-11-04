@@ -1,0 +1,504 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class XbimReadWriteTransaction
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class XbimReadWriteTransaction
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction">
+  
+  
+  <h1 id="Xbim_IO_Esent_XbimReadWriteTransaction" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction" class="text-break">Class XbimReadWriteTransaction
+  </h1>
+  <div class="markdown level0 summary"><p>A transaction allowing read and write operations on a model</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Xbim.IO.Esent.XbimReadTransaction.html">XbimReadTransaction</a></div>
+    <div class="level2"><span class="xref">XbimReadWriteTransaction</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.ITransaction.html">ITransaction</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.XbimReadTransaction.html#Xbim_IO_Esent_XbimReadTransaction_InTransaction">XbimReadTransaction.InTransaction</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.XbimReadTransaction.html#Xbim_IO_Esent_XbimReadTransaction_Model">XbimReadTransaction.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.XbimReadTransaction.html#Xbim_IO_Esent_XbimReadTransaction_Dispose">XbimReadTransaction.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.XbimReadTransaction.html#Xbim_IO_Esent_XbimReadTransaction_EntityChanged">XbimReadTransaction.EntityChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.XbimReadTransaction.html#Xbim_IO_Esent_XbimReadTransaction_EntityChanging">XbimReadTransaction.EntityChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.XbimReadTransaction.html#Xbim_IO_Esent_XbimReadTransaction_OnEntityChanged_Xbim_Common_IPersistEntity_Xbim_Common_ChangeType_System_Int32_">XbimReadTransaction.OnEntityChanged(IPersistEntity, ChangeType, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.Esent.XbimReadTransaction.html#Xbim_IO_Esent_XbimReadTransaction_OnEntityChanging_Xbim_Common_IPersistEntity_Xbim_Common_ChangeType_System_Int32_">XbimReadTransaction.OnEntityChanging(IPersistEntity, ChangeType, Int32)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.IO.Esent.html">Xbim.IO.Esent</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.IO.Esent.dll</h6>
+  <h5 id="Xbim_IO_Esent_XbimReadWriteTransaction_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class XbimReadWriteTransaction : XbimReadTransaction, ITransaction, IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction_Name.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L28">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_XbimReadWriteTransaction_Name_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Name*"></a>
+  <h4 id="Xbim_IO_Esent_XbimReadWriteTransaction_Name" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction_TransactionBatchSize.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction.TransactionBatchSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L22">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_XbimReadWriteTransaction_TransactionBatchSize_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.TransactionBatchSize*"></a>
+  <h4 id="Xbim_IO_Esent_XbimReadWriteTransaction_TransactionBatchSize" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.TransactionBatchSize">TransactionBatchSize</h4>
+  <div class="markdown level1 summary"><p>The maximum number of pulse actions before a transaction is automatically commited, default is 100</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TransactionBatchSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction_Begin.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction.Begin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L69">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_XbimReadWriteTransaction_Begin_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Begin*"></a>
+  <h4 id="Xbim_IO_Esent_XbimReadWriteTransaction_Begin" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Begin">Begin()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Begin()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction_Commit.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction.Commit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L55">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_XbimReadWriteTransaction_Commit_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Commit*"></a>
+  <h4 id="Xbim_IO_Esent_XbimReadWriteTransaction_Commit" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Commit">Commit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Commit()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L83">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_XbimReadWriteTransaction_Dispose_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Dispose*"></a>
+  <h4 id="Xbim_IO_Esent_XbimReadWriteTransaction_Dispose_System_Boolean_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.IO.Esent.XbimReadTransaction.html#Xbim_IO_Esent_XbimReadTransaction_Dispose_System_Boolean_">XbimReadTransaction.Dispose(Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction_Modified.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction.Modified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L101">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_XbimReadWriteTransaction_Modified_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Modified*"></a>
+  <h4 id="Xbim_IO_Esent_XbimReadWriteTransaction_Modified" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Modified">Modified()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IInstantiableEntity&gt; Modified()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction_Pulse.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction.Pulse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L44">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_XbimReadWriteTransaction_Pulse_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Pulse*"></a>
+  <h4 id="Xbim_IO_Esent_XbimReadWriteTransaction_Pulse" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Pulse">Pulse()</h4>
+  <div class="markdown level1 summary"><p>Increments the pulse count for the transaction, if the pulse count exceed the Transaction batch size the transaction is committed and restarted</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Pulse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_Commit.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction.Xbim%23Common%23ITransaction%23Commit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L111">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_Commit_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Xbim#Common#ITransaction#Commit*"></a>
+  <h4 id="Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_Commit" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Xbim#Common#ITransaction#Commit">ITransaction.Commit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ITransaction.Commit()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_DoReversibleAction_System_Action_System_Action_Xbim_Common_IPersistEntity_Xbim_Common_ChangeType_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction.Xbim%23Common%23ITransaction%23DoReversibleAction(System.Action%2CSystem.Action%2CXbim.Common.IPersistEntity%2CXbim.Common.ChangeType%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L136">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_DoReversibleAction_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Xbim#Common#ITransaction#DoReversibleAction*"></a>
+  <h4 id="Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_DoReversibleAction_System_Action_System_Action_Xbim_Common_IPersistEntity_Xbim_Common_ChangeType_System_Int32_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Xbim#Common#ITransaction#DoReversibleAction(System.Action,System.Action,Xbim.Common.IPersistEntity,Xbim.Common.ChangeType,System.Int32)">ITransaction.DoReversibleAction(Action, Action, IPersistEntity, ChangeType, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ITransaction.DoReversibleAction(Action doAction, Action undoAction, IPersistEntity entity, ChangeType changeType, int property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">doAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">undoAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ChangeType.html">ChangeType</a></td>
+        <td><span class="parametername">changeType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_Name.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction.Xbim%23Common%23ITransaction%23Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L106">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_Name_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Xbim#Common#ITransaction#Name*"></a>
+  <h4 id="Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_Name" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Xbim#Common#ITransaction#Name">ITransaction.Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ITransaction.Name { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_RollBack.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction.Xbim%23Common%23ITransaction%23RollBack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L116">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_RollBack_" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Xbim#Common#ITransaction#RollBack*"></a>
+  <h4 id="Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_ITransaction_RollBack" data-uid="Xbim.IO.Esent.XbimReadWriteTransaction.Xbim#Common#ITransaction#RollBack">ITransaction.RollBack()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ITransaction.RollBack()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.ITransaction.html">ITransaction</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_XbimReadWriteTransaction.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.XbimReadWriteTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/XbimReadWriteTransaction.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

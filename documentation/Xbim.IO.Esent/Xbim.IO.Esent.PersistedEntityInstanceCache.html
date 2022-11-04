@@ -1,0 +1,1738 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PersistedEntityInstanceCache
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PersistedEntityInstanceCache
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache">
+  
+  
+  <h1 id="Xbim_IO_Esent_PersistedEntityInstanceCache" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache" class="text-break">Class PersistedEntityInstanceCache
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PersistedEntityInstanceCache</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.IO.Esent.html">Xbim.IO.Esent</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.IO.Esent.dll</h6>
+  <h5 id="Xbim_IO_Esent_PersistedEntityInstanceCache_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PersistedEntityInstanceCache : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache__ctor_Xbim_IO_Esent_EsentModel_Xbim_Common_IEntityFactory_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.%23ctor(Xbim.IO.Esent.EsentModel%2CXbim.Common.IEntityFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L96">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache__ctor_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.#ctor*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache__ctor_Xbim_IO_Esent_EsentModel_Xbim_Common_IEntityFactory_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.#ctor(Xbim.IO.Esent.EsentModel,Xbim.Common.IEntityFactory)">PersistedEntityInstanceCache(EsentModel, IEntityFactory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PersistedEntityInstanceCache(EsentModel model, IEntityFactory factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.EsentModel.html">EsentModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityFactory.html">IEntityFactory</a></td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_CreatedNew.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.CreatedNew%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L81">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_CreatedNew" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.CreatedNew">CreatedNew</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ConcurrentDictionary&lt;int, IPersistEntity&gt; CreatedNew</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Concurrent.ConcurrentDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_ModifiedEntities.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.ModifiedEntities%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L80">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_ModifiedEntities" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.ModifiedEntities">ModifiedEntities</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ConcurrentDictionary&lt;int, IPersistEntity&gt; ModifiedEntities</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Concurrent.ConcurrentDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_AccessMode.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.AccessMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L106">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_AccessMode_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.AccessMode*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_AccessMode" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.AccessMode">AccessMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimDBAccess AccessMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimDBAccess.html">XbimDBAccess</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Count.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1041">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Count_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Count*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Count" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Count">Count</h4>
+  <div class="markdown level1 summary"><p>returns the number of instances in the model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_HasDatabaseInstance.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.HasDatabaseInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L2184">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_HasDatabaseInstance_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.HasDatabaseInstance*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_HasDatabaseInstance" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.HasDatabaseInstance">HasDatabaseInstance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasDatabaseInstance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_HighestLabel.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.HighestLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1062">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_HighestLabel_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.HighestLabel*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_HighestLabel" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.HighestLabel">HighestLabel</h4>
+  <div class="markdown level1 summary"><p>returns the value of the highest current entity label</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HighestLabel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_InstanceHandles.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.InstanceHandles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1131">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_InstanceHandles_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.InstanceHandles*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_InstanceHandles" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.InstanceHandles">InstanceHandles</h4>
+  <div class="markdown level1 summary"><p>Returns an enumeration of handles to all instances in the database and in the cache</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;XbimInstanceHandle&gt; InstanceHandles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.XbimInstanceHandle.html">XbimInstanceHandle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_InstanceLabels.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.InstanceLabels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L2123">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_InstanceLabels_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.InstanceLabels*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_InstanceLabels" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.InstanceLabels">InstanceLabels</h4>
+  <div class="markdown level1 summary"><p>Returns an enumeration of all the instance labels in the model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;int&gt; InstanceLabels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Model.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Model%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L2312">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Model_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Model*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Model" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Model">Model</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EsentModel Model { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.EsentModel.html">EsentModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Saved.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Saved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1698">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Saved_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Saved*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Saved" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Saved">Saved</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Saved { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Activate_Xbim_Common_IPersistEntity_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Activate(Xbim.Common.IPersistEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1476">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Activate_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Activate*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Activate_Xbim_Common_IPersistEntity_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Activate(Xbim.Common.IPersistEntity)">Activate(IPersistEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Activate(IPersistEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Any__1.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Any%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1018">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Any_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Any*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Any__1" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Any``1">Any&lt;TIfcType&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Any&lt;TIfcType&gt;()
+    where TIfcType : IPersistEntity</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TIfcType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Close.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L442">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Close_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Close*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Close" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>Clears all contents from the cache and closes any connections</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Contains_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Contains(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L927">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Contains_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Contains*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Contains_System_Int32_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Contains(System.Int32)">Contains(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(int entityLabel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">entityLabel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Contains_Xbim_Common_IPersistEntity_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Contains(Xbim.Common.IPersistEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L922">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Contains_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Contains*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Contains_Xbim_Common_IPersistEntity_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Contains(Xbim.Common.IPersistEntity)">Contains(IPersistEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(IPersistEntity instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_CountOf__1.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.CountOf%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L950">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_CountOf_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.CountOf*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_CountOf__1" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.CountOf``1">CountOf&lt;TIfcType&gt;()</h4>
+  <div class="markdown level1 summary"><p>returns the number of instances of the specified type and its sub types</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long CountOf&lt;TIfcType&gt;()
+    where TIfcType : IPersistEntity</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TIfcType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Delete_Reversable_Xbim_Common_IPersistEntity_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Delete_Reversable(Xbim.Common.IPersistEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1693">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Delete_Reversable_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Delete_Reversable*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Delete_Reversable_Xbim_Common_IPersistEntity_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Delete_Reversable(Xbim.Common.IPersistEntity)">Delete_Reversable(IPersistEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete_Reversable(IPersistEntity instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Dispose.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1483">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Dispose_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Dispose*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Dispose" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1498">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Dispose_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Dispose*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Dispose_System_Boolean_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Finalize.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1492">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Finalize_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Finalize*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Finalize" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.ForEach%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L496">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_ForEach_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.ForEach*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, Action&lt;TSource&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performs a set of actions on a collection of entities inside a single read only transaction
+This improves database  performance for retrieving and accessing complex and deep objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt; source, Action&lt;TSource&gt; body)
+    where TSource : IPersistEntity</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_FreeTable_Xbim_IO_Esent_EsentShapeGeometryCursor_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.FreeTable(Xbim.IO.Esent.EsentShapeGeometryCursor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L363">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_FreeTable_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.FreeTable*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_FreeTable_Xbim_IO_Esent_EsentShapeGeometryCursor_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.FreeTable(Xbim.IO.Esent.EsentShapeGeometryCursor)">FreeTable(EsentShapeGeometryCursor)</h4>
+  <div class="markdown level1 summary"><p>Free a table. This will cache the table if the cache isn't full
+and dispose of it otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeTable(EsentShapeGeometryCursor table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.EsentShapeGeometryCursor.html">EsentShapeGeometryCursor</a></td>
+        <td><span class="parametername">table</span></td>
+        <td><p>The cursor to free.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_FreeTable_Xbim_IO_Esent_EsentShapeInstanceCursor_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.FreeTable(Xbim.IO.Esent.EsentShapeInstanceCursor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L388">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_FreeTable_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.FreeTable*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_FreeTable_Xbim_IO_Esent_EsentShapeInstanceCursor_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.FreeTable(Xbim.IO.Esent.EsentShapeInstanceCursor)">FreeTable(EsentShapeInstanceCursor)</h4>
+  <div class="markdown level1 summary"><p>Free a table. This will cache the table if the cache isn't full
+and dispose of it otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeTable(EsentShapeInstanceCursor table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.EsentShapeInstanceCursor.html">EsentShapeInstanceCursor</a></td>
+        <td><span class="parametername">table</span></td>
+        <td><p>The cursor to free.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_FreeTable_Xbim_IO_Esent_XbimGeometryCursor_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.FreeTable(Xbim.IO.Esent.XbimGeometryCursor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L338">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_FreeTable_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.FreeTable*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_FreeTable_Xbim_IO_Esent_XbimGeometryCursor_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.FreeTable(Xbim.IO.Esent.XbimGeometryCursor)">FreeTable(XbimGeometryCursor)</h4>
+  <div class="markdown level1 summary"><p>Free a table. This will cache the table if the cache isn't full
+and dispose of it otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeTable(XbimGeometryCursor table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.XbimGeometryCursor.html">XbimGeometryCursor</a></td>
+        <td><span class="parametername">table</span></td>
+        <td><p>The cursor to free.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_GetGeometry_System_Int16_System_Int32_Xbim_Common_Geometry_XbimGeometryType_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.GetGeometry(System.Int16%2CSystem.Int32%2CXbim.Common.Geometry.XbimGeometryType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1894">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_GetGeometry_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.GetGeometry*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_GetGeometry_System_Int16_System_Int32_Xbim_Common_Geometry_XbimGeometryType_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.GetGeometry(System.Int16,System.Int32,Xbim.Common.Geometry.XbimGeometryType)">GetGeometry(Int16, Int32, XbimGeometryType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;XbimGeometryData&gt; GetGeometry(short typeId, int productLabel, XbimGeometryType geomType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">typeId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">productLabel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryType.html">XbimGeometryType</a></td>
+        <td><span class="parametername">geomType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryData.html">XbimGeometryData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_GetGeometryData_Xbim_Common_Geometry_XbimGeometryType_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.GetGeometryData(Xbim.Common.Geometry.XbimGeometryType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1919">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_GetGeometryData_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.GetGeometryData*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_GetGeometryData_Xbim_Common_Geometry_XbimGeometryType_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.GetGeometryData(Xbim.Common.Geometry.XbimGeometryType)">GetGeometryData(XbimGeometryType)</h4>
+  <div class="markdown level1 summary"><p>Iterates over all the shape geoemtry
+This is a thread safe operation and can be accessed in background threads</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;XbimGeometryData&gt; GetGeometryData(XbimGeometryType ofType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryType.html">XbimGeometryType</a></td>
+        <td><span class="parametername">ofType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryData.html">XbimGeometryData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_GetInstance_System_Int32_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.GetInstance(System.Int32%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1192">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_GetInstance_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.GetInstance*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_GetInstance_System_Int32_System_Boolean_System_Boolean_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.GetInstance(System.Int32,System.Boolean,System.Boolean)">GetInstance(Int32, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns an instance of the entity with the specified label,
+if the instance has already been loaded it is returned from the cache
+if it has not been loaded a blank instance is loaded, i.e. will not have been activated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPersistEntity GetInstance(int label, bool loadProperties = false, bool unCached = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">loadProperties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">unCached</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_GetOrCreateInstanceFromCache_System_Int32_System_Type_System_Byte___.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.GetOrCreateInstanceFromCache(System.Int32%2CSystem.Type%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1209">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_GetOrCreateInstanceFromCache_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.GetOrCreateInstanceFromCache*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_GetOrCreateInstanceFromCache_System_Int32_System_Type_System_Byte___" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.GetOrCreateInstanceFromCache(System.Int32,System.Type,System.Byte[])">GetOrCreateInstanceFromCache(Int32, Type, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Looks for this instance in the cache and returns it, if not found it creates a new instance and adds it to the cache</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPersistEntity GetOrCreateInstanceFromCache(int label, Type type, byte[] properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>Entity label to create</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>If not null creates an instance of this type, else creates an unknown Ifc Type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>if not null populates all properties of the instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_ImportIfcXml_System_String_System_String_Xbim_Common_ReportProgressDelegate_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.ImportIfcXml(System.String%2CSystem.String%2CXbim.Common.ReportProgressDelegate%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L849">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_ImportIfcXml_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.ImportIfcXml*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_ImportIfcXml_System_String_System_String_Xbim_Common_ReportProgressDelegate_System_Boolean_System_Boolean_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.ImportIfcXml(System.String,System.String,Xbim.Common.ReportProgressDelegate,System.Boolean,System.Boolean)">ImportIfcXml(String, String, ReportProgressDelegate, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Imports an Xml file memory model into the model server, only call when the database instances table is empty</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ImportIfcXml(string xbimDbName, string xmlFilename, ReportProgressDelegate progressHandler = null, bool keepOpen = false, bool cacheEntities = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xbimDbName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xmlFilename</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progressHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">keepOpen</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cacheEntities</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_ImportModel_Xbim_Common_IModel_System_String_Xbim_Common_ReportProgressDelegate_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.ImportModel(Xbim.Common.IModel%2CSystem.String%2CXbim.Common.ReportProgressDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L612">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_ImportModel_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.ImportModel*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_ImportModel_Xbim_Common_IModel_System_String_Xbim_Common_ReportProgressDelegate_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.ImportModel(Xbim.Common.IModel,System.String,Xbim.Common.ReportProgressDelegate)">ImportModel(IModel, String, ReportProgressDelegate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ImportModel(IModel fromModel, string xbimDbName, ReportProgressDelegate progressHandler = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td><span class="parametername">fromModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xbimDbName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progressHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_ImportStep_System_String_System_String_Xbim_Common_ReportProgressDelegate_System_Boolean_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.ImportStep(System.String%2CSystem.String%2CXbim.Common.ReportProgressDelegate%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L675">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_ImportStep_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.ImportStep*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_ImportStep_System_String_System_String_Xbim_Common_ReportProgressDelegate_System_Boolean_System_Boolean_System_Int32_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.ImportStep(System.String,System.String,Xbim.Common.ReportProgressDelegate,System.Boolean,System.Boolean,System.Int32)">ImportStep(String, String, ReportProgressDelegate, Boolean, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>Imports the contents of the ifc file into the named database, the resulting database is closed after success, use LoadStep21 to access</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ImportStep(string xbimDbName, string toImportIfcFilename, ReportProgressDelegate progressHandler = null, bool keepOpen = false, bool cacheEntities = false, int codePageOverride = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xbimDbName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">toImportIfcFilename</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progressHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">keepOpen</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cacheEntities</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">codePageOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_ImportZip_System_String_System_String_Xbim_Common_ReportProgressDelegate_System_Boolean_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.ImportZip(System.String%2CSystem.String%2CXbim.Common.ReportProgressDelegate%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L719">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_ImportZip_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.ImportZip*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_ImportZip_System_String_System_String_Xbim_Common_ReportProgressDelegate_System_Boolean_System_Boolean_System_Int32_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.ImportZip(System.String,System.String,Xbim.Common.ReportProgressDelegate,System.Boolean,System.Boolean,System.Int32)">ImportZip(String, String, ReportProgressDelegate, Boolean, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ImportZip(string xbimDbName, string toImportFilename, ReportProgressDelegate progressHandler = null, bool keepOpen = false, bool cacheEntities = false, int codePageOverride = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xbimDbName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">toImportFilename</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progressHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">keepOpen</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cacheEntities</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">codePageOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_InstanceHandlesOfType__1.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.InstanceHandlesOfType%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1157">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_InstanceHandlesOfType_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.InstanceHandlesOfType*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_InstanceHandlesOfType__1" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.InstanceHandlesOfType``1">InstanceHandlesOfType&lt;TIfcType&gt;()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumeration of handles to all instances in the database or the cache of specified type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;XbimInstanceHandle&gt; InstanceHandlesOfType&lt;TIfcType&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.XbimInstanceHandle.html">XbimInstanceHandle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TIfcType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_InstancesOfTypeCount_System_Type_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.InstancesOfTypeCount(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1123">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_InstancesOfTypeCount_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.InstancesOfTypeCount*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_InstancesOfTypeCount_System_Type_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.InstancesOfTypeCount(System.Type)">InstancesOfTypeCount(Type)</h4>
+  <div class="markdown level1 summary"><p>Deprecated. Use CountOf, returns the number of instances of the specified type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long InstancesOfTypeCount(Type t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Print.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Print%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1280">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Print_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Print*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Print" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Print">Print()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Print()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_SaveAs_Xbim_IO_StorageType_System_String_Xbim_Common_ReportProgressDelegate_System_Collections_Generic_IDictionary_System_Int32_System_Int32__.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.SaveAs(Xbim.IO.StorageType%2CSystem.String%2CXbim.Common.ReportProgressDelegate%2CSystem.Collections.Generic.IDictionary%7BSystem.Int32%2CSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1563">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_SaveAs_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.SaveAs*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_SaveAs_Xbim_IO_StorageType_System_String_Xbim_Common_ReportProgressDelegate_System_Collections_Generic_IDictionary_System_Int32_System_Int32__" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.SaveAs(Xbim.IO.StorageType,System.String,Xbim.Common.ReportProgressDelegate,System.Collections.Generic.IDictionary{System.Int32,System.Int32})">SaveAs(StorageType, String, ReportProgressDelegate, IDictionary&lt;Int32, Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveAs(StorageType storageType, string storageFileName, ReportProgressDelegate progress = null, IDictionary&lt;int, int&gt; map = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.StorageType.html">StorageType</a></td>
+        <td><span class="parametername">storageType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">storageFileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Where__1_System_Func___0_System_Boolean__.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Where%60%601(System.Func%7B%60%600%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1753">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Where_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Where*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Where__1_System_Func___0_System_Boolean__" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Where``1(System.Func{``0,System.Boolean})">Where&lt;T&gt;(Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; Where&lt;T&gt;(Func&lt;T, bool&gt; condition)
+    where T : IPersistEntity</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache_Where__1_System_Func___0_System_Boolean__System_String_Xbim_Common_IPersistEntity_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache.Where%60%601(System.Func%7B%60%600%2CSystem.Boolean%7D%2CSystem.String%2CXbim.Common.IPersistEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L1758">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_PersistedEntityInstanceCache_Where_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Where*"></a>
+  <h4 id="Xbim_IO_Esent_PersistedEntityInstanceCache_Where__1_System_Func___0_System_Boolean__System_String_Xbim_Common_IPersistEntity_" data-uid="Xbim.IO.Esent.PersistedEntityInstanceCache.Where``1(System.Func{``0,System.Boolean},System.String,Xbim.Common.IPersistEntity)">Where&lt;T&gt;(Func&lt;T, Boolean&gt;, String, IPersistEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; Where&lt;T&gt;(Func&lt;T, bool&gt; condition, string inverseProperty, IPersistEntity inverseArgument)
+    where T : IPersistEntity</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">inverseProperty</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></td>
+        <td><span class="parametername">inverseArgument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_PersistedEntityInstanceCache.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.PersistedEntityInstanceCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/PersistedEntityInstanceCache.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

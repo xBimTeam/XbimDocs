@@ -1,0 +1,1264 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class XbimP21Scanner
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class XbimP21Scanner
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.IO.Step21.XbimP21Scanner">
+  
+  
+  <h1 id="Xbim_IO_Step21_XbimP21Scanner" data-uid="Xbim.IO.Step21.XbimP21Scanner" class="text-break">Class XbimP21Scanner
+  </h1>
+  <div class="markdown level0 summary"><p>This class is meant to replace original parser which was generated using GPPG.
+Actual implementation of the original parser was actually only scanner with little
+added value but it had significant overhead on processing spead. This implementation
+uses the same methods but binds them to the scanner directly. This cuts off part of the
+structure security but it also cuts off processing time by about 20%.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">XbimP21Scanner</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.IO.Step21.html">Xbim.IO.Step21</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Common.dll</h6>
+  <h5 id="Xbim_IO_Step21_XbimP21Scanner_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class XbimP21Scanner : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner__ctor_System_IO_Stream_System_Int64_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.%23ctor(System.IO.Stream%2CSystem.Int64%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L91">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner__ctor_" data-uid="Xbim.IO.Step21.XbimP21Scanner.#ctor*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner__ctor_System_IO_Stream_System_Int64_System_Collections_Generic_IEnumerable_System_String__" data-uid="Xbim.IO.Step21.XbimP21Scanner.#ctor(System.IO.Stream,System.Int64,System.Collections.Generic.IEnumerable{System.String})">XbimP21Scanner(Stream, Int64, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimP21Scanner(Stream strm, long streamSize, IEnumerable&lt;string&gt; ignoreTypes = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">strm</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">streamSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">ignoreTypes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner__ctor_System_String_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.%23ctor(System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L119">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner__ctor_" data-uid="Xbim.IO.Step21.XbimP21Scanner.#ctor*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner__ctor_System_String_System_Collections_Generic_IEnumerable_System_String__" data-uid="Xbim.IO.Step21.XbimP21Scanner.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})">XbimP21Scanner(String, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimP21Scanner(string data, IEnumerable&lt;string&gt; ignoreTypes = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">ignoreTypes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_Cancel.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.Cancel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L68">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_Cancel" data-uid="Xbim.IO.Step21.XbimP21Scanner.Cancel">Cancel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Cancel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_CurrentInstance.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.CurrentInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L49">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_CurrentInstance" data-uid="Xbim.IO.Step21.XbimP21Scanner.CurrentInstance">CurrentInstance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Part21Entity CurrentInstance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Parser.Part21Entity.html">Part21Entity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_EntityCreate.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.EntityCreate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L50">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_EntityCreate" data-uid="Xbim.IO.Step21.XbimP21Scanner.EntityCreate">EntityCreate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CreateEntityDelegate EntityCreate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Step21.CreateEntityDelegate.html">CreateEntityDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_ListNestLevel.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.ListNestLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L48">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_ListNestLevel" data-uid="Xbim.IO.Step21.XbimP21Scanner.ListNestLevel">ListNestLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ListNestLevel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_MaxErrorCount.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.MaxErrorCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L54">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_MaxErrorCount" data-uid="Xbim.IO.Step21.XbimP21Scanner.MaxErrorCount">MaxErrorCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MaxErrorCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_PropertyValue.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.PropertyValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L51">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_PropertyValue" data-uid="Xbim.IO.Step21.XbimP21Scanner.PropertyValue">PropertyValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PropertyValue PropertyValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Step21.Parser.PropertyValue.html">PropertyValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_AllowMissingReferences.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.AllowMissingReferences%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L63">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_AllowMissingReferences_" data-uid="Xbim.IO.Step21.XbimP21Scanner.AllowMissingReferences*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_AllowMissingReferences" data-uid="Xbim.IO.Step21.XbimP21Scanner.AllowMissingReferences">AllowMissingReferences</h4>
+  <div class="markdown level1 summary"><p>Missing references will not be reported if this is true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowMissingReferences { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_CurrentPosition.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.CurrentPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L295">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_CurrentPosition_" data-uid="Xbim.IO.Step21.XbimP21Scanner.CurrentPosition*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_CurrentPosition" data-uid="Xbim.IO.Step21.XbimP21Scanner.CurrentPosition">CurrentPosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LexLocation CurrentPosition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="QUT.Gppg.LexLocation.html">LexLocation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_Entities.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.Entities%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L681">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_Entities_" data-uid="Xbim.IO.Step21.XbimP21Scanner.Entities*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_Entities" data-uid="Xbim.IO.Step21.XbimP21Scanner.Entities">Entities</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, IPersist&gt; Entities { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="Xbim.Common.IPersist.html">IPersist</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_ErrorCount.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.ErrorCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L282">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_ErrorCount_" data-uid="Xbim.IO.Step21.XbimP21Scanner.ErrorCount*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_ErrorCount" data-uid="Xbim.IO.Step21.XbimP21Scanner.ErrorCount">ErrorCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ErrorCount { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_Logger.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L44">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_Logger_" data-uid="Xbim.IO.Step21.XbimP21Scanner.Logger*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_Logger" data-uid="Xbim.IO.Step21.XbimP21Scanner.Logger">Logger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_NestedIndex.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.NestedIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L70">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_NestedIndex_" data-uid="Xbim.IO.Step21.XbimP21Scanner.NestedIndex*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_NestedIndex" data-uid="Xbim.IO.Step21.XbimP21Scanner.NestedIndex">NestedIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] NestedIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SkipTypes.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SkipTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L65">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SkipTypes_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SkipTypes*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SkipTypes" data-uid="Xbim.IO.Step21.XbimP21Scanner.SkipTypes">SkipTypes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HashSet&lt;string&gt; SkipTypes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.HashSet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_BeginData.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.BeginData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L319">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_BeginData_" data-uid="Xbim.IO.Step21.XbimP21Scanner.BeginData*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_BeginData" data-uid="Xbim.IO.Step21.XbimP21Scanner.BeginData">BeginData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void BeginData()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_BeginHeader.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.BeginHeader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L314">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_BeginHeader_" data-uid="Xbim.IO.Step21.XbimP21Scanner.BeginHeader*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_BeginHeader" data-uid="Xbim.IO.Step21.XbimP21Scanner.BeginHeader">BeginHeader()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void BeginHeader()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_BeginList.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.BeginList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L335">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_BeginList_" data-uid="Xbim.IO.Step21.XbimP21Scanner.BeginList*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_BeginList" data-uid="Xbim.IO.Step21.XbimP21Scanner.BeginList">BeginList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void BeginList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_BeginNestedType_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.BeginNestedType(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L638">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_BeginNestedType_" data-uid="Xbim.IO.Step21.XbimP21Scanner.BeginNestedType*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_BeginNestedType_System_String_" data-uid="Xbim.IO.Step21.XbimP21Scanner.BeginNestedType(System.String)">BeginNestedType(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void BeginNestedType(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_Dispose.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L708">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_Dispose_" data-uid="Xbim.IO.Step21.XbimP21Scanner.Dispose*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_Dispose" data-uid="Xbim.IO.Step21.XbimP21Scanner.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_EndEntity.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.EndEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L450">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_EndEntity_" data-uid="Xbim.IO.Step21.XbimP21Scanner.EndEntity*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_EndEntity" data-uid="Xbim.IO.Step21.XbimP21Scanner.EndEntity">EndEntity()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EndEntity()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_EndList.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.EndList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L351">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_EndList_" data-uid="Xbim.IO.Step21.XbimP21Scanner.EndList*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_EndList" data-uid="Xbim.IO.Step21.XbimP21Scanner.EndList">EndList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EndList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_EndNestedType.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.EndNestedType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L600">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_EndNestedType_" data-uid="Xbim.IO.Step21.XbimP21Scanner.EndNestedType*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_EndNestedType" data-uid="Xbim.IO.Step21.XbimP21Scanner.EndNestedType">EndNestedType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EndNestedType()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_EndParse.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.EndParse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L297">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_EndParse_" data-uid="Xbim.IO.Step21.XbimP21Scanner.EndParse*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_EndParse" data-uid="Xbim.IO.Step21.XbimP21Scanner.EndParse">EndParse()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EndParse()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_EndSec.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.EndSec%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L327">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_EndSec_" data-uid="Xbim.IO.Step21.XbimP21Scanner.EndSec*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_EndSec" data-uid="Xbim.IO.Step21.XbimP21Scanner.EndSec">EndSec()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EndSec()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_NewEntity_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.NewEntity(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L375">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_NewEntity_" data-uid="Xbim.IO.Step21.XbimP21Scanner.NewEntity*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_NewEntity_System_String_" data-uid="Xbim.IO.Step21.XbimP21Scanner.NewEntity(System.String)">NewEntity(String)</h4>
+  <div class="markdown level1 summary"><p>From the resiliance point of view this is a check point.
+It needs to make sure that previous entity was finished correctly.
+If it wasn't it should log the error, clear the state and start from local point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void NewEntity(string entityLabel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">entityLabel</span></td>
+        <td><p>Entity Label to create for the new entity</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_Parse_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.Parse(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L139">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_Parse_" data-uid="Xbim.IO.Step21.XbimP21Scanner.Parse*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_Parse_System_Boolean_" data-uid="Xbim.IO.Step21.XbimP21Scanner.Parse(System.Boolean)">Parse(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Parse(bool onlyHeader = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">onlyHeader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SetBooleanValue_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SetBooleanValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L509">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SetBooleanValue_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetBooleanValue*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SetBooleanValue_System_String_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetBooleanValue(System.String)">SetBooleanValue(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetBooleanValue(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SetEnumValue_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SetEnumValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L503">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SetEnumValue_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetEnumValue*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SetEnumValue_System_String_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetEnumValue(System.String)">SetEnumValue(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetEnumValue(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SetFloatValue_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SetFloatValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L491">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SetFloatValue_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetFloatValue*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SetFloatValue_System_String_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetFloatValue(System.String)">SetFloatValue(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetFloatValue(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SetHexValue_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SetHexValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L485">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SetHexValue_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetHexValue*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SetHexValue_System_String_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetHexValue(System.String)">SetHexValue(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetHexValue(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SetIntegerValue_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SetIntegerValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L479">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SetIntegerValue_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetIntegerValue*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SetIntegerValue_System_String_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetIntegerValue(System.String)">SetIntegerValue(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetIntegerValue(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SetNonDefinedValue.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SetNonDefinedValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L515">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SetNonDefinedValue_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetNonDefinedValue*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SetNonDefinedValue" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetNonDefinedValue">SetNonDefinedValue()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetNonDefinedValue()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SetObjectValue_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SetObjectValue(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L585">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SetObjectValue_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetObjectValue*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SetObjectValue_System_Int32_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetObjectValue(System.Int32)">SetObjectValue(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetObjectValue(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SetObjectValue_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SetObjectValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L579">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SetObjectValue_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetObjectValue*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SetObjectValue_System_String_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetObjectValue(System.String)">SetObjectValue(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetObjectValue(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SetOverrideValue.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SetOverrideValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L524">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SetOverrideValue_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetOverrideValue*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SetOverrideValue" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetOverrideValue">SetOverrideValue()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetOverrideValue()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SetStringValue_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SetStringValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L497">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SetStringValue_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetStringValue*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SetStringValue_System_String_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetStringValue(System.String)">SetStringValue(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetStringValue(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_SetType_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.SetType(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L410">View Source</a>
+  </span>
+  <a id="Xbim_IO_Step21_XbimP21Scanner_SetType_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetType*"></a>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_SetType_System_String_" data-uid="Xbim.IO.Step21.XbimP21Scanner.SetType(System.String)">SetType(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool SetType(string entityTypeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">entityTypeName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner_ProgressStatus.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner.ProgressStatus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L75">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Step21_XbimP21Scanner_ProgressStatus" data-uid="Xbim.IO.Step21.XbimP21Scanner.ProgressStatus">ProgressStatus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReportProgressDelegate ProgressStatus</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Step21_XbimP21Scanner.md&amp;value=---%0Auid%3A%20Xbim.IO.Step21.XbimP21Scanner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Step21/XbimP21Scanner.cs/#L42" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

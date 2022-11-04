@@ -1,0 +1,640 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IModelProvider
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IModelProvider
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.IO.IModelProvider">
+  
+  
+  <h1 id="Xbim_IO_IModelProvider" data-uid="Xbim.IO.IModelProvider" class="text-break">Interface IModelProvider
+  </h1>
+  <div class="markdown level0 summary"><p>Interface defining a provider of <a class="xref" href="Xbim.Common.IModel.html">IModel</a>s that can be used to Create, Open and persist model data</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.IO.html">Xbim.IO</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Common.dll</h6>
+  <h5 id="Xbim_IO_IModelProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IModelProvider</code></pre>
+  </div>
+  <h5 id="Xbim_IO_IModelProvider_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The implementors can use this to provide the concrete implementation of the <a class="xref" href="Xbim.Common.IModel.html">IModel</a> without
+a direct reference to the actual type.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_IModelProvider_Capabilities.md&amp;value=---%0Auid%3A%20Xbim.IO.IModelProvider.Capabilities%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/IModelProvider.cs/#L75">View Source</a>
+  </span>
+  <a id="Xbim_IO_IModelProvider_Capabilities_" data-uid="Xbim.IO.IModelProvider.Capabilities*"></a>
+  <h4 id="Xbim_IO_IModelProvider_Capabilities" data-uid="Xbim.IO.IModelProvider.Capabilities">Capabilities</h4>
+  <div class="markdown level1 summary"><p>Describes the capabilities of the underlying model store(s)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">StoreCapabilities Capabilities { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.StoreCapabilities.html">StoreCapabilities</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_IModelProvider_EntityFactoryResolver.md&amp;value=---%0Auid%3A%20Xbim.IO.IModelProvider.EntityFactoryResolver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/IModelProvider.cs/#L97">View Source</a>
+  </span>
+  <a id="Xbim_IO_IModelProvider_EntityFactoryResolver_" data-uid="Xbim.IO.IModelProvider.EntityFactoryResolver*"></a>
+  <h4 id="Xbim_IO_IModelProvider_EntityFactoryResolver" data-uid="Xbim.IO.IModelProvider.EntityFactoryResolver">EntityFactoryResolver</h4>
+  <div class="markdown level1 summary"><p>Gets and sets a delegate to allow consumers to determine the <a class="xref" href="Xbim.Common.IEntityFactory.html">IEntityFactory</a> to build
+for a given <a class="xref" href="Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Func&lt;XbimSchemaVersion, IEntityFactory&gt; EntityFactoryResolver { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a>, <a class="xref" href="Xbim.Common.IEntityFactory.html">IEntityFactory</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_IModelProvider_Close_Xbim_Common_IModel_.md&amp;value=---%0Auid%3A%20Xbim.IO.IModelProvider.Close(Xbim.Common.IModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/IModelProvider.cs/#L19">View Source</a>
+  </span>
+  <a id="Xbim_IO_IModelProvider_Close_" data-uid="Xbim.IO.IModelProvider.Close*"></a>
+  <h4 id="Xbim_IO_IModelProvider_Close_Xbim_Common_IModel_" data-uid="Xbim.IO.IModelProvider.Close(Xbim.Common.IModel)">Close(IModel)</h4>
+  <div class="markdown level1 summary"><p>Closes a model and releases any resources</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Close(IModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.IModel.html">IModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_IModelProvider_Create_Xbim_Common_Step21_XbimSchemaVersion_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.IModelProvider.Create(Xbim.Common.Step21.XbimSchemaVersion%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/IModelProvider.cs/#L27">View Source</a>
+  </span>
+  <a id="Xbim_IO_IModelProvider_Create_" data-uid="Xbim.IO.IModelProvider.Create*"></a>
+  <h4 id="Xbim_IO_IModelProvider_Create_Xbim_Common_Step21_XbimSchemaVersion_System_String_" data-uid="Xbim.IO.IModelProvider.Create(Xbim.Common.Step21.XbimSchemaVersion,System.String)">Create(XbimSchemaVersion, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new empty persistent model with the provided path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IModel Create(XbimSchemaVersion ifcVersion, string dbPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">ifcVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dbPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_IModelProvider_Create_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimStoreType_.md&amp;value=---%0Auid%3A%20Xbim.IO.IModelProvider.Create(Xbim.Common.Step21.XbimSchemaVersion%2CXbim.IO.XbimStoreType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/IModelProvider.cs/#L35">View Source</a>
+  </span>
+  <a id="Xbim_IO_IModelProvider_Create_" data-uid="Xbim.IO.IModelProvider.Create*"></a>
+  <h4 id="Xbim_IO_IModelProvider_Create_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimStoreType_" data-uid="Xbim.IO.IModelProvider.Create(Xbim.Common.Step21.XbimSchemaVersion,Xbim.IO.XbimStoreType)">Create(XbimSchemaVersion, XbimStoreType)</h4>
+  <div class="markdown level1 summary"><p>Creates a new empty model, backed by the requested type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IModel Create(XbimSchemaVersion ifcVersion, XbimStoreType storageType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">ifcVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.XbimStoreType.html">XbimStoreType</a></td>
+        <td><span class="parametername">storageType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_IModelProvider_GetLocation_Xbim_Common_IModel_.md&amp;value=---%0Auid%3A%20Xbim.IO.IModelProvider.GetLocation(Xbim.Common.IModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/IModelProvider.cs/#L91">View Source</a>
+  </span>
+  <a id="Xbim_IO_IModelProvider_GetLocation_" data-uid="Xbim.IO.IModelProvider.GetLocation*"></a>
+  <h4 id="Xbim_IO_IModelProvider_GetLocation_Xbim_Common_IModel_" data-uid="Xbim.IO.IModelProvider.GetLocation(Xbim.Common.IModel)">GetLocation(IModel)</h4>
+  <div class="markdown level1 summary"><p>Gets the location any persisted backing store for the Model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetLocation(IModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.IModel.html">IModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Xbim_IO_IModelProvider_GetLocation_Xbim_Common_IModel__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For EsentModel this would be the location of the xbim file</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_IModelProvider_GetXbimSchemaVersion_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.IModelProvider.GetXbimSchemaVersion(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/IModelProvider.cs/#L42">View Source</a>
+  </span>
+  <a id="Xbim_IO_IModelProvider_GetXbimSchemaVersion_" data-uid="Xbim.IO.IModelProvider.GetXbimSchemaVersion*"></a>
+  <h4 id="Xbim_IO_IModelProvider_GetXbimSchemaVersion_System_String_" data-uid="Xbim.IO.IModelProvider.GetXbimSchemaVersion(System.String)">GetXbimSchemaVersion(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a> of the provided model file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">XbimSchemaVersion GetXbimSchemaVersion(string modelPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modelPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_IModelProvider_Open_System_IO_Stream_Xbim_IO_StorageType_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimModelType_Xbim_IO_XbimDBAccess_Xbim_Common_ReportProgressDelegate_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.IModelProvider.Open(System.IO.Stream%2CXbim.IO.StorageType%2CXbim.Common.Step21.XbimSchemaVersion%2CXbim.IO.XbimModelType%2CXbim.IO.XbimDBAccess%2CXbim.Common.ReportProgressDelegate%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/IModelProvider.cs/#L55">View Source</a>
+  </span>
+  <a id="Xbim_IO_IModelProvider_Open_" data-uid="Xbim.IO.IModelProvider.Open*"></a>
+  <h4 id="Xbim_IO_IModelProvider_Open_System_IO_Stream_Xbim_IO_StorageType_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimModelType_Xbim_IO_XbimDBAccess_Xbim_Common_ReportProgressDelegate_System_Int32_" data-uid="Xbim.IO.IModelProvider.Open(System.IO.Stream,Xbim.IO.StorageType,Xbim.Common.Step21.XbimSchemaVersion,Xbim.IO.XbimModelType,Xbim.IO.XbimDBAccess,Xbim.Common.ReportProgressDelegate,System.Int32)">Open(Stream, StorageType, XbimSchemaVersion, XbimModelType, XbimDBAccess, ReportProgressDelegate, Int32)</h4>
+  <div class="markdown level1 summary"><p>Opens a model from the provided <span class="xref">System.IO.Stream</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IModel Open(Stream stream, StorageType dataType, XbimSchemaVersion schemaVersion, XbimModelType modelType, XbimDBAccess accessMode = XbimDBAccess.Read, ReportProgressDelegate progDelegate = null, int codePageOverride = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.StorageType.html">StorageType</a></td>
+        <td><span class="parametername">dataType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">schemaVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.XbimModelType.html">XbimModelType</a></td>
+        <td><span class="parametername">modelType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.XbimDBAccess.html">XbimDBAccess</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">codePageOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_IModelProvider_Open_System_String_Xbim_Common_Step21_XbimSchemaVersion_System_Nullable_System_Double__Xbim_Common_ReportProgressDelegate_Xbim_IO_XbimDBAccess_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.IModelProvider.Open(System.String%2CXbim.Common.Step21.XbimSchemaVersion%2CSystem.Nullable%7BSystem.Double%7D%2CXbim.Common.ReportProgressDelegate%2CXbim.IO.XbimDBAccess%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/IModelProvider.cs/#L69">View Source</a>
+  </span>
+  <a id="Xbim_IO_IModelProvider_Open_" data-uid="Xbim.IO.IModelProvider.Open*"></a>
+  <h4 id="Xbim_IO_IModelProvider_Open_System_String_Xbim_Common_Step21_XbimSchemaVersion_System_Nullable_System_Double__Xbim_Common_ReportProgressDelegate_Xbim_IO_XbimDBAccess_System_Int32_" data-uid="Xbim.IO.IModelProvider.Open(System.String,Xbim.Common.Step21.XbimSchemaVersion,System.Nullable{System.Double},Xbim.Common.ReportProgressDelegate,Xbim.IO.XbimDBAccess,System.Int32)">Open(String, XbimSchemaVersion, Nullable&lt;Double&gt;, ReportProgressDelegate, XbimDBAccess, Int32)</h4>
+  <div class="markdown level1 summary"><p>Opens a model from the given path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IModel Open(string path, XbimSchemaVersion schemaVersion, double? ifcDatabaseSizeThreshHold = null, ReportProgressDelegate progDelegate = null, XbimDBAccess accessMode = XbimDBAccess.Read, int codePageOverride = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">schemaVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">ifcDatabaseSizeThreshHold</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.XbimDBAccess.html">XbimDBAccess</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">codePageOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_IModelProvider_Persist_Xbim_Common_IModel_System_String_Xbim_Common_ReportProgressDelegate_.md&amp;value=---%0Auid%3A%20Xbim.IO.IModelProvider.Persist(Xbim.Common.IModel%2CSystem.String%2CXbim.Common.ReportProgressDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/IModelProvider.cs/#L83">View Source</a>
+  </span>
+  <a id="Xbim_IO_IModelProvider_Persist_" data-uid="Xbim.IO.IModelProvider.Persist*"></a>
+  <h4 id="Xbim_IO_IModelProvider_Persist_Xbim_Common_IModel_System_String_Xbim_Common_ReportProgressDelegate_" data-uid="Xbim.IO.IModelProvider.Persist(Xbim.Common.IModel,System.String,Xbim.Common.ReportProgressDelegate)">Persist(IModel, String, ReportProgressDelegate)</h4>
+  <div class="markdown level1 summary"><p>Saves the current model to a persistent store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Persist(IModel model, string fileName, ReportProgressDelegate progDelegate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.IModel.html">IModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_IModelProvider.md&amp;value=---%0Auid%3A%20Xbim.IO.IModelProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/IModelProvider.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

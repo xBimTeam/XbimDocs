@@ -1,0 +1,752 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcPileType
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcPileType
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType">
+  
+  
+  <h1 id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType" class="text-break">Class IfcPileType
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><a class="xref" href="Xbim.Ifc4.Kernel.IfcRoot.html">IfcRoot</a></div>
+    <div class="level3"><a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html">IfcObjectDefinition</a></div>
+    <div class="level4"><a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeObject.html">IfcTypeObject</a></div>
+    <div class="level5"><a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeProduct.html">IfcTypeProduct</a></div>
+    <div class="level6"><a class="xref" href="Xbim.Ifc4.ProductExtension.IfcElementType.html">IfcElementType</a></div>
+    <div class="level7"><a class="xref" href="Xbim.Ifc4.ProductExtension.IfcBuildingElementType.html">IfcBuildingElementType</a></div>
+    <div class="level8"><span class="xref">IfcPileType</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.Kernel.IfcRoot.html">IfcRoot</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html">IfcObjectDefinition</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeObject.html">IfcTypeObject</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeProduct.html">IfcTypeProduct</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.ProductExtension.IfcElementType.html">IfcElementType</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.ProductExtension.IfcBuildingElementType.html">IfcBuildingElementType</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcPileType.html">IIfcPileType</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcBuildingElementType.html">IIfcBuildingElementType</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcElementType.html">IIfcElementType</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcTypeProduct.html">IIfcTypeProduct</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcTypeObject.html">IIfcTypeObject</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcObjectDefinition.html">IIfcObjectDefinition</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcRoot.html">IIfcRoot</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Kernel.IfcDefinitionSelect.html">IfcDefinitionSelect</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcDefinitionSelect.html">IIfcDefinitionSelect</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Kernel.IfcProductSelect.html">IfcProductSelect</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcProductSelect.html">IIfcProductSelect</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IContainsIndexedReferences.html">IContainsIndexedReferences</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.html">IfcPileType</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ProductExtension.IfcBuildingElementType.html#Xbim_Ifc4_ProductExtension_IfcBuildingElementType_Equals_Xbim_Ifc4_ProductExtension_IfcBuildingElementType_">IfcBuildingElementType.Equals(IfcBuildingElementType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ProductExtension.IfcElementType.html#Xbim_Ifc4_ProductExtension_IfcElementType_Xbim_Ifc4_Interfaces_IIfcElementType_ElementType">IfcElementType.IIfcElementType.ElementType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ProductExtension.IfcElementType.html#Xbim_Ifc4_ProductExtension_IfcElementType_ElementType">IfcElementType.ElementType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.ProductExtension.IfcElementType.html#Xbim_Ifc4_ProductExtension_IfcElementType_Equals_Xbim_Ifc4_ProductExtension_IfcElementType_">IfcElementType.Equals(IfcElementType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeProduct.html#Xbim_Ifc4_Kernel_IfcTypeProduct_Xbim_Ifc4_Interfaces_IIfcTypeProduct_RepresentationMaps">IfcTypeProduct.IIfcTypeProduct.RepresentationMaps</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeProduct.html#Xbim_Ifc4_Kernel_IfcTypeProduct_Xbim_Ifc4_Interfaces_IIfcTypeProduct_Tag">IfcTypeProduct.IIfcTypeProduct.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeProduct.html#Xbim_Ifc4_Kernel_IfcTypeProduct_Xbim_Ifc4_Interfaces_IIfcTypeProduct_ReferencedBy">IfcTypeProduct.IIfcTypeProduct.ReferencedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeProduct.html#Xbim_Ifc4_Kernel_IfcTypeProduct_RepresentationMaps">IfcTypeProduct.RepresentationMaps</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeProduct.html#Xbim_Ifc4_Kernel_IfcTypeProduct_Tag">IfcTypeProduct.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeProduct.html#Xbim_Ifc4_Kernel_IfcTypeProduct_ReferencedBy">IfcTypeProduct.ReferencedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeProduct.html#Xbim_Ifc4_Kernel_IfcTypeProduct_Equals_Xbim_Ifc4_Kernel_IfcTypeProduct_">IfcTypeProduct.Equals(IfcTypeProduct)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeProduct.html#Xbim_Ifc4_Kernel_IfcTypeProduct_ValidateClause_Xbim_Ifc4_Kernel_IfcTypeProduct_IfcTypeProductClause_">IfcTypeProduct.ValidateClause(IfcTypeProduct.IfcTypeProductClause)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeObject.html#Xbim_Ifc4_Kernel_IfcTypeObject_Xbim_Ifc4_Interfaces_IIfcTypeObject_ApplicableOccurrence">IfcTypeObject.IIfcTypeObject.ApplicableOccurrence</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeObject.html#Xbim_Ifc4_Kernel_IfcTypeObject_Xbim_Ifc4_Interfaces_IIfcTypeObject_HasPropertySets">IfcTypeObject.IIfcTypeObject.HasPropertySets</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeObject.html#Xbim_Ifc4_Kernel_IfcTypeObject_Xbim_Ifc4_Interfaces_IIfcTypeObject_Types">IfcTypeObject.IIfcTypeObject.Types</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeObject.html#Xbim_Ifc4_Kernel_IfcTypeObject_ApplicableOccurrence">IfcTypeObject.ApplicableOccurrence</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeObject.html#Xbim_Ifc4_Kernel_IfcTypeObject_HasPropertySets">IfcTypeObject.HasPropertySets</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeObject.html#Xbim_Ifc4_Kernel_IfcTypeObject_Types">IfcTypeObject.Types</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeObject.html#Xbim_Ifc4_Kernel_IfcTypeObject_Equals_Xbim_Ifc4_Kernel_IfcTypeObject_">IfcTypeObject.Equals(IfcTypeObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeObject.html#Xbim_Ifc4_Kernel_IfcTypeObject_DefinedByProperties">IfcTypeObject.DefinedByProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeObject.html#Xbim_Ifc4_Kernel_IfcTypeObject_ValidateClause_Xbim_Ifc4_Kernel_IfcTypeObject_IfcTypeObjectClause_">IfcTypeObject.ValidateClause(IfcTypeObject.IfcTypeObjectClause)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_HasAssignments">IfcObjectDefinition.IIfcObjectDefinition.HasAssignments</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_Nests">IfcObjectDefinition.IIfcObjectDefinition.Nests</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_IsNestedBy">IfcObjectDefinition.IIfcObjectDefinition.IsNestedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_HasContext">IfcObjectDefinition.IIfcObjectDefinition.HasContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_IsDecomposedBy">IfcObjectDefinition.IIfcObjectDefinition.IsDecomposedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_Decomposes">IfcObjectDefinition.IIfcObjectDefinition.Decomposes</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_HasAssociations">IfcObjectDefinition.IIfcObjectDefinition.HasAssociations</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_HasAssignments">IfcObjectDefinition.HasAssignments</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Nests">IfcObjectDefinition.Nests</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_IsNestedBy">IfcObjectDefinition.IsNestedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_HasContext">IfcObjectDefinition.HasContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_IsDecomposedBy">IfcObjectDefinition.IsDecomposedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Decomposes">IfcObjectDefinition.Decomposes</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_HasAssociations">IfcObjectDefinition.HasAssociations</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Equals_Xbim_Ifc4_Kernel_IfcObjectDefinition_">IfcObjectDefinition.Equals(IfcObjectDefinition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Material">IfcObjectDefinition.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcObjectDefinition.html#Xbim_Ifc4_Kernel_IfcObjectDefinition_Item_System_String_">IfcObjectDefinition.Item[String]</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcRoot.html#Xbim_Ifc4_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_GlobalId">IfcRoot.IIfcRoot.GlobalId</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcRoot.html#Xbim_Ifc4_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_OwnerHistory">IfcRoot.IIfcRoot.OwnerHistory</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcRoot.html#Xbim_Ifc4_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_Name">IfcRoot.IIfcRoot.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcRoot.html#Xbim_Ifc4_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_Description">IfcRoot.IIfcRoot.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcRoot.html#Xbim_Ifc4_Kernel_IfcRoot_GlobalId">IfcRoot.GlobalId</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcRoot.html#Xbim_Ifc4_Kernel_IfcRoot_OwnerHistory">IfcRoot.OwnerHistory</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcRoot.html#Xbim_Ifc4_Kernel_IfcRoot_Name">IfcRoot.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcRoot.html#Xbim_Ifc4_Kernel_IfcRoot_Description">IfcRoot.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcRoot.html#Xbim_Ifc4_Kernel_IfcRoot_Equals_Xbim_Ifc4_Kernel_IfcRoot_">IfcRoot.Equals(IfcRoot)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc4.StructuralElementsDomain.html">Xbim.Ifc4.StructuralElementsDomain</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc4.dll</h6>
+  <h5 id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcPileType&quot;, 1221)]
+public class IfcPileType : IfcBuildingElementType, INotifyPropertyChanged, IEquatable&lt;IfcRoot&gt;, IEquatable&lt;IfcObjectDefinition&gt;, IEquatable&lt;IfcTypeObject&gt;, IEquatable&lt;IfcTypeProduct&gt;, IEquatable&lt;IfcElementType&gt;, IEquatable&lt;IfcBuildingElementType&gt;, IInstantiableEntity, IIfcPileType, IIfcBuildingElementType, IIfcElementType, IIfcTypeProduct, IIfcTypeObject, IIfcObjectDefinition, IIfcRoot, IfcDefinitionSelect, IIfcDefinitionSelect, IfcProductSelect, IIfcProductSelect, IExpressSelectType, IContainsEntityReferences, IContainsIndexedReferences, IPersistEntity, IPersist, IEquatable&lt;IfcPileType&gt;, IExpressValidatable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralElementsDomain_IfcPileType_PredefinedType.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralElementsDomain.IfcPileType.PredefinedType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralElementsDomain/IfcPileType.cs/#L59">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_PredefinedType_" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.PredefinedType*"></a>
+  <h4 id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_PredefinedType" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.PredefinedType">PredefinedType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(10, EntityAttributeState.Mandatory, EntityAttributeType.Enum, EntityAttributeType.None, null, null, 19)]
+public IfcPileTypeEnum PredefinedType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.Interfaces.IfcPileTypeEnum.html">IfcPileTypeEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Equals_Xbim_Ifc4_StructuralElementsDomain_IfcPileType_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Equals(Xbim.Ifc4.StructuralElementsDomain.IfcPileType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralElementsDomain/IfcPileType.cs/#L104">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Equals_" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Equals*"></a>
+  <h4 id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Equals_Xbim_Ifc4_StructuralElementsDomain_IfcPileType_" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Equals(Xbim.Ifc4.StructuralElementsDomain.IfcPileType)">Equals(IfcPileType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcPileType other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.html">IfcPileType</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralElementsDomain/IfcPileType.cs/#L79">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Parse_" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Parse*"></a>
+  <h4 id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc4.ProductExtension.IfcBuildingElementType.html#Xbim_Ifc4_ProductExtension_IfcBuildingElementType_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">IfcBuildingElementType.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Validate.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/Validation/IfcPileType.cs/#L43">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Validate_" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Validate*"></a>
+  <h4 id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Validate" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Validate">Validate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;ValidationResult&gt; Validate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.ValidationResult.html">ValidationResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc4.Kernel.IfcTypeProduct.html#Xbim_Ifc4_Kernel_IfcTypeProduct_Validate">IfcTypeProduct.Validate()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralElementsDomain_IfcPileType_ValidateClause_Xbim_Ifc4_StructuralElementsDomain_IfcPileType_IfcPileTypeClause_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralElementsDomain.IfcPileType.ValidateClause(Xbim.Ifc4.StructuralElementsDomain.IfcPileType.IfcPileTypeClause)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/Validation/IfcPileType.cs/#L26">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_ValidateClause_" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.ValidateClause*"></a>
+  <h4 id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_ValidateClause_Xbim_Ifc4_StructuralElementsDomain_IfcPileType_IfcPileTypeClause_" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.ValidateClause(Xbim.Ifc4.StructuralElementsDomain.IfcPileType.IfcPileTypeClause)">ValidateClause(IfcPileType.IfcPileTypeClause)</h4>
+  <div class="markdown level1 summary"><p>Tests the express where-clause specified in param 'clause'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateClause(IfcPileType.IfcPileTypeClause clause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.IfcPileTypeClause.html">IfcPileType.IfcPileTypeClause</a></td>
+        <td><span class="parametername">clause</span></td>
+        <td><p>The express clause to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the clause is satisfied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Xbim_Common_IContainsEntityReferences_References.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Xbim%23Common%23IContainsEntityReferences%23References%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralElementsDomain/IfcPileType.cs/#L111">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Xbim_Common_IContainsEntityReferences_References_" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Xbim#Common#IContainsEntityReferences#References*"></a>
+  <h4 id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Xbim_Common_IContainsEntityReferences_References" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Xbim#Common#IContainsEntityReferences#References">IContainsEntityReferences.References</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IPersistEntity&gt; IContainsEntityReferences.References { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Xbim_Common_IContainsIndexedReferences_IndexedReferences.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Xbim%23Common%23IContainsIndexedReferences%23IndexedReferences%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralElementsDomain/IfcPileType.cs/#L127">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Xbim_Common_IContainsIndexedReferences_IndexedReferences_" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Xbim#Common#IContainsIndexedReferences#IndexedReferences*"></a>
+  <h4 id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Xbim_Common_IContainsIndexedReferences_IndexedReferences" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Xbim#Common#IContainsIndexedReferences#IndexedReferences">IContainsIndexedReferences.IndexedReferences</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IPersistEntity&gt; IContainsIndexedReferences.IndexedReferences { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Xbim_Ifc4_Interfaces_IIfcPileType_PredefinedType.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Xbim%23Ifc4%23Interfaces%23IIfcPileType%23PredefinedType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralElementsDomain/IfcPileType.cs/#L41">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Xbim_Ifc4_Interfaces_IIfcPileType_PredefinedType_" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Xbim#Ifc4#Interfaces#IIfcPileType#PredefinedType*"></a>
+  <h4 id="Xbim_Ifc4_StructuralElementsDomain_IfcPileType_Xbim_Ifc4_Interfaces_IIfcPileType_PredefinedType" data-uid="Xbim.Ifc4.StructuralElementsDomain.IfcPileType.Xbim#Ifc4#Interfaces#IIfcPileType#PredefinedType">IIfcPileType.PredefinedType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcPileTypeEnum IIfcPileType.PredefinedType { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.Interfaces.IfcPileTypeEnum.html">IfcPileTypeEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcPileType.html">IIfcPileType</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcBuildingElementType.html">IIfcBuildingElementType</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcElementType.html">IIfcElementType</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcTypeProduct.html">IIfcTypeProduct</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcTypeObject.html">IIfcTypeObject</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcObjectDefinition.html">IIfcObjectDefinition</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcRoot.html">IIfcRoot</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcDefinitionSelect.html">IfcDefinitionSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcDefinitionSelect.html">IIfcDefinitionSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Kernel.IfcProductSelect.html">IfcProductSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcProductSelect.html">IIfcProductSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IContainsIndexedReferences.html">IContainsIndexedReferences</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralElementsDomain_IfcPileType.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralElementsDomain.IfcPileType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/Validation/IfcPileType.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

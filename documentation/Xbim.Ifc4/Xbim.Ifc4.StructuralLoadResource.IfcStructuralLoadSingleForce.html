@@ -1,0 +1,731 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcStructuralLoadSingleForce
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcStructuralLoadSingleForce
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce">
+  
+  
+  <h1 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce" class="text-break">Class IfcStructuralLoadSingleForce
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoad.html">IfcStructuralLoad</a></div>
+    <div class="level3"><a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadOrResult.html">IfcStructuralLoadOrResult</a></div>
+    <div class="level4"><a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadStatic.html">IfcStructuralLoadStatic</a></div>
+    <div class="level5"><span class="xref">IfcStructuralLoadSingleForce</span></div>
+      <div class="level6"><a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForceWarping.html">IfcStructuralLoadSingleForceWarping</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoad.html">IfcStructuralLoad</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadOrResult.html">IfcStructuralLoadOrResult</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadStatic.html">IfcStructuralLoadStatic</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcStructuralLoadSingleForce.html">IIfcStructuralLoadSingleForce</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcStructuralLoadStatic.html">IIfcStructuralLoadStatic</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcStructuralLoadOrResult.html">IIfcStructuralLoadOrResult</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcStructuralLoad.html">IIfcStructuralLoad</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.html">IfcStructuralLoadSingleForce</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadStatic.html#Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadStatic_Equals_Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadStatic_">IfcStructuralLoadStatic.Equals(IfcStructuralLoadStatic)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadOrResult.html#Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadOrResult_Equals_Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadOrResult_">IfcStructuralLoadOrResult.Equals(IfcStructuralLoadOrResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoad.html#Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoad_Xbim_Ifc4_Interfaces_IIfcStructuralLoad_Name">IfcStructuralLoad.IIfcStructuralLoad.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoad.html#Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoad_Name">IfcStructuralLoad.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoad.html#Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoad_Equals_Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoad_">IfcStructuralLoad.Equals(IfcStructuralLoad)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc4.StructuralLoadResource.html">Xbim.Ifc4.StructuralLoadResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc4.dll</h6>
+  <h5 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcStructuralLoadSingleForce&quot;, 119)]
+public class IfcStructuralLoadSingleForce : IfcStructuralLoadStatic, INotifyPropertyChanged, IEquatable&lt;IfcStructuralLoad&gt;, IEquatable&lt;IfcStructuralLoadOrResult&gt;, IEquatable&lt;IfcStructuralLoadStatic&gt;, IInstantiableEntity, IIfcStructuralLoadSingleForce, IIfcStructuralLoadStatic, IIfcStructuralLoadOrResult, IIfcStructuralLoad, IPersistEntity, IPersist, IEquatable&lt;IfcStructuralLoadSingleForce&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_ForceX.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.ForceX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L94">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_ForceX_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.ForceX*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_ForceX" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.ForceX">ForceX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(2, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 2)]
+public IfcForceMeasure? ForceX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcForceMeasure.html">IfcForceMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_ForceY.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.ForceY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L108">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_ForceY_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.ForceY*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_ForceY" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.ForceY">ForceY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(3, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 3)]
+public IfcForceMeasure? ForceY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcForceMeasure.html">IfcForceMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_ForceZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.ForceZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L122">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_ForceZ_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.ForceZ*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_ForceZ" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.ForceZ">ForceZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(4, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 4)]
+public IfcForceMeasure? ForceZ { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcForceMeasure.html">IfcForceMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_MomentX.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.MomentX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L136">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_MomentX_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.MomentX*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_MomentX" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.MomentX">MomentX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(5, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 5)]
+public IfcTorqueMeasure? MomentX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcTorqueMeasure.html">IfcTorqueMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_MomentY.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.MomentY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L150">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_MomentY_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.MomentY*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_MomentY" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.MomentY">MomentY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(6, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 6)]
+public IfcTorqueMeasure? MomentY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcTorqueMeasure.html">IfcTorqueMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_MomentZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.MomentZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L164">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_MomentZ_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.MomentZ*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_MomentZ" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.MomentZ">MomentZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(7, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 7)]
+public IfcTorqueMeasure? MomentZ { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcTorqueMeasure.html">IfcTorqueMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Equals_Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Equals(Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L216">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Equals_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Equals*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Equals_Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Equals(Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce)">Equals(IfcStructuralLoadSingleForce)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcStructuralLoadSingleForce other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.html">IfcStructuralLoadSingleForce</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L184">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Parse_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Parse*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadStatic.html#Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadStatic_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">IfcStructuralLoadStatic.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_ForceX.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim%23Ifc4%23Interfaces%23IIfcStructuralLoadSingleForce%23ForceX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L46">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_ForceX_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#ForceX*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_ForceX" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#ForceX">IIfcStructuralLoadSingleForce.ForceX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcForceMeasure? IIfcStructuralLoadSingleForce.ForceX { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcForceMeasure.html">IfcForceMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_ForceY.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim%23Ifc4%23Interfaces%23IIfcStructuralLoadSingleForce%23ForceY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L51">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_ForceY_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#ForceY*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_ForceY" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#ForceY">IIfcStructuralLoadSingleForce.ForceY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcForceMeasure? IIfcStructuralLoadSingleForce.ForceY { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcForceMeasure.html">IfcForceMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_ForceZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim%23Ifc4%23Interfaces%23IIfcStructuralLoadSingleForce%23ForceZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L56">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_ForceZ_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#ForceZ*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_ForceZ" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#ForceZ">IIfcStructuralLoadSingleForce.ForceZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcForceMeasure? IIfcStructuralLoadSingleForce.ForceZ { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcForceMeasure.html">IfcForceMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_MomentX.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim%23Ifc4%23Interfaces%23IIfcStructuralLoadSingleForce%23MomentX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L61">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_MomentX_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#MomentX*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_MomentX" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#MomentX">IIfcStructuralLoadSingleForce.MomentX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcTorqueMeasure? IIfcStructuralLoadSingleForce.MomentX { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcTorqueMeasure.html">IfcTorqueMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_MomentY.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim%23Ifc4%23Interfaces%23IIfcStructuralLoadSingleForce%23MomentY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L66">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_MomentY_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#MomentY*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_MomentY" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#MomentY">IIfcStructuralLoadSingleForce.MomentY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcTorqueMeasure? IIfcStructuralLoadSingleForce.MomentY { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcTorqueMeasure.html">IfcTorqueMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_MomentZ.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim%23Ifc4%23Interfaces%23IIfcStructuralLoadSingleForce%23MomentZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L71">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_MomentZ_" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#MomentZ*"></a>
+  <h4 id="Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce_Xbim_Ifc4_Interfaces_IIfcStructuralLoadSingleForce_MomentZ" data-uid="Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce.Xbim#Ifc4#Interfaces#IIfcStructuralLoadSingleForce#MomentZ">IIfcStructuralLoadSingleForce.MomentZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcTorqueMeasure? IIfcStructuralLoadSingleForce.MomentZ { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc4.MeasureResource.IfcTorqueMeasure.html">IfcTorqueMeasure</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcStructuralLoadSingleForce.html">IIfcStructuralLoadSingleForce</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcStructuralLoadStatic.html">IIfcStructuralLoadStatic</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcStructuralLoadOrResult.html">IIfcStructuralLoadOrResult</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcStructuralLoad.html">IIfcStructuralLoad</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_StructuralLoadResource_IfcStructuralLoadSingleForce.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadSingleForce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/StructuralLoadResource/IfcStructuralLoadSingleForce.cs/#L41" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

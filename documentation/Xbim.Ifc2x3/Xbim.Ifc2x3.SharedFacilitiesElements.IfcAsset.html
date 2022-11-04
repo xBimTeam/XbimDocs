@@ -1,0 +1,1542 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcAsset
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcAsset
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset">
+  
+  
+  <h1 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset" class="text-break">Class IfcAsset
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html">IfcRoot</a></div>
+    <div class="level3"><a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html">IfcObjectDefinition</a></div>
+    <div class="level4"><a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html">IfcObject</a></div>
+    <div class="level5"><a class="xref" href="Xbim.Ifc2x3.Kernel.IfcGroup.html">IfcGroup</a></div>
+    <div class="level6"><span class="xref">IfcAsset</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html">IfcRoot</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html">IfcObjectDefinition</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html">IfcObject</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Kernel.IfcGroup.html">IfcGroup</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcAsset.html">IIfcAsset</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcGroup.html">IIfcGroup</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcObject.html">IIfcObject</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcObjectDefinition.html">IIfcObjectDefinition</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcRoot.html">IIfcRoot</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Kernel.IfcDefinitionSelect.html">IfcDefinitionSelect</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcDefinitionSelect.html">IIfcDefinitionSelect</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcAsset.html">IIfcAsset</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcGroup.html">IIfcGroup</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcObject.html">IIfcObject</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcObjectDefinition.html">IIfcObjectDefinition</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcRoot.html">IIfcRoot</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.html">IfcAsset</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcGroup.html#Xbim_Ifc2x3_Kernel_IfcGroup_Xbim_Ifc4_Interfaces_IIfcGroup_IsGroupedBy">IfcGroup.IIfcGroup.IsGroupedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcGroup.html#Xbim_Ifc2x3_Kernel_IfcGroup_Xbim_Ifc2x3_Interfaces_IIfcGroup_IsGroupedBy">IfcGroup.IIfcGroup.IsGroupedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcGroup.html#Xbim_Ifc2x3_Kernel_IfcGroup_IsGroupedBy">IfcGroup.IsGroupedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcGroup.html#Xbim_Ifc2x3_Kernel_IfcGroup_Equals_Xbim_Ifc2x3_Kernel_IfcGroup_">IfcGroup.Equals(IfcGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc4_Interfaces_IIfcObject_ObjectType">IfcObject.IIfcObject.ObjectType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc4_Interfaces_IIfcObject_IsDeclaredBy">IfcObject.IIfcObject.IsDeclaredBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc4_Interfaces_IIfcObject_Declares">IfcObject.IIfcObject.Declares</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc4_Interfaces_IIfcObject_IsTypedBy">IfcObject.IIfcObject.IsTypedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc4_Interfaces_IIfcObject_IsDefinedBy">IfcObject.IIfcObject.IsDefinedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc2x3_Interfaces_IIfcObject_ObjectType">IfcObject.IIfcObject.ObjectType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Xbim_Ifc2x3_Interfaces_IIfcObject_IsDefinedBy">IfcObject.IIfcObject.IsDefinedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_ObjectType">IfcObject.ObjectType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_IsDefinedBy">IfcObject.IsDefinedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Equals_Xbim_Ifc2x3_Kernel_IfcObject_">IfcObject.Equals(IfcObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_IsDefinedByProperties">IfcObject.IsDefinedByProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_IsTypedBy">IfcObject.IsTypedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_AddDefiningType_Xbim_Ifc2x3_Kernel_IfcTypeObject_">IfcObject.AddDefiningType(IfcTypeObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_AddPropertySet_Xbim_Ifc2x3_Kernel_IfcPropertySet_">IfcObject.AddPropertySet(IfcPropertySet)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetPropertySet_System_String_System_Boolean_">IfcObject.GetPropertySet(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetPropertySingleValue_System_String_System_String_">IfcObject.GetPropertySingleValue(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetPropertySingleValue__1_System_String_System_String_">IfcObject.GetPropertySingleValue&lt;TValueType&gt;(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetPropertySingleNominalValue_System_String_System_String_">IfcObject.GetPropertySingleNominalValue(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_PropertySets">IfcObject.PropertySets</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_SetPropertySingleValue_System_String_System_String_System_Type_">IfcObject.SetPropertySingleValue(String, String, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_SetPropertySingleValue_System_String_System_String_Xbim_Ifc2x3_MeasureResource_IfcValue_">IfcObject.SetPropertySingleValue(String, String, IfcValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetExternalElements_Xbim_Common_IModel_">IfcObject.GetExternalElements(IModel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetElementQuantity_System_String_System_Boolean_">IfcObject.GetElementQuantity(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_ElementQuantities">IfcObject.ElementQuantities</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_PhysicalSimpleQuantities">IfcObject.PhysicalSimpleQuantities</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetQuantity__1_System_String_System_String_">IfcObject.GetQuantity&lt;TQType&gt;(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetQuantity__1_System_String_">IfcObject.GetQuantity&lt;TQType&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_AddQuantity_System_String_Xbim_Ifc2x3_QuantityResource_IfcPhysicalQuantity_System_String_">IfcObject.AddQuantity(String, IfcPhysicalQuantity, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_AddQuantity_System_String_Xbim_Ifc2x3_QuantityResource_IfcPhysicalQuantity_">IfcObject.AddQuantity(String, IfcPhysicalQuantity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_GetElementPhysicalSimpleQuantity_System_String_System_String_">IfcObject.GetElementPhysicalSimpleQuantity(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_SetElementPhysicalSimpleQuantity_System_String_System_String_System_Double_Xbim_Ifc2x3_Kernel_XbimQuantityTypeEnum_Xbim_Ifc2x3_MeasureResource_IfcNamedUnit_">IfcObject.SetElementPhysicalSimpleQuantity(String, String, Double, XbimQuantityTypeEnum, IfcNamedUnit)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_ValidateClause_Xbim_Ifc2x3_Kernel_IfcObject_IfcObjectClause_">IfcObject.ValidateClause(IfcObject.IfcObjectClause)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_HasAssignments">IfcObjectDefinition.IIfcObjectDefinition.HasAssignments</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_Nests">IfcObjectDefinition.IIfcObjectDefinition.Nests</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_IsNestedBy">IfcObjectDefinition.IIfcObjectDefinition.IsNestedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_HasContext">IfcObjectDefinition.IIfcObjectDefinition.HasContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_IsDecomposedBy">IfcObjectDefinition.IIfcObjectDefinition.IsDecomposedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_Decomposes">IfcObjectDefinition.IIfcObjectDefinition.Decomposes</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc4_Interfaces_IIfcObjectDefinition_HasAssociations">IfcObjectDefinition.IIfcObjectDefinition.HasAssociations</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Item_System_String_">IfcObjectDefinition.Item[String]</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc2x3_Interfaces_IIfcObjectDefinition_HasAssignments">IfcObjectDefinition.IIfcObjectDefinition.HasAssignments</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc2x3_Interfaces_IIfcObjectDefinition_IsDecomposedBy">IfcObjectDefinition.IIfcObjectDefinition.IsDecomposedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc2x3_Interfaces_IIfcObjectDefinition_Decomposes">IfcObjectDefinition.IIfcObjectDefinition.Decomposes</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Xbim_Ifc2x3_Interfaces_IIfcObjectDefinition_HasAssociations">IfcObjectDefinition.IIfcObjectDefinition.HasAssociations</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_HasAssignments">IfcObjectDefinition.HasAssignments</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_IsDecomposedBy">IfcObjectDefinition.IsDecomposedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Decomposes">IfcObjectDefinition.Decomposes</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_HasAssociations">IfcObjectDefinition.HasAssociations</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Equals_Xbim_Ifc2x3_Kernel_IfcObjectDefinition_">IfcObjectDefinition.Equals(IfcObjectDefinition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObjectDefinition.html#Xbim_Ifc2x3_Kernel_IfcObjectDefinition_Material">IfcObjectDefinition.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_GlobalId">IfcRoot.IIfcRoot.GlobalId</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_OwnerHistory">IfcRoot.IIfcRoot.OwnerHistory</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_Name">IfcRoot.IIfcRoot.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc4_Interfaces_IIfcRoot_Description">IfcRoot.IIfcRoot.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc2x3_Interfaces_IIfcRoot_GlobalId">IfcRoot.IIfcRoot.GlobalId</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc2x3_Interfaces_IIfcRoot_OwnerHistory">IfcRoot.IIfcRoot.OwnerHistory</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc2x3_Interfaces_IIfcRoot_Name">IfcRoot.IIfcRoot.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Xbim_Ifc2x3_Interfaces_IIfcRoot_Description">IfcRoot.IIfcRoot.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_GlobalId">IfcRoot.GlobalId</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_OwnerHistory">IfcRoot.OwnerHistory</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Name">IfcRoot.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Description">IfcRoot.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_Equals_Xbim_Ifc2x3_Kernel_IfcRoot_">IfcRoot.Equals(IfcRoot)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc2x3.Kernel.IfcRoot.html#Xbim_Ifc2x3_Kernel_IfcRoot_FriendlyName">IfcRoot.FriendlyName</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc2x3.SharedFacilitiesElements.html">Xbim.Ifc2x3.SharedFacilitiesElements</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc2x3.dll</h6>
+  <h5 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcAsset&quot;, 767)]
+public class IfcAsset : IfcGroup, INotifyPropertyChanged, IEquatable&lt;IfcRoot&gt;, IEquatable&lt;IfcObjectDefinition&gt;, IEquatable&lt;IfcObject&gt;, IEquatable&lt;IfcGroup&gt;, IIfcAsset, IIfcGroup, IIfcObject, IIfcObjectDefinition, IIfcRoot, IfcDefinitionSelect, IIfcDefinitionSelect, IExpressSelectType, IInstantiableEntity, IIfcAsset, IIfcGroup, IIfcObject, IIfcObjectDefinition, IIfcRoot, IContainsEntityReferences, IPersistEntity, IPersist, IEquatable&lt;IfcAsset&gt;, IExpressValidatable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_AssetID.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.AssetID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L127">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_AssetID_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.AssetID*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_AssetID" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.AssetID">AssetID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(6, EntityAttributeState.Mandatory, EntityAttributeType.None, EntityAttributeType.None, null, null, 12)]
+public IfcIdentifier AssetID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcIdentifier.html">IfcIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_CurrentValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.CurrentValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L157">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_CurrentValue_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.CurrentValue*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_CurrentValue" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.CurrentValue">CurrentValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(8, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 14)]
+public IfcCostValue CurrentValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.CostResource.IfcCostValue.html">IfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_DepreciatedValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.DepreciatedValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L253">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_DepreciatedValue_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.DepreciatedValue*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_DepreciatedValue" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.DepreciatedValue">DepreciatedValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(14, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 20)]
+public IfcCostValue DepreciatedValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.CostResource.IfcCostValue.html">IfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_IncorporationDate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.IncorporationDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L237">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_IncorporationDate_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.IncorporationDate*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_IncorporationDate" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.IncorporationDate">IncorporationDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(13, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 19)]
+public IfcCalendarDate IncorporationDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcCalendarDate.html">IfcCalendarDate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_OriginalValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.OriginalValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L141">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_OriginalValue_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.OriginalValue*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_OriginalValue" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.OriginalValue">OriginalValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(7, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 13)]
+public IfcCostValue OriginalValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.CostResource.IfcCostValue.html">IfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Owner.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Owner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L189">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Owner_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Owner*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Owner" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Owner">Owner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(10, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 16)]
+public IfcActorSelect Owner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ActorResource.IfcActorSelect.html">IfcActorSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_ResponsiblePerson.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.ResponsiblePerson%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L221">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_ResponsiblePerson_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.ResponsiblePerson*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_ResponsiblePerson" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.ResponsiblePerson">ResponsiblePerson</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(12, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 18)]
+public IfcPerson ResponsiblePerson { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ActorResource.IfcPerson.html">IfcPerson</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_TotalReplacementCost.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.TotalReplacementCost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L173">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_TotalReplacementCost_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.TotalReplacementCost*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_TotalReplacementCost" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.TotalReplacementCost">TotalReplacementCost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(9, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 15)]
+public IfcCostValue TotalReplacementCost { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.CostResource.IfcCostValue.html">IfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_User.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.User%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L205">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_User_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.User*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_User" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.User">User</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(11, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 17)]
+public IfcActorSelect User { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.ActorResource.IfcActorSelect.html">IfcActorSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Equals_Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Equals(Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L320">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Equals_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Equals*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Equals_Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Equals(Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset)">Equals(IfcAsset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcAsset other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.html">IfcAsset</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L275">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Parse_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Parse*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc2x3.Kernel.IfcGroup.html#Xbim_Ifc2x3_Kernel_IfcGroup_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">IfcGroup.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Validate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcAsset.cs/#L47">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Validate_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Validate*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Validate" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Validate">Validate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;ValidationResult&gt; Validate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.ValidationResult.html">ValidationResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc2x3.Kernel.IfcObject.html#Xbim_Ifc2x3_Kernel_IfcObject_Validate">IfcObject.Validate()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_ValidateClause_Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_IfcAssetClause_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.ValidateClause(Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.IfcAssetClause)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcAsset.cs/#L30">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_ValidateClause_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.ValidateClause*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_ValidateClause_Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_IfcAssetClause_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.ValidateClause(Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.IfcAssetClause)">ValidateClause(IfcAsset.IfcAssetClause)</h4>
+  <div class="markdown level1 summary"><p>Tests the express where-clause specified in param 'clause'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateClause(IfcAsset.IfcAssetClause clause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.IfcAssetClause.html">IfcAsset.IfcAssetClause</a></td>
+        <td><span class="parametername">clause</span></td>
+        <td><p>The express clause to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the clause is satisfied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Common_IContainsEntityReferences_References.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Common%23IContainsEntityReferences%23References%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L327">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Common_IContainsEntityReferences_References_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Common#IContainsEntityReferences#References*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Common_IContainsEntityReferences_References" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Common#IContainsEntityReferences#References">IContainsEntityReferences.References</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IPersistEntity&gt; IContainsEntityReferences.References { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_AssetID.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc2x3%23Interfaces%23IIfcAsset%23AssetID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L53">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_AssetID_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#AssetID*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_AssetID" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#AssetID">IIfcAsset.AssetID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcIdentifier IIfcAsset.AssetID { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcIdentifier.html">IfcIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_CurrentValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc2x3%23Interfaces%23IIfcAsset%23CurrentValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L64">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_CurrentValue_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#CurrentValue*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_CurrentValue" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#CurrentValue">IIfcAsset.CurrentValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcCostValue IIfcAsset.CurrentValue { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcCostValue.html">IIfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_DepreciatedValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc2x3%23Interfaces%23IIfcAsset%23DepreciatedValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L100">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_DepreciatedValue_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#DepreciatedValue*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_DepreciatedValue" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#DepreciatedValue">IIfcAsset.DepreciatedValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcCostValue IIfcAsset.DepreciatedValue { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcCostValue.html">IIfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_IncorporationDate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc2x3%23Interfaces%23IIfcAsset%23IncorporationDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L94">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_IncorporationDate_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#IncorporationDate*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_IncorporationDate" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#IncorporationDate">IIfcAsset.IncorporationDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcCalendarDate IIfcAsset.IncorporationDate { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcCalendarDate.html">IIfcCalendarDate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_OriginalValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc2x3%23Interfaces%23IIfcAsset%23OriginalValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L58">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_OriginalValue_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#OriginalValue*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_OriginalValue" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#OriginalValue">IIfcAsset.OriginalValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcCostValue IIfcAsset.OriginalValue { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcCostValue.html">IIfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_Owner.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc2x3%23Interfaces%23IIfcAsset%23Owner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L76">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_Owner_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#Owner*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_Owner" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#Owner">IIfcAsset.Owner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcActorSelect IIfcAsset.Owner { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcActorSelect.html">IIfcActorSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_ResponsiblePerson.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc2x3%23Interfaces%23IIfcAsset%23ResponsiblePerson%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L88">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_ResponsiblePerson_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#ResponsiblePerson*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_ResponsiblePerson" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#ResponsiblePerson">IIfcAsset.ResponsiblePerson</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcPerson IIfcAsset.ResponsiblePerson { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcPerson.html">IIfcPerson</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_TotalReplacementCost.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc2x3%23Interfaces%23IIfcAsset%23TotalReplacementCost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L70">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_TotalReplacementCost_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#TotalReplacementCost*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_TotalReplacementCost" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#TotalReplacementCost">IIfcAsset.TotalReplacementCost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcCostValue IIfcAsset.TotalReplacementCost { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcCostValue.html">IIfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_User.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc2x3%23Interfaces%23IIfcAsset%23User%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/SharedFacilitiesElements/IfcAsset.cs/#L82">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_User_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#User*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc2x3_Interfaces_IIfcAsset_User" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc2x3#Interfaces#IIfcAsset#User">IIfcAsset.User</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcActorSelect IIfcAsset.User { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcActorSelect.html">IIfcActorSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_CurrentValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc4%23Interfaces%23IIfcAsset%23CurrentValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAsset.cs/#L51">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_CurrentValue_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#CurrentValue*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_CurrentValue" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#CurrentValue">IIfcAsset.CurrentValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAsset), 8)]
+IIfcCostValue IIfcAsset.CurrentValue { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcCostValue.html">IIfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_DepreciatedValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc4%23Interfaces%23IIfcAsset%23DepreciatedValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAsset.cs/#L216">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_DepreciatedValue_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#DepreciatedValue*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_DepreciatedValue" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#DepreciatedValue">IIfcAsset.DepreciatedValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAsset), 14)]
+IIfcCostValue IIfcAsset.DepreciatedValue { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcCostValue.html">IIfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_Identification.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc4%23Interfaces%23IIfcAsset%23Identification%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAsset.cs/#L21">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_Identification_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#Identification*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_Identification" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#Identification">IIfcAsset.Identification</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAsset), 6)]
+IfcIdentifier? IIfcAsset.Identification { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcIdentifier.html">IfcIdentifier</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_IncorporationDate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc4%23Interfaces%23IIfcAsset%23IncorporationDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAsset.cs/#L185">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_IncorporationDate_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#IncorporationDate*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_IncorporationDate" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#IncorporationDate">IIfcAsset.IncorporationDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAsset), 13)]
+IfcDate? IIfcAsset.IncorporationDate { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.DateTimeResource.IfcDate.html">IfcDate</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_OriginalValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc4%23Interfaces%23IIfcAsset%23OriginalValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAsset.cs/#L37">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_OriginalValue_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#OriginalValue*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_OriginalValue" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#OriginalValue">IIfcAsset.OriginalValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAsset), 7)]
+IIfcCostValue IIfcAsset.OriginalValue { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcCostValue.html">IIfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_Owner.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc4%23Interfaces%23IIfcAsset%23Owner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAsset.cs/#L79">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_Owner_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#Owner*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_Owner" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#Owner">IIfcAsset.Owner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAsset), 10)]
+IIfcActorSelect IIfcAsset.Owner { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcActorSelect.html">IIfcActorSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_ResponsiblePerson.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc4%23Interfaces%23IIfcAsset%23ResponsiblePerson%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAsset.cs/#L171">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_ResponsiblePerson_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#ResponsiblePerson*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_ResponsiblePerson" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#ResponsiblePerson">IIfcAsset.ResponsiblePerson</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAsset), 12)]
+IIfcPerson IIfcAsset.ResponsiblePerson { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcPerson.html">IIfcPerson</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_TotalReplacementCost.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc4%23Interfaces%23IIfcAsset%23TotalReplacementCost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAsset.cs/#L65">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_TotalReplacementCost_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#TotalReplacementCost*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_TotalReplacementCost" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#TotalReplacementCost">IIfcAsset.TotalReplacementCost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAsset), 9)]
+IIfcCostValue IIfcAsset.TotalReplacementCost { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcCostValue.html">IIfcCostValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_User.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim%23Ifc4%23Interfaces%23IIfcAsset%23User%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAsset.cs/#L125">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_User_" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#User*"></a>
+  <h4 id="Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset_Xbim_Ifc4_Interfaces_IIfcAsset_User" data-uid="Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.Xbim#Ifc4#Interfaces#IIfcAsset#User">IIfcAsset.User</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAsset), 11)]
+IIfcActorSelect IIfcAsset.User { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcActorSelect.html">IIfcActorSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcAsset.html">IIfcAsset</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcGroup.html">IIfcGroup</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcObject.html">IIfcObject</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcObjectDefinition.html">IIfcObjectDefinition</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcRoot.html">IIfcRoot</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Kernel.IfcDefinitionSelect.html">IfcDefinitionSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcDefinitionSelect.html">IIfcDefinitionSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcAsset.html">IIfcAsset</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcGroup.html">IIfcGroup</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcObject.html">IIfcObject</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcObjectDefinition.html">IIfcObjectDefinition</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcRoot.html">IIfcRoot</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IContainsEntityReferences.html">IContainsEntityReferences</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_SharedFacilitiesElements_IfcAsset.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcAsset.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

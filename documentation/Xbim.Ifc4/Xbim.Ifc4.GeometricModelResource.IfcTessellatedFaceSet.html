@@ -1,0 +1,604 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcTessellatedFaceSet
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcTessellatedFaceSet
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet">
+  
+  
+  <h1 id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet" class="text-break">Class IfcTessellatedFaceSet
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html">IfcRepresentationItem</a></div>
+    <div class="level3"><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcGeometricRepresentationItem.html">IfcGeometricRepresentationItem</a></div>
+    <div class="level4"><a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcTessellatedItem.html">IfcTessellatedItem</a></div>
+    <div class="level5"><span class="xref">IfcTessellatedFaceSet</span></div>
+      <div class="level6"><a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcPolygonalFaceSet.html">IfcPolygonalFaceSet</a></div>
+      <div class="level6"><a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcTriangulatedFaceSet.html">IfcTriangulatedFaceSet</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html">IfcRepresentationItem</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.GeometryResource.IfcGeometricRepresentationItem.html">IfcGeometricRepresentationItem</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcTessellatedItem.html">IfcTessellatedItem</a>&gt;</div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcTessellatedFaceSet.html">IIfcTessellatedFaceSet</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcTessellatedItem.html">IIfcTessellatedItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcGeometricRepresentationItem.html">IIfcGeometricRepresentationItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcRepresentationItem.html">IIfcRepresentationItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.PresentationOrganizationResource.IfcLayeredItem.html">IfcLayeredItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcLayeredItem.html">IIfcLayeredItem</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcBooleanOperand.html">IfcBooleanOperand</a></div>
+    <div><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcBooleanOperand.html">IIfcBooleanOperand</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.html">IfcTessellatedFaceSet</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcTessellatedItem.html#Xbim_Ifc4_GeometricModelResource_IfcTessellatedItem_Equals_Xbim_Ifc4_GeometricModelResource_IfcTessellatedItem_">IfcTessellatedItem.Equals(IfcTessellatedItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcGeometricRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcGeometricRepresentationItem_Equals_Xbim_Ifc4_GeometryResource_IfcGeometricRepresentationItem_">IfcGeometricRepresentationItem.Equals(IfcGeometricRepresentationItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcRepresentationItem_Xbim_Ifc4_Interfaces_IIfcRepresentationItem_LayerAssignment">IfcRepresentationItem.IIfcRepresentationItem.LayerAssignment</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcRepresentationItem_Xbim_Ifc4_Interfaces_IIfcRepresentationItem_StyledByItem">IfcRepresentationItem.IIfcRepresentationItem.StyledByItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcRepresentationItem_LayerAssignment">IfcRepresentationItem.LayerAssignment</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcRepresentationItem_StyledByItem">IfcRepresentationItem.StyledByItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Ifc4.GeometryResource.IfcRepresentationItem.html#Xbim_Ifc4_GeometryResource_IfcRepresentationItem_Equals_Xbim_Ifc4_GeometryResource_IfcRepresentationItem_">IfcRepresentationItem.Equals(IfcRepresentationItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc4.GeometricModelResource.html">Xbim.Ifc4.GeometricModelResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc4.dll</h6>
+  <h5 id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcTessellatedFaceSet&quot;, 1299)]
+public abstract class IfcTessellatedFaceSet : IfcTessellatedItem, INotifyPropertyChanged, IEquatable&lt;IfcRepresentationItem&gt;, IEquatable&lt;IfcGeometricRepresentationItem&gt;, IEquatable&lt;IfcTessellatedItem&gt;, IIfcTessellatedFaceSet, IIfcTessellatedItem, IIfcGeometricRepresentationItem, IIfcRepresentationItem, IfcLayeredItem, IIfcLayeredItem, IfcBooleanOperand, IIfcBooleanOperand, IExpressSelectType, IPersistEntity, IPersist, IEquatable&lt;IfcTessellatedFaceSet&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Coordinates.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Coordinates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometricModelResource/IfcTessellatedFaceSet.cs/#L65">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Coordinates_" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Coordinates*"></a>
+  <h4 id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Coordinates" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Coordinates">Coordinates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(1, EntityAttributeState.Mandatory, EntityAttributeType.Class, EntityAttributeType.None, null, null, 3)]
+public IfcCartesianPointList3D Coordinates { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcCartesianPointList3D.html">IfcCartesianPointList3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Dim.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Dim%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometricModelResource/IfcTessellatedFaceSet.cs/#L85">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Dim_" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Dim*"></a>
+  <h4 id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Dim" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Dim">Dim</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(0, EntityAttributeState.Derived, EntityAttributeType.None, EntityAttributeType.None, null, null, 0)]
+public IfcDimensionCount Dim { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.GeometryResource.IfcDimensionCount.html">IfcDimensionCount</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_HasColours.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.HasColours%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometricModelResource/IfcTessellatedFaceSet.cs/#L100">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_HasColours_" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.HasColours*"></a>
+  <h4 id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_HasColours" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.HasColours">HasColours</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;MappedTo&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{1}, 4)]
+public IEnumerable&lt;IfcIndexedColourMap&gt; HasColours { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc4.PresentationAppearanceResource.IfcIndexedColourMap.html">IfcIndexedColourMap</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_HasTextures.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.HasTextures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometricModelResource/IfcTessellatedFaceSet.cs/#L109">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_HasTextures_" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.HasTextures*"></a>
+  <h4 id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_HasTextures" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.HasTextures">HasTextures</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;MappedTo&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{-1}, 5)]
+public IEnumerable&lt;IfcIndexedTextureMap&gt; HasTextures { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc4.PresentationAppearanceResource.IfcIndexedTextureMap.html">IfcIndexedTextureMap</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Equals_Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Equals(Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometricModelResource/IfcTessellatedFaceSet.cs/#L135">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Equals_" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Equals*"></a>
+  <h4 id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Equals_Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Equals(Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet)">Equals(IfcTessellatedFaceSet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcTessellatedFaceSet other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.html">IfcTessellatedFaceSet</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometricModelResource/IfcTessellatedFaceSet.cs/#L121">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Parse_" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Parse*"></a>
+  <h4 id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcTessellatedItem.html#Xbim_Ifc4_GeometricModelResource_IfcTessellatedItem_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">IfcTessellatedItem.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Xbim_Ifc4_Interfaces_IIfcTessellatedFaceSet_Coordinates.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Xbim%23Ifc4%23Interfaces%23IIfcTessellatedFaceSet%23Coordinates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometricModelResource/IfcTessellatedFaceSet.cs/#L44">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Xbim_Ifc4_Interfaces_IIfcTessellatedFaceSet_Coordinates_" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Xbim#Ifc4#Interfaces#IIfcTessellatedFaceSet#Coordinates*"></a>
+  <h4 id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Xbim_Ifc4_Interfaces_IIfcTessellatedFaceSet_Coordinates" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Xbim#Ifc4#Interfaces#IIfcTessellatedFaceSet#Coordinates">IIfcTessellatedFaceSet.Coordinates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcCartesianPointList3D IIfcTessellatedFaceSet.Coordinates { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc4.Interfaces.IIfcCartesianPointList3D.html">IIfcCartesianPointList3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Xbim_Ifc4_Interfaces_IIfcTessellatedFaceSet_HasColours.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Xbim%23Ifc4%23Interfaces%23IIfcTessellatedFaceSet%23HasColours%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometricModelResource/IfcTessellatedFaceSet.cs/#L51">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Xbim_Ifc4_Interfaces_IIfcTessellatedFaceSet_HasColours_" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Xbim#Ifc4#Interfaces#IIfcTessellatedFaceSet#HasColours*"></a>
+  <h4 id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Xbim_Ifc4_Interfaces_IIfcTessellatedFaceSet_HasColours" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Xbim#Ifc4#Interfaces#IIfcTessellatedFaceSet#HasColours">IIfcTessellatedFaceSet.HasColours</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcIndexedColourMap&gt; IIfcTessellatedFaceSet.HasColours { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc4.Interfaces.IIfcIndexedColourMap.html">IIfcIndexedColourMap</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Xbim_Ifc4_Interfaces_IIfcTessellatedFaceSet_HasTextures.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Xbim%23Ifc4%23Interfaces%23IIfcTessellatedFaceSet%23HasTextures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometricModelResource/IfcTessellatedFaceSet.cs/#L52">View Source</a>
+  </span>
+  <a id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Xbim_Ifc4_Interfaces_IIfcTessellatedFaceSet_HasTextures_" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Xbim#Ifc4#Interfaces#IIfcTessellatedFaceSet#HasTextures*"></a>
+  <h4 id="Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet_Xbim_Ifc4_Interfaces_IIfcTessellatedFaceSet_HasTextures" data-uid="Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet.Xbim#Ifc4#Interfaces#IIfcTessellatedFaceSet#HasTextures">IIfcTessellatedFaceSet.HasTextures</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcIndexedTextureMap&gt; IIfcTessellatedFaceSet.HasTextures { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc4.Interfaces.IIfcIndexedTextureMap.html">IIfcIndexedTextureMap</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcTessellatedFaceSet.html">IIfcTessellatedFaceSet</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcTessellatedItem.html">IIfcTessellatedItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcGeometricRepresentationItem.html">IIfcGeometricRepresentationItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcRepresentationItem.html">IIfcRepresentationItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.PresentationOrganizationResource.IfcLayeredItem.html">IfcLayeredItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcLayeredItem.html">IIfcLayeredItem</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.GeometricModelResource.IfcBooleanOperand.html">IfcBooleanOperand</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc4.Interfaces.IIfcBooleanOperand.html">IIfcBooleanOperand</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc4_GeometricModelResource_IfcTessellatedFaceSet.md&amp;value=---%0Auid%3A%20Xbim.Ifc4.GeometricModelResource.IfcTessellatedFaceSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc4/GeometricModelResource/IfcTessellatedFaceSet.cs/#L39" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

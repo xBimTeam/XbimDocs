@@ -1,0 +1,3326 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EsentModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EsentModel
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.IO.Esent.EsentModel">
+  
+  
+  <h1 id="Xbim_IO_Esent_EsentModel" data-uid="Xbim.IO.Esent.EsentModel" class="text-break">Class EsentModel
+  </h1>
+  <div class="markdown level0 summary"><p>IModel implementation for Esent DB based model support</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EsentModel</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.Federation.IFederatedModel.html">IFederatedModel</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.IO.Esent.html">Xbim.IO.Esent</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.IO.Esent.dll</h6>
+  <h5 id="Xbim_IO_Esent_EsentModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EsentModel : IModel, IFederatedModel, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel__ctor_Xbim_Common_IEntityFactory_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.%23ctor(Xbim.Common.IEntityFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L71">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel__ctor_" data-uid="Xbim.IO.Esent.EsentModel.#ctor*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel__ctor_Xbim_Common_IEntityFactory_" data-uid="Xbim.IO.Esent.EsentModel.#ctor(Xbim.Common.IEntityFactory)">EsentModel(IEntityFactory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EsentModel(IEntityFactory factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityFactory.html">IEntityFactory</a></td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_InstanceCache.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.InstanceCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L28">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Esent_EsentModel_InstanceCache" data-uid="Xbim.IO.Esent.EsentModel.InstanceCache">InstanceCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PersistedEntityInstanceCache InstanceCache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.PersistedEntityInstanceCache.html">PersistedEntityInstanceCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_AllInstancesHandles.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.AllInstancesHandles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1096">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_AllInstancesHandles_" data-uid="Xbim.IO.Esent.EsentModel.AllInstancesHandles*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_AllInstancesHandles" data-uid="Xbim.IO.Esent.EsentModel.AllInstancesHandles">AllInstancesHandles</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerable of the handles to all entities in the model
+Note this includes entities that are in any federated models</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;XbimInstanceHandle&gt; AllInstancesHandles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.XbimInstanceHandle.html">XbimInstanceHandle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CanEdit.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CanEdit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L705">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CanEdit_" data-uid="Xbim.IO.Esent.EsentModel.CanEdit*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CanEdit" data-uid="Xbim.IO.Esent.EsentModel.CanEdit">CanEdit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanEdit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CodePageOverride.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CodePageOverride%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L120">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CodePageOverride_" data-uid="Xbim.IO.Esent.EsentModel.CodePageOverride*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CodePageOverride" data-uid="Xbim.IO.Esent.EsentModel.CodePageOverride">CodePageOverride</h4>
+  <div class="markdown level1 summary"><p>Some applications do not comply with the standard and used the Windows code page for text. This property gives the possibility to override the character encoding when reading ifc.
+default value = -1 - by standard <a href="http://www.buildingsmart-tech.org/implementation/get-started/string-encoding/string-encoding-decoding-summary">http://www.buildingsmart-tech.org/implementation/get-started/string-encoding/string-encoding-decoding-summary</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CodePageOverride { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Xbim_IO_Esent_EsentModel_CodePageOverride_examples">Examples</h5>
+  <p>model.CodePageOverride = Encoding.Default.WindowsCodePage;</p>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CurrentTransaction.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CurrentTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1035">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CurrentTransaction_" data-uid="Xbim.IO.Esent.EsentModel.CurrentTransaction*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CurrentTransaction" data-uid="Xbim.IO.Esent.EsentModel.CurrentTransaction">CurrentTransaction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITransaction CurrentTransaction { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_DatabaseName.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.DatabaseName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L97">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_DatabaseName_" data-uid="Xbim.IO.Esent.EsentModel.DatabaseName*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_DatabaseName" data-uid="Xbim.IO.Esent.EsentModel.DatabaseName">DatabaseName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DatabaseName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_EntityCache.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.EntityCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1236">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_EntityCache_" data-uid="Xbim.IO.Esent.EsentModel.EntityCache*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_EntityCache" data-uid="Xbim.IO.Esent.EsentModel.EntityCache">EntityCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityCache EntityCache { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityCache.html">IEntityCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Factory.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Factory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L56">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Factory_" data-uid="Xbim.IO.Esent.EsentModel.Factory*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Factory" data-uid="Xbim.IO.Esent.EsentModel.Factory">Factory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityFactory Factory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityFactory.html">IEntityFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_FederatedInstanceHandles.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.FederatedInstanceHandles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1209">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_FederatedInstanceHandles_" data-uid="Xbim.IO.Esent.EsentModel.FederatedInstanceHandles*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_FederatedInstanceHandles" data-uid="Xbim.IO.Esent.EsentModel.FederatedInstanceHandles">FederatedInstanceHandles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;XbimInstanceHandle&gt; FederatedInstanceHandles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.XbimInstanceHandle.html">XbimInstanceHandle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_FederatedInstances.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.FederatedInstances%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L141">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_FederatedInstances_" data-uid="Xbim.IO.Esent.EsentModel.FederatedInstances*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_FederatedInstances" data-uid="Xbim.IO.Esent.EsentModel.FederatedInstances">FederatedInstances</h4>
+  <div class="markdown level1 summary"><p>Returns a collection of all instances in the model and all federated instances</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyEntityCollection FederatedInstances { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IReadOnlyEntityCollection.html">IReadOnlyEntityCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GeometriesCount.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GeometriesCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L397">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GeometriesCount_" data-uid="Xbim.IO.Esent.EsentModel.GeometriesCount*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GeometriesCount" data-uid="Xbim.IO.Esent.EsentModel.GeometriesCount">GeometriesCount</h4>
+  <div class="markdown level1 summary"><p>Returns the total number of Geometry objects in the model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long GeometriesCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GeometryManager.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GeometryManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L103">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GeometryManager_" data-uid="Xbim.IO.Esent.EsentModel.GeometryManager*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GeometryManager" data-uid="Xbim.IO.Esent.EsentModel.GeometryManager">GeometryManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IGeometryManager GeometryManager { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.IGeometryManager.html">IGeometryManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GeometryStore.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GeometryStore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1123">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GeometryStore_" data-uid="Xbim.IO.Esent.EsentModel.GeometryStore*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GeometryStore" data-uid="Xbim.IO.Esent.EsentModel.GeometryStore">GeometryStore</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IGeometryStore GeometryStore { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.IGeometryStore.html">IGeometryStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GeometrySupportLevel.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GeometrySupportLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L868">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GeometrySupportLevel_" data-uid="Xbim.IO.Esent.EsentModel.GeometrySupportLevel*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GeometrySupportLevel" data-uid="Xbim.IO.Esent.EsentModel.GeometrySupportLevel">GeometrySupportLevel</h4>
+  <div class="markdown level1 summary"><p>Returns the level of geometry supported in the model
+0 = No geometry has been compiled in the model
+1 = Triangulated Mesh only
+2 = Polygonal  geometry meshes supporting maps</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GeometrySupportLevel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Header.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Header%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L555">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Header_" data-uid="Xbim.IO.Esent.EsentModel.Header*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Header" data-uid="Xbim.IO.Esent.EsentModel.Header">Header</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStepFileHeader Header { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.IStepFileHeader.html">IStepFileHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_InstanceHandles.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.InstanceHandles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1224">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_InstanceHandles_" data-uid="Xbim.IO.Esent.EsentModel.InstanceHandles*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_InstanceHandles" data-uid="Xbim.IO.Esent.EsentModel.InstanceHandles">InstanceHandles</h4>
+  <div class="markdown level1 summary"><p>Returns a list of the handles to only the entities in this model
+Note this do NOT include entities that are in any federated models</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;XbimInstanceHandle&gt; InstanceHandles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.XbimInstanceHandle.html">XbimInstanceHandle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Instances.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Instances%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L131">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Instances_" data-uid="Xbim.IO.Esent.EsentModel.Instances*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Instances" data-uid="Xbim.IO.Esent.EsentModel.Instances">Instances</h4>
+  <div class="markdown level1 summary"><p>Returns a collection of all instances only in the model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityCollection Instances { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityCollection.html">IEntityCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_InverseCache.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.InverseCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L207">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_InverseCache_" data-uid="Xbim.IO.Esent.EsentModel.InverseCache*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_InverseCache" data-uid="Xbim.IO.Esent.EsentModel.InverseCache">InverseCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IInverseCache InverseCache { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IInverseCache.html">IInverseCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_IsFederation.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.IsFederation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1079">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_IsFederation_" data-uid="Xbim.IO.Esent.EsentModel.IsFederation*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_IsFederation" data-uid="Xbim.IO.Esent.EsentModel.IsFederation">IsFederation</h4>
+  <div class="markdown level1 summary"><p>Returns true if the model contains reference models or the model has extension xBIMf</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsFederation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_IsTransacting.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.IsTransacting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L318">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_IsTransacting_" data-uid="Xbim.IO.Esent.EsentModel.IsTransacting*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_IsTransacting" data-uid="Xbim.IO.Esent.EsentModel.IsTransacting">IsTransacting</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTransacting { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Logger.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1234">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Logger_" data-uid="Xbim.IO.Esent.EsentModel.Logger*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Logger" data-uid="Xbim.IO.Esent.EsentModel.Logger">Logger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger Logger { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Metadata.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Metadata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L58">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Metadata_" data-uid="Xbim.IO.Esent.EsentModel.Metadata*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Metadata" data-uid="Xbim.IO.Esent.EsentModel.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressMetaData Metadata { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Metadata.ExpressMetaData.html">ExpressMetaData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_ModelFactors.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.ModelFactors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L64">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_ModelFactors_" data-uid="Xbim.IO.Esent.EsentModel.ModelFactors*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_ModelFactors" data-uid="Xbim.IO.Esent.EsentModel.ModelFactors">ModelFactors</h4>
+  <div class="markdown level1 summary"><p>Model wide factors, precision etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IModelFactors ModelFactors { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModelFactors.html">IModelFactors</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_ModelOpenCount.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.ModelOpenCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L105">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_ModelOpenCount_" data-uid="Xbim.IO.Esent.EsentModel.ModelOpenCount*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_ModelOpenCount" data-uid="Xbim.IO.Esent.EsentModel.ModelOpenCount">ModelOpenCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ModelOpenCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_ReferencedModels.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.ReferencedModels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1062">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_ReferencedModels_" data-uid="Xbim.IO.Esent.EsentModel.ReferencedModels*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_ReferencedModels" data-uid="Xbim.IO.Esent.EsentModel.ReferencedModels">ReferencedModels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IReferencedModel&gt; ReferencedModels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.Federation.IReferencedModel.html">IReferencedModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_ReferencingModel.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.ReferencingModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1203">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_ReferencingModel_" data-uid="Xbim.IO.Esent.EsentModel.ReferencingModel*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_ReferencingModel" data-uid="Xbim.IO.Esent.EsentModel.ReferencingModel">ReferencingModel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IModel ReferencingModel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_SchemaVersion.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.SchemaVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1229">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_SchemaVersion_" data-uid="Xbim.IO.Esent.EsentModel.SchemaVersion*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_SchemaVersion" data-uid="Xbim.IO.Esent.EsentModel.SchemaVersion">SchemaVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimSchemaVersion SchemaVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Tag.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Tag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L981">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Tag_" data-uid="Xbim.IO.Esent.EsentModel.Tag*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Tag" data-uid="Xbim.IO.Esent.EsentModel.Tag">Tag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Tag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_UserDefinedId.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.UserDefinedId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L48">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_UserDefinedId_" data-uid="Xbim.IO.Esent.EsentModel.UserDefinedId*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_UserDefinedId" data-uid="Xbim.IO.Esent.EsentModel.UserDefinedId">UserDefinedId</h4>
+  <div class="markdown level1 summary"><p>An identifier that an application can use to identify this model uniquely</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UserDefinedId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_AddModelReference_Xbim_Common_Federation_IReferencedModel_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.AddModelReference(Xbim.Common.Federation.IReferencedModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1070">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_AddModelReference_" data-uid="Xbim.IO.Esent.EsentModel.AddModelReference*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_AddModelReference_Xbim_Common_Federation_IReferencedModel_" data-uid="Xbim.IO.Esent.EsentModel.AddModelReference(Xbim.Common.Federation.IReferencedModel)">AddModelReference(IReferencedModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddModelReference(IReferencedModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Federation.IReferencedModel.html">IReferencedModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_BeginEntityCaching.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.BeginEntityCaching%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1175">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_BeginEntityCaching_" data-uid="Xbim.IO.Esent.EsentModel.BeginEntityCaching*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_BeginEntityCaching" data-uid="Xbim.IO.Esent.EsentModel.BeginEntityCaching">BeginEntityCaching()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityCache BeginEntityCaching()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityCache.html">IEntityCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_BeginInverseCaching.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.BeginInverseCaching%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L165">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_BeginInverseCaching_" data-uid="Xbim.IO.Esent.EsentModel.BeginInverseCaching*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_BeginInverseCaching" data-uid="Xbim.IO.Esent.EsentModel.BeginInverseCaching">BeginInverseCaching()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IInverseCache BeginInverseCaching()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IInverseCache.html">IInverseCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_BeginTransaction.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.BeginTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L313">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_BeginTransaction_" data-uid="Xbim.IO.Esent.EsentModel.BeginTransaction*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_BeginTransaction" data-uid="Xbim.IO.Esent.EsentModel.BeginTransaction">BeginTransaction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimReadWriteTransaction BeginTransaction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.XbimReadWriteTransaction.html">XbimReadWriteTransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_BeginTransaction_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.BeginTransaction(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L326">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_BeginTransaction_" data-uid="Xbim.IO.Esent.EsentModel.BeginTransaction*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_BeginTransaction_System_String_" data-uid="Xbim.IO.Esent.EsentModel.BeginTransaction(System.String)">BeginTransaction(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimReadWriteTransaction BeginTransaction(string operationName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">operationName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.XbimReadWriteTransaction.html">XbimReadWriteTransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CacheClear.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CacheClear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L669">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CacheClear_" data-uid="Xbim.IO.Esent.EsentModel.CacheClear*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CacheClear" data-uid="Xbim.IO.Esent.EsentModel.CacheClear">CacheClear()</h4>
+  <div class="markdown level1 summary"><p>Clears all read data in the cache</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CacheClear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CacheStart.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CacheStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L661">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CacheStart_" data-uid="Xbim.IO.Esent.EsentModel.CacheStart*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CacheStart" data-uid="Xbim.IO.Esent.EsentModel.CacheStart">CacheStart()</h4>
+  <div class="markdown level1 summary"><p>Begins a cache of all data read from the model, improves performance where data is read many times</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CacheStart()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CacheStop.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CacheStop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L678">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CacheStop_" data-uid="Xbim.IO.Esent.EsentModel.CacheStop*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CacheStop" data-uid="Xbim.IO.Esent.EsentModel.CacheStop">CacheStop()</h4>
+  <div class="markdown level1 summary"><p>Stops further caching of data and clears the current cache</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CacheStop()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CheckMaps.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CheckMaps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L810">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CheckMaps_" data-uid="Xbim.IO.Esent.EsentModel.CheckMaps*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CheckMaps" data-uid="Xbim.IO.Esent.EsentModel.CheckMaps">CheckMaps()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckMaps()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Close.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L603">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Close_" data-uid="Xbim.IO.Esent.EsentModel.Close*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Close" data-uid="Xbim.IO.Esent.EsentModel.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>Closes the current model and releases all resources and instances</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Close()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Compact_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Compact(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L896">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Compact_" data-uid="Xbim.IO.Esent.EsentModel.Compact*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Compact_System_String_" data-uid="Xbim.IO.Esent.EsentModel.Compact(System.String)">Compact(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Compact(string targetModelName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetModelName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CreateDatabase_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CreateDatabase(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L503">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CreateDatabase_" data-uid="Xbim.IO.Esent.EsentModel.CreateDatabase*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CreateDatabase_System_String_" data-uid="Xbim.IO.Esent.EsentModel.CreateDatabase(System.String)">CreateDatabase(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CreateDatabase(string tmpFileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tmpFileName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CreateFrom_System_IO_Stream_System_Int64_Xbim_IO_StorageType_System_String_Xbim_Common_ReportProgressDelegate_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CreateFrom(System.IO.Stream%2CSystem.Int64%2CXbim.IO.StorageType%2CSystem.String%2CXbim.Common.ReportProgressDelegate%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L459">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CreateFrom_" data-uid="Xbim.IO.Esent.EsentModel.CreateFrom*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CreateFrom_System_IO_Stream_System_Int64_Xbim_IO_StorageType_System_String_Xbim_Common_ReportProgressDelegate_System_Boolean_System_Boolean_" data-uid="Xbim.IO.Esent.EsentModel.CreateFrom(System.IO.Stream,System.Int64,Xbim.IO.StorageType,System.String,Xbim.Common.ReportProgressDelegate,System.Boolean,System.Boolean)">CreateFrom(Stream, Int64, StorageType, String, ReportProgressDelegate, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CreateFrom(Stream inputStream, long streamSize, StorageType streamType, string xbimDbName, ReportProgressDelegate progDelegate = null, bool keepOpen = false, bool cacheEntities = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">inputStream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">streamSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.StorageType.html">StorageType</a></td>
+        <td><span class="parametername">streamType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xbimDbName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">keepOpen</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cacheEntities</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CreateFrom_System_String_System_String_Xbim_Common_ReportProgressDelegate_System_Boolean_System_Boolean_System_Nullable_Xbim_IO_StorageType__System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CreateFrom(System.String%2CSystem.String%2CXbim.Common.ReportProgressDelegate%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Nullable%7BXbim.IO.StorageType%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L421">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CreateFrom_" data-uid="Xbim.IO.Esent.EsentModel.CreateFrom*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CreateFrom_System_String_System_String_Xbim_Common_ReportProgressDelegate_System_Boolean_System_Boolean_System_Nullable_Xbim_IO_StorageType__System_Boolean_" data-uid="Xbim.IO.Esent.EsentModel.CreateFrom(System.String,System.String,Xbim.Common.ReportProgressDelegate,System.Boolean,System.Boolean,System.Nullable{Xbim.IO.StorageType},System.Boolean)">CreateFrom(String, String, ReportProgressDelegate, Boolean, Boolean, Nullable&lt;StorageType&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Model and populates with instances from the specified file, Ifc, IfcXML, and IfcZip are all supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CreateFrom(string importFrom, string xbimDbName = null, ReportProgressDelegate progDelegate = null, bool keepOpen = false, bool cacheEntities = false, StorageType? storageType = null, bool deleteOnClose = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">importFrom</span></td>
+        <td><p>Name of the file containing the instances to import</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xbimDbName</span></td>
+        <td><p>Name of the xbim file that will be created.
+If null the contents are loaded into memory and are not persistent</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">keepOpen</span></td>
+        <td><p>Flag indicating whether to keep the model open after creation, otherwise closes after import</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cacheEntities</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.IO.StorageType.html">StorageType</a>&gt;</td>
+        <td><span class="parametername">storageType</span></td>
+        <td><p>The expected Ifc Format of the file. Inferred from extension when null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">deleteOnClose</span></td>
+        <td><p>Indicates whether the xbim database file should be deleted on close of model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Xbim_IO_Esent_EsentModel_CreateFrom_System_String_System_String_Xbim_Common_ReportProgressDelegate_System_Boolean_System_Boolean_System_Nullable_Xbim_IO_StorageType__System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To create a new model from an existing XBIM file, use
+<a class="xref" href="Xbim.IO.Esent.EsentModel.html#Xbim_IO_Esent_EsentModel_SaveAs_System_String_System_Nullable_Xbim_IO_StorageType__Xbim_Common_ReportProgressDelegate_System_Collections_Generic_IDictionary_System_Int32_System_Int32__">SaveAs(String, Nullable&lt;StorageType&gt;, ReportProgressDelegate, IDictionary&lt;Int32, Int32&gt;)</a>,
+or <a class="xref" href="Xbim.IO.Esent.EsentModel.html#Xbim_IO_Esent_EsentModel_CreateFrom_Xbim_Common_IModel_System_String_Xbim_Common_ReportProgressDelegate_">CreateFrom(IModel, String, ReportProgressDelegate)</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CreateFrom_Xbim_Common_IModel_System_String_Xbim_Common_ReportProgressDelegate_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CreateFrom(Xbim.Common.IModel%2CSystem.String%2CXbim.Common.ReportProgressDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1167">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CreateFrom_" data-uid="Xbim.IO.Esent.EsentModel.CreateFrom*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CreateFrom_Xbim_Common_IModel_System_String_Xbim_Common_ReportProgressDelegate_" data-uid="Xbim.IO.Esent.EsentModel.CreateFrom(Xbim.Common.IModel,System.String,Xbim.Common.ReportProgressDelegate)">CreateFrom(IModel, String, ReportProgressDelegate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateFrom(IModel model, string fileName, ReportProgressDelegate progDelegate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CreateModel_Xbim_Common_IEntityFactory_System_String_Xbim_IO_XbimDBAccess_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CreateModel(Xbim.Common.IEntityFactory%2CSystem.String%2CXbim.IO.XbimDBAccess)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L521">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CreateModel_" data-uid="Xbim.IO.Esent.EsentModel.CreateModel*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CreateModel_Xbim_Common_IEntityFactory_System_String_Xbim_IO_XbimDBAccess_" data-uid="Xbim.IO.Esent.EsentModel.CreateModel(Xbim.Common.IEntityFactory,System.String,Xbim.IO.XbimDBAccess)">CreateModel(IEntityFactory, String, XbimDBAccess)</h4>
+  <div class="markdown level1 summary"><p>Creates and opens a new Xbim Database</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EsentModel CreateModel(IEntityFactory factory, string dbFileName, XbimDBAccess access = XbimDBAccess.ReadWrite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityFactory.html">IEntityFactory</a></td>
+        <td><span class="parametername">factory</span></td>
+        <td><p>Entity factory to be used for deserialization</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dbFileName</span></td>
+        <td><p>Name of the Xbim file</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimDBAccess.html">XbimDBAccess</a></td>
+        <td><span class="parametername">access</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.EsentModel.html">EsentModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_CreateTemporaryModel_Xbim_Common_IEntityFactory_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.CreateTemporaryModel(Xbim.Common.IEntityFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L481">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_CreateTemporaryModel_" data-uid="Xbim.IO.Esent.EsentModel.CreateTemporaryModel*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_CreateTemporaryModel_Xbim_Common_IEntityFactory_" data-uid="Xbim.IO.Esent.EsentModel.CreateTemporaryModel(Xbim.Common.IEntityFactory)">CreateTemporaryModel(IEntityFactory)</h4>
+  <div class="markdown level1 summary"><p>Creates an empty model using a temporary filename, the model will be deleted on close, unless SaveAs is called
+It will be returned open for read write operations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EsentModel CreateTemporaryModel(IEntityFactory factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityFactory.html">IEntityFactory</a></td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.EsentModel.html">EsentModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_DatabaseHasGeometryTable.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.DatabaseHasGeometryTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1007">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_DatabaseHasGeometryTable_" data-uid="Xbim.IO.Esent.EsentModel.DatabaseHasGeometryTable*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_DatabaseHasGeometryTable" data-uid="Xbim.IO.Esent.EsentModel.DatabaseHasGeometryTable">DatabaseHasGeometryTable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DatabaseHasGeometryTable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_DatabaseHasInstanceTable.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.DatabaseHasInstanceTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1012">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_DatabaseHasInstanceTable_" data-uid="Xbim.IO.Esent.EsentModel.DatabaseHasInstanceTable*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_DatabaseHasInstanceTable" data-uid="Xbim.IO.Esent.EsentModel.DatabaseHasInstanceTable">DatabaseHasInstanceTable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DatabaseHasInstanceTable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Delete_Xbim_Common_IPersistEntity_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Delete(Xbim.Common.IPersistEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L375">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Delete_" data-uid="Xbim.IO.Esent.EsentModel.Delete*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Delete_Xbim_Common_IPersistEntity_" data-uid="Xbim.IO.Esent.EsentModel.Delete(Xbim.Common.IPersistEntity)">Delete(IPersistEntity)</h4>
+  <div class="markdown level1 summary"><p>Registers an entity for deletion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(IPersistEntity instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_DeleteGeometryCache.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.DeleteGeometryCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1002">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_DeleteGeometryCache_" data-uid="Xbim.IO.Esent.EsentModel.DeleteGeometryCache*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_DeleteGeometryCache" data-uid="Xbim.IO.Esent.EsentModel.DeleteGeometryCache">DeleteGeometryCache()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeleteGeometryCache()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Dispose.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L773">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Dispose_" data-uid="Xbim.IO.Esent.EsentModel.Dispose*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Dispose" data-uid="Xbim.IO.Esent.EsentModel.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L783">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Dispose_" data-uid="Xbim.IO.Esent.EsentModel.Dispose*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Dispose_System_Boolean_" data-uid="Xbim.IO.Esent.EsentModel.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_EnsureGeometryTables.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.EnsureGeometryTables%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L997">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_EnsureGeometryTables_" data-uid="Xbim.IO.Esent.EsentModel.EnsureGeometryTables*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_EnsureGeometryTables" data-uid="Xbim.IO.Esent.EsentModel.EnsureGeometryTables">EnsureGeometryTables()</h4>
+  <div class="markdown level1 summary"><p>Invoke the function before meshing to ensure database structure is available</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnsureGeometryTables()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_EnsureUniqueUserDefinedId.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.EnsureUniqueUserDefinedId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1108">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_EnsureUniqueUserDefinedId_" data-uid="Xbim.IO.Esent.EsentModel.EnsureUniqueUserDefinedId*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_EnsureUniqueUserDefinedId" data-uid="Xbim.IO.Esent.EsentModel.EnsureUniqueUserDefinedId">EnsureUniqueUserDefinedId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureUniqueUserDefinedId()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Finalize.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L768">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Finalize_" data-uid="Xbim.IO.Esent.EsentModel.Finalize*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Finalize" data-uid="Xbim.IO.Esent.EsentModel.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.ForEach%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L360">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_ForEach_" data-uid="Xbim.IO.Esent.EsentModel.ForEach*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__" data-uid="Xbim.IO.Esent.EsentModel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, Action&lt;TSource&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performs a set of actions on a collection of entities inside a single read only transaction
+This improves database  performance for retrieving and accessing complex and deep objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEach&lt;TSource&gt;(IEnumerable&lt;TSource&gt; source, Action&lt;TSource&gt; body)
+    where TSource : IPersistEntity</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_FreeTable_Xbim_IO_Esent_EsentEntityCursor_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.FreeTable(Xbim.IO.Esent.EsentEntityCursor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L266">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_FreeTable_" data-uid="Xbim.IO.Esent.EsentModel.FreeTable*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_FreeTable_Xbim_IO_Esent_EsentEntityCursor_" data-uid="Xbim.IO.Esent.EsentModel.FreeTable(Xbim.IO.Esent.EsentEntityCursor)">FreeTable(EsentEntityCursor)</h4>
+  <div class="markdown level1 summary"><p>Returns the table to the cache for reuse</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeTable(EsentEntityCursor table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.EsentEntityCursor.html">EsentEntityCursor</a></td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_FreeTable_Xbim_IO_Esent_EsentShapeGeometryCursor_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.FreeTable(Xbim.IO.Esent.EsentShapeGeometryCursor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L274">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_FreeTable_" data-uid="Xbim.IO.Esent.EsentModel.FreeTable*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_FreeTable_Xbim_IO_Esent_EsentShapeGeometryCursor_" data-uid="Xbim.IO.Esent.EsentModel.FreeTable(Xbim.IO.Esent.EsentShapeGeometryCursor)">FreeTable(EsentShapeGeometryCursor)</h4>
+  <div class="markdown level1 summary"><p>Returns the table to the cache for reuse</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeTable(EsentShapeGeometryCursor table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.EsentShapeGeometryCursor.html">EsentShapeGeometryCursor</a></td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_FreeTable_Xbim_IO_Esent_EsentShapeInstanceCursor_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.FreeTable(Xbim.IO.Esent.EsentShapeInstanceCursor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L282">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_FreeTable_" data-uid="Xbim.IO.Esent.EsentModel.FreeTable*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_FreeTable_Xbim_IO_Esent_EsentShapeInstanceCursor_" data-uid="Xbim.IO.Esent.EsentModel.FreeTable(Xbim.IO.Esent.EsentShapeInstanceCursor)">FreeTable(EsentShapeInstanceCursor)</h4>
+  <div class="markdown level1 summary"><p>Returns the table to the cache for reuse</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeTable(EsentShapeInstanceCursor table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.EsentShapeInstanceCursor.html">EsentShapeInstanceCursor</a></td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_FreeTable_Xbim_IO_Esent_XbimGeometryCursor_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.FreeTable(Xbim.IO.Esent.XbimGeometryCursor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L257">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_FreeTable_" data-uid="Xbim.IO.Esent.EsentModel.FreeTable*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_FreeTable_Xbim_IO_Esent_XbimGeometryCursor_" data-uid="Xbim.IO.Esent.EsentModel.FreeTable(Xbim.IO.Esent.XbimGeometryCursor)">FreeTable(XbimGeometryCursor)</h4>
+  <div class="markdown level1 summary"><p>Returns the table to the cache for reuse</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeTable(XbimGeometryCursor table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.XbimGeometryCursor.html">XbimGeometryCursor</a></td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GetEntityBinaryData_Xbim_Common_IInstantiableEntity_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GetEntityBinaryData(Xbim.Common.IInstantiableEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L543">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GetEntityBinaryData_" data-uid="Xbim.IO.Esent.EsentModel.GetEntityBinaryData*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GetEntityBinaryData_Xbim_Common_IInstantiableEntity_" data-uid="Xbim.IO.Esent.EsentModel.GetEntityBinaryData(Xbim.Common.IInstantiableEntity)">GetEntityBinaryData(IInstantiableEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetEntityBinaryData(IInstantiableEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IInstantiableEntity.html">IInstantiableEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GetGeometryData_System_Collections_Generic_IEnumerable_Xbim_IO_Esent_XbimGeometryHandle__.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GetGeometryData(System.Collections.Generic.IEnumerable%7BXbim.IO.Esent.XbimGeometryHandle%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L975">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GetGeometryData_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryData*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GetGeometryData_System_Collections_Generic_IEnumerable_Xbim_IO_Esent_XbimGeometryHandle__" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryData(System.Collections.Generic.IEnumerable{Xbim.IO.Esent.XbimGeometryHandle})">GetGeometryData(IEnumerable&lt;XbimGeometryHandle&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;XbimGeometryData&gt; GetGeometryData(IEnumerable&lt;XbimGeometryHandle&gt; handles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.IO.Esent.XbimGeometryHandle.html">XbimGeometryHandle</a>&gt;</td>
+        <td><span class="parametername">handles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryData.html">XbimGeometryData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GetGeometryData_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GetGeometryData(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L970">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GetGeometryData_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryData*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GetGeometryData_System_Int32_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryData(System.Int32)">GetGeometryData(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimGeometryData GetGeometryData(int geomLabel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">geomLabel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryData.html">XbimGeometryData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GetGeometryData_System_Int32_Xbim_Common_Geometry_XbimGeometryType_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GetGeometryData(System.Int32%2CXbim.Common.Geometry.XbimGeometryType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L836">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GetGeometryData_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryData*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GetGeometryData_System_Int32_Xbim_Common_Geometry_XbimGeometryType_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryData(System.Int32,Xbim.Common.Geometry.XbimGeometryType)">GetGeometryData(Int32, XbimGeometryType)</h4>
+  <div class="markdown level1 summary"><p>Returns all the geometries for the geometry type
+Typically bounding box returns a single object, triangulated mesh mes may return multiple geometry meshes
+where an object is made of multiple materials</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;XbimGeometryData&gt; GetGeometryData(int productLabel, XbimGeometryType geomType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">productLabel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryType.html">XbimGeometryType</a></td>
+        <td><span class="parametername">geomType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryData.html">XbimGeometryData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GetGeometryData_Xbim_Common_Geometry_XbimGeometryType_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GetGeometryData(Xbim.Common.Geometry.XbimGeometryType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L886">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GetGeometryData_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryData*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GetGeometryData_Xbim_Common_Geometry_XbimGeometryType_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryData(Xbim.Common.Geometry.XbimGeometryType)">GetGeometryData(XbimGeometryType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;XbimGeometryData&gt; GetGeometryData(XbimGeometryType ofType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryType.html">XbimGeometryType</a></td>
+        <td><span class="parametername">ofType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryData.html">XbimGeometryData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GetGeometryData_Xbim_IO_Esent_XbimGeometryHandle_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GetGeometryData(Xbim.IO.Esent.XbimGeometryHandle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L965">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GetGeometryData_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryData*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GetGeometryData_Xbim_IO_Esent_XbimGeometryHandle_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryData(Xbim.IO.Esent.XbimGeometryHandle)">GetGeometryData(XbimGeometryHandle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimGeometryData GetGeometryData(XbimGeometryHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.XbimGeometryHandle.html">XbimGeometryHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryData.html">XbimGeometryData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GetGeometryHandle_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GetGeometryHandle(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L823">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GetGeometryHandle_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryHandle*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GetGeometryHandle_System_Int32_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryHandle(System.Int32)">GetGeometryHandle(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimGeometryHandle GetGeometryHandle(int geometryLabel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">geometryLabel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.XbimGeometryHandle.html">XbimGeometryHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GetGeometryHandles_Xbim_Common_Geometry_XbimGeometryType_Xbim_IO_XbimGeometrySort_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GetGeometryHandles(Xbim.Common.Geometry.XbimGeometryType%2CXbim.IO.XbimGeometrySort)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L818">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GetGeometryHandles_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryHandles*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GetGeometryHandles_Xbim_Common_Geometry_XbimGeometryType_Xbim_IO_XbimGeometrySort_" data-uid="Xbim.IO.Esent.EsentModel.GetGeometryHandles(Xbim.Common.Geometry.XbimGeometryType,Xbim.IO.XbimGeometrySort)">GetGeometryHandles(XbimGeometryType, XbimGeometrySort)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XbimGeometryHandleCollection GetGeometryHandles(XbimGeometryType geomType = XbimGeometryType.TriangulatedMesh, XbimGeometrySort sortOrder = XbimGeometrySort.OrderByIfcSurfaceStyleThenIfcType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Geometry.XbimGeometryType.html">XbimGeometryType</a></td>
+        <td><span class="parametername">geomType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.XbimGeometrySort.html">XbimGeometrySort</a></td>
+        <td><span class="parametername">sortOrder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.XbimGeometryHandleCollection.html">XbimGeometryHandleCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_GetStepFileHeader_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.GetStepFileHeader(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1139">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_GetStepFileHeader_" data-uid="Xbim.IO.Esent.EsentModel.GetStepFileHeader*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_GetStepFileHeader_System_String_" data-uid="Xbim.IO.Esent.EsentModel.GetStepFileHeader(System.String)">GetStepFileHeader(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IStepFileHeader GetStepFileHeader(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.IStepFileHeader.html">IStepFileHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Init_Xbim_Common_IEntityFactory_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Init(Xbim.Common.IEntityFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L86">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Init_" data-uid="Xbim.IO.Esent.EsentModel.Init*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Init_Xbim_Common_IEntityFactory_" data-uid="Xbim.IO.Esent.EsentModel.Init(Xbim.Common.IEntityFactory)">Init(IEntityFactory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Init(IEntityFactory factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IEntityFactory.html">IEntityFactory</a></td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_InsertCopy__1___0_Xbim_Common_XbimInstanceHandleMap_Xbim_Common_PropertyTranformDelegate_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.InsertCopy%60%601(%60%600%2CXbim.Common.XbimInstanceHandleMap%2CXbim.Common.PropertyTranformDelegate%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L932">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_InsertCopy_" data-uid="Xbim.IO.Esent.EsentModel.InsertCopy*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_InsertCopy__1___0_Xbim_Common_XbimInstanceHandleMap_Xbim_Common_PropertyTranformDelegate_System_Boolean_System_Boolean_" data-uid="Xbim.IO.Esent.EsentModel.InsertCopy``1(``0,Xbim.Common.XbimInstanceHandleMap,Xbim.Common.PropertyTranformDelegate,System.Boolean,System.Boolean)">InsertCopy&lt;T&gt;(T, XbimInstanceHandleMap, PropertyTranformDelegate, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Implementation of IModel variant of InsertCopy() function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T InsertCopy&lt;T&gt;(T toCopy, XbimInstanceHandleMap mappings, PropertyTranformDelegate propTransform, bool includeInverses, bool keepLabels)
+    where T : IPersistEntity</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">toCopy</span></td>
+        <td><p>Object to copy</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.XbimInstanceHandleMap.html">XbimInstanceHandleMap</a></td>
+        <td><span class="parametername">mappings</span></td>
+        <td><p>Mappings make sure object is only inserted once. You should use one instance of mappings for all InsertCopy() calls between two models</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.PropertyTranformDelegate.html">PropertyTranformDelegate</a></td>
+        <td><span class="parametername">propTransform</span></td>
+        <td><p>Delegate which can be used to transform properties. You can use this to filter out certain properties or referenced objects</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeInverses</span></td>
+        <td><p>If TRUE interse relations are also copied over. This may potentially bring over almost entire model if not controlled by propTransform delegate</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">keepLabels</span></td>
+        <td><p>If TRUE entity labels of inserted objects will be the same as the labels of original objects. This should be FALSE if you are inserting objects to existing model
+or if you are inserting objects from multiple source models into a single target model where entity labels may potentially clash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>New created object in this model which is a deep copy of original object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the object to be inserted. This must be a type supported by this model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_InsertCopy__1___0_Xbim_Common_XbimInstanceHandleMap_Xbim_IO_Esent_XbimReadWriteTransaction_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.InsertCopy%60%601(%60%600%2CXbim.Common.XbimInstanceHandleMap%2CXbim.IO.Esent.XbimReadWriteTransaction%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L911">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_InsertCopy_" data-uid="Xbim.IO.Esent.EsentModel.InsertCopy*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_InsertCopy__1___0_Xbim_Common_XbimInstanceHandleMap_Xbim_IO_Esent_XbimReadWriteTransaction_System_Boolean_" data-uid="Xbim.IO.Esent.EsentModel.InsertCopy``1(``0,Xbim.Common.XbimInstanceHandleMap,Xbim.IO.Esent.XbimReadWriteTransaction,System.Boolean)">InsertCopy&lt;T&gt;(T, XbimInstanceHandleMap, XbimReadWriteTransaction, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Inserts a deep copy of the toCopy object into this model
+All property values are copied to the maximum depth
+Inverse properties are not copied</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T InsertCopy&lt;T&gt;(T toCopy, XbimInstanceHandleMap mappings, XbimReadWriteTransaction txn, bool includeInverses = false)
+    where T : IPersistEntity</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">toCopy</span></td>
+        <td><p>Instance to copy</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.XbimInstanceHandleMap.html">XbimInstanceHandleMap</a></td>
+        <td><span class="parametername">mappings</span></td>
+        <td><p>Supply a dictionary of mappings if repeat copy insertions are to be made</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.XbimReadWriteTransaction.html">XbimReadWriteTransaction</a></td>
+        <td><span class="parametername">txn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeInverses</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_InsertCopy__1___0_Xbim_Common_XbimInstanceHandleMap_Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_PropertyTranformDelegate_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.InsertCopy%60%601(%60%600%2CXbim.Common.XbimInstanceHandleMap%2CXbim.IO.Esent.XbimReadWriteTransaction%2CXbim.Common.PropertyTranformDelegate%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L916">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_InsertCopy_" data-uid="Xbim.IO.Esent.EsentModel.InsertCopy*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_InsertCopy__1___0_Xbim_Common_XbimInstanceHandleMap_Xbim_IO_Esent_XbimReadWriteTransaction_Xbim_Common_PropertyTranformDelegate_System_Boolean_" data-uid="Xbim.IO.Esent.EsentModel.InsertCopy``1(``0,Xbim.Common.XbimInstanceHandleMap,Xbim.IO.Esent.XbimReadWriteTransaction,Xbim.Common.PropertyTranformDelegate,System.Boolean)">InsertCopy&lt;T&gt;(T, XbimInstanceHandleMap, XbimReadWriteTransaction, PropertyTranformDelegate, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T InsertCopy&lt;T&gt;(T toCopy, XbimInstanceHandleMap mappings, XbimReadWriteTransaction txn, PropertyTranformDelegate propTransform, bool includeInverses = false)
+    where T : IPersistEntity</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">toCopy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.XbimInstanceHandleMap.html">XbimInstanceHandleMap</a></td>
+        <td><span class="parametername">mappings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Xbim.IO.Esent.XbimReadWriteTransaction.html">XbimReadWriteTransaction</a></td>
+        <td><span class="parametername">txn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.PropertyTranformDelegate.html">PropertyTranformDelegate</a></td>
+        <td><span class="parametername">propTransform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeInverses</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_NextReferenceIdentifier.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.NextReferenceIdentifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1087">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_NextReferenceIdentifier_" data-uid="Xbim.IO.Esent.EsentModel.NextReferenceIdentifier*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_NextReferenceIdentifier" data-uid="Xbim.IO.Esent.EsentModel.NextReferenceIdentifier">NextReferenceIdentifier()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string NextReferenceIdentifier()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Open_System_String_Xbim_IO_XbimDBAccess_System_Boolean_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Open(System.String%2CXbim.IO.XbimDBAccess%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L652">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Open_" data-uid="Xbim.IO.Esent.EsentModel.Open*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Open_System_String_Xbim_IO_XbimDBAccess_System_Boolean_" data-uid="Xbim.IO.Esent.EsentModel.Open(System.String,Xbim.IO.XbimDBAccess,System.Boolean)">Open(String, XbimDBAccess, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Open(string fileName, XbimDBAccess accessMode, bool deleteOnClose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimDBAccess.html">XbimDBAccess</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">deleteOnClose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Open_System_String_Xbim_IO_XbimDBAccess_Xbim_Common_ReportProgressDelegate_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Open(System.String%2CXbim.IO.XbimDBAccess%2CXbim.Common.ReportProgressDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L691">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Open_" data-uid="Xbim.IO.Esent.EsentModel.Open*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Open_System_String_Xbim_IO_XbimDBAccess_Xbim_Common_ReportProgressDelegate_" data-uid="Xbim.IO.Esent.EsentModel.Open(System.String,Xbim.IO.XbimDBAccess,Xbim.Common.ReportProgressDelegate)">Open(String, XbimDBAccess, ReportProgressDelegate)</h4>
+  <div class="markdown level1 summary"><p>Opens an Xbim model only, to open Ifc, IfcZip and IfcXML files use the CreateFrom method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Open(string fileName, XbimDBAccess accessMode = XbimDBAccess.Read, ReportProgressDelegate progDelegate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimDBAccess.html">XbimDBAccess</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Print.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Print%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L763">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Print_" data-uid="Xbim.IO.Esent.EsentModel.Print*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Print" data-uid="Xbim.IO.Esent.EsentModel.Print">Print()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Print()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_SaveAs_System_String_System_Nullable_Xbim_IO_StorageType__Xbim_Common_ReportProgressDelegate_System_Collections_Generic_IDictionary_System_Int32_System_Int32__.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.SaveAs(System.String%2CSystem.Nullable%7BXbim.IO.StorageType%7D%2CXbim.Common.ReportProgressDelegate%2CSystem.Collections.Generic.IDictionary%7BSystem.Int32%2CSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L713">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_SaveAs_" data-uid="Xbim.IO.Esent.EsentModel.SaveAs*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_SaveAs_System_String_System_Nullable_Xbim_IO_StorageType__Xbim_Common_ReportProgressDelegate_System_Collections_Generic_IDictionary_System_Int32_System_Int32__" data-uid="Xbim.IO.Esent.EsentModel.SaveAs(System.String,System.Nullable{Xbim.IO.StorageType},Xbim.Common.ReportProgressDelegate,System.Collections.Generic.IDictionary{System.Int32,System.Int32})">SaveAs(String, Nullable&lt;StorageType&gt;, ReportProgressDelegate, IDictionary&lt;Int32, Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveAs(string outputFileName, StorageType? storageType = null, ReportProgressDelegate progress = null, IDictionary&lt;int, int&gt; map = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">outputFileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.IO.StorageType.html">StorageType</a>&gt;</td>
+        <td><span class="parametername">storageType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_StopCaching.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.StopCaching%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L175">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_StopCaching_" data-uid="Xbim.IO.Esent.EsentModel.StopCaching*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_StopCaching" data-uid="Xbim.IO.Esent.EsentModel.StopCaching">StopCaching()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopCaching()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_EntityDeleted.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.EntityDeleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L163">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Esent_EsentModel_EntityDeleted" data-uid="Xbim.IO.Esent.EsentModel.EntityDeleted">EntityDeleted</h4>
+  <div class="markdown level1 summary"><p>This event is fired every time when entity gets deleted from model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event DeletedEntityHandler EntityDeleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.DeletedEntityHandler.html">DeletedEntityHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_EntityModified.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.EntityModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L158">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Esent_EsentModel_EntityModified" data-uid="Xbim.IO.Esent.EsentModel.EntityModified">EntityModified</h4>
+  <div class="markdown level1 summary"><p>This event is fired every time any entity is modified. If your model is not
+transactional it might not be called at all as the central point for all
+modifications is a transaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ModifiedEntityHandler EntityModified</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ModifiedEntityHandler.html">ModifiedEntityHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_EntityNew.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.EntityNew%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L151">View Source</a>
+  </span>
+  <h4 id="Xbim_IO_Esent_EsentModel_EntityNew" data-uid="Xbim.IO.Esent.EsentModel.EntityNew">EntityNew</h4>
+  <div class="markdown level1 summary"><p>This event is fired every time new entity is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event NewEntityHandler EntityNew</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.NewEntityHandler.html">NewEntityHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Xbim_Common_IModel_Activate_Xbim_Common_IPersistEntity_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Xbim%23Common%23IModel%23Activate(Xbim.Common.IPersistEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L287">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Xbim_Common_IModel_Activate_" data-uid="Xbim.IO.Esent.EsentModel.Xbim#Common#IModel#Activate*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Xbim_Common_IModel_Activate_Xbim_Common_IPersistEntity_" data-uid="Xbim.IO.Esent.EsentModel.Xbim#Common#IModel#Activate(Xbim.Common.IPersistEntity)">IModel.Activate(IPersistEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IModel.Activate(IPersistEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Xbim_Common_IModel_BeginTransaction_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Xbim%23Common%23IModel%23BeginTransaction(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1022">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Xbim_Common_IModel_BeginTransaction_" data-uid="Xbim.IO.Esent.EsentModel.Xbim#Common#IModel#BeginTransaction*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Xbim_Common_IModel_BeginTransaction_System_String_" data-uid="Xbim.IO.Esent.EsentModel.Xbim#Common#IModel#BeginTransaction(System.String)">IModel.BeginTransaction(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITransaction IModel.BeginTransaction(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel_Xbim_Common_IModel_IsTransactional.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel.Xbim%23Common%23IModel%23IsTransactional%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L1017">View Source</a>
+  </span>
+  <a id="Xbim_IO_Esent_EsentModel_Xbim_Common_IModel_IsTransactional_" data-uid="Xbim.IO.Esent.EsentModel.Xbim#Common#IModel#IsTransactional*"></a>
+  <h4 id="Xbim_IO_Esent_EsentModel_Xbim_Common_IModel_IsTransactional" data-uid="Xbim.IO.Esent.EsentModel.Xbim#Common#IModel#IsTransactional">IModel.IsTransactional</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IModel.IsTransactional { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.Federation.IFederatedModel.html">IFederatedModel</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Esent_EsentModel.md&amp;value=---%0Auid%3A%20Xbim.IO.Esent.EsentModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.Esent/Esent/EsentModel.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

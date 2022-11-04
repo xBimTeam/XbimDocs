@@ -1,0 +1,654 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MemoryModelProvider
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MemoryModelProvider
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.IO.Memory.MemoryModelProvider">
+  
+  
+  <h1 id="Xbim_IO_Memory_MemoryModelProvider" data-uid="Xbim.IO.Memory.MemoryModelProvider" class="text-break">Class MemoryModelProvider
+  </h1>
+  <div class="markdown level0 summary"><p>A simple model provider implementation using the in-memory <a class="xref" href="Xbim.IO.Memory.MemoryModel.html">MemoryModel</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Xbim.IO.BaseModelProvider.html">BaseModelProvider</a></div>
+    <div class="level2"><span class="xref">MemoryModelProvider</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="../Xbim.Common/Xbim.IO.IModelProvider.html">IModelProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.IO.BaseModelProvider.html#Xbim_IO_BaseModelProvider_EntityFactoryResolver">BaseModelProvider.EntityFactoryResolver</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.IO.BaseModelProvider.html#Xbim_IO_BaseModelProvider_GetFactory_Xbim_Common_Step21_XbimSchemaVersion_">BaseModelProvider.GetFactory(XbimSchemaVersion)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.IO.Memory.html">Xbim.IO.Memory</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.IO.MemoryModel.dll</h6>
+  <h5 id="Xbim_IO_Memory_MemoryModelProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MemoryModelProvider : BaseModelProvider, IModelProvider</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Memory_MemoryModelProvider_Capabilities.md&amp;value=---%0Auid%3A%20Xbim.IO.Memory.MemoryModelProvider.Capabilities%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.MemoryModel/MemoryModelProvider.cs/#L13">View Source</a>
+  </span>
+  <a id="Xbim_IO_Memory_MemoryModelProvider_Capabilities_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Capabilities*"></a>
+  <h4 id="Xbim_IO_Memory_MemoryModelProvider_Capabilities" data-uid="Xbim.IO.Memory.MemoryModelProvider.Capabilities">Capabilities</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override StoreCapabilities Capabilities { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.StoreCapabilities.html">StoreCapabilities</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.IO.BaseModelProvider.html#Xbim_IO_BaseModelProvider_Capabilities">BaseModelProvider.Capabilities</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Memory_MemoryModelProvider_Close_Xbim_Common_IModel_.md&amp;value=---%0Auid%3A%20Xbim.IO.Memory.MemoryModelProvider.Close(Xbim.Common.IModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.MemoryModel/MemoryModelProvider.cs/#L15">View Source</a>
+  </span>
+  <a id="Xbim_IO_Memory_MemoryModelProvider_Close_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Close*"></a>
+  <h4 id="Xbim_IO_Memory_MemoryModelProvider_Close_Xbim_Common_IModel_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Close(Xbim.Common.IModel)">Close(IModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Close(IModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.IO.BaseModelProvider.html#Xbim_IO_BaseModelProvider_Close_Xbim_Common_IModel_">BaseModelProvider.Close(IModel)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Memory_MemoryModelProvider_Create_Xbim_Common_Step21_XbimSchemaVersion_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Memory.MemoryModelProvider.Create(Xbim.Common.Step21.XbimSchemaVersion%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.MemoryModel/MemoryModelProvider.cs/#L20">View Source</a>
+  </span>
+  <a id="Xbim_IO_Memory_MemoryModelProvider_Create_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Create*"></a>
+  <h4 id="Xbim_IO_Memory_MemoryModelProvider_Create_Xbim_Common_Step21_XbimSchemaVersion_System_String_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Create(Xbim.Common.Step21.XbimSchemaVersion,System.String)">Create(XbimSchemaVersion, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IModel Create(XbimSchemaVersion ifcVersion, string dbPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">ifcVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dbPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.IO.BaseModelProvider.html#Xbim_IO_BaseModelProvider_Create_Xbim_Common_Step21_XbimSchemaVersion_System_String_">BaseModelProvider.Create(XbimSchemaVersion, String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Memory_MemoryModelProvider_Create_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimStoreType_.md&amp;value=---%0Auid%3A%20Xbim.IO.Memory.MemoryModelProvider.Create(Xbim.Common.Step21.XbimSchemaVersion%2CXbim.IO.XbimStoreType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.MemoryModel/MemoryModelProvider.cs/#L25">View Source</a>
+  </span>
+  <a id="Xbim_IO_Memory_MemoryModelProvider_Create_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Create*"></a>
+  <h4 id="Xbim_IO_Memory_MemoryModelProvider_Create_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimStoreType_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Create(Xbim.Common.Step21.XbimSchemaVersion,Xbim.IO.XbimStoreType)">Create(XbimSchemaVersion, XbimStoreType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IModel Create(XbimSchemaVersion ifcVersion, XbimStoreType storageType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">ifcVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimStoreType.html">XbimStoreType</a></td>
+        <td><span class="parametername">storageType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.IO.BaseModelProvider.html#Xbim_IO_BaseModelProvider_Create_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimStoreType_">BaseModelProvider.Create(XbimSchemaVersion, XbimStoreType)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Memory_MemoryModelProvider_GetLocation_Xbim_Common_IModel_.md&amp;value=---%0Auid%3A%20Xbim.IO.Memory.MemoryModelProvider.GetLocation(Xbim.Common.IModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.MemoryModel/MemoryModelProvider.cs/#L31">View Source</a>
+  </span>
+  <a id="Xbim_IO_Memory_MemoryModelProvider_GetLocation_" data-uid="Xbim.IO.Memory.MemoryModelProvider.GetLocation*"></a>
+  <h4 id="Xbim_IO_Memory_MemoryModelProvider_GetLocation_Xbim_Common_IModel_" data-uid="Xbim.IO.Memory.MemoryModelProvider.GetLocation(Xbim.Common.IModel)">GetLocation(IModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetLocation(IModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.IO.BaseModelProvider.html#Xbim_IO_BaseModelProvider_GetLocation_Xbim_Common_IModel_">BaseModelProvider.GetLocation(IModel)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Memory_MemoryModelProvider_GetXbimSchemaVersion_System_String_.md&amp;value=---%0Auid%3A%20Xbim.IO.Memory.MemoryModelProvider.GetXbimSchemaVersion(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.MemoryModel/MemoryModelProvider.cs/#L36">View Source</a>
+  </span>
+  <a id="Xbim_IO_Memory_MemoryModelProvider_GetXbimSchemaVersion_" data-uid="Xbim.IO.Memory.MemoryModelProvider.GetXbimSchemaVersion*"></a>
+  <h4 id="Xbim_IO_Memory_MemoryModelProvider_GetXbimSchemaVersion_System_String_" data-uid="Xbim.IO.Memory.MemoryModelProvider.GetXbimSchemaVersion(System.String)">GetXbimSchemaVersion(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override XbimSchemaVersion GetXbimSchemaVersion(string modelPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modelPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.IO.BaseModelProvider.html#Xbim_IO_BaseModelProvider_GetXbimSchemaVersion_System_String_">BaseModelProvider.GetXbimSchemaVersion(String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Memory_MemoryModelProvider_Open_System_IO_Stream_Xbim_IO_StorageType_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimModelType_Xbim_IO_XbimDBAccess_Xbim_Common_ReportProgressDelegate_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Memory.MemoryModelProvider.Open(System.IO.Stream%2CXbim.IO.StorageType%2CXbim.Common.Step21.XbimSchemaVersion%2CXbim.IO.XbimModelType%2CXbim.IO.XbimDBAccess%2CXbim.Common.ReportProgressDelegate%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.MemoryModel/MemoryModelProvider.cs/#L52">View Source</a>
+  </span>
+  <a id="Xbim_IO_Memory_MemoryModelProvider_Open_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Open*"></a>
+  <h4 id="Xbim_IO_Memory_MemoryModelProvider_Open_System_IO_Stream_Xbim_IO_StorageType_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimModelType_Xbim_IO_XbimDBAccess_Xbim_Common_ReportProgressDelegate_System_Int32_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Open(System.IO.Stream,Xbim.IO.StorageType,Xbim.Common.Step21.XbimSchemaVersion,Xbim.IO.XbimModelType,Xbim.IO.XbimDBAccess,Xbim.Common.ReportProgressDelegate,System.Int32)">Open(Stream, StorageType, XbimSchemaVersion, XbimModelType, XbimDBAccess, ReportProgressDelegate, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IModel Open(Stream stream, StorageType dataType, XbimSchemaVersion schema, XbimModelType modelType, XbimDBAccess accessMode = XbimDBAccess.Read, ReportProgressDelegate progDelegate = null, int codePageOverride = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.StorageType.html">StorageType</a></td>
+        <td><span class="parametername">dataType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimModelType.html">XbimModelType</a></td>
+        <td><span class="parametername">modelType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimDBAccess.html">XbimDBAccess</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">codePageOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.IO.BaseModelProvider.html#Xbim_IO_BaseModelProvider_Open_System_IO_Stream_Xbim_IO_StorageType_Xbim_Common_Step21_XbimSchemaVersion_Xbim_IO_XbimModelType_Xbim_IO_XbimDBAccess_Xbim_Common_ReportProgressDelegate_System_Int32_">BaseModelProvider.Open(Stream, StorageType, XbimSchemaVersion, XbimModelType, XbimDBAccess, ReportProgressDelegate, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Memory_MemoryModelProvider_Open_System_String_Xbim_Common_Step21_XbimSchemaVersion_System_Nullable_System_Double__Xbim_Common_ReportProgressDelegate_Xbim_IO_XbimDBAccess_System_Int32_.md&amp;value=---%0Auid%3A%20Xbim.IO.Memory.MemoryModelProvider.Open(System.String%2CXbim.Common.Step21.XbimSchemaVersion%2CSystem.Nullable%7BSystem.Double%7D%2CXbim.Common.ReportProgressDelegate%2CXbim.IO.XbimDBAccess%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.MemoryModel/MemoryModelProvider.cs/#L93">View Source</a>
+  </span>
+  <a id="Xbim_IO_Memory_MemoryModelProvider_Open_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Open*"></a>
+  <h4 id="Xbim_IO_Memory_MemoryModelProvider_Open_System_String_Xbim_Common_Step21_XbimSchemaVersion_System_Nullable_System_Double__Xbim_Common_ReportProgressDelegate_Xbim_IO_XbimDBAccess_System_Int32_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Open(System.String,Xbim.Common.Step21.XbimSchemaVersion,System.Nullable{System.Double},Xbim.Common.ReportProgressDelegate,Xbim.IO.XbimDBAccess,System.Int32)">Open(String, XbimSchemaVersion, Nullable&lt;Double&gt;, ReportProgressDelegate, XbimDBAccess, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IModel Open(string path, XbimSchemaVersion schemaVersion, double? ifcDatabaseSizeThreshHold = null, ReportProgressDelegate progDelegate = null, XbimDBAccess accessMode = XbimDBAccess.Read, int codePageOverride = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.Step21.XbimSchemaVersion.html">XbimSchemaVersion</a></td>
+        <td><span class="parametername">schemaVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">ifcDatabaseSizeThreshHold</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.IO.XbimDBAccess.html">XbimDBAccess</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">codePageOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.IO.BaseModelProvider.html#Xbim_IO_BaseModelProvider_Open_System_String_Xbim_Common_Step21_XbimSchemaVersion_System_Nullable_System_Double__Xbim_Common_ReportProgressDelegate_Xbim_IO_XbimDBAccess_System_Int32_">BaseModelProvider.Open(String, XbimSchemaVersion, Nullable&lt;Double&gt;, ReportProgressDelegate, XbimDBAccess, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Memory_MemoryModelProvider_Persist_Xbim_Common_IModel_System_String_Xbim_Common_ReportProgressDelegate_.md&amp;value=---%0Auid%3A%20Xbim.IO.Memory.MemoryModelProvider.Persist(Xbim.Common.IModel%2CSystem.String%2CXbim.Common.ReportProgressDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.MemoryModel/MemoryModelProvider.cs/#L125">View Source</a>
+  </span>
+  <a id="Xbim_IO_Memory_MemoryModelProvider_Persist_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Persist*"></a>
+  <h4 id="Xbim_IO_Memory_MemoryModelProvider_Persist_Xbim_Common_IModel_System_String_Xbim_Common_ReportProgressDelegate_" data-uid="Xbim.IO.Memory.MemoryModelProvider.Persist(Xbim.Common.IModel,System.String,Xbim.Common.ReportProgressDelegate)">Persist(IModel, String, ReportProgressDelegate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Persist(IModel model, string fileName, ReportProgressDelegate progDelegate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IModel.html">IModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.ReportProgressDelegate.html">ReportProgressDelegate</a></td>
+        <td><span class="parametername">progDelegate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Xbim.IO.BaseModelProvider.html#Xbim_IO_BaseModelProvider_Persist_Xbim_Common_IModel_System_String_Xbim_Common_ReportProgressDelegate_">BaseModelProvider.Persist(IModel, String, ReportProgressDelegate)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.IO.IModelProvider.html">IModelProvider</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_IO_Memory_MemoryModelProvider.md&amp;value=---%0Auid%3A%20Xbim.IO.Memory.MemoryModelProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.IO.MemoryModel/MemoryModelProvider.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

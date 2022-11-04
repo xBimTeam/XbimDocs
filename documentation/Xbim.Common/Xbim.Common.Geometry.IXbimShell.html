@@ -1,0 +1,874 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IXbimShell
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IXbimShell
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Common.Geometry.IXbimShell">
+  
+  
+  <h1 id="Xbim_Common_Geometry_IXbimShell" data-uid="Xbim.Common.Geometry.IXbimShell" class="text-break">Interface IXbimShell
+  </h1>
+  <div class="markdown level0 summary"><p>A set of connected faces</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_GeometryType">IXbimGeometryObject.GeometryType</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_IsValid">IXbimGeometryObject.IsValid</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_IsSet">IXbimGeometryObject.IsSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_BoundingBox">IXbimGeometryObject.BoundingBox</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_Transform_Xbim_Common_Geometry_XbimMatrix3D_">IXbimGeometryObject.Transform(XbimMatrix3D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_TransformShallow_Xbim_Common_Geometry_XbimMatrix3D_">IXbimGeometryObject.TransformShallow(XbimMatrix3D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObject.html#Xbim_Common_Geometry_IXbimGeometryObject_Tag">IXbimGeometryObject.Tag</a>
+    </div>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.IEquatable&lt;Xbim.Common.Geometry.IXbimShell&gt;.Equals(Xbim.Common.Geometry.IXbimShell)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Common.Geometry.html">Xbim.Common.Geometry</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Common.dll</h6>
+  <h5 id="Xbim_Common_Geometry_IXbimShell_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IXbimShell : IXbimGeometryObject, IDisposable, IEquatable&lt;IXbimShell&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_Edges.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.Edges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L13">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_Edges_" data-uid="Xbim.Common.Geometry.IXbimShell.Edges*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_Edges" data-uid="Xbim.Common.Geometry.IXbimShell.Edges">Edges</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimEdgeSet Edges { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimEdgeSet.html">IXbimEdgeSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_Faces.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.Faces%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L12">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_Faces_" data-uid="Xbim.Common.Geometry.IXbimShell.Faces*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_Faces" data-uid="Xbim.Common.Geometry.IXbimShell.Faces">Faces</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimFaceSet Faces { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimFaceSet.html">IXbimFaceSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_IsClosed.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.IsClosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L20">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_IsClosed_" data-uid="Xbim.Common.Geometry.IXbimShell.IsClosed*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_IsClosed" data-uid="Xbim.Common.Geometry.IXbimShell.IsClosed">IsClosed</h4>
+  <div class="markdown level1 summary"><p>The shell is a closed manifold shape</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsClosed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_IsPolyhedron.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.IsPolyhedron%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L16">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_IsPolyhedron_" data-uid="Xbim.Common.Geometry.IXbimShell.IsPolyhedron*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_IsPolyhedron" data-uid="Xbim.Common.Geometry.IXbimShell.IsPolyhedron">IsPolyhedron</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsPolyhedron { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_SurfaceArea.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.SurfaceArea%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L15">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_SurfaceArea_" data-uid="Xbim.Common.Geometry.IXbimShell.SurfaceArea*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_SurfaceArea" data-uid="Xbim.Common.Geometry.IXbimShell.SurfaceArea">SurfaceArea</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double SurfaceArea { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_ToBRep.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.ToBRep%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L34">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_ToBRep_" data-uid="Xbim.Common.Geometry.IXbimShell.ToBRep*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_ToBRep" data-uid="Xbim.Common.Geometry.IXbimShell.ToBRep">ToBRep</h4>
+  <div class="markdown level1 summary"><p>Converts the object to a string in BRep format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ToBRep { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_Vertices.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.Vertices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L14">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_Vertices_" data-uid="Xbim.Common.Geometry.IXbimShell.Vertices*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_Vertices" data-uid="Xbim.Common.Geometry.IXbimShell.Vertices">Vertices</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimVertexSet Vertices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimVertexSet.html">IXbimVertexSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_CanCreateSolid.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.CanCreateSolid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L21">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_CanCreateSolid_" data-uid="Xbim.Common.Geometry.IXbimShell.CanCreateSolid*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_CanCreateSolid" data-uid="Xbim.Common.Geometry.IXbimShell.CanCreateSolid">CanCreateSolid()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanCreateSolid()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_CreateSolid.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.CreateSolid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L22">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_CreateSolid_" data-uid="Xbim.Common.Geometry.IXbimShell.CreateSolid*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_CreateSolid" data-uid="Xbim.Common.Geometry.IXbimShell.CreateSolid">CreateSolid()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimSolid CreateSolid()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimSolid.html">IXbimSolid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_Cut_Xbim_Common_Geometry_IXbimSolid_System_Double_Microsoft_Extensions_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.Cut(Xbim.Common.Geometry.IXbimSolid%2CSystem.Double%2CMicrosoft.Extensions.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L24">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_Cut_" data-uid="Xbim.Common.Geometry.IXbimShell.Cut*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_Cut_Xbim_Common_Geometry_IXbimSolid_System_Double_Microsoft_Extensions_Logging_ILogger_" data-uid="Xbim.Common.Geometry.IXbimShell.Cut(Xbim.Common.Geometry.IXbimSolid,System.Double,Microsoft.Extensions.Logging.ILogger)">Cut(IXbimSolid, Double, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimGeometryObjectSet Cut(IXbimSolid toCut, double tolerance, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimSolid.html">IXbimSolid</a></td>
+        <td><span class="parametername">toCut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObjectSet.html">IXbimGeometryObjectSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_Cut_Xbim_Common_Geometry_IXbimSolidSet_System_Double_Microsoft_Extensions_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.Cut(Xbim.Common.Geometry.IXbimSolidSet%2CSystem.Double%2CMicrosoft.Extensions.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L23">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_Cut_" data-uid="Xbim.Common.Geometry.IXbimShell.Cut*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_Cut_Xbim_Common_Geometry_IXbimSolidSet_System_Double_Microsoft_Extensions_Logging_ILogger_" data-uid="Xbim.Common.Geometry.IXbimShell.Cut(Xbim.Common.Geometry.IXbimSolidSet,System.Double,Microsoft.Extensions.Logging.ILogger)">Cut(IXbimSolidSet, Double, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimGeometryObjectSet Cut(IXbimSolidSet toCut, double tolerance, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimSolidSet.html">IXbimSolidSet</a></td>
+        <td><span class="parametername">toCut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObjectSet.html">IXbimGeometryObjectSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_Intersection_Xbim_Common_Geometry_IXbimSolid_System_Double_Microsoft_Extensions_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.Intersection(Xbim.Common.Geometry.IXbimSolid%2CSystem.Double%2CMicrosoft.Extensions.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L28">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_Intersection_" data-uid="Xbim.Common.Geometry.IXbimShell.Intersection*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_Intersection_Xbim_Common_Geometry_IXbimSolid_System_Double_Microsoft_Extensions_Logging_ILogger_" data-uid="Xbim.Common.Geometry.IXbimShell.Intersection(Xbim.Common.Geometry.IXbimSolid,System.Double,Microsoft.Extensions.Logging.ILogger)">Intersection(IXbimSolid, Double, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimGeometryObjectSet Intersection(IXbimSolid toCut, double tolerance, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimSolid.html">IXbimSolid</a></td>
+        <td><span class="parametername">toCut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObjectSet.html">IXbimGeometryObjectSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_Intersection_Xbim_Common_Geometry_IXbimSolidSet_System_Double_Microsoft_Extensions_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.Intersection(Xbim.Common.Geometry.IXbimSolidSet%2CSystem.Double%2CMicrosoft.Extensions.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L27">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_Intersection_" data-uid="Xbim.Common.Geometry.IXbimShell.Intersection*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_Intersection_Xbim_Common_Geometry_IXbimSolidSet_System_Double_Microsoft_Extensions_Logging_ILogger_" data-uid="Xbim.Common.Geometry.IXbimShell.Intersection(Xbim.Common.Geometry.IXbimSolidSet,System.Double,Microsoft.Extensions.Logging.ILogger)">Intersection(IXbimSolidSet, Double, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimGeometryObjectSet Intersection(IXbimSolidSet toCut, double tolerance, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimSolidSet.html">IXbimSolidSet</a></td>
+        <td><span class="parametername">toCut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObjectSet.html">IXbimGeometryObjectSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_SaveAsBrep_System_String_.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.SaveAsBrep(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L30">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_SaveAsBrep_" data-uid="Xbim.Common.Geometry.IXbimShell.SaveAsBrep*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_SaveAsBrep_System_String_" data-uid="Xbim.Common.Geometry.IXbimShell.SaveAsBrep(System.String)">SaveAsBrep(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SaveAsBrep(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_Section_Xbim_Common_Geometry_IXbimFace_System_Double_Microsoft_Extensions_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.Section(Xbim.Common.Geometry.IXbimFace%2CSystem.Double%2CMicrosoft.Extensions.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L29">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_Section_" data-uid="Xbim.Common.Geometry.IXbimShell.Section*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_Section_Xbim_Common_Geometry_IXbimFace_System_Double_Microsoft_Extensions_Logging_ILogger_" data-uid="Xbim.Common.Geometry.IXbimShell.Section(Xbim.Common.Geometry.IXbimFace,System.Double,Microsoft.Extensions.Logging.ILogger)">Section(IXbimFace, Double, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimFaceSet Section(IXbimFace toSection, double tolerance, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimFace.html">IXbimFace</a></td>
+        <td><span class="parametername">toSection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimFaceSet.html">IXbimFaceSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_Union_Xbim_Common_Geometry_IXbimSolid_System_Double_Microsoft_Extensions_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.Union(Xbim.Common.Geometry.IXbimSolid%2CSystem.Double%2CMicrosoft.Extensions.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L26">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_Union_" data-uid="Xbim.Common.Geometry.IXbimShell.Union*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_Union_Xbim_Common_Geometry_IXbimSolid_System_Double_Microsoft_Extensions_Logging_ILogger_" data-uid="Xbim.Common.Geometry.IXbimShell.Union(Xbim.Common.Geometry.IXbimSolid,System.Double,Microsoft.Extensions.Logging.ILogger)">Union(IXbimSolid, Double, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimGeometryObjectSet Union(IXbimSolid toCut, double tolerance, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimSolid.html">IXbimSolid</a></td>
+        <td><span class="parametername">toCut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObjectSet.html">IXbimGeometryObjectSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell_Union_Xbim_Common_Geometry_IXbimSolidSet_System_Double_Microsoft_Extensions_Logging_ILogger_.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell.Union(Xbim.Common.Geometry.IXbimSolidSet%2CSystem.Double%2CMicrosoft.Extensions.Logging.ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L25">View Source</a>
+  </span>
+  <a id="Xbim_Common_Geometry_IXbimShell_Union_" data-uid="Xbim.Common.Geometry.IXbimShell.Union*"></a>
+  <h4 id="Xbim_Common_Geometry_IXbimShell_Union_Xbim_Common_Geometry_IXbimSolidSet_System_Double_Microsoft_Extensions_Logging_ILogger_" data-uid="Xbim.Common.Geometry.IXbimShell.Union(Xbim.Common.Geometry.IXbimSolidSet,System.Double,Microsoft.Extensions.Logging.ILogger)">Union(IXbimSolidSet, Double, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXbimGeometryObjectSet Union(IXbimSolidSet toCut, double tolerance, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimSolidSet.html">IXbimSolidSet</a></td>
+        <td><span class="parametername">toCut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Common.Geometry.IXbimGeometryObjectSet.html">IXbimGeometryObjectSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Common_Geometry_IXbimShell.md&amp;value=---%0Auid%3A%20Xbim.Common.Geometry.IXbimShell%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Common/Geometry/IXbimShell.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1366 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IfcAppliedValue
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IfcAppliedValue
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue">
+  
+  
+  <h1 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue" class="text-break">Class IfcAppliedValue
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html">PersistEntity</a></div>
+    <div class="level2"><span class="xref">IfcAppliedValue</span></div>
+      <div class="level3"><a class="xref" href="Xbim.Ifc2x3.CostResource.IfcCostValue.html">IfcCostValue</a></div>
+      <div class="level3"><a class="xref" href="Xbim.Ifc2x3.CostResource.IfcEnvironmentalImpactValue.html">IfcEnvironmentalImpactValue</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcAppliedValue.html">IIfcAppliedValue</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.PropertyResource.IfcObjectReferenceSelect.html">IfcObjectReferenceSelect</a></div>
+    <div><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcObjectReferenceSelect.html">IIfcObjectReferenceSelect</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.CostResource.IfcAppliedValue.html">IfcAppliedValue</a>&gt;</div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcAppliedValue.html">IIfcAppliedValue</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ConstraintResource.IfcMetricValueSelect.html">IfcMetricValueSelect</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcMetricValueSelect.html">IIfcMetricValueSelect</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.PropertyResource.IfcObjectReferenceSelect.html">IfcObjectReferenceSelect</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcObjectReferenceSelect.html">IIfcObjectReferenceSelect</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ExternalReferenceResource.IfcResourceObjectSelect.html">IfcResourceObjectSelect</a></div>
+    <div><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcResourceObjectSelect.html">IIfcResourceObjectSelect</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a></div>
+    <div><a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity__activated">PersistEntity._activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Activate">PersistEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_NotifyPropertyChanged_System_String_">PersistEntity.NotifyPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_SetValue__1_System_Action___0____0___0_System_String_System_Int32_">PersistEntity.SetValue&lt;TProperty&gt;(Action&lt;TProperty&gt;, TProperty, TProperty, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Equals_System_Object_">PersistEntity.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_GetHashCode">PersistEntity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ToString">PersistEntity.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_EntityLabel">PersistEntity.EntityLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Model">PersistEntity.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_ModelOf">PersistEntity.ModelOf</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_Activated">PersistEntity.IPersistEntity.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Xbim_Common_IPersistEntity_ExpressType">PersistEntity.IPersistEntity.ExpressType</a>
+    </div>
+    <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_PropertyChanged">PersistEntity.PropertyChanged</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xbim.Ifc2x3.CostResource.html">Xbim.Ifc2x3.CostResource</a></h6>
+  <h6><strong>Assembly</strong>: Xbim.Ifc2x3.dll</h6>
+  <h5 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExpressType(&quot;IfcAppliedValue&quot;, 79)]
+public abstract class IfcAppliedValue : PersistEntity, INotifyPropertyChanged, IIfcAppliedValue, IfcObjectReferenceSelect, IIfcObjectReferenceSelect, IEquatable&lt;IfcAppliedValue&gt;, IIfcAppliedValue, IfcMetricValueSelect, IIfcMetricValueSelect, IfcObjectReferenceSelect, IIfcObjectReferenceSelect, IfcResourceObjectSelect, IIfcResourceObjectSelect, IExpressSelectType, IPersistEntity, IPersist, IExpressValidatable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_ApplicableDate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.ApplicableDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L169">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_ApplicableDate_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.ApplicableDate*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_ApplicableDate" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.ApplicableDate">ApplicableDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(5, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 5)]
+public IfcDateTimeSelect ApplicableDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_AppliedValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.AppliedValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L136">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_AppliedValue_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.AppliedValue*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_AppliedValue" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.AppliedValue">AppliedValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(3, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 3)]
+public IfcAppliedValueSelect AppliedValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.CostResource.IfcAppliedValueSelect.html">IfcAppliedValueSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Description.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L122">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Description_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Description*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Description" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Description">Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(2, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 2)]
+public IfcText? Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcText.html">IfcText</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_FixedUntilDate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.FixedUntilDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L185">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_FixedUntilDate_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.FixedUntilDate*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_FixedUntilDate" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.FixedUntilDate">FixedUntilDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(6, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 6)]
+public IfcDateTimeSelect FixedUntilDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect.html">IfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_IsComponentIn.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.IsComponentIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L224">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_IsComponentIn_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.IsComponentIn*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_IsComponentIn" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.IsComponentIn">IsComponentIn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;Components&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{-1}, 9)]
+public IEnumerable&lt;IfcAppliedValueRelationship&gt; IsComponentIn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.CostResource.IfcAppliedValueRelationship.html">IfcAppliedValueRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Name.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L108">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Name_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Name*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Name" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(1, EntityAttributeState.Optional, EntityAttributeType.None, EntityAttributeType.None, null, null, 1)]
+public IfcLabel? Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_UnitBasis.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.UnitBasis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L153">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_UnitBasis_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.UnitBasis*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_UnitBasis" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.UnitBasis">UnitBasis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EntityAttribute(4, EntityAttributeState.Optional, EntityAttributeType.Class, EntityAttributeType.None, null, null, 4)]
+public IfcMeasureWithUnit UnitBasis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcMeasureWithUnit.html">IfcMeasureWithUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_ValueOfComponents.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.ValueOfComponents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L215">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_ValueOfComponents_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.ValueOfComponents*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_ValueOfComponents" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.ValueOfComponents">ValueOfComponents</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;ComponentOfTotal&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{-1}, 8)]
+public IEnumerable&lt;IfcAppliedValueRelationship&gt; ValueOfComponents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.CostResource.IfcAppliedValueRelationship.html">IfcAppliedValueRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_ValuesReferenced.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.ValuesReferenced%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L206">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_ValuesReferenced_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.ValuesReferenced*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_ValuesReferenced" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.ValuesReferenced">ValuesReferenced</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InverseProperty(&quot;ReferencingValues&quot;)]
+[EntityAttribute(-1, EntityAttributeState.Mandatory, EntityAttributeType.Set, EntityAttributeType.Class, new int[]{0}, new int[]{-1}, 7)]
+public IEnumerable&lt;IfcReferencesValueDocument&gt; ValuesReferenced { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.CostResource.IfcReferencesValueDocument.html">IfcReferencesValueDocument</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_AsString.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.AsString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValuePartial.cs/#L12">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_AsString_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.AsString*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_AsString" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.AsString">AsString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AsString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Equals_Xbim_Ifc2x3_CostResource_IfcAppliedValue_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Equals(Xbim.Ifc2x3.CostResource.IfcAppliedValue)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L265">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Equals_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Equals*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Equals_Xbim_Ifc2x3_CostResource_IfcAppliedValue_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Equals(Xbim.Ifc2x3.CostResource.IfcAppliedValue)">Equals(IfcAppliedValue)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IfcAppliedValue other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.CostResource.IfcAppliedValue.html">IfcAppliedValue</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Parse(System.Int32%2CXbim.Common.IPropertyValue%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L236">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Parse_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Parse*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Parse(System.Int32,Xbim.Common.IPropertyValue,System.Int32[])">Parse(Int32, IPropertyValue, Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Parse(int propIndex, IPropertyValue value, int[] nestedIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">propIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Xbim.Common/Xbim.Common.IPropertyValue.html">IPropertyValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">nestedIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../Xbim.Common/Xbim.Common.PersistEntity.html#Xbim_Common_PersistEntity_Parse_System_Int32_Xbim_Common_IPropertyValue_System_Int32___">PersistEntity.Parse(Int32, IPropertyValue, Int32[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Validate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcAppliedValue.cs/#L47">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Validate_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Validate*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Validate" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Validate">Validate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;ValidationResult&gt; Validate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.ValidationResult.html">ValidationResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_ValidateClause_Xbim_Ifc2x3_CostResource_IfcAppliedValue_IfcAppliedValueClause_.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.ValidateClause(Xbim.Ifc2x3.CostResource.IfcAppliedValue.IfcAppliedValueClause)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcAppliedValue.cs/#L30">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_ValidateClause_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.ValidateClause*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_ValidateClause_Xbim_Ifc2x3_CostResource_IfcAppliedValue_IfcAppliedValueClause_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.ValidateClause(Xbim.Ifc2x3.CostResource.IfcAppliedValue.IfcAppliedValueClause)">ValidateClause(IfcAppliedValue.IfcAppliedValueClause)</h4>
+  <div class="markdown level1 summary"><p>Tests the express where-clause specified in param 'clause'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateClause(IfcAppliedValue.IfcAppliedValueClause clause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.CostResource.IfcAppliedValue.IfcAppliedValueClause.html">IfcAppliedValue.IfcAppliedValueClause</a></td>
+        <td><span class="parametername">clause</span></td>
+        <td><p>The express clause to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the clause is satisfied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_ApplicableDate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc2x3%23Interfaces%23IIfcAppliedValue%23ApplicableDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L75">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_ApplicableDate_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#ApplicableDate*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_ApplicableDate" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#ApplicableDate">IIfcAppliedValue.ApplicableDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcAppliedValue.ApplicableDate { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_AppliedValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc2x3%23Interfaces%23IIfcAppliedValue%23AppliedValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L63">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_AppliedValue_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#AppliedValue*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_AppliedValue" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#AppliedValue">IIfcAppliedValue.AppliedValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcAppliedValueSelect IIfcAppliedValue.AppliedValue { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcAppliedValueSelect.html">IIfcAppliedValueSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_Description.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc2x3%23Interfaces%23IIfcAppliedValue%23Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L58">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_Description_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#Description*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_Description" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#Description">IIfcAppliedValue.Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcText? IIfcAppliedValue.Description { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcText.html">IfcText</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_FixedUntilDate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc2x3%23Interfaces%23IIfcAppliedValue%23FixedUntilDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L81">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_FixedUntilDate_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#FixedUntilDate*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_FixedUntilDate" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#FixedUntilDate">IIfcAppliedValue.FixedUntilDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcDateTimeSelect IIfcAppliedValue.FixedUntilDate { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcDateTimeSelect.html">IIfcDateTimeSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_IsComponentIn.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc2x3%23Interfaces%23IIfcAppliedValue%23IsComponentIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L90">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_IsComponentIn_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#IsComponentIn*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_IsComponentIn" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#IsComponentIn">IIfcAppliedValue.IsComponentIn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcAppliedValueRelationship&gt; IIfcAppliedValue.IsComponentIn { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcAppliedValueRelationship.html">IIfcAppliedValueRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_Name.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc2x3%23Interfaces%23IIfcAppliedValue%23Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L53">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_Name_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#Name*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_Name" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#Name">IIfcAppliedValue.Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IfcLabel? IIfcAppliedValue.Name { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_UnitBasis.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc2x3%23Interfaces%23IIfcAppliedValue%23UnitBasis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L69">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_UnitBasis_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#UnitBasis*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_UnitBasis" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#UnitBasis">IIfcAppliedValue.UnitBasis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IIfcMeasureWithUnit IIfcAppliedValue.UnitBasis { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcMeasureWithUnit.html">IIfcMeasureWithUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_ValueOfComponents.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc2x3%23Interfaces%23IIfcAppliedValue%23ValueOfComponents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L89">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_ValueOfComponents_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#ValueOfComponents*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_ValueOfComponents" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#ValueOfComponents">IIfcAppliedValue.ValueOfComponents</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcAppliedValueRelationship&gt; IIfcAppliedValue.ValueOfComponents { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcAppliedValueRelationship.html">IIfcAppliedValueRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_ValuesReferenced.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc2x3%23Interfaces%23IIfcAppliedValue%23ValuesReferenced%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/CostResource/IfcAppliedValue.cs/#L88">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_ValuesReferenced_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#ValuesReferenced*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc2x3_Interfaces_IIfcAppliedValue_ValuesReferenced" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc2x3#Interfaces#IIfcAppliedValue#ValuesReferenced">IIfcAppliedValue.ValuesReferenced</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcReferencesValueDocument&gt; IIfcAppliedValue.ValuesReferenced { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcReferencesValueDocument.html">IIfcReferencesValueDocument</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_ApplicableDate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc4%23Interfaces%23IIfcAppliedValue%23ApplicableDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAppliedValue.cs/#L865">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_ApplicableDate_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#ApplicableDate*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_ApplicableDate" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#ApplicableDate">IIfcAppliedValue.ApplicableDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAppliedValue), 5)]
+IfcDate? IIfcAppliedValue.ApplicableDate { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.DateTimeResource.IfcDate.html">IfcDate</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_AppliedValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc4%23Interfaces%23IIfcAppliedValue%23AppliedValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAppliedValue.cs/#L58">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_AppliedValue_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#AppliedValue*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_AppliedValue" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#AppliedValue">IIfcAppliedValue.AppliedValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAppliedValue), 3)]
+IIfcAppliedValueSelect IIfcAppliedValue.AppliedValue { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcAppliedValueSelect.html">IIfcAppliedValueSelect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_ArithmeticOperator.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc4%23Interfaces%23IIfcAppliedValue%23ArithmeticOperator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAppliedValue.cs/#L957">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_ArithmeticOperator_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#ArithmeticOperator*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_ArithmeticOperator" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#ArithmeticOperator">IIfcAppliedValue.ArithmeticOperator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAppliedValue), 9)]
+IfcArithmeticOperatorEnum? IIfcAppliedValue.ArithmeticOperator { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IfcArithmeticOperatorEnum.html">IfcArithmeticOperatorEnum</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Category.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc4%23Interfaces%23IIfcAppliedValue%23Category%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAppliedValue.cs/#L926">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Category_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#Category*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Category" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#Category">IIfcAppliedValue.Category</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAppliedValue), 7)]
+IfcLabel? IIfcAppliedValue.Category { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Components.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc4%23Interfaces%23IIfcAppliedValue%23Components%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAppliedValue.cs/#L1016">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Components_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#Components*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Components" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#Components">IIfcAppliedValue.Components</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAppliedValue), 10)]
+IEnumerable&lt;IIfcAppliedValue&gt; IIfcAppliedValue.Components { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcAppliedValue.html">IIfcAppliedValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Condition.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc4%23Interfaces%23IIfcAppliedValue%23Condition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAppliedValue.cs/#L943">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Condition_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#Condition*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Condition" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#Condition">IIfcAppliedValue.Condition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAppliedValue), 8)]
+IfcLabel? IIfcAppliedValue.Condition { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Description.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc4%23Interfaces%23IIfcAppliedValue%23Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAppliedValue.cs/#L38">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Description_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#Description*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Description" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#Description">IIfcAppliedValue.Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAppliedValue), 2)]
+IfcText? IIfcAppliedValue.Description { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcText.html">IfcText</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_FixedUntilDate.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc4%23Interfaces%23IIfcAppliedValue%23FixedUntilDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAppliedValue.cs/#L894">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_FixedUntilDate_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#FixedUntilDate*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_FixedUntilDate" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#FixedUntilDate">IIfcAppliedValue.FixedUntilDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAppliedValue), 6)]
+IfcDate? IIfcAppliedValue.FixedUntilDate { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.DateTimeResource.IfcDate.html">IfcDate</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_HasExternalReference.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc4%23Interfaces%23IIfcAppliedValue%23HasExternalReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAppliedValue.cs/#L1026">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_HasExternalReference_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#HasExternalReference*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_HasExternalReference" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#HasExternalReference">IIfcAppliedValue.HasExternalReference</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IIfcExternalReferenceRelationship&gt; IIfcAppliedValue.HasExternalReference { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcExternalReferenceRelationship.html">IIfcExternalReferenceRelationship</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Name.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc4%23Interfaces%23IIfcAppliedValue%23Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAppliedValue.cs/#L21">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Name_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#Name*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_Name" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#Name">IIfcAppliedValue.Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAppliedValue), 1)]
+IfcLabel? IIfcAppliedValue.Name { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.MeasureResource.IfcLabel.html">IfcLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_UnitBasis.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim%23Ifc4%23Interfaces%23IIfcAppliedValue%23UnitBasis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Interfaces/IFC4/IfcAppliedValue.cs/#L851">View Source</a>
+  </span>
+  <a id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_UnitBasis_" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#UnitBasis*"></a>
+  <h4 id="Xbim_Ifc2x3_CostResource_IfcAppliedValue_Xbim_Ifc4_Interfaces_IIfcAppliedValue_UnitBasis" data-uid="Xbim.Ifc2x3.CostResource.IfcAppliedValue.Xbim#Ifc4#Interfaces#IIfcAppliedValue#UnitBasis">IIfcAppliedValue.UnitBasis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CrossSchemaAttribute(typeof(IIfcAppliedValue), 4)]
+IIfcMeasureWithUnit IIfcAppliedValue.UnitBasis { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcMeasureWithUnit.html">IIfcMeasureWithUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcAppliedValue.html">IIfcAppliedValue</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.PropertyResource.IfcObjectReferenceSelect.html">IfcObjectReferenceSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="Xbim.Ifc2x3.Interfaces.IIfcObjectReferenceSelect.html">IIfcObjectReferenceSelect</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcAppliedValue.html">IIfcAppliedValue</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ConstraintResource.IfcMetricValueSelect.html">IfcMetricValueSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcMetricValueSelect.html">IIfcMetricValueSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.PropertyResource.IfcObjectReferenceSelect.html">IfcObjectReferenceSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcObjectReferenceSelect.html">IIfcObjectReferenceSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.ExternalReferenceResource.IfcResourceObjectSelect.html">IfcResourceObjectSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Ifc4/Xbim.Ifc4.Interfaces.IIfcResourceObjectSelect.html">IIfcResourceObjectSelect</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IExpressSelectType.html">IExpressSelectType</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersistEntity.html">IPersistEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.IPersist.html">IPersist</a>
+  </div>
+  <div>
+      <a class="xref" href="../Xbim.Common/Xbim.Common.ExpressValidation.IExpressValidatable.html">IExpressValidatable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/new/develop/apiSpec/new?filename=Xbim_Ifc2x3_CostResource_IfcAppliedValue.md&amp;value=---%0Auid%3A%20Xbim.Ifc2x3.CostResource.IfcAppliedValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xBimTeam/XbimEssentials/blob/develop/Xbim.Ifc2x3/Validation/IfcAppliedValue.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 <strong>xbim</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
