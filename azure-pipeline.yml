@@ -27,10 +27,9 @@ steps:
       **
       !(azure-pipeline.yml)
 
-steps:
-   - download: none
-   - download: Essentials
-     artifact: docs 
+- download: none
+- download: Essentials
+  artifact: docs 
 
 - task: CopyFiles@2
   displayName: 'Copy generated docs to repo'
