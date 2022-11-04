@@ -2,6 +2,7 @@ resources:
   pipelines:
   - pipeline: Essentials
     source: XbimEssentials
+    branch: develop
     project: xBIMToolkit
     trigger:
        branches:
@@ -25,26 +26,11 @@ steps:
     contents: |
       **
 
-- powershell: |
-   $url = 'https://github.com/xBimTeam/XbimEssentials.git'
-   git clone $url --branch develop
-  displayName: 'Clone Essentials repository'
-
-- powershell: |
-    choco install docfx -y
-    docfx XbimEssentials/docs/docfx.json
-    if ($lastexitcode -ne 0){
-      throw ("Error generating document")
-    }
-  displayName: 'Generate Documentation'
-  #condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
-   
-
 - task: CopyFiles@2
   displayName: 'Copy generated docs to repo'
   #condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
   inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)\\XbimEssentials\\docs\\_build'
+    SourceFolder: '$(PIPELINE.WORKSPACE)/Essentials/docs'
     Contents: |
       **
     TargetFolder: '$(System.DefaultWorkingDirectory)'
