@@ -27,6 +27,11 @@ steps:
       **
       !(azure-pipeline.yml)
 
+steps:
+   - download: none
+   - download: Essentials
+     artifact: docs 
+
 - task: CopyFiles@2
   displayName: 'Copy generated docs to repo'
   #condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
