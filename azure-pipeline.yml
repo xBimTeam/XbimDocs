@@ -1,11 +1,19 @@
 resources:
   pipelines:
-  - pipeline:
+  - pipeline: Essentials
     source: XbimEssentials
     project: XbimEssentials
     trigger: true
 
+
+pool:
+  vmImage: 'windows-2022'
+
+
 steps:
+- checkout: self
+  persistCredentials: true
+
 - task: DeleteFiles@1
   displayName: 'Remove old docs files'
   inputs:
