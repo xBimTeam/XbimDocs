@@ -10,8 +10,6 @@ resources:
         - master
         - develop
         
-
-
 pool:
   vmImage: 'windows-2022'
 
@@ -22,6 +20,7 @@ steps:
 - powershell: |
     git rm -rf .
     git checkout HEAD -- azure-pipeline.yml
+    git checkout gh-pages
   displayName: 'Remove old docs files'
 
 - download: none
@@ -43,8 +42,7 @@ steps:
     git config --global user.email "azure.agent@xbim.net"
     git config --global user.name "azure.agent"
     git add .
-    git commit -m 'new docs generated'
-    git -c http.extraheader="AUTHORIZATION: Bearer $env:SYSTEM_ACCESSTOKEN" push -u origin gh-pages
+    git commit -m "new docs generated"
+    git push
+
   displayName: 'Push new docs files'
-  env:
-      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
