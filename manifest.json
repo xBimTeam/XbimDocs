@@ -91,7 +91,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ARaHXe1bCSNZYdsGwBwM7gZTFi4lrYxm28GkbwmKdQs="
+          "hash": "3I5ZZq3o1eilSntcyv0+9+8tMiFYayXOGmdphJCfbLo="
         }
       },
       "is_incremental": false,
@@ -2594,6 +2594,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/documentation/Xbim.Common/Xbim.IO.Parser.yml",
       "output": {
@@ -3224,9 +3227,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/documentation/Xbim.IO.Esent/Xbim.IO.Parser.yml",
       "output": {
@@ -3326,6 +3326,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/documentation/Xbim.IO.Esent/Xbim.Ifc.ModelProviderExtensions.yml",
       "output": {
@@ -3338,6 +3341,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/documentation/Xbim.IO.Esent/Xbim.Ifc.yml",
       "output": {
@@ -3866,9 +3872,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/documentation/Xbim.IO.MemoryModel/Xbim.Ifc.ModelProviderExtensions.yml",
       "output": {
@@ -3881,9 +3884,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "obj/documentation/Xbim.IO.MemoryModel/Xbim.Ifc.yml",
       "output": {
