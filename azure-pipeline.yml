@@ -3,7 +3,12 @@ resources:
   - pipeline: Essentials
     source: XbimEssentials
     project: XbimEssentials
-    trigger: true
+    trigger:
+       branches:
+        include:
+        - master
+        - develop
+        
 
 
 pool:
