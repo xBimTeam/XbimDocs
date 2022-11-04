@@ -7,8 +7,8 @@ resources:
     trigger:
        branches:
         include:
-        - master
-        - develop
+        - refs/heads/master
+        - refs/heads/develop
         
 pool:
   vmImage: 'windows-2022'
