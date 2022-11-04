@@ -15,17 +15,14 @@ resources:
 pool:
   vmImage: 'windows-2022'
 
-
 steps:
 - checkout: self
   persistCredentials: true
 
-- task: DeleteFiles@1
+- powershell: |
+    git rm -rf .
+    git checkout HEAD -- azure-pipeline.yml
   displayName: 'Remove old docs files'
-  inputs:
-    contents: |
-      **
-      !(azure-pipeline.yml)
 
 - download: none
 - download: Essentials
@@ -48,4 +45,4 @@ steps:
     git add .
     git commit -m 'new docs generated'
     git push -u origin gh-pages
-  displayName: 'Clone Essentials repository'
+  displayName: 'Push new docs files'
