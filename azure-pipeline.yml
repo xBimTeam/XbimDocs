@@ -44,5 +44,7 @@ steps:
     git config --global user.name "azure.agent"
     git add .
     git commit -m 'new docs generated'
-    git push -u origin gh-pages
+    git -c http.extraheader="AUTHORIZATION: Bearer $env:SYSTEM_ACCESSTOKEN" push -u origin gh-pages
   displayName: 'Push new docs files'
+  env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
