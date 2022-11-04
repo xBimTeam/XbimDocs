@@ -2,7 +2,7 @@ resources:
   pipelines:
   - pipeline: Essentials
     source: XbimEssentials
-    project: XbimEssentials
+    project: xBIMToolkit
     trigger:
        branches:
         include:
